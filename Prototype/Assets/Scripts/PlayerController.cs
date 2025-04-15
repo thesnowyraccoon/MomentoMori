@@ -1,9 +1,11 @@
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem; // Import the Unity Input System namespace
 
 public class PlayerController : MonoBehaviour
 {
     public InputAction moveAction; // Input action for movement
+    public InputAction attackAction; // Input action for attack
     public float moveSpeed = 5f; // Speed of the player movement
 
     public Animator animator; // Reference to the Animator component
@@ -12,6 +14,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         moveAction.Enable(); // Enable the move action to start receiving input
+        attackAction.Enable(); // Enable the attack action to start receiving input
 
         animator = GetComponent<Animator>(); // Get the Animator component attached to the player
     }
@@ -40,6 +43,8 @@ public class PlayerController : MonoBehaviour
         transform.position += moveDirection.normalized * moveSpeed * Time.deltaTime; // Move the player based on input
     }
 
+
+
     void AnimatePlayer()
     {
         if (moveAction.ReadValue<Vector2>().x > 0) // Check if moving right
@@ -66,7 +71,8 @@ public class PlayerController : MonoBehaviour
         {
             animator.SetBool("isUp", false); // Reset animator parameter for up movement
         }
-        if (moveAction.ReadValue<Vector2>().y < 0) // Check if moving down
+        //if (moveAction.ReadValue<Vector2>().y < 0) // Check if moving down
+        if (moveAction.name == "Down")
         {
             animator.SetBool("isDown", true); // Set animator parameter for down movement
         }
@@ -81,5 +87,16 @@ public class PlayerController : MonoBehaviour
     {
         MovePlayer(); // Call the MovePlayer method to handle movement
         AnimatePlayer(); // Call the AnimatePlayer method to handle animation
+    }
+
+    void OnTriggerStay2D(Collider2D trigger)
+    {
+        if (trigger.gameObject.tag == "Enemy") 
+        {
+            if (attackAction.IsPressed())
+            {
+                print("player attacks");
+            }
+        }
     }
 }
