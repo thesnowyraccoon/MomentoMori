@@ -4,11 +4,23 @@ using UnityEngine.InputSystem; // Import the Unity Input System namespace
 
 public class PlayerController : MonoBehaviour
 {
+    // Input
     public InputAction moveAction; // Input action for movement
     public InputAction attackAction; // Input action for attack
-    public float moveSpeed = 5f; // Speed of the player movement
 
-    public Animator animator; // Reference to the Animator component
+    // Movement
+    public float moveSpeed = 5f; // Speed of the player
+
+    // Animations
+    public Animator animator; // Animator component
+
+    // Cooldown
+    public float staminaTime = 3f;
+    float staminaCooldown = 0f;
+    bool hasStamina;
+
+    // Enemy
+    int enemyHealth = 100;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -17,6 +29,15 @@ public class PlayerController : MonoBehaviour
         attackAction.Enable(); // Enable the attack action to start receiving input
 
         animator = GetComponent<Animator>(); // Get the Animator component attached to the player
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        MovePlayer(); // Call the MovePlayer method to handle movement
+        AnimatePlayer(); // Call the AnimatePlayer method to handle animation
+
+        StaminaCooldown();
     }
 
     void MovePlayer()
@@ -42,8 +63,6 @@ public class PlayerController : MonoBehaviour
 
         transform.position += moveDirection.normalized * moveSpeed * Time.deltaTime; // Move the player based on input
     }
-
-
 
     void AnimatePlayer()
     {
@@ -82,20 +101,34 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
-    void Update()
+    // Stamina cooldown and check
+    void StaminaCooldown()
     {
-        MovePlayer(); // Call the MovePlayer method to handle movement
-        AnimatePlayer(); // Call the AnimatePlayer method to handle animation
+        if ((staminaCooldown <= 0f) && (hasStamina == false))
+        {
+            hasStamina = true;
+            staminaCooldown = staminaTime;
+        }
+        else
+        {
+            staminaCooldown -= Time.deltaTime;
+        }
     }
 
+    // Checks enemy collision and attacking
     void OnTriggerStay2D(Collider2D trigger)
     {
         if (trigger.gameObject.tag == "Enemy") 
         {
             if (attackAction.IsPressed())
             {
-                print("player attacks");
+                if (hasStamina)
+                {
+                    enemyHealth --;
+                    print("Health: " + enemyHealth); 
+
+                    hasStamina = false;   
+                }
             }
         }
     }
