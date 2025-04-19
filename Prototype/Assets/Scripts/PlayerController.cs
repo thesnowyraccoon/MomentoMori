@@ -1,3 +1,4 @@
+using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -14,10 +15,15 @@ public class PlayerController : MonoBehaviour
     // Animations
     public Animator animator; // Animator component
 
-    // Cooldown
+    // Stats
+    public int playerHealth = 100;
+    public int playerDamage = 5;
+
+    // Stamina
     public float staminaTime = 3f;
     float staminaCooldown = 0f;
     bool hasStamina;
+    TextMeshPro stamina;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -26,6 +32,8 @@ public class PlayerController : MonoBehaviour
         attackAction.Enable(); // Enable the attack action to start receiving input
 
         animator = GetComponent<Animator>(); // Get the Animator component attached to the player
+
+        stamina = GetComponentInChildren<TextMeshPro>();
     }
 
     // Update is called once per frame
@@ -110,9 +118,19 @@ public class PlayerController : MonoBehaviour
         {
             staminaCooldown -= Time.deltaTime;
         }
+
+        if (hasStamina)
+        {
+            stamina.enabled = false;
+        }
+        else
+        {
+            stamina.enabled = true;
+            stamina.text = "Stamina: " + Mathf.CeilToInt(staminaCooldown);
+        }
     }
 
-    //Player attacking
+    // Player attacking
     public int Attack()
     {
         if (attackAction.IsPressed())
@@ -120,7 +138,7 @@ public class PlayerController : MonoBehaviour
             if (hasStamina)
             {
                 hasStamina = false;
-                return 5;
+                return playerDamage;
             }
         }
 
