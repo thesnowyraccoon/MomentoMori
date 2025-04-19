@@ -1,6 +1,6 @@
 using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.InputSystem; // Import the Unity Input System namespace
+using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
@@ -18,9 +18,6 @@ public class PlayerController : MonoBehaviour
     public float staminaTime = 3f;
     float staminaCooldown = 0f;
     bool hasStamina;
-
-    // Enemy
-    int enemyHealth = 100;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -115,21 +112,18 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    // Checks enemy collision and attacking
-    void OnTriggerStay2D(Collider2D trigger)
+    //Player attacking
+    public int Attack()
     {
-        if (trigger.gameObject.tag == "Enemy") 
+        if (attackAction.IsPressed())
         {
-            if (attackAction.IsPressed())
+            if (hasStamina)
             {
-                if (hasStamina)
-                {
-                    enemyHealth --;
-                    print("Health: " + enemyHealth); 
-
-                    hasStamina = false;   
-                }
+                hasStamina = false;
+                return 5;
             }
         }
+
+        return 0;
     }
 }
