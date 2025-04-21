@@ -1,5 +1,5 @@
+using System.Linq;
 using TMPro;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -16,14 +16,16 @@ public class PlayerController : MonoBehaviour
     public Animator animator; // Animator component
 
     // Stats
-    public int playerHealth = 100;
-    public int playerDamage = 5;
+    public float maxHealth = 100;
+    [HideInInspector] public float playerHealth;
+    public float playerDamage = 5;
+    TextMeshPro textHealth;
 
     // Stamina
     public float staminaTime = 3f;
     float staminaCooldown = 0f;
-    bool hasStamina;
-    TextMeshPro stamina;
+    [HideInInspector] public bool hasStamina;
+    TextMeshPro textStamina;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -33,7 +35,10 @@ public class PlayerController : MonoBehaviour
 
         animator = GetComponent<Animator>(); // Get the Animator component attached to the player
 
-        stamina = GetComponentInChildren<TextMeshPro>();
+        textStamina = GetComponentsInChildren<TextMeshPro>().FirstOrDefault(t => t.name == "stamina"); 
+        textHealth = GetComponentsInChildren<TextMeshPro>().FirstOrDefault(t => t.name == "playerHealth");
+
+        playerHealth = maxHealth; // sets playerhealth to maximum
     }
 
     // Update is called once per frame
@@ -42,9 +47,12 @@ public class PlayerController : MonoBehaviour
         MovePlayer(); // Call the MovePlayer method to handle movement
         AnimatePlayer(); // Call the AnimatePlayer method to handle animation
 
+        Health();
+
         StaminaCooldown();
     }
 
+    // player movement
     void MovePlayer()
     {
         Vector3 moveDirection = Vector3.zero; // Initialize move direction
@@ -69,40 +77,41 @@ public class PlayerController : MonoBehaviour
         transform.position += moveDirection.normalized * moveSpeed * Time.deltaTime; // Move the player based on input
     }
 
+    // player animations
+    // checks movement and animates accordingly
     void AnimatePlayer()
     {
-        if (moveAction.ReadValue<Vector2>().x > 0) // Check if moving right
+        if (moveAction.ReadValue<Vector2>().x > 0) 
         {
-            animator.SetBool("isRight", true); // Set animator parameter for right movement
+            animator.SetBool("isRight", true); 
         }
         else
         {
-            animator.SetBool("isRight", false); // Reset animator parameter for right movement
+            animator.SetBool("isRight", false); 
         }
-        if (moveAction.ReadValue<Vector2>().x < 0) // Check if moving left
+        if (moveAction.ReadValue<Vector2>().x < 0) 
         {
-            animator.SetBool("isLeft", true); // Set animator parameter for left movement
-        }
-        else
-        {
-            animator.SetBool("isLeft", false); // Reset animator parameter for left movement
-        }
-        if (moveAction.ReadValue<Vector2>().y > 0) // Check if moving up
-        {
-            animator.SetBool("isUp", true); // Set animator parameter for up movement
+            animator.SetBool("isLeft", true); 
         }
         else
         {
-            animator.SetBool("isUp", false); // Reset animator parameter for up movement
+            animator.SetBool("isLeft", false); 
         }
-        //if (moveAction.ReadValue<Vector2>().y < 0) // Check if moving down
-        if (moveAction.name == "Down")
+        if (moveAction.ReadValue<Vector2>().y > 0) 
         {
-            animator.SetBool("isDown", true); // Set animator parameter for down movement
+            animator.SetBool("isUp", true); 
         }
         else
         {
-            animator.SetBool("isDown", false); // Reset animator parameter for down movement
+            animator.SetBool("isUp", false); 
+        }
+        if (moveAction.ReadValue<Vector2>().y < 0) 
+        {
+            animator.SetBool("isDown", true); 
+        }
+        else
+        {
+            animator.SetBool("isDown", false); 
         }
     }
 
@@ -119,29 +128,39 @@ public class PlayerController : MonoBehaviour
             staminaCooldown -= Time.deltaTime;
         }
 
-        if (hasStamina)
+        if (hasStamina) // displays stamina when cooldown is active
         {
-            stamina.enabled = false;
+            textStamina.enabled = false;
         }
         else
         {
-            stamina.enabled = true;
-            stamina.text = "Stamina: " + Mathf.CeilToInt(staminaCooldown);
+            textStamina.enabled = true;
+            textStamina.text = "Stamina: " + Mathf.CeilToInt(staminaCooldown);
         }
     }
 
     // Player attacking
-    public int Attack()
+    public float Attack()
     {
-        if (attackAction.IsPressed())
+        if (attackAction.IsPressed() && hasStamina)
         {
-            if (hasStamina)
-            {
-                hasStamina = false;
-                return playerDamage;
-            }
+            hasStamina = false;
+            return playerDamage;
         }
+        else
+        {
+            return 0;
+        }
+    }
 
-        return 0;
+    // Player health display and check
+    void Health()
+    {
+        textHealth.text = "Health: " + playerHealth;
+
+        if (playerHealth > maxHealth)
+        {
+            playerHealth = maxHealth;
+        }
     }
 }

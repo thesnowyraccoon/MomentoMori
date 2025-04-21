@@ -1,16 +1,11 @@
 using TMPro;
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class EnemyController : MonoBehaviour
 {
     // Enemy stats
-    public int enemyHealth = 100;
+    public float enemyHealth = 100;
     TextMeshPro health;
-
-    // Player damage
-    int damage;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -30,16 +25,13 @@ public class EnemyController : MonoBehaviour
     // Checks if player attacks and applies damage
     void OnTriggerStay2D(Collider2D trigger)
     {
-        if (trigger.CompareTag("Player"))
+        if (trigger.gameObject.CompareTag("Player"))
         {
-            damage = trigger.GetComponent<PlayerController>().Attack();
+            float damage = trigger.GetComponent<PlayerController>().Attack();
 
-            if (damage > 0)
-            {
-                enemyHealth -= damage;
-                health.enabled = true;
-                health.text = "Health: " + enemyHealth;
-            }
+            enemyHealth -= damage;
+            health.enabled = true;
+            health.text = "Health: " + enemyHealth; 
         }
     }
 }
