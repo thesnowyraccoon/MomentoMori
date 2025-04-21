@@ -30,7 +30,6 @@ public class EnemyController : MonoBehaviour
             float damage = trigger.GetComponent<PlayerController>().Attack();
 
             enemyHealth -= damage;
-            health.enabled = true;
             health.text = "Health: " + enemyHealth; 
         }
     }
