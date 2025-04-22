@@ -56,5 +56,6 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "Prototype.sln"
+    "dotnet.defaultSolution": "Prototype.sln",
+    "github.copilot.renameSuggestions.triggerAutomatically": false
 }
