@@ -24,8 +24,9 @@ public class PlayerController : MonoBehaviour
     // Stamina
     public float staminaTime = 3f;
     float staminaCooldown = 0f;
-    [HideInInspector] public bool hasStamina;
+    bool hasStamina = false;
     TextMeshPro textStamina;
+    [HideInInspector] public bool hasAttack = true;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -121,11 +122,17 @@ public class PlayerController : MonoBehaviour
         if ((staminaCooldown <= 0f) && (hasStamina == false))
         {
             hasStamina = true;
+            hasAttack = true;
             staminaCooldown = staminaTime;
         }
         else
         {
             staminaCooldown -= Time.deltaTime;
+            
+            if (staminaCooldown < 0f)
+            {
+                staminaCooldown = 0f;
+            }
         }
 
         if (hasStamina) // displays stamina when cooldown is active
@@ -137,20 +144,32 @@ public class PlayerController : MonoBehaviour
             textStamina.enabled = true;
             textStamina.text = "Stamina: " + Mathf.CeilToInt(staminaCooldown);
         }
+
+        if (attackAction.IsPressed() && hasStamina)
+        {
+            hasStamina = false;
+        }
     }
 
     // Player attacking
     public float Attack()
     {
-        if (attackAction.IsPressed() && hasStamina)
+        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(transform.position, 5f); // Adjust radius as needed
+
+        foreach (var enemy in hitEnemies)
         {
-            hasStamina = false;
-            return playerDamage;
+            if (enemy.CompareTag("Enemy"))
+            {
+                if (attackAction.IsPressed() && hasAttack)
+                {
+                    hasStamina = false;
+                    hasAttack = false;
+                    return playerDamage;
+                }
+            }
         }
-        else
-        {
-            return 0;
-        }
+
+        return 0;
     }
 
     // Player health display and check
