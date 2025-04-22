@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 5e1677903c9159e4ab4dc64263f2061e
+guid: 5490843fa8a96b042b7b1678a2877023
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1016178569819398364
-    second: Depleted_Health_Bar-removebg-preview_0
+      213: 1833384403467759984
+    second: Options-removebg-preview_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Depleted_Health_Bar-removebg-preview_0
+      name: Options-removebg-preview_0
       rect:
         serializedVersion: 2
-        x: 1
-        y: 1
-        width: 72
-        height: 68
+        x: 14
+        y: 10
+        width: 578
+        height: 174
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 42fdc8589fec5e1f0800000000000000
-      internalID: -1016178569819398364
+      spriteID: 071ff69b66d717910800000000000000
+      internalID: 1833384403467759984
       vertices: []
       indices: 
       edges: []
@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Options-removebg-preview_0: 1833384403467759984
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
