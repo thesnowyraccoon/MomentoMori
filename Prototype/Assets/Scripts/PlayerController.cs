@@ -39,7 +39,9 @@ public class PlayerController : MonoBehaviour
         textStamina = GetComponentsInChildren<TextMeshPro>().FirstOrDefault(t => t.name == "stamina"); 
         textHealth = GetComponentsInChildren<TextMeshPro>().FirstOrDefault(t => t.name == "playerHealth");
 
-        playerHealth = maxHealth; // sets playerhealth to maximum
+        playerHealth = maxHealth; // sets playerhealth to maximum\
+
+        textHealth.text = "Health: " + playerHealth;
     }
 
     // Update is called once per frame
@@ -180,6 +182,12 @@ public class PlayerController : MonoBehaviour
         if (playerHealth > maxHealth)
         {
             playerHealth = maxHealth;
+        }
+
+        if (playerHealth <= 0)
+        {
+            Destroy(gameObject);
+            print("Game Over");
         }
     }
 }

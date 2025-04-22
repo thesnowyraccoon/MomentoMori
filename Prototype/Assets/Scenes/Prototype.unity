@@ -317,7 +317,7 @@ MonoBehaviour:
   maxHealth: 100
   playerHealth: 100
   playerDamage: 5
-  staminaTime: 3
+  staminaTime: 2
   hasAttack: 1
 --- !u!50 &49788835
 Rigidbody2D:
@@ -715,7 +715,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c42448c430bf2449b4ed14f2e8142c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyHealth: 100
+  enemyHealth: 25
+  attack: 10
+  stamina: 5
 --- !u!1 &1378991560
 GameObject:
   m_ObjectHideFlags: 0
@@ -1501,7 +1503,7 @@ Transform:
   m_GameObject: {fileID: 1610038140}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.815401, y: -0.30591, z: -9.962212}
+  m_LocalPosition: {x: 6.8145866, y: -0.30589002, z: -9.962212}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
