@@ -1,6 +1,13 @@
 using Unity.Cinemachine;
 using UnityEngine;
 
+//Title: Move to a new area boundary in your game
+//Author: Game Code Library 
+//Date: April 11 2025
+//Code version: Unknown
+//Availability: https://youtu.be/9r9YbHsjSKs?si=D9ccCkUvTTY_Eu99
+
+
 public class MapTransition : MonoBehaviour
 {
     public PolygonCollider2D mapBoundry;
