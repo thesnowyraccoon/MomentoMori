@@ -1,7 +1,9 @@
 using System.Linq;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
@@ -184,8 +186,56 @@ public class PlayerController : MonoBehaviour
             playerHealth = maxHealth;
         }
 
+        RawImage full = GameObject.Find("fullHealth").GetComponent<RawImage>();
+        RawImage three = GameObject.Find("threeHealth").GetComponent<RawImage>();
+        RawImage half = GameObject.Find("halfHealth").GetComponent<RawImage>();
+        RawImage quarter = GameObject.Find("quarterHealth").GetComponent<RawImage>();
+        RawImage zero = GameObject.Find("zeroHealth").GetComponent<RawImage>();
+
+        if (playerHealth == maxHealth)
+        {
+            full.enabled = true;
+            three.enabled = false;
+            half.enabled = false;
+            quarter.enabled = false;
+            zero.enabled = false;
+        }
+        
+        if (playerHealth < maxHealth && playerHealth > (maxHealth/2))
+        {
+            full.enabled = false;
+            three.enabled = true;
+            half.enabled = false;
+            quarter.enabled = false;
+            zero.enabled = false;
+        }
+        
+        if (playerHealth == (maxHealth/2))
+        {
+            full.enabled = false;
+            three.enabled = false;
+            half.enabled = true;
+            quarter.enabled = false;
+            zero.enabled = false;
+        }
+        
+        if (playerHealth < (maxHealth/2))
+        {
+            full.enabled = false;
+            three.enabled = false;
+            half.enabled = false;
+            quarter.enabled = true;
+            zero.enabled = false;
+        }
+
         if (playerHealth <= 0)
         {
+            full.enabled = false;
+            three.enabled = false;
+            half.enabled = false;
+            quarter.enabled = false;
+            zero.enabled = true;
+
             Destroy(gameObject);
             print("Game Over");
         }

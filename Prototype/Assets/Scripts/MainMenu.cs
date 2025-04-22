@@ -5,6 +5,7 @@ public class MainMenu : MonoBehaviour
     public void PlayGame()
     {
         SceneManager.LoadSceneAsync("Prototype");
+        SceneManager.LoadSceneAsync("Health Bar", LoadSceneMode.Additive);
     }
     public void QuitGame()
     {

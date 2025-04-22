@@ -129,7 +129,6 @@ GameObject:
   m_Component:
   - component: {fileID: 43416978}
   - component: {fileID: 43416982}
-  - component: {fileID: 43416981}
   - component: {fileID: 43416980}
   - component: {fileID: 43416983}
   m_Layer: 5
@@ -138,7 +137,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &43416978
 RectTransform:
   m_ObjectHideFlags: 0
@@ -182,36 +181,6 @@ MonoBehaviour:
   m_Spacing: {x: 0, y: 0}
   m_Constraint: 0
   m_ConstraintCount: 2
---- !u!114 &43416981
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 43416977}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
 --- !u!222 &43416982
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -323,7 +292,7 @@ GameObject:
   - component: {fileID: 1059908585}
   - component: {fileID: 1059908584}
   m_Layer: 5
-  m_Name: RawImage (3)
+  m_Name: quarterHealth
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -437,7 +406,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!81 &1147102555
 AudioListener:
   m_ObjectHideFlags: 0
@@ -722,7 +691,7 @@ GameObject:
   - component: {fileID: 1411640520}
   - component: {fileID: 1411640519}
   m_Layer: 5
-  m_Name: RawImage
+  m_Name: fullHealth
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -883,7 +852,7 @@ GameObject:
   - component: {fileID: 1512851528}
   - component: {fileID: 1512851527}
   m_Layer: 5
-  m_Name: RawImage (1)
+  m_Name: threeHealth
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1063,7 +1032,7 @@ GameObject:
   - component: {fileID: 1816062664}
   - component: {fileID: 1816062663}
   m_Layer: 5
-  m_Name: RawImage (2)
+  m_Name: halfHealth
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1135,7 +1104,7 @@ GameObject:
   - component: {fileID: 1956805893}
   - component: {fileID: 1956805892}
   m_Layer: 5
-  m_Name: RawImage (4)
+  m_Name: zeroHealth
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
