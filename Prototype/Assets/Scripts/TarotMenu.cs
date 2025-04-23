@@ -34,7 +34,8 @@ public class TarotMenu : MonoBehaviour
 
     public void HealthTarot()
     {
-        player.playerHealth += 50;
+        player.maxHealth += 50;
+        player.playerHealth = player.maxHealth;
         t3.interactable = false;
     }
 }
