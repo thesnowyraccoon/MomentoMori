@@ -195,6 +195,10 @@ public class PlayerController : MonoBehaviour
         RawImage quarter = GameObject.Find("quarterHealth").GetComponent<RawImage>();
         RawImage zero = GameObject.Find("zeroHealth").GetComponent<RawImage>();
 
+        TextMeshProUGUI gameOver = GameObject.Find("GameOver").GetComponent<TextMeshProUGUI>();
+        TextMeshProUGUI overText = GameObject.Find("overText").GetComponent<TextMeshProUGUI>();
+        Image overButton = GameObject.Find("overButton").GetComponent<Image>();
+
         if (playerHealth == maxHealth)
         {
             full.enabled = true;
@@ -240,7 +244,10 @@ public class PlayerController : MonoBehaviour
             zero.enabled = true;
 
             Destroy(gameObject);
-            print("Game Over");
+
+            gameOver.enabled = true;
+            overButton.enabled = true;
+            overText.enabled = true;
         }
     }
 
