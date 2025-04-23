@@ -6,6 +6,7 @@ public class MainMenu : MonoBehaviour
     {
         SceneManager.LoadSceneAsync("Prototype");
         SceneManager.LoadSceneAsync("Health Bar", LoadSceneMode.Additive);
+        SceneManager.LoadSceneAsync("Tarot", LoadSceneMode.Additive);
     }
     public void QuitGame()
     {

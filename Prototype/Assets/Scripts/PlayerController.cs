@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
     // Input
     public InputAction moveAction; // Input action for movement
     public InputAction attackAction; // Input action for attack
+    public InputAction interactAction;
 
     // Movement
     public float moveSpeed = 5f; // Speed of the player
@@ -34,6 +35,7 @@ public class PlayerController : MonoBehaviour
     {
         moveAction.Enable(); // Enable the move action to start receiving input
         attackAction.Enable(); // Enable the attack action to start receiving input
+        interactAction.Enable();
 
         animator = GetComponent<Animator>(); // Get the Animator component attached to the player
 
@@ -50,6 +52,8 @@ public class PlayerController : MonoBehaviour
     {
         MovePlayer(); // Call the MovePlayer method to handle movement
         AnimatePlayer(); // Call the AnimatePlayer method to handle animation
+
+        Interaction();
 
         Health();
 
@@ -237,6 +241,20 @@ public class PlayerController : MonoBehaviour
 
             Destroy(gameObject);
             print("Game Over");
+        }
+    }
+
+    void Interaction()
+    {
+        if (interactAction.IsPressed())
+        {
+            bool interactable = GameObject.Find("interactable").GetComponent<Interactable>().interactable;
+            
+            if (interactable == true)
+            {
+                Canvas tarot = GameObject.Find("canvasTarot").GetComponent<Canvas>();
+                tarot.enabled = true;
+            }
         }
     }
 }
