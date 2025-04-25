@@ -15,7 +15,7 @@ public class TarotMenu : MonoBehaviour
 
     public void CloseTarot()
     {
-        Canvas tarot = GameObject.Find("canvasTarot").GetComponent<Canvas>();
+        Canvas tarot = GameObject.Find("Tarot UI").GetComponent<Canvas>();
 
         tarot.enabled = false;
     }

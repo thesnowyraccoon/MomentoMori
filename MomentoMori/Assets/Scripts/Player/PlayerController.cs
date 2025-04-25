@@ -121,6 +121,14 @@ public class PlayerController : MonoBehaviour
         {
             animator.SetBool("isDown", false); 
         }
+        if (moveAction.IsPressed())
+        {
+            animator.SetBool("isIdle", false);
+        }
+        else
+        {
+            animator.SetBool("isIdle", true);
+        }
     }
 
     // Stamina cooldown and check
@@ -255,11 +263,11 @@ public class PlayerController : MonoBehaviour
     {
         if (interactAction.IsPressed())
         {
-            bool interactable = GameObject.Find("interactable").GetComponent<Interactable>().interactable;
+            bool interactable = GameObject.Find("Interactable").GetComponent<Interactable>().interactable;
             
             if (interactable == true)
             {
-                Canvas tarot = GameObject.Find("canvasTarot").GetComponent<Canvas>();
+                Canvas tarot = GameObject.Find("Tarot UI").GetComponent<Canvas>();
                 tarot.enabled = true;
             }
         }
