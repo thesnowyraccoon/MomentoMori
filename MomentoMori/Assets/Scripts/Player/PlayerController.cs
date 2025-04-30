@@ -9,7 +9,7 @@ public class PlayerController : MonoBehaviour
     // Input
     public InputAction moveAction; // Input action for movement
     public InputAction attackAction; // Input action for attack
-    public InputAction interactAction;
+    public InputAction interactAction; // Input action for interactions
 
     // Movement
     public float moveSpeed = 5f; // Speed of the player
@@ -21,13 +21,13 @@ public class PlayerController : MonoBehaviour
     public float maxHealth = 100;
     [HideInInspector] public float playerHealth;
     public float playerDamage = 5;
-    TextMeshPro textHealth;
+    private TextMeshPro _textHealth;
 
     // Stamina
     public float staminaTime = 3f;
-    float staminaCooldown = 0f;
-    bool hasStamina = false;
-    TextMeshPro textStamina;
+    private float _staminaCooldown = 0f;
+    private bool _hasStamina = false;
+    private TextMeshPro _textStamina;
     [HideInInspector] public bool hasAttack = true;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -39,12 +39,12 @@ public class PlayerController : MonoBehaviour
 
         animator = GetComponent<Animator>(); // Get the Animator component attached to the player
 
-        textStamina = GetComponentsInChildren<TextMeshPro>().FirstOrDefault(t => t.name == "stamina"); 
-        textHealth = GetComponentsInChildren<TextMeshPro>().FirstOrDefault(t => t.name == "playerHealth");
+        _textStamina = GetComponentsInChildren<TextMeshPro>().FirstOrDefault(t => t.name == "stamina"); 
+        _textHealth = GetComponentsInChildren<TextMeshPro>().FirstOrDefault(t => t.name == "playerHealth");
 
         playerHealth = maxHealth; // sets playerhealth to maximum\
 
-        textHealth.text = "Health: " + playerHealth;
+        _textHealth.text = "Health: " + playerHealth;
     }
 
     // Update is called once per frame
@@ -63,26 +63,26 @@ public class PlayerController : MonoBehaviour
     // player movement
     void MovePlayer()
     {
-        Vector3 moveDirection = Vector3.zero; // Initialize move direction
+        Vector3 _moveDirection = Vector3.zero; // Initialize move direction
 
         if (moveAction.ReadValue<Vector2>().x > 0) // Check if moving right
         {
-            moveDirection.x += 1;
+            _moveDirection.x += 1;
         }
         else if (moveAction.ReadValue<Vector2>().x < 0) // Check if moving left
         {
-            moveDirection.x -= 1;
+            _moveDirection.x -= 1;
         }
         else if (moveAction.ReadValue<Vector2>().y > 0) // Check if moving up
         {
-            moveDirection.y += 1;
+            _moveDirection.y += 1;
         }
         else if (moveAction.ReadValue<Vector2>().y < 0) // Check if moving down
         {
-            moveDirection.y -= 1;
+            _moveDirection.y -= 1;
         }
 
-        transform.position += moveDirection.normalized * moveSpeed * Time.deltaTime; // Move the player based on input
+        transform.position += _moveDirection.normalized * moveSpeed * Time.deltaTime; // Move the player based on input
     }
 
     // player animations
@@ -134,35 +134,35 @@ public class PlayerController : MonoBehaviour
     // Stamina cooldown and check
     void StaminaCooldown()
     {
-        if ((staminaCooldown <= 0f) && (hasStamina == false))
+        if ((_staminaCooldown <= 0f) && (_hasStamina == false))
         {
-            hasStamina = true;
+            _hasStamina = true;
             hasAttack = true;
-            staminaCooldown = staminaTime;
+            _staminaCooldown = staminaTime;
         }
         else
         {
-            staminaCooldown -= Time.deltaTime;
+            _staminaCooldown -= Time.deltaTime;
             
-            if (staminaCooldown < 0f)
+            if (_staminaCooldown < 0f)
             {
-                staminaCooldown = 0f;
+                _staminaCooldown = 0f;
             }
         }
 
-        if (hasStamina) // displays stamina when cooldown is active
+        if (_hasStamina) // displays stamina when cooldown is active
         {
-            textStamina.enabled = false;
+            _textStamina.enabled = false;
         }
         else
         {
-            textStamina.enabled = true;
-            textStamina.text = "Stamina: " + Mathf.CeilToInt(staminaCooldown);
+            _textStamina.enabled = true;
+            _textStamina.text = "Stamina: " + Mathf.CeilToInt(_staminaCooldown);
         }
 
-        if (attackAction.IsPressed() && hasStamina)
+        if (attackAction.IsPressed() && _hasStamina)
         {
-            hasStamina = false;
+            _hasStamina = false;
         }
     }
 
@@ -177,7 +177,7 @@ public class PlayerController : MonoBehaviour
             {
                 if (attackAction.IsPressed() && hasAttack)
                 {
-                    hasStamina = false;
+                    _hasStamina = false;
                     hasAttack = false;
                     return playerDamage;
                 }
@@ -190,7 +190,7 @@ public class PlayerController : MonoBehaviour
     // Player health display and check
     void Health()
     {
-        textHealth.text = "Health: " + playerHealth;
+        _textHealth.text = "Health: " + playerHealth;
 
         if (playerHealth > maxHealth)
         {

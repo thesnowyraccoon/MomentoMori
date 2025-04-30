@@ -626,12 +626,12 @@ MonoBehaviour:
   moveAction:
     m_Name: Move
     m_Type: 0
-    m_ExpectedControlType: 
+    m_ExpectedControlType: Button
     m_Id: 1070a490-9ae7-4c04-830b-79b8784f0a23
     m_Processors: 
     m_Interactions: 
     m_SingletonActionBindings:
-    - m_Name: 2D Vector
+    - m_Name: WASD
       m_Id: ad078829-d540-44be-8c10-06cb8903287a
       m_Path: 2DVector
       m_Interactions: 
@@ -674,8 +674,8 @@ MonoBehaviour:
     m_Flags: 0
   attackAction:
     m_Name: Attack
-    m_Type: 0
-    m_ExpectedControlType: 
+    m_Type: 1
+    m_ExpectedControlType: Button
     m_Id: ba83d870-114b-4141-9175-a32a56e5e4c8
     m_Processors: 
     m_Interactions: 
@@ -691,8 +691,8 @@ MonoBehaviour:
     m_Flags: 0
   interactAction:
     m_Name: Interact
-    m_Type: 0
-    m_ExpectedControlType: 
+    m_Type: 1
+    m_ExpectedControlType: Button
     m_Id: 0dc06af6-1d0d-482c-908d-3dc9b3efcf7f
     m_Processors: 
     m_Interactions: 
@@ -5212,7 +5212,7 @@ Transform:
   m_GameObject: {fileID: 1610038140}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.762018, y: 0.53654, z: -9.962212}
+  m_LocalPosition: {x: 2.7613835, y: 0.53654, z: -9.962212}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
