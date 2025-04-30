@@ -50,85 +50,56 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        MovePlayer(); // Call the MovePlayer method to handle movement
-        AnimatePlayer(); // Call the AnimatePlayer method to handle animation
+        MovePlayer(); // Call to handle movement and animation
 
-        Interaction();
+        Interaction(); // Call to check if interacting
 
-        Health();
+        Health(); // Call to check health, and to set and animate accordingly
 
-        StaminaCooldown();
+        StaminaCooldown(); // Cooldown for attacking
     }
 
     // player movement
     void MovePlayer()
     {
-        Vector3 _moveDirection = Vector3.zero; // Initialize move direction
+        Vector3 moveDirection = Vector3.zero; // Initialize move direction
 
-        if (moveAction.ReadValue<Vector2>().x > 0) // Check if moving right
-        {
-            _moveDirection.x += 1;
-        }
-        else if (moveAction.ReadValue<Vector2>().x < 0) // Check if moving left
-        {
-            _moveDirection.x -= 1;
-        }
-        else if (moveAction.ReadValue<Vector2>().y > 0) // Check if moving up
-        {
-            _moveDirection.y += 1;
-        }
-        else if (moveAction.ReadValue<Vector2>().y < 0) // Check if moving down
-        {
-            _moveDirection.y -= 1;
-        }
+        bool isUp = false, isLeft = false, isDown = false, isRight = false; // Consistently sets movement animation false when not moving
+        bool isIdle = true; // Sets idle animation true when not moving
 
-        transform.position += _moveDirection.normalized * moveSpeed * Time.deltaTime; // Move the player based on input
-    }
+        // Checks for WASD movement in 4 directions and animates accordingly
+        if (moveAction.ReadValue<Vector2>().x > 0)
+        {
+            moveDirection.x += 1;
+            isRight = true;
+            isIdle = false;
+        }
+        else if (moveAction.ReadValue<Vector2>().x < 0) 
+        {
+            moveDirection.x -= 1;
+            isLeft = true;
+            isIdle = false;
+        }
+        else if (moveAction.ReadValue<Vector2>().y > 0) 
+        {
+            moveDirection.y += 1;
+            isUp = true;
+            isIdle = false;
+        }
+        else if (moveAction.ReadValue<Vector2>().y < 0) 
+        {
+            moveDirection.y -= 1;
+            isDown = true;
+            isIdle = false;
+        }
+    
+        transform.position += moveDirection.normalized * moveSpeed * Time.deltaTime; // Move the player based on input
 
-    // player animations
-    // checks movement and animates accordingly
-    void AnimatePlayer()
-    {
-        if (moveAction.ReadValue<Vector2>().x > 0) 
-        {
-            animator.SetBool("isRight", true); 
-        }
-        else
-        {
-            animator.SetBool("isRight", false); 
-        }
-        if (moveAction.ReadValue<Vector2>().x < 0) 
-        {
-            animator.SetBool("isLeft", true); 
-        }
-        else
-        {
-            animator.SetBool("isLeft", false); 
-        }
-        if (moveAction.ReadValue<Vector2>().y > 0) 
-        {
-            animator.SetBool("isUp", true); 
-        }
-        else
-        {
-            animator.SetBool("isUp", false); 
-        }
-        if (moveAction.ReadValue<Vector2>().y < 0) 
-        {
-            animator.SetBool("isDown", true); 
-        }
-        else
-        {
-            animator.SetBool("isDown", false); 
-        }
-        if (moveAction.IsPressed())
-        {
-            animator.SetBool("isIdle", false);
-        }
-        else
-        {
-            animator.SetBool("isIdle", true);
-        }
+        animator.SetBool("isRight", isRight);
+        animator.SetBool("isLeft", isLeft);
+        animator.SetBool("isUp", isUp);
+        animator.SetBool("isDown", isDown);
+        animator.SetBool("isIdle", isIdle);
     }
 
     // Stamina cooldown and check
