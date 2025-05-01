@@ -2,6 +2,7 @@ using System.Linq;
 using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
@@ -10,6 +11,9 @@ public class PlayerController : MonoBehaviour
     public InputAction moveAction; // Input action for movement
     public InputAction attackAction; // Input action for attack
     public InputAction interactAction; // Input action for interactions
+    public InputAction pauseAction;
+
+    private Vector2 boxSize = new Vector2(0.1f, 1f);
 
     // Movement
     public float moveSpeed = 5f; // Speed of the player
@@ -21,10 +25,12 @@ public class PlayerController : MonoBehaviour
     public float maxHealth = 100;
     [HideInInspector] public float playerHealth;
     public float playerDamage = 5;
+
     private TextMeshPro _textHealth;
 
     // Stamina
     public float staminaTime = 3f;
+
     private float _staminaCooldown = 0f;
     private bool _hasStamina = false;
     private TextMeshPro _textStamina;
@@ -36,6 +42,7 @@ public class PlayerController : MonoBehaviour
         moveAction.Enable(); // Enable the move action to start receiving input
         attackAction.Enable(); // Enable the attack action to start receiving input
         interactAction.Enable();
+        pauseAction.Enable();
 
         animator = GetComponent<Animator>(); // Get the Animator component attached to the player
 
@@ -51,8 +58,8 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         MovePlayer(); // Call to handle movement and animation
-
         Interaction(); // Call to check if interacting
+        Pause();
 
         Health(); // Call to check health, and to set and animate accordingly
 
@@ -230,17 +237,52 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    void Pause()
+    {
+        if (pauseAction.triggered)
+        {
+            SceneManager.LoadScene("Pause Menu");
+        }
+    }
+
+    // Title: How to Interact With Game Objects [Unity Tutorial]
+    // Author: Comp-3 Interactive 
+    // Date: April 24 2020
+    // Code version: Unknown
+    // Availability: https://youtu.be/GaVADPZlO0o?si=0MwOBmMmnPj6RDBl
+    
+    public void OpenInteractableIcon()
+    {
+        // Set interactable icon active
+    }
+
+    public void CloseInteractableIcon()
+    {
+        // Set interactable icon false
+    }
+
+    void CheckInteraction()
+    {
+        RaycastHit2D[] hits = Physics2D.BoxCastAll(transform.position, boxSize, 0, Vector2.zero);
+
+        if (hits.Length > 0)
+        {
+            foreach(RaycastHit2D raycast in hits)
+            {
+                if (raycast.transform.GetComponent<Interactions>())
+                {
+                    raycast.transform.GetComponent<Interactions>().Interact();
+                    return;
+                }
+            }
+        }
+    }
+
     void Interaction()
     {
-        if (interactAction.IsPressed())
+        if (interactAction.triggered)
         {
-            bool interactable = GameObject.Find("Interactable").GetComponent<Interactable>().interactable;
-            
-            if (interactable == true)
-            {
-                Canvas tarot = GameObject.Find("Tarot UI").GetComponent<Canvas>();
-                tarot.enabled = true;
-            }
+            CheckInteraction();
         }
     }
 }

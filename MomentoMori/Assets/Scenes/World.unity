@@ -700,10 +700,27 @@ MonoBehaviour:
     - m_Name: 
       m_Id: a4085730-c944-4e16-a305-3ed19c6a32e4
       m_Path: <Keyboard>/e
-      m_Interactions: Press(behavior=1)
+      m_Interactions: 
       m_Processors: 
       m_Groups: 
       m_Action: Interact
+      m_Flags: 0
+    m_Flags: 0
+  pauseAction:
+    m_Name: Pause
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: a46ee294-d9de-48f0-833a-449d775d8e43
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: 1441505e-a104-49af-8413-6bda6a291f74
+      m_Path: <Keyboard>/escape
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Pause
       m_Flags: 0
     m_Flags: 0
   moveSpeed: 5
@@ -3555,6 +3572,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   open: {fileID: 3625043607559282579, guid: 0d267bc78a0864eb48358689b29ed20a, type: 3}
   closed: {fileID: 7482667652216324306, guid: 75f5f34dc1b5347e0b8351032682f224, type: 3}
+  isOpen: 0
 --- !u!1 &1323909381
 GameObject:
   m_ObjectHideFlags: 0

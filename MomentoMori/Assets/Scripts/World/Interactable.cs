@@ -3,31 +3,27 @@ using UnityEngine;
 
 public class Interactable : MonoBehaviour
 {
-    TextMeshPro interact;
-
-    [HideInInspector] public bool interactable = false;
+    TextMeshPro interactIcon;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        interact = GetComponentInChildren<TextMeshPro>();
+        interactIcon = GetComponentInChildren<TextMeshPro>();
     }
     
     void OnTriggerEnter2D(Collider2D trigger)
     {
-        if (trigger.gameObject.CompareTag("Player"))
+        if (trigger.CompareTag("Player"))
         {
-            interact.enabled = true;   
-            interactable = true; 
+            interactIcon.enabled = true;   
         }
     }
 
     void OnTriggerExit2D(Collider2D trigger)
     {
-        if (trigger.gameObject.CompareTag("Player"))
+        if (trigger.CompareTag("Player"))
         {
-            interact.enabled = false;
-            interactable = false;
+            interactIcon.enabled = false;
         }
     }
 }
