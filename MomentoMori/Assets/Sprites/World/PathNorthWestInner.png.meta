@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: e2ecbc3be3d7492489013b99eb2226d9
+guid: 8e9a566963303d949852b5c5f7907a10
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7681108779949519566
-    second: BloodSplatterTile_0
+      213: 2162458456369758794
+    second: PathNorthWestInner_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,7 +113,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BloodSplatterTile_0
+      name: PathNorthWestInner_0
       rect:
         serializedVersion: 2
         x: 0
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ec276063db7c89a60800000000000000
-      internalID: 7681108779949519566
+      spriteID: a4285754288920e10800000000000000
+      internalID: 2162458456369758794
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      BloodSplatterTile_0: 7681108779949519566
+      PathNorthWestInner_0: 2162458456369758794
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
