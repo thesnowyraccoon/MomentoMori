@@ -13,7 +13,7 @@ public class PlayerController : MonoBehaviour
     public InputAction interactAction; // Input action for interactions
     public InputAction pauseAction;
 
-    private Vector2 boxSize = new Vector2(0.1f, 1f);
+    private Vector2 _boxSize = new Vector2(0.1f, 1f);
 
     // Movement
     public float moveSpeed = 5f; // Speed of the player
@@ -263,7 +263,7 @@ public class PlayerController : MonoBehaviour
 
     void CheckInteraction()
     {
-        RaycastHit2D[] hits = Physics2D.BoxCastAll(transform.position, boxSize, 0, Vector2.zero);
+        RaycastHit2D[] hits = Physics2D.BoxCastAll(transform.position, _boxSize, 0, Vector2.zero);
 
         if (hits.Length > 0)
         {
