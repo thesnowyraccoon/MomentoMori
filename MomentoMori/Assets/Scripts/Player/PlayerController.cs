@@ -11,9 +11,9 @@ public class PlayerController : MonoBehaviour
     public InputAction moveAction; // Input action for movement
     public InputAction attackAction; // Input action for attack
     public InputAction interactAction; // Input action for interactions
-    public InputAction pauseAction;
+    public InputAction pauseAction; // Input action for pausing the game
 
-    private Vector2 boxSize = new Vector2(0.1f, 1f);
+    private Vector2 _boxSize = new Vector2(0.1f, 1f);
 
     // Movement
     public float moveSpeed = 5f; // Speed of the player
@@ -241,7 +241,8 @@ public class PlayerController : MonoBehaviour
     {
         if (pauseAction.triggered)
         {
-            SceneManager.LoadScene("Pause Menu");
+            PauseMenu pause = GameObject.Find("Pause UI").GetComponent<PauseMenu>();
+            pause.Open();
         }
     }
 
@@ -263,7 +264,7 @@ public class PlayerController : MonoBehaviour
 
     void CheckInteraction()
     {
-        RaycastHit2D[] hits = Physics2D.BoxCastAll(transform.position, boxSize, 0, Vector2.zero);
+        RaycastHit2D[] hits = Physics2D.BoxCastAll(transform.position, _boxSize, 0, Vector2.zero);
 
         if (hits.Length > 0)
         {
