@@ -11,7 +11,7 @@ public class PlayerController : MonoBehaviour
     public InputAction moveAction; // Input action for movement
     public InputAction attackAction; // Input action for attack
     public InputAction interactAction; // Input action for interactions
-    public InputAction pauseAction;
+    public InputAction pauseAction; // Input action for pausing the game
 
     private Vector2 _boxSize = new Vector2(0.1f, 1f);
 
@@ -241,7 +241,8 @@ public class PlayerController : MonoBehaviour
     {
         if (pauseAction.triggered)
         {
-            SceneManager.LoadScene("Pause Menu");
+            PauseMenu pause = GameObject.Find("Pause UI").GetComponent<PauseMenu>();
+            pause.Open();
         }
     }
 
