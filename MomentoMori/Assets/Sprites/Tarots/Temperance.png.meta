@@ -272,7 +272,13 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Temperance_0: 9046216141905335349
+      Temperance_1: 99831123971979460
+      Temperance_2: 9096801498685623727
+      Temperance_3: -161025123022351775
+      Temperance_4: -6917507393447866894
+      Temperance_5: -4519553589551889820
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
