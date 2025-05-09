@@ -197,7 +197,10 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      TarotSlotsHUD_0: -274455258522226829
+      TarotSlotsHUD_1: 858636287058581959
+      TarotSlotsHUD_2: 1818281582067105122
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

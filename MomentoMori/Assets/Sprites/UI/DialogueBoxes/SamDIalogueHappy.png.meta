@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      SamDIalogueHappy_0: 4159206653903506342
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

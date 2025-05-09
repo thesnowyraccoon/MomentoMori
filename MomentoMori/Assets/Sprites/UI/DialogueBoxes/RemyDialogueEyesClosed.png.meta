@@ -172,7 +172,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      RemyDialogueEyesClosed_0: 7549863644151092437
+      RemyDialogueEyesClosed_1: 6057356433114369480
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

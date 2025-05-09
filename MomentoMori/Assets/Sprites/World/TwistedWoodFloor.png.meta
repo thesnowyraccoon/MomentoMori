@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      TwistedWoodFloor_0: 6648803015804911450
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
