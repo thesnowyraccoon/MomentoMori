@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      TwistedBathroomFloor_0: 4208057535411055204
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

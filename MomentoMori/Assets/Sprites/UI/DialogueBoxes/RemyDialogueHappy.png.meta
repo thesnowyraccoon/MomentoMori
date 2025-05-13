@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      RemyDialogueHappy_0: 1772211865085531004
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

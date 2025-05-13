@@ -222,7 +222,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      AceOfSwords_0: -8601349906771368109
+      AceOfSwords_1: 3541124657729445143
+      AceOfSwords_2: 5117118996009857097
+      AceOfSwords_3: 1539014487512305364
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -372,7 +372,17 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Chariot_0: 9116023373601038741
+      Chariot_1: 325082473411799848
+      Chariot_2: -116689240335485928
+      Chariot_3: 4137007533188083224
+      Chariot_4: -4575560357578429383
+      Chariot_5: -2037733894576514401
+      Chariot_6: 8751750819720076864
+      Chariot_7: 3479778413751885549
+      Chariot_8: -2109516706976868307
+      Chariot_9: 8484060428648844142
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

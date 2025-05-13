@@ -247,7 +247,12 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      WheelOfFortune_0: 693195512843694964
+      WheelOfFortune_1: 4711482194092586324
+      WheelOfFortune_2: 598103956710606808
+      WheelOfFortune_3: 5097449351649156371
+      WheelOfFortune_4: -3181814948173330098
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

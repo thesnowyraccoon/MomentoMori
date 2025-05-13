@@ -322,7 +322,15 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      WarningFont_0: 8227219657628222713
+      WarningFont_1: 369148523465372094
+      WarningFont_2: -3875239154029376523
+      WarningFont_3: -2693088437157837165
+      WarningFont_4: -7943445382881092588
+      WarningFont_5: -2281217422051750592
+      WarningFont_6: 6479154499786292779
+      WarningFont_7: -5104781262674830461
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
