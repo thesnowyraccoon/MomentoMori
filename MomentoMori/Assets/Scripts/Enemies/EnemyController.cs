@@ -3,11 +3,15 @@ using UnityEngine;
 
 public class EnemyController : MonoBehaviour
 {
-    // Enemy stats
-    public float enemyHealth = 100;
-    TextMeshPro health;
+    // Player stats
+    public PlayerController player;
+    private int playerHealth;
+    private int playerMaxHealth;
 
-    public float attack = 5;
+    // Enemy stats
+    public int health = 100;
+
+    public int attack = 5;
 
     float cooldown = 0f;
     public float stamina = 5f;
@@ -16,8 +20,7 @@ public class EnemyController : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        health = GetComponentInChildren<TextMeshPro>(); // Assigns health to the text component
-        health.text = "Health: " + enemyHealth;
+        
     }
 
     // Update is called once per frame
@@ -25,7 +28,10 @@ public class EnemyController : MonoBehaviour
     {
         Stamina();
 
-        if (enemyHealth <= 0)   // Checks health and destroys if dead
+        playerHealth = player.playerHealth;
+        playerMaxHealth = player.maxHealth;
+
+        if (health <= 0)   // Checks health and destroys if dead
         {
             Destroy(gameObject); 
         }
@@ -36,14 +42,12 @@ public class EnemyController : MonoBehaviour
     {
         if (trigger.gameObject.CompareTag("Player"))
         {
-            float damage = trigger.GetComponent<PlayerController>().Attack();
-
-            enemyHealth -= damage;
-            health.text = "Health: " + enemyHealth; 
+            health -= player.Attack();
 
             if (hasStamina)
             {
-                trigger.GetComponent<PlayerController>().playerHealth -= attack;
+                playerHealth -= attack;
+                player.playerHealth = playerHealth;
 
                 hasStamina = false;
             }

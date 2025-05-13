@@ -2,31 +2,47 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
+// Title: Player Health System #2: Heart Display UI (Unity Tutorial)
+// Author: Night Run Studio
+// Date: April 18 2022
+// Code version: Unknown
+// Availability: https://youtu.be/uqGkNTFzYXM?si=GgB4EGKlyMtqmOPE
+
 public class HealthUI : MonoBehaviour
 {
-    PlayerController player;
+    // Player Stats
+    public PlayerController player;
+    private int health;
+    private int maxHealth;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public Sprite emptyStar;
+    public Sprite fullStar;
+    public Image[] stars;
+
+    void Update()
     {
-        player = GameObject.Find("playerRemy").GetComponent<PlayerController>();
-    }
+        health = player.playerHealth;
+        maxHealth = player.maxHealth;
 
-    public void Health()
-    {
-        TextMeshProUGUI gameOver = GameObject.Find("GameOver").GetComponent<TextMeshProUGUI>();
-        TextMeshProUGUI overText = GameObject.Find("overText").GetComponent<TextMeshProUGUI>();
-        Image overButton = GameObject.Find("overButton").GetComponent<Image>();
-
-        if (player.playerHealth <= 0)
+        for (int i = 0; i < stars.Length; i++)
         {
-            Destroy(gameObject);
+            if (i < health)
+            {
+                stars[i].sprite = fullStar;
+            }
+            else
+            {
+                stars[i].sprite = emptyStar;
+            }
 
-            gameOver.enabled = true;
-            overButton.enabled = true;
-            overText.enabled = true;
+            if (i < maxHealth)
+            {
+                stars[i].enabled = true;
+            }
+            else
+            {
+                stars[i].enabled = false;
+            }
         }
     }
-
-
 }

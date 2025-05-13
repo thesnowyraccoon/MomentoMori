@@ -19,20 +19,18 @@ public class PlayerController : MonoBehaviour
 
     // Animations
     public Animator animator; // Animator component
+    public SpriteRenderer playerSR;
 
     // Stats
-    public float maxHealth = 100;
-    [HideInInspector] public float playerHealth;
-    public float playerDamage = 5;
-
-    private TextMeshPro _textHealth;
+    public int maxHealth = 100;
+    [HideInInspector] public int playerHealth;
+    public int playerDamage = 5;
 
     // Stamina
     public float staminaTime = 3f;
 
     private float _staminaCooldown = 0f;
     private bool _hasStamina = false;
-    private TextMeshPro _textStamina;
     [HideInInspector] public bool hasAttack = true;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -45,12 +43,7 @@ public class PlayerController : MonoBehaviour
 
         animator = GetComponent<Animator>(); // Get the Animator component attached to the player
 
-        _textStamina = GetComponentsInChildren<TextMeshPro>().FirstOrDefault(t => t.name == "stamina"); 
-        _textHealth = GetComponentsInChildren<TextMeshPro>().FirstOrDefault(t => t.name == "playerHealth");
-
         playerHealth = maxHealth; // sets playerhealth to maximum\
-
-        _textHealth.text = "Health: " + playerHealth;
     }
 
     // Update is called once per frame
@@ -127,16 +120,6 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-        if (_hasStamina) // displays stamina when cooldown is active
-        {
-            _textStamina.enabled = false;
-        }
-        else
-        {
-            _textStamina.enabled = true;
-            _textStamina.text = "Stamina: " + Mathf.CeilToInt(_staminaCooldown);
-        }
-
         if (attackAction.IsPressed() && _hasStamina)
         {
             _hasStamina = false;
@@ -144,7 +127,7 @@ public class PlayerController : MonoBehaviour
     }
 
     // Player attacking
-    public float Attack()
+    public int Attack()
     {
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(transform.position, 5f); // Adjust radius as needed
 
@@ -164,12 +147,23 @@ public class PlayerController : MonoBehaviour
         return 0;
     }
 
+    public void Damaged(int damage)
+    {
+        playerHealth -= damage;
+    }
+
     // Player health display and check
     void Health()
     {
         if (playerHealth > maxHealth)
         {
             playerHealth = maxHealth;
+        }
+
+        if (playerHealth <= 0)
+        {
+            playerSR.enabled = false;
+            moveAction.Disable();
         }
     }
 
