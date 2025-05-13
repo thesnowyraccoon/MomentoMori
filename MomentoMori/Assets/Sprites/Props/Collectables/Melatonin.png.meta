@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: 6ee159a254bc70b4c9213239ab9b1901
+guid: 4e48749f9a47c5d4298ba394116c660d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8105134936311887315
-    second: RemyStill_0
+      213: -8355695218496794209
+    second: Melatonin_0
+  - first:
+      213: 4880639438580548857
+    second: Melatonin_1
+  - first:
+      213: -5110845946439172653
+    second: Melatonin_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,8 +57,8 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 150
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 2000
+  spriteBorder: {x: 643, y: 0, z: 715, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -113,23 +119,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: RemyStill_0
+      name: Melatonin_0
       rect:
         serializedVersion: 2
-        x: 61
-        y: 657
-        width: 266
-        height: 386
+        x: 647
+        y: 17
+        width: 554
+        height: 1045
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3d57a7f18493b7070800000000000000
-      internalID: 8105134936311887315
+      spriteID: f91911a187b9a0c80800000000000000
+      internalID: -8355695218496794209
       vertices: []
       indices: 
       edges: []
@@ -138,8 +144,8 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
-    internalID: 0
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 1537655665
     vertices: []
     indices: 
     edges: []
@@ -148,7 +154,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      RemyStill_0: 8105134936311887315
+      Melatonin_0: -8355695218496794209
+      Melatonin_1: 4880639438580548857
+      Melatonin_2: -5110845946439172653
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
