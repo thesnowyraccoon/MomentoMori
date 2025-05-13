@@ -285,7 +285,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 67.5238, y: -70}
+  m_AnchoredPosition: {x: 67.523926, y: -70}
   m_SizeDelta: {x: 95.0475, y: 95.0475}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &7911501
@@ -731,7 +731,7 @@ MonoBehaviour:
   moveSpeed: 5
   animator: {fileID: 49788833}
   playerSR: {fileID: 49788832}
-  maxHealth: 5
+  maxHealth: 50
   playerHealth: 0
   playerDamage: 5
   staminaTime: 2
@@ -823,6 +823,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 49788834}
   emptyStar: {fileID: -1333515913005022435, guid: 84709de37a77dcf4bb8e9ecbae9544ef, type: 3}
+  quarterStar: {fileID: -2736377441051256399, guid: 6aead4fe8a166f045b2043e1350c94d0, type: 3}
+  halfStar: {fileID: -1609472864295989705, guid: 0401ca566606bd74e9e65a4cc4257616, type: 3}
+  threequarterStar: {fileID: 5921520191417961623, guid: 0b5f9a7b68991904abe21da9c8caa3d8, type: 3}
   fullStar: {fileID: -5613572870632553568, guid: da81a28854b9b4740be59594a6083963, type: 3}
   stars:
   - {fileID: 7911501}
@@ -8082,7 +8085,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 49788834}
   health: 100
-  attack: 1
+  attack: 5
   stamina: 5
 --- !u!1 &1398082774
 GameObject:
