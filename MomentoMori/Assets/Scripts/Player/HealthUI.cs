@@ -27,7 +27,7 @@ public class HealthUI : MonoBehaviour
         health = player.playerHealth;
         maxHealth = player.maxHealth;
 
-        int maxCount = 0;
+        int maxCount = 10;
 
         if (maxHealth == 50)
         {
@@ -50,31 +50,33 @@ public class HealthUI : MonoBehaviour
             maxCount = 1;
         }
 
-        float healthCheck = health/maxCount;
-        int maxCheck = maxHealth/maxCount;
-
         for (int i = 0; i < stars.Length; i++)
         {
-            if (healthCheck == maxCheck)
+            for (int j = 1; j < maxHealth; j++)
             {
-                stars[i].sprite = fullStar;
+                if (health < 1)
+                {
+                    stars[i].sprite = emptyStar;
+                }
+                else if (health < 5 && health > 0)
+                {
+                    stars[i].sprite = quarterStar;
+                }
+                else if (health == 5)
+                {
+                    stars[i].sprite = halfStar;
+                }
+                else if (health < 10 && health > 5)
+                {
+                    stars[i].sprite = threequarterStar;
+                }
+                else if (health >= 10)
+                {
+                    stars[i].sprite = fullStar;
+                }
             }
-            else if (healthCheck > (maxCheck/2))
-            {
-                stars[i].sprite = threequarterStar;
-            }
-            else if (healthCheck == (maxCheck/2))
-            {
-                stars[i].sprite = halfStar;
-            }
-            else if (healthCheck < (maxCheck/2))
-            {
-                stars[i].sprite = quarterStar;
-            }
-            else if (healthCheck == 0)
-            {
-                stars[i].sprite = emptyStar;
-            }
+
+            health -= 10;
 
             if (i < maxCount)
             {
