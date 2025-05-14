@@ -1,8 +1,5 @@
-using System.Linq;
-using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
@@ -18,17 +15,18 @@ public class PlayerController : MonoBehaviour
     public float moveSpeed = 5f; // Speed of the player
 
     // Animations
-    public Animator animator; // Animator component
-    public SpriteRenderer playerSR;
+    [SerializeField] private Animator animator; // Animator component
+    [SerializeField] private SpriteRenderer playerSR;
 
     // Stats
-    public int maxHealth = 100;
-    [HideInInspector] public int playerHealth;
+    [HideInInspector] public int maxHealth = 100;
+    public enum MaximumHealth {Ten, Twenty, Thirty, Forty, Fifty};
+    public MaximumHealth maximumHealth;
+    public int playerHealth;
     public int playerDamage = 5;
 
     // Stamina
-    public float staminaTime = 3f;
-
+    private float staminaTime = 3f;
     private float _staminaCooldown = 0f;
     private bool _hasStamina = false;
     [HideInInspector] public bool hasAttack = true;
@@ -53,6 +51,7 @@ public class PlayerController : MonoBehaviour
         Interaction(); // Call to check if interacting
         Pause();
 
+        HealthMax();
         Health(); // Call to check health, and to set and animate accordingly
 
         StaminaCooldown(); // Cooldown for attacking
@@ -150,6 +149,30 @@ public class PlayerController : MonoBehaviour
     public void Damaged(int damage)
     {
         playerHealth -= damage;
+    }
+
+    void HealthMax()
+    {
+        if (maximumHealth == MaximumHealth.Ten)
+        {
+            maxHealth = 10;
+        }
+        else if (maximumHealth == MaximumHealth.Twenty)
+        {
+            maxHealth = 20;
+        }
+        else if (maximumHealth == MaximumHealth.Thirty)
+        {
+            maxHealth = 30;
+        }
+        else if (maximumHealth == MaximumHealth.Forty)
+        {
+            maxHealth = 40;
+        }
+        else if (maximumHealth == MaximumHealth.Fifty)
+        {
+            maxHealth = 50;
+        }
     }
 
     // Player health display and check
