@@ -26,7 +26,7 @@ public class PlayerController : MonoBehaviour
     public int playerDamage = 5;
 
     // Stamina
-    private float staminaTime = 3f;
+    public float staminaTime = 3f;
     private float _staminaCooldown = 0f;
     private bool _hasStamina = false;
     [HideInInspector] public bool hasAttack = true;

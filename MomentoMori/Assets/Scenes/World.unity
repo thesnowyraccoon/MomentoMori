@@ -727,14 +727,23 @@ MonoBehaviour:
       m_Groups: 
       m_Action: Pause
       m_Flags: 0
+    - m_Name: 
+      m_Id: b5436147-33ae-4bff-bfbc-ea70ec68f49d
+      m_Path: <Keyboard>/tab
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Pause
+      m_Flags: 0
     m_Flags: 0
   moveSpeed: 5
   animator: {fileID: 49788833}
   playerSR: {fileID: 49788832}
   maxHealth: 50
+  maximumHealth: 0
   playerHealth: 0
   playerDamage: 5
-  staminaTime: 2
+  staminaTime: 3
   hasAttack: 1
 --- !u!50 &49788835
 Rigidbody2D:
