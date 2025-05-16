@@ -678,23 +678,6 @@ MonoBehaviour:
       m_Action: Move
       m_Flags: 8
     m_Flags: 0
-  attackAction:
-    m_Name: Attack
-    m_Type: 1
-    m_ExpectedControlType: Button
-    m_Id: ba83d870-114b-4141-9175-a32a56e5e4c8
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: 6e69aa30-7760-402b-ac0b-88b436a466a5
-      m_Path: <Keyboard>/k
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Attack
-      m_Flags: 0
-    m_Flags: 0
   interactAction:
     m_Name: Interact
     m_Type: 1
@@ -730,14 +713,13 @@ MonoBehaviour:
       m_Flags: 0
     m_Flags: 0
   moveSpeed: 5
+  aim: {fileID: 0}
   animator: {fileID: 49788833}
   playerSR: {fileID: 49788832}
   maxHealth: 100
   maximumHealth: 0
   playerHealth: 10
   playerDamage: 5
-  staminaTime: 2
-  hasAttack: 1
 --- !u!50 &49788835
 Rigidbody2D:
   serializedVersion: 5
@@ -828,7 +810,7 @@ MonoBehaviour:
   maxStamina: 100
   attackCost: 10
   chargeRate: 33
-  player: {fileID: 49788834}
+  player: {fileID: 0}
 --- !u!114 &49788838
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8706,8 +8688,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 49788834}
   health: 100
+  maxHealth: 100
   attack: 10
-  stamina: 5
 --- !u!1 &1333513262
 GameObject:
   m_ObjectHideFlags: 0
