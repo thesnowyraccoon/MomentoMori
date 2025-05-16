@@ -26,10 +26,7 @@ public class PlayerController : MonoBehaviour
     public int playerDamage = 5;
 
     // Stamina
-    public float staminaTime = 3f;
-    private float _staminaCooldown = 0f;
-    private bool _hasStamina = false;
-    [HideInInspector] public bool hasAttack = true;
+    
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -53,8 +50,6 @@ public class PlayerController : MonoBehaviour
 
         HealthMax();
         Health(); // Call to check health, and to set and animate accordingly
-
-        StaminaCooldown(); // Cooldown for attacking
     }
 
     // player movement
@@ -62,67 +57,38 @@ public class PlayerController : MonoBehaviour
     {
         Vector3 moveDirection = Vector3.zero; // Initialize move direction
 
-        bool isUp = false, isLeft = false, isDown = false, isRight = false; // Consistently sets movement animation false when not moving
-        bool isIdle = true; // Sets idle animation true when not moving
-
         // Checks for WASD movement in 4 directions and animates accordingly
         if (moveAction.ReadValue<Vector2>().x > 0)
         {
             moveDirection.x += 1;
-            isRight = true;
-            isIdle = false;
+
+            animator.SetFloat("Horizontal", 1);
+            animator.SetFloat("Vertical", 0);
+
         }
-        else if (moveAction.ReadValue<Vector2>().x < 0) 
+        else if (moveAction.ReadValue<Vector2>().x < 0)
         {
             moveDirection.x -= 1;
-            isLeft = true;
-            isIdle = false;
+
+            animator.SetFloat("Horizontal", -1);
+            animator.SetFloat("Vertical", 0);
         }
-        else if (moveAction.ReadValue<Vector2>().y > 0) 
+        else if (moveAction.ReadValue<Vector2>().y > 0)
         {
             moveDirection.y += 1;
-            isUp = true;
-            isIdle = false;
+
+            animator.SetFloat("Vertical", 1);
+            animator.SetFloat("Horizontal", 0);
         }
-        else if (moveAction.ReadValue<Vector2>().y < 0) 
+        else if (moveAction.ReadValue<Vector2>().y < 0)
         {
             moveDirection.y -= 1;
-            isDown = true;
-            isIdle = false;
+
+            animator.SetFloat("Vertical", -1);
+            animator.SetFloat("Horizontal", 0);
         }
-    
+
         transform.position += moveDirection.normalized * moveSpeed * Time.deltaTime; // Move the player based on input
-
-        animator.SetBool("isRight", isRight);
-        animator.SetBool("isLeft", isLeft);
-        animator.SetBool("isUp", isUp);
-        animator.SetBool("isDown", isDown);
-        animator.SetBool("isIdle", isIdle);
-    }
-
-    // Stamina cooldown and check
-    void StaminaCooldown()
-    {
-        if ((_staminaCooldown <= 0f) && (_hasStamina == false))
-        {
-            _hasStamina = true;
-            hasAttack = true;
-            _staminaCooldown = staminaTime;
-        }
-        else
-        {
-            _staminaCooldown -= Time.deltaTime;
-            
-            if (_staminaCooldown < 0f)
-            {
-                _staminaCooldown = 0f;
-            }
-        }
-
-        if (attackAction.IsPressed() && _hasStamina)
-        {
-            _hasStamina = false;
-        }
     }
 
     // Player attacking
@@ -134,10 +100,8 @@ public class PlayerController : MonoBehaviour
         {
             if (enemy.CompareTag("Enemy"))
             {
-                if (attackAction.IsPressed() && hasAttack)
+                if (attackAction.IsPressed())
                 {
-                    _hasStamina = false;
-                    hasAttack = false;
                     return playerDamage;
                 }
             }
@@ -196,6 +160,8 @@ public class PlayerController : MonoBehaviour
         {
             PauseMenu pause = GameObject.Find("Pause UI").GetComponent<PauseMenu>();
             pause.Open();
+
+            Time.timeScale = 0f; // Stop game time
         }
     }
 

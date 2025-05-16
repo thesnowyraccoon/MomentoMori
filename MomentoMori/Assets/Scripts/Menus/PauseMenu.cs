@@ -23,12 +23,14 @@ public class PauseMenu : MonoBehaviour
             pause.enabled = false;
             isOpen = false;
         }
-    } 
+    }
 
     public void Resume()
     {
         pause.enabled = false;
         isOpen = false;
+        
+        Time.timeScale = 1f;
     }
 
     public void Options()
