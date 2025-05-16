@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      InsomniumCover_0: 5807212956303263033
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
