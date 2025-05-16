@@ -13,6 +13,7 @@ public class PlayerController : MonoBehaviour
 
     // Movement
     public float moveSpeed = 5f; // Speed of the player
+    float lastX = 0, lastY = 0;
 
     // Animations
     [SerializeField] private Animator animator; // Animator component
@@ -57,38 +58,58 @@ public class PlayerController : MonoBehaviour
     {
         Vector3 moveDirection = Vector3.zero; // Initialize move direction
 
+        bool isMoving = false;
+
         // Checks for WASD movement in 4 directions and animates accordingly
         if (moveAction.ReadValue<Vector2>().x > 0)
         {
             moveDirection.x += 1;
 
-            animator.SetFloat("Horizontal", 1);
-            animator.SetFloat("Vertical", 0);
+            lastX = 1;
+            lastY = 0;
 
+            isMoving = true;
         }
         else if (moveAction.ReadValue<Vector2>().x < 0)
         {
             moveDirection.x -= 1;
 
-            animator.SetFloat("Horizontal", -1);
-            animator.SetFloat("Vertical", 0);
+            lastX = -1;
+            lastY = 0;
+
+            isMoving = true;
         }
         else if (moveAction.ReadValue<Vector2>().y > 0)
         {
             moveDirection.y += 1;
 
-            animator.SetFloat("Vertical", 1);
-            animator.SetFloat("Horizontal", 0);
+            lastX = 0;
+            lastY = 1;
+
+            isMoving = true;
         }
         else if (moveAction.ReadValue<Vector2>().y < 0)
         {
             moveDirection.y -= 1;
 
-            animator.SetFloat("Vertical", -1);
-            animator.SetFloat("Horizontal", 0);
+            lastX = 0;
+            lastY = -1;
+
+            isMoving = true;
         }
 
         transform.position += moveDirection.normalized * moveSpeed * Time.deltaTime; // Move the player based on input
+
+        animator.SetFloat("X", moveDirection.x);
+        animator.SetFloat("Y", moveDirection.y);
+
+        if (isMoving == false)
+        {
+            animator.SetFloat("lastX", lastX);
+            animator.SetFloat("lastY", lastY);
+        }
+
+        animator.SetBool("isMoving", isMoving);
     }
 
     // Player attacking
