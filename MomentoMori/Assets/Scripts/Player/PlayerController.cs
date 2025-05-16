@@ -5,7 +5,6 @@ public class PlayerController : MonoBehaviour
 {
     // Input
     public InputAction moveAction; // Input action for movement
-    public InputAction attackAction; // Input action for attack
     public InputAction interactAction; // Input action for interactions
     public InputAction pauseAction; // Input action for pausing the game
 
@@ -14,6 +13,10 @@ public class PlayerController : MonoBehaviour
     // Movement
     public float moveSpeed = 5f; // Speed of the player
     float lastX = 0, lastY = 0;
+    bool isMoving = false;
+
+    // Attacking 
+    public Transform aim;
 
     // Animations
     [SerializeField] private Animator animator; // Animator component
@@ -26,14 +29,10 @@ public class PlayerController : MonoBehaviour
     public int playerHealth;
     public int playerDamage = 5;
 
-    // Stamina
-    
-
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         moveAction.Enable(); // Enable the move action to start receiving input
-        attackAction.Enable(); // Enable the attack action to start receiving input
         interactAction.Enable();
         pauseAction.Enable();
 
@@ -53,12 +52,12 @@ public class PlayerController : MonoBehaviour
         Health(); // Call to check health, and to set and animate accordingly
     }
 
-    // player movement
+    // Player movement
     void MovePlayer()
     {
         Vector3 moveDirection = Vector3.zero; // Initialize move direction
 
-        bool isMoving = false;
+        isMoving = false;
 
         // Checks for WASD movement in 4 directions and animates accordingly
         if (moveAction.ReadValue<Vector2>().x > 0)
@@ -110,25 +109,18 @@ public class PlayerController : MonoBehaviour
         }
 
         animator.SetBool("isMoving", isMoving);
-    }
 
-    // Player attacking
-    public int Attack()
-    {
-        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(transform.position, 5f); // Adjust radius as needed
+        // Title: Melee & Ranged Top Down Combat - Unity 2D
+        // Author: Game Code Library
+        // Date: August 10 2023
+        // Code version: Unknown
+        // Availability: https://youtu.be/-4bsGg7dVFo?si=z3A91GlWMENwUL_P
 
-        foreach (var enemy in hitEnemies)
+        if (isMoving)
         {
-            if (enemy.CompareTag("Enemy"))
-            {
-                if (attackAction.IsPressed())
-                {
-                    return playerDamage;
-                }
-            }
+            Vector3 vector3 = Vector3.left * moveDirection.x + Vector3.down * moveDirection.y;
+            aim.rotation = Quaternion.LookRotation(Vector3.forward, vector3);
         }
-
-        return 0;
     }
 
     public void Damaged(int damage)
