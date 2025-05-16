@@ -6,8 +6,8 @@ public class Melatonin : MonoBehaviour
     public int collectableHealth = 10;
     
     // player stats
-    float playerHealth;
-    float maxHealth;
+    int playerHealth;
+    int maxHealth;
 
     void OnTriggerEnter2D(Collider2D trigger)
     {
