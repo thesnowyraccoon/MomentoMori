@@ -116,10 +116,10 @@ TextureImporter:
       name: Trash_0
       rect:
         serializedVersion: 2
-        x: 501
-        y: 185
+        x: 53
+        y: 736
         width: 200
-        height: 303
+        height: 280
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -147,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Trash_0: 2433294883196242628
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
