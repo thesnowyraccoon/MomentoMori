@@ -5,7 +5,6 @@ public class PlayerController : MonoBehaviour
 {
     // Input
     public InputAction moveAction; // Input action for movement
-    public InputAction attackAction; // Input action for attack
     public InputAction interactAction; // Input action for interactions
     public InputAction pauseAction; // Input action for pausing the game
 
@@ -13,6 +12,11 @@ public class PlayerController : MonoBehaviour
 
     // Movement
     public float moveSpeed = 5f; // Speed of the player
+    float lastX = 0, lastY = 0;
+    bool isMoving = false;
+
+    // Attacking 
+    public Transform aim;
 
     // Animations
     [SerializeField] private Animator animator; // Animator component
@@ -25,17 +29,10 @@ public class PlayerController : MonoBehaviour
     public int playerHealth;
     public int playerDamage = 5;
 
-    // Stamina
-    public float staminaTime = 3f;
-    private float _staminaCooldown = 0f;
-    private bool _hasStamina = false;
-    [HideInInspector] public bool hasAttack = true;
-
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         moveAction.Enable(); // Enable the move action to start receiving input
-        attackAction.Enable(); // Enable the attack action to start receiving input
         interactAction.Enable();
         pauseAction.Enable();
 
@@ -53,97 +50,77 @@ public class PlayerController : MonoBehaviour
 
         HealthMax();
         Health(); // Call to check health, and to set and animate accordingly
-
-        StaminaCooldown(); // Cooldown for attacking
     }
 
-    // player movement
+    // Player movement
     void MovePlayer()
     {
         Vector3 moveDirection = Vector3.zero; // Initialize move direction
 
-        bool isUp = false, isLeft = false, isDown = false, isRight = false; // Consistently sets movement animation false when not moving
-        bool isIdle = true; // Sets idle animation true when not moving
+        isMoving = false;
 
         // Checks for WASD movement in 4 directions and animates accordingly
         if (moveAction.ReadValue<Vector2>().x > 0)
         {
             moveDirection.x += 1;
-            isRight = true;
-            isIdle = false;
+
+            lastX = 1;
+            lastY = 0;
+
+            isMoving = true;
         }
-        else if (moveAction.ReadValue<Vector2>().x < 0) 
+        else if (moveAction.ReadValue<Vector2>().x < 0)
         {
             moveDirection.x -= 1;
-            isLeft = true;
-            isIdle = false;
+
+            lastX = -1;
+            lastY = 0;
+
+            isMoving = true;
         }
-        else if (moveAction.ReadValue<Vector2>().y > 0) 
+        else if (moveAction.ReadValue<Vector2>().y > 0)
         {
             moveDirection.y += 1;
-            isUp = true;
-            isIdle = false;
+
+            lastX = 0;
+            lastY = 1;
+
+            isMoving = true;
         }
-        else if (moveAction.ReadValue<Vector2>().y < 0) 
+        else if (moveAction.ReadValue<Vector2>().y < 0)
         {
             moveDirection.y -= 1;
-            isDown = true;
-            isIdle = false;
+
+            lastX = 0;
+            lastY = -1;
+
+            isMoving = true;
         }
-    
+
         transform.position += moveDirection.normalized * moveSpeed * Time.deltaTime; // Move the player based on input
 
-        animator.SetBool("isRight", isRight);
-        animator.SetBool("isLeft", isLeft);
-        animator.SetBool("isUp", isUp);
-        animator.SetBool("isDown", isDown);
-        animator.SetBool("isIdle", isIdle);
-    }
+        animator.SetFloat("X", moveDirection.x);
+        animator.SetFloat("Y", moveDirection.y);
 
-    // Stamina cooldown and check
-    void StaminaCooldown()
-    {
-        if ((_staminaCooldown <= 0f) && (_hasStamina == false))
+        if (isMoving == false)
         {
-            _hasStamina = true;
-            hasAttack = true;
-            _staminaCooldown = staminaTime;
-        }
-        else
-        {
-            _staminaCooldown -= Time.deltaTime;
-            
-            if (_staminaCooldown < 0f)
-            {
-                _staminaCooldown = 0f;
-            }
+            animator.SetFloat("lastX", lastX);
+            animator.SetFloat("lastY", lastY);
         }
 
-        if (attackAction.IsPressed() && _hasStamina)
+        animator.SetBool("isMoving", isMoving);
+
+        // Title: Melee & Ranged Top Down Combat - Unity 2D
+        // Author: Game Code Library
+        // Date: August 10 2023
+        // Code version: Unknown
+        // Availability: https://youtu.be/-4bsGg7dVFo?si=z3A91GlWMENwUL_P
+
+        if (isMoving)
         {
-            _hasStamina = false;
+            Vector3 vector3 = Vector3.left * moveDirection.x + Vector3.down * moveDirection.y;
+            aim.rotation = Quaternion.LookRotation(Vector3.forward, vector3);
         }
-    }
-
-    // Player attacking
-    public int Attack()
-    {
-        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(transform.position, 5f); // Adjust radius as needed
-
-        foreach (var enemy in hitEnemies)
-        {
-            if (enemy.CompareTag("Enemy"))
-            {
-                if (attackAction.IsPressed() && hasAttack)
-                {
-                    _hasStamina = false;
-                    hasAttack = false;
-                    return playerDamage;
-                }
-            }
-        }
-
-        return 0;
     }
 
     public void Damaged(int damage)
@@ -196,6 +173,8 @@ public class PlayerController : MonoBehaviour
         {
             PauseMenu pause = GameObject.Find("Pause UI").GetComponent<PauseMenu>();
             pause.Open();
+
+            Time.timeScale = 0f; // Stop game time
         }
     }
 
