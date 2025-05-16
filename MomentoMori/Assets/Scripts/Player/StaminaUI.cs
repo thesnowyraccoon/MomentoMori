@@ -18,7 +18,7 @@ public class StaminaUI : MonoBehaviour
 
     private Coroutine recharge;
 
-    public PlayerAttack player;
+    public PlayerController player;
 
     // Update is called once per frame
     void Update()
