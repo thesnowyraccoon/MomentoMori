@@ -40,7 +40,7 @@ public class TarotMenu : MonoBehaviour
 
     public void AttackTarot()
     {
-        player.playerDamage += 5;
+        //player.playerDamage += 5;
         t2.interactable = false;
     }
 

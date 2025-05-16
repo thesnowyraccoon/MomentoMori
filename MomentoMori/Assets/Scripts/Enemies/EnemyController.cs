@@ -15,13 +15,21 @@ public class EnemyController : MonoBehaviour
         health = maxHealth;
     }
 
-    void TakeDamage(int damage)
+    public void TakeDamage(int damage)
     {
         health -= damage;
 
         if (health <= 0)
         {
             Destroy(gameObject);
+        }
+    }
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            player.Damaged(attack);    
         }
     }
 }

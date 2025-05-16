@@ -11,12 +11,15 @@ public class PlayerAttack : MonoBehaviour
 {
     public InputAction attackAction; // Input action for attack
 
+    public StaminaUI stamina;
+
     public GameObject sword;
     public Animator animator;
 
     private bool isAttacking = false;
     private float attackDuration = 0.3f;
     private float attackTimer = 0f;
+    private bool hasStamina;
 
     void Start()
     {
@@ -25,9 +28,11 @@ public class PlayerAttack : MonoBehaviour
 
     void Update()
     {
+        hasStamina = stamina.GetStamina();
+
         AttackTimer();
 
-        if (attackAction.triggered)
+        if (attackAction.triggered && hasStamina == true)
         {
             OnAttack();
         }

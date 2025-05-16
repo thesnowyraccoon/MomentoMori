@@ -12,6 +12,7 @@ public class StaminaUI : MonoBehaviour
 {
     public Image staminaBar;
     public float stamina, maxStamina;
+    private bool hasStamina = true;
 
     public float attackCost;
     public float chargeRate;
@@ -22,8 +23,8 @@ public class StaminaUI : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
-        if (player.attackAction.triggered)
+    { 
+        if (player.attackAction.triggered && hasStamina == true)
         {
             stamina -= attackCost;
 
@@ -45,7 +46,22 @@ public class StaminaUI : MonoBehaviour
             stamina = maxStamina;
         }
 
+        if (stamina < attackCost)
+        {
+            hasStamina = false;
+        }
+
+        if (stamina >= attackCost)
+        {
+            hasStamina = true;
+        }
+
         staminaBar.fillAmount = stamina/maxStamina;
+    }
+
+    public bool GetStamina()
+    {
+        return hasStamina;
     }
 
     private IEnumerator RechargeStamina()
@@ -54,7 +70,7 @@ public class StaminaUI : MonoBehaviour
 
         while (stamina < maxStamina)
         {
-            stamina += chargeRate/10f;
+            stamina += chargeRate / 10f;
 
             yield return new WaitForSeconds(.1f);
         }
