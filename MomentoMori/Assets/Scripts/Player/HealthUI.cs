@@ -12,9 +12,11 @@ public class HealthUI : MonoBehaviour
 {
     // Player Stats
     public PlayerController player;
+
     private int health;
     private int maxHealth;
 
+    // Health UI
     public Sprite emptyStar;
     public Sprite quarterStar;
     public Sprite halfStar;
@@ -23,10 +25,12 @@ public class HealthUI : MonoBehaviour
     public Image[] stars;
 
     void Update()
-    {
-        health = player.playerHealth;
-        maxHealth = player.maxHealth;
+    {   
+        // Gets player health values
+        health = player.GetHealth();
+        maxHealth = player.GetMaxHealth();
 
+        // Counter for number of health stars based on max health
         int maxCount = 10;
 
         if (maxHealth == 50)
@@ -50,9 +54,10 @@ public class HealthUI : MonoBehaviour
             maxCount = 1;
         }
 
+        // Loop for checking health values and setting UI elements accordingly
         for (int i = 0; i < stars.Length; i++)
         {
-            for (int j = 1; j < maxHealth; j++)
+            for (int j = 1; j < maxHealth; j++) // Loop for setting current health values in UI
             {
                 if (health < 1)
                 {
@@ -76,9 +81,9 @@ public class HealthUI : MonoBehaviour
                 }
             }
 
-            health -= 10;
+            health -= 10; // Subtraction to check each star in current health loop (each star = 10 health)
 
-            if (i < maxCount)
+            if (i < maxCount) // Enables or disables UI based on max health
             {
                 stars[i].enabled = true;
             }

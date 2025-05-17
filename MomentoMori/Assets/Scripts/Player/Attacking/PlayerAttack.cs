@@ -11,9 +11,11 @@ public class PlayerAttack : MonoBehaviour
 {
     public InputAction attackAction; // Input action for attack
 
+    // Reference to the weapon
     public GameObject sword;
     public Animator animator;
 
+    // Attacking 
     private bool isAttacking = false;
     private float attackDuration = 0.3f;
     private float attackTimer = 0f;
@@ -23,18 +25,9 @@ public class PlayerAttack : MonoBehaviour
         attackAction.Enable(); // Enable the attack action to start receiving input
     }
 
-    void Update()
+    public void OnAttack()
     {
-        AttackTimer();
-
-        if (attackAction.triggered)
-        {
-            OnAttack();
-        }
-    }
-
-    void OnAttack()
-    {
+        // Checks if player is currently attacking and attacks accordingly
         if (!isAttacking)
         {
             sword.SetActive(true);
@@ -43,8 +36,9 @@ public class PlayerAttack : MonoBehaviour
         }
     }
 
-    void AttackTimer()
+    public void AttackTimer()
     {
+        // Attack timer for length of each attack
         if (isAttacking)
         {
             attackTimer += Time.deltaTime;

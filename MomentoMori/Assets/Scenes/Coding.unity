@@ -707,8 +707,8 @@ MonoBehaviour:
   staminaBar: {fileID: 2093519668}
   stamina: 100
   maxStamina: 100
-  attackCost: 20
   chargeRate: 33
+  attackCost: 20
   player: {fileID: 49788839}
 --- !u!114 &49788838
 MonoBehaviour:
@@ -872,10 +872,8 @@ MonoBehaviour:
   aim: {fileID: 409129549}
   animator: {fileID: 49788833}
   playerSR: {fileID: 49788832}
-  maxHealth: 10
   maximumHealth: 0
   playerHealth: 10
-  playerDamage: 5
 --- !u!1 &55227534
 GameObject:
   m_ObjectHideFlags: 0
