@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 7058d951a15ba75419b95cad4ebd0a32
+guid: d5e287a5bd884a246b599d7b8fac5b10
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1332785197874802282
-    second: StandBlue_0
+      213: -7706002169006976291
+    second: Couch_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,23 +113,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: StandBlue_0
+      name: Couch_0
       rect:
         serializedVersion: 2
-        x: 1135
-        y: 28
-        width: 712
-        height: 305
+        x: 1098
+        y: 582
+        width: 743
+        height: 448
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 1, w: 0}
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 69116c68ceef08de0800000000000000
-      internalID: -1332785197874802282
+      spriteID: dd213fdfad7ce0590800000000000000
+      internalID: -7706002169006976291
       vertices: []
       indices: 
       edges: []
@@ -138,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 6343e3897704ca747b9e40d36244a9b6
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -147,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      StandBlue_0: -1332785197874802282
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
