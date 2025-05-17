@@ -125,12 +125,12 @@ TextureImporter:
       name: OwlWalkRight_0
       rect:
         serializedVersion: 2
-        x: 407
+        x: 429
         y: 1242
-        width: 172
+        width: 150
         height: 222
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -147,12 +147,12 @@ TextureImporter:
       name: OwlWalkRight_1
       rect:
         serializedVersion: 2
-        x: 2326
+        x: 2339
         y: 1239
-        width: 179
+        width: 166
         height: 221
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -169,12 +169,12 @@ TextureImporter:
       name: OwlWalkRight_2
       rect:
         serializedVersion: 2
-        x: 407
+        x: 426
         y: 162
-        width: 172
+        width: 153
         height: 222
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -191,12 +191,12 @@ TextureImporter:
       name: OwlWalkRight_3
       rect:
         serializedVersion: 2
-        x: 2327
+        x: 2346
         y: 161
-        width: 178
+        width: 160
         height: 221
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -213,7 +213,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: f61f149d2916efa4fac571eda09ec477
     internalID: 0
     vertices: []
     indices: 

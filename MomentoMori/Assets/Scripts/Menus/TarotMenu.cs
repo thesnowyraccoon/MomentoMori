@@ -3,13 +3,16 @@ using UnityEngine;
 public class TarotMenu : MonoBehaviour
 {
     // External object references
-    PlayerController player;
-    Sword sword;
-    Insomnium insomnium;
+    private PlayerController player;
+    private Sword sword;
+    private Insomnium insomnium;
 
     // Tarot UI
-    Canvas tarot;
-    UnityEngine.UI.Button t1, t2, t3;
+    private Canvas tarot;
+    private UnityEngine.UI.Button t1, t2, t3;
+
+    // Tarot Effects
+    [SerializeField] private int speedTarot = 3, attackTarot = 2;
 
     void Start()
     {
@@ -42,14 +45,14 @@ public class TarotMenu : MonoBehaviour
     // Increases player speed
     public void SpeedTarot()
     {
-        player.moveSpeed += 5;
+        player.AddSpeed(speedTarot);
         t1.interactable = false;
     }
 
     // Increases player attack
     public void AttackTarot()
     {
-        sword.playerDamage += 5;
+        sword.AddDamage(attackTarot);
         t2.interactable = false;
     }
 

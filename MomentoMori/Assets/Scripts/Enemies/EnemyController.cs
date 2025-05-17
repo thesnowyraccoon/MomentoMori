@@ -3,33 +3,50 @@ using UnityEngine;
 public class EnemyController : MonoBehaviour
 {
     // Player stats
-    public PlayerController player;
+    private PlayerController player;
+
+    //Animations
+    [SerializeField] private Animator owl;
 
     // Enemy stats
-    public int health;
-    public int maxHealth = 100;
-    public int attack = 5;
+    [SerializeField] private int health;
+    [SerializeField] private int maxHealth = 100;
+    [SerializeField] private int attack = 5;
 
     void Start()
     {
-        health = maxHealth;
+        health = maxHealth; // Sets enemy health to max
     }
 
+    // Enemy takes damage on hit
     public void TakeDamage(int damage)
     {
         health -= damage;
 
         if (health <= 0)
         {
-            Destroy(gameObject);
+            Destroy(gameObject); // Enemy dies when health is zero
         }
     }
 
-    void OnTriggerEnter2D(Collider2D collision)
+    // Checks if near player and deals damage accordingly
+    void OnTriggerEnter2D(Collider2D trigger)
     {
-        if (collision.CompareTag("Player"))
+        if (trigger.CompareTag("Player"))
         {
-            player.Damaged(attack);    
+            player = trigger.GetComponent<PlayerController>();
+
+            owl.SetBool("isAttacking", true);
+
+            player.Damaged(attack);
+        }
+    }
+
+    void OnTriggerExit2D(Collider2D trigger)
+    {
+        if (trigger.CompareTag("Player"))
+        {
+            owl.SetBool("isAttacking", false);
         }
     }
 }

@@ -1436,6 +1436,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c45afde9e15823499a4beb30cf7fae8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speedTarot: 3
+  attackTarot: 2
 --- !u!1 &501682311
 GameObject:
   m_ObjectHideFlags: 0
@@ -1699,7 +1701,7 @@ Animator:
   m_GameObject: {fileID: 657703910}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 19ba7bb1014f0d1489b5a7e2d495335f, type: 2}
+  m_Controller: {fileID: 9100000, guid: 61032465cb8bea9479f7d8e2ddedd1b4, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1723,7 +1725,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9b49f5e89cb4eb42ab31cd2fb3a42cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerDamage: 1
+  swordDamage: 1
 --- !u!60 &657703913
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -1853,13 +1855,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 657703910}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0.70195144, w: 0.7122249}
-  m_LocalPosition: {x: 0.05, y: -2.75, z: -0.0378}
+  m_LocalRotation: {x: -0, y: -0, z: -0.06269469, w: 0.99803275}
+  m_LocalPosition: {x: 1.42, y: -1.5, z: -0.0378}
   m_LocalScale: {x: 0.15885907, y: 0.15885907, z: 0.15885907}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 502432047}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -89.168}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -7.189}
 --- !u!1 &696081677
 GameObject:
   m_ObjectHideFlags: 0
@@ -7132,6 +7134,7 @@ MonoBehaviour:
     m_Flags: 0
   sword: {fileID: 657703910}
   animator: {fileID: 657703911}
+  attackDuration: 0.25
 --- !u!114 &1275644931
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7603,8 +7606,10 @@ GameObject:
   - component: {fileID: 1323909383}
   - component: {fileID: 1323909382}
   - component: {fileID: 1323909386}
+  - component: {fileID: 1323909389}
   - component: {fileID: 1323909384}
   - component: {fileID: 1323909387}
+  - component: {fileID: 1323909388}
   m_Layer: 0
   m_Name: enemy
   m_TagString: Enemy
@@ -7656,8 +7661,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 5
-  m_Sprite: {fileID: 21300000, guid: 0ccc508108fa6ed4fa11b4a467d7f609, type: 3}
-  m_Color: {r: 0, g: 0.083981276, b: 1, a: 1}
+  m_Sprite: {fileID: 6923203597509446940, guid: 14114de08305e5c4c8493645fb0b2d21, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -7676,8 +7681,8 @@ Transform:
   m_GameObject: {fileID: 1323909381}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 4.7234545, y: 4.5677743, z: 2.4672}
+  m_LocalPosition: {x: 0.12, y: -0.45, z: 0}
+  m_LocalScale: {x: 0.86125714, y: 0.83287096, z: 0.44986007}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1166518724}
@@ -7743,17 +7748,17 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.0020828098, y: -0.004307419}
+  m_Offset: {x: -0.006223798, y: 0.008538127}
   m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
+    border: {x: 0, y: 0, z: 0.01, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.64}
+    oldSize: {x: 1.62, y: 2.17}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.2793806, y: 0.5606453}
+  m_Size: {x: 1.6623604, y: 2.1962874}
   m_EdgeRadius: 0
 --- !u!114 &1323909387
 MonoBehaviour:
@@ -7767,10 +7772,78 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c42448c430bf2449b4ed14f2e8142c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 1275644931}
+  owl: {fileID: 1323909388}
   health: 10
   maxHealth: 10
   attack: 2
+--- !u!95 &1323909388
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1323909381}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 447acec16b149234d9393612965d644b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!61 &1323909389
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1323909381}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: -0.012421966, y: 0.008563399}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0.01, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.62, y: 2.17}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1.6586034, y: 2.1985695}
+  m_EdgeRadius: 0.25
 --- !u!1 &1333513262
 GameObject:
   m_ObjectHideFlags: 0
@@ -8242,7 +8315,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 4
+  orthographic size: 5
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -9233,7 +9306,7 @@ MonoBehaviour:
     CustomLookAtTarget: 0
   Lens:
     FieldOfView: 60
-    OrthographicSize: 4
+    OrthographicSize: 5
     NearClipPlane: 0.3
     FarClipPlane: 1000
     Dutch: 0

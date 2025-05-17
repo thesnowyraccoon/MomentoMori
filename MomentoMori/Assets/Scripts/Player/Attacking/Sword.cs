@@ -8,7 +8,7 @@ using UnityEngine;
 
 public class Sword : MonoBehaviour
 {
-    public int playerDamage = 1; // Player damage
+    [SerializeField] private int swordDamage = 1; // Player damage
 
     // Checks if weapon interacting with enemy and deals damage accordingly
     void OnTriggerEnter2D(Collider2D collision)
@@ -19,8 +19,14 @@ public class Sword : MonoBehaviour
 
             if (enemy != null)
             {
-                enemy.TakeDamage(playerDamage);
+                enemy.TakeDamage(swordDamage);
             }
         }
+    }
+
+    // Adds attack damage
+    public void AddDamage(int damage)
+    {
+        swordDamage += damage;
     }
 }

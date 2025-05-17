@@ -4,37 +4,42 @@ using UnityEngine;
 
 public class Insomnium : Interactions
 {
-    public Sprite open;
-    public Sprite closed;
-    public bool isOpen;
+    // Sprite 
+    [SerializeField] private Sprite open;
+    [SerializeField] private Sprite closed;
 
-    private Canvas _tarot;
+    public bool isOpen = false;
+
+    // Tarot UI
+    private Canvas tarot;
     private SpriteRenderer spriteRenderer;
 
+    // Check interaction and animate accordingly
     public override void Interact()
     {
         if (isOpen)
         {
             spriteRenderer.sprite = closed;
 
-            _tarot.enabled = false;
+            tarot.enabled = false;
         }
         else
         {
             spriteRenderer.sprite = open;
 
-            _tarot.enabled = true;
+            tarot.enabled = true;
         }
 
         isOpen = !isOpen;
     }
 
+    // Assigns sprites and UI and animates or sets state accordingly
     void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
         spriteRenderer.sprite = closed;
 
-        _tarot = GameObject.Find("Tarot UI").GetComponent<Canvas>();
-        _tarot.enabled = false;
+        tarot = GameObject.Find("Tarot UI").GetComponent<Canvas>();
+        tarot.enabled = false;
     }
 }

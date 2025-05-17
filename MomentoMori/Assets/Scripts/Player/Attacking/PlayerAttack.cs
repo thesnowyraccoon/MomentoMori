@@ -17,7 +17,7 @@ public class PlayerAttack : MonoBehaviour
 
     // Attacking 
     private bool isAttacking = false;
-    private float attackDuration = 0.3f;
+    [SerializeField] private float attackDuration = 0.3f;
     private float attackTimer = 0f;
 
     void Start()

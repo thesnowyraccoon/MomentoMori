@@ -11,7 +11,7 @@ public class PlayerController : MonoBehaviour
     private Vector2 _boxSize = new Vector2(0.1f, 1f); // Interaction distance
 
     // Movement
-    public float moveSpeed = 5f; // Speed of the player
+    [SerializeField] private float moveSpeed = 5f; // Speed of the player
 
     private float lastX = 0, lastY = 0; // Last position player was facing
     private bool isMoving = false; // Movement check
@@ -126,6 +126,12 @@ public class PlayerController : MonoBehaviour
             Vector3 vector3 = Vector3.left * moveDirection.x + Vector3.down * moveDirection.y;
             aim.rotation = Quaternion.LookRotation(Vector3.forward, vector3);
         }
+    }
+
+    // Sets player speed in external operations
+    public void AddSpeed(float speed)
+    {
+        moveSpeed += speed;
     }
 
     // Player recieving damage
