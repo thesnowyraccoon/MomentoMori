@@ -8,8 +8,9 @@ using UnityEngine;
 
 public class Sword : MonoBehaviour
 {
-    public int playerDamage = 1;
+    public int playerDamage = 1; // Player damage
 
+    // Checks if weapon interacting with enemy and deals damage accordingly
     void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Enemy"))

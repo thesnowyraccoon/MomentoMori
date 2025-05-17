@@ -2,31 +2,30 @@ using UnityEngine;
 
 public class Melatonin : MonoBehaviour
 {
-    // interactable stats
-    public int collectableHealth = 10;
+    // Collectable health stats
+    [SerializeField] private int collectableHealth = 10;
     
-    // player stats
-    int playerHealth;
-    int maxHealth;
+    // Player stats
+    private int playerHealth;
+    private int maxHealth;
+    private PlayerController player;
 
+    // Check for player and if they can pick up collectable health
     void OnTriggerEnter2D(Collider2D trigger)
     {
         if (trigger.gameObject.CompareTag("Player"))
         {
-            GameObject player = GameObject.FindGameObjectWithTag("Player"); // checks player max health
+            player = trigger.GetComponent<PlayerController>();
 
-            if (player != null)
+            if (player != null) // If player exists get health values
             {
-                maxHealth = player.GetComponent<PlayerController>().maxHealth;
+                maxHealth = player.GetMaxHealth(); // Gets player max health
+                playerHealth = player.GetHealth(); // Gets player current health
             }
-
-            playerHealth = trigger.gameObject.GetComponent<PlayerController>().playerHealth; // gets player health
             
-            if (playerHealth < maxHealth)
+            if (playerHealth < maxHealth) // Checks if player can recieve health
             {
-                playerHealth += collectableHealth;
-                
-                trigger.gameObject.GetComponent<PlayerController>().playerHealth = playerHealth; // sets new player health
+                player.HealthGain(collectableHealth); // sets new player health
 
                 Destroy(gameObject);
             }

@@ -8,36 +8,38 @@ public class PlayerController : MonoBehaviour
     public InputAction interactAction; // Input action for interactions
     public InputAction pauseAction; // Input action for pausing the game
 
-    private Vector2 _boxSize = new Vector2(0.1f, 1f);
+    private Vector2 _boxSize = new Vector2(0.1f, 1f); // Interaction distance
 
     // Movement
     public float moveSpeed = 5f; // Speed of the player
-    float lastX = 0, lastY = 0;
-    bool isMoving = false;
+
+    private float lastX = 0, lastY = 0; // Last position player was facing
+    private bool isMoving = false; // Movement check
 
     // Attacking 
-    public Transform aim;
+    public Transform aim; // Direction of player attack
 
     // Animations
     [SerializeField] private Animator animator; // Animator component
-    [SerializeField] private SpriteRenderer playerSR;
+    [SerializeField] private SpriteRenderer playerSR; // Player renderer
 
     // Stats
-    [HideInInspector] public int maxHealth = 100;
-    public enum MaximumHealth {Ten, Twenty, Thirty, Forty, Fifty};
+    public enum MaximumHealth { Ten, Twenty, Thirty, Forty, Fifty }; // Specific player max health
     public MaximumHealth maximumHealth;
-    public int playerHealth;
+
+    private int maxHealth = 10;
+    [SerializeField] private int playerHealth = 10; // Player current health
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        moveAction.Enable(); // Enable the move action to start receiving input
-        interactAction.Enable();
-        pauseAction.Enable();
+        moveAction.Enable(); // Enable the movement inputs
+        interactAction.Enable(); // Enable interaction input
+        pauseAction.Enable(); // Enable pause inputs
 
         animator = GetComponent<Animator>(); // Get the Animator component attached to the player
 
-        playerHealth = maxHealth; // sets playerhealth to maximum\
+        playerHealth = maxHealth; // Sets player health to maximum
     }
 
     // Update is called once per frame
@@ -45,9 +47,9 @@ public class PlayerController : MonoBehaviour
     {
         MovePlayer(); // Call to handle movement and animation
         Interaction(); // Call to check if interacting
-        Pause();
+        Pause(); // Call to check if pausing
 
-        HealthMax();
+        HealthMax(); // Set player max health values
         Health(); // Call to check health, and to set and animate accordingly
     }
 
@@ -56,9 +58,10 @@ public class PlayerController : MonoBehaviour
     {
         Vector3 moveDirection = Vector3.zero; // Initialize move direction
 
-        isMoving = false;
+        isMoving = false; // Sets moving to false when not moving 
 
         // Checks for WASD movement in 4 directions and animates accordingly
+        // Saves last postions and sets moving to true
         if (moveAction.ReadValue<Vector2>().x > 0)
         {
             moveDirection.x += 1;
@@ -98,9 +101,11 @@ public class PlayerController : MonoBehaviour
 
         transform.position += moveDirection.normalized * moveSpeed * Time.deltaTime; // Move the player based on input
 
+        // Moving animations
         animator.SetFloat("X", moveDirection.x);
         animator.SetFloat("Y", moveDirection.y);
 
+        // Saves last movement for idle animations
         if (isMoving == false)
         {
             animator.SetFloat("lastX", lastX);
@@ -115,6 +120,7 @@ public class PlayerController : MonoBehaviour
         // Code version: Unknown
         // Availability: https://youtu.be/-4bsGg7dVFo?si=z3A91GlWMENwUL_P
 
+        // Sets direction of player attack
         if (isMoving)
         {
             Vector3 vector3 = Vector3.left * moveDirection.x + Vector3.down * moveDirection.y;
@@ -122,11 +128,31 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    // Player recieving damage
     public void Damaged(int damage)
     {
         playerHealth -= damage;
     }
 
+    // Player recieving health
+    public void HealthGain(int health)
+    {
+        playerHealth += health;
+    }
+
+    // Gets player health for other operations
+    public int GetHealth()
+    {
+        return playerHealth;
+    }
+
+    // Gets player max health for other operations
+    public int GetMaxHealth()
+    {
+        return maxHealth;
+    }
+
+    // Player max health enum
     void HealthMax()
     {
         if (maximumHealth == MaximumHealth.Ten)
@@ -159,19 +185,20 @@ public class PlayerController : MonoBehaviour
             playerHealth = maxHealth;
         }
 
-        if (playerHealth <= 0)
+        if (playerHealth <= 0) // Player disable on death // Should be reset to start
         {
             playerSR.enabled = false;
             moveAction.Disable();
         }
     }
 
+    // Pause menu activation
     void Pause()
     {
         if (pauseAction.triggered)
         {
             PauseMenu pause = GameObject.Find("Pause UI").GetComponent<PauseMenu>();
-            pause.Open();
+            pause.Open(); // Opens pause menu
 
             Time.timeScale = 0f; // Stop game time
         }
@@ -183,6 +210,7 @@ public class PlayerController : MonoBehaviour
     // Code version: Unknown
     // Availability: https://youtu.be/GaVADPZlO0o?si=0MwOBmMmnPj6RDBl
     
+    // Displays icon when able to interact
     public void OpenInteractableIcon()
     {
         // Set interactable icon active
@@ -193,6 +221,7 @@ public class PlayerController : MonoBehaviour
         // Set interactable icon false
     }
 
+    // Checks if player can interact
     void CheckInteraction()
     {
         RaycastHit2D[] hits = Physics2D.BoxCastAll(transform.position, _boxSize, 0, Vector2.zero);
@@ -210,6 +239,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    // Activates interaction according to input
     void Interaction()
     {
         if (interactAction.triggered)
