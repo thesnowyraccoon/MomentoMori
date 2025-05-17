@@ -7772,10 +7772,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c42448c430bf2449b4ed14f2e8142c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 1275644924}
+  followDistance: 8
   owl: {fileID: 1323909388}
   health: 10
   maxHealth: 10
   attack: 2
+  attackDuration: 0.6
+  speed: 2
 --- !u!95 &1323909388
 Animator:
   serializedVersion: 7
