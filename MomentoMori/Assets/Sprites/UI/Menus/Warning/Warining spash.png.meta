@@ -1,0 +1,1170 @@
+fileFormatVersion: 2
+guid: 773fcd60b82294a4c96f7a4fd730944f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4324177357767941833
+    second: Warining spash_0
+  - first:
+      213: -3749291449201090084
+    second: Warining spash_1
+  - first:
+      213: 890419373126071253
+    second: Warining spash_2
+  - first:
+      213: 1595053304612688100
+    second: Warining spash_3
+  - first:
+      213: -5600695993035826862
+    second: Warining spash_4
+  - first:
+      213: 3635811977871479964
+    second: Warining spash_5
+  - first:
+      213: -669832680525708586
+    second: Warining spash_6
+  - first:
+      213: -6899409354466952733
+    second: Warining spash_7
+  - first:
+      213: -6044667902848448198
+    second: Warining spash_8
+  - first:
+      213: 4542892576069403473
+    second: Warining spash_9
+  - first:
+      213: -4209864505514375085
+    second: Warining spash_10
+  - first:
+      213: -8903344292449962716
+    second: Warining spash_11
+  - first:
+      213: 9200236319280915995
+    second: Warining spash_12
+  - first:
+      213: -5415728805302069012
+    second: Warining spash_13
+  - first:
+      213: -1691052926158518711
+    second: Warining spash_14
+  - first:
+      213: -1129124530964227664
+    second: Warining spash_15
+  - first:
+      213: -5163405176300052974
+    second: Warining spash_16
+  - first:
+      213: -3670249585350070084
+    second: Warining spash_17
+  - first:
+      213: -28185968126481355
+    second: Warining spash_18
+  - first:
+      213: 8168659451945838096
+    second: Warining spash_19
+  - first:
+      213: -8820855485117475145
+    second: Warining spash_20
+  - first:
+      213: 8735688814803286861
+    second: Warining spash_21
+  - first:
+      213: 7180559986613271448
+    second: Warining spash_22
+  - first:
+      213: 8657276203582849880
+    second: Warining spash_23
+  - first:
+      213: -3145946447765570200
+    second: Warining spash_24
+  - first:
+      213: 7076687869395661589
+    second: Warining spash_25
+  - first:
+      213: -2276111150222035431
+    second: Warining spash_26
+  - first:
+      213: 370799175211110331
+    second: Warining spash_27
+  - first:
+      213: -3596244780563399001
+    second: Warining spash_28
+  - first:
+      213: -1994123023053301496
+    second: Warining spash_29
+  - first:
+      213: 6766590459896281597
+    second: Warining spash_30
+  - first:
+      213: 5643641548035212345
+    second: Warining spash_31
+  - first:
+      213: 315324992271344334
+    second: Warining spash_32
+  - first:
+      213: -7526797189292521985
+    second: Warining spash_33
+  - first:
+      213: 6643780386204513816
+    second: Warining spash_34
+  - first:
+      213: 1108781481434628568
+    second: Warining spash_35
+  - first:
+      213: -6138246284667754962
+    second: Warining spash_36
+  - first:
+      213: -5633761734702267330
+    second: Warining spash_37
+  - first:
+      213: -8141458355855647670
+    second: Warining spash_38
+  - first:
+      213: -8206063946751082859
+    second: Warining spash_39
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Warining spash_0
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 173
+        width: 167
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73164748a9f6df3c0800000000000000
+      internalID: -4324177357767941833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warining spash_1
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 172
+        width: 159
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd1a5f2aa47d7fbc0800000000000000
+      internalID: -3749291449201090084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warining spash_2
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 174
+        width: 91
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d33e44c3b76b5c00800000000000000
+      internalID: 890419373126071253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warining spash_3
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 258
+        width: 29
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e090439784c22610800000000000000
+      internalID: 1595053304612688100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warining spash_4
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 170
+        width: 95
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25955280ba45642b0800000000000000
+      internalID: -5600695993035826862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warining spash_5
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 173
+        width: 77
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c94d3230bbff47230800000000000000
+      internalID: 3635811977871479964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warining spash_6
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 172
+        width: 73
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d2415ad9b644b6f0800000000000000
+      internalID: -669832680525708586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warining spash_7
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 106
+        width: 56
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e97dfa2fbf5040a0800000000000000
+      internalID: -6899409354466952733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warining spash_8
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 99
+        width: 68
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a39438181960d1ca0800000000000000
+      internalID: -6044667902848448198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warining spash_9
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 106
+        width: 102
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15340698ab89b0f30800000000000000
+      internalID: 4542892576069403473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warining spash_10
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 124
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3584a4c798e8395c0800000000000000
+      internalID: -4209864505514375085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warining spash_11
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 99
+        width: 102
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 425b487b987f07480800000000000000
+      internalID: -8903344292449962716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warining spash_12
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 99
+        width: 99
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b16e26cff2ecdaf70800000000000000
+      internalID: 9200236319280915995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warining spash_13
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 99
+        width: 76
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce89e18685777d4b0800000000000000
+      internalID: -5415728805302069012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warining spash_14
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 106
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 946cfefb25c2888e0800000000000000
+      internalID: -1691052926158518711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warining spash_15
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 101
+        width: 62
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b992b0b83b8450f0800000000000000
+      internalID: -1129124530964227664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warining spash_16
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 99
+        width: 64
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21ed83b5956e758b0800000000000000
+      internalID: -5163405176300052974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warining spash_17
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 106
+        width: 79
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb03f2ca277a01dc0800000000000000
+      internalID: -3670249585350070084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warining spash_18
+      rect:
+        serializedVersion: 2
+        x: 764
+        y: 106
+        width: 46
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53cab26e20ddb9ff0800000000000000
+      internalID: -28185968126481355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warining spash_19
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 63
+        width: 12
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0166e5cfd78ec5170800000000000000
+      internalID: 8168659451945838096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warining spash_20
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 87
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b65482dba6069580800000000000000
+      internalID: -8820855485117475145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warining spash_21
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 63
+        width: 135
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4bf3b281b66b3970800000000000000
+      internalID: 8735688814803286861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warining spash_22
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 63
+        width: 80
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89bb77a734976a360800000000000000
+      internalID: 7180559986613271448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warining spash_23
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 69
+        width: 121
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8538ff4c6d2d42870800000000000000
+      internalID: 8657276203582849880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warining spash_24
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 69
+        width: 23
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86df78aaf5a5754d0800000000000000
+      internalID: -3145946447765570200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warining spash_25
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 88
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 513f4a19f12753260800000000000000
+      internalID: 7076687869395661589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warining spash_26
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 69
+        width: 94
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 916b5bdd7f0a960e0800000000000000
+      internalID: -2276111150222035431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warining spash_27
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 69
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbf4771a2e7552500800000000000000
+      internalID: 370799175211110331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warining spash_28
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 69
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ae7a210d62971ec0800000000000000
+      internalID: -3596244780563399001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warining spash_29
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 69
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 809da740da37354e0800000000000000
+      internalID: -1994123023053301496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warining spash_30
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 22
+        width: 20
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df93aae1c22c7ed50800000000000000
+      internalID: 6766590459896281597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warining spash_31
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 33
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 934464e261e325e40800000000000000
+      internalID: 5643641548035212345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warining spash_32
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 22
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec2e229e862406400800000000000000
+      internalID: 315324992271344334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warining spash_33
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 22
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff58fc3c5d17b8790800000000000000
+      internalID: -7526797189292521985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warining spash_34
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 22
+        width: 69
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8167d6d9f03733c50800000000000000
+      internalID: 6643780386204513816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warining spash_35
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 17
+        width: 65
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d1417ef1ee236f00800000000000000
+      internalID: 1108781481434628568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warining spash_36
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 22
+        width: 54
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e266482a68190daa0800000000000000
+      internalID: -6138246284667754962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warining spash_37
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 22
+        width: 29
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3402ed1d8bd0d1b0800000000000000
+      internalID: -5633761734702267330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warining spash_38
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 17
+        width: 43
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4c9699b2cab30f80800000000000000
+      internalID: -8141458355855647670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Warining spash_39
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 17
+        width: 75
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59ef2c961543e1e80800000000000000
+      internalID: -8206063946751082859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Warining spash_0: -4324177357767941833
+      Warining spash_1: -3749291449201090084
+      Warining spash_10: -4209864505514375085
+      Warining spash_11: -8903344292449962716
+      Warining spash_12: 9200236319280915995
+      Warining spash_13: -5415728805302069012
+      Warining spash_14: -1691052926158518711
+      Warining spash_15: -1129124530964227664
+      Warining spash_16: -5163405176300052974
+      Warining spash_17: -3670249585350070084
+      Warining spash_18: -28185968126481355
+      Warining spash_19: 8168659451945838096
+      Warining spash_2: 890419373126071253
+      Warining spash_20: -8820855485117475145
+      Warining spash_21: 8735688814803286861
+      Warining spash_22: 7180559986613271448
+      Warining spash_23: 8657276203582849880
+      Warining spash_24: -3145946447765570200
+      Warining spash_25: 7076687869395661589
+      Warining spash_26: -2276111150222035431
+      Warining spash_27: 370799175211110331
+      Warining spash_28: -3596244780563399001
+      Warining spash_29: -1994123023053301496
+      Warining spash_3: 1595053304612688100
+      Warining spash_30: 6766590459896281597
+      Warining spash_31: 5643641548035212345
+      Warining spash_32: 315324992271344334
+      Warining spash_33: -7526797189292521985
+      Warining spash_34: 6643780386204513816
+      Warining spash_35: 1108781481434628568
+      Warining spash_36: -6138246284667754962
+      Warining spash_37: -5633761734702267330
+      Warining spash_38: -8141458355855647670
+      Warining spash_39: -8206063946751082859
+      Warining spash_4: -5600695993035826862
+      Warining spash_5: 3635811977871479964
+      Warining spash_6: -669832680525708586
+      Warining spash_7: -6899409354466952733
+      Warining spash_8: -6044667902848448198
+      Warining spash_9: 4542892576069403473
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
