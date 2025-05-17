@@ -50,7 +50,7 @@ public class MapTransition : MonoBehaviour
                 newPos.y -= 7;
                 break;
             case Direction.Far:
-                newPos = new Vector3(122, -16, 0); 
+                newPos = new Vector3(0, 7, 0); 
                 break;
         }
         playerRemy.transform.position = newPos;
