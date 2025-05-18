@@ -11,18 +11,28 @@ using UnityEngine.UI;
 public class StaminaUI : MonoBehaviour
 {
     // Stamina 
+    [Header("UI")]
     public Image staminaBar;
-    
-    [SerializeField] private float stamina, maxStamina;
+
+    [Header("Stamina")]
+    [SerializeField] private float stamina;
+    [SerializeField] private float maxStamina;
     [SerializeField] private float chargeRate;
     private bool hasStamina = true;
 
     // Attacking
+    [Header("Attack")]
     [SerializeField] private float attackCost;
+
+    // Dashing
+    [Header("Dash")]
+    [SerializeField] private float dashCost;
 
     private Coroutine recharge;
 
-    public PlayerAttack player;
+    [Header("Player")]
+    public PlayerController playerController;
+    public PlayerAttack playerAttack;
 
     void Start()
     {
@@ -30,12 +40,19 @@ public class StaminaUI : MonoBehaviour
     }
 
     void Update()
-    { 
-        player.AttackTimer(); // Initiates time and check for each attack
+    {
+        Attacking();
+        Dashing();
+        Stamina();
+    }
 
-        if (player.attackAction.triggered && hasStamina == true) // Checks if attack button is pressed and if player has stamina
+    void Attacking()
+    {
+        playerAttack.AttackTimer(); // Initiates time and check for each attack
+
+        if (playerAttack.attackAction.triggered && hasStamina == true) // Checks if attack button is pressed and if player has stamina
         {
-            player.OnAttack(); // Activates attack
+            playerAttack.OnAttack(); // Activates attack
 
             stamina -= attackCost; // Attacks use stamina
 
@@ -46,7 +63,27 @@ public class StaminaUI : MonoBehaviour
 
             recharge = StartCoroutine(RechargeStamina()); // Stamina recharges
         }
+    }
 
+    void Dashing()
+    {
+        if (playerController.dashAction.triggered && hasStamina == true) // Checks if attack button is pressed and if player has stamina
+        {
+            playerController.Dash();
+
+            stamina -= dashCost; // Attacks use stamina
+
+            if (recharge != null) // Checks and initiates cooldown before recharging stamina
+            {
+                StopCoroutine(recharge); 
+            }
+
+            recharge = StartCoroutine(RechargeStamina()); // Stamina recharges
+        }
+    }
+
+    void Stamina()
+    {
         if (stamina < 0) // Ensures stamina not below 0
         {
             stamina = 0;
@@ -58,12 +95,12 @@ public class StaminaUI : MonoBehaviour
         }
 
         // Stamina checks for cost of attacks and if player has stamina to attack
-        if (stamina < attackCost)
+        if (stamina < attackCost || stamina < dashCost)
         {
             hasStamina = false;
         }
 
-        if (stamina >= attackCost)
+        if (stamina >= attackCost || stamina >= dashCost)
         {
             hasStamina = true;
         }

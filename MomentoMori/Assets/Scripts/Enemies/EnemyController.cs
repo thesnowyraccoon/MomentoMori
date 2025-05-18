@@ -10,25 +10,34 @@ using UnityEngine;
 public class EnemyController : MonoBehaviour
 {
     // Player
+    [Header("Player")]
     public GameObject player;
 
     private bool hasPlayer = false;
 
-    // Following stats
-    private float distance;
-    private Vector2 direction;
-    [SerializeField] private float followDistance = 4;
-
     // Animations
+    [Header("Animations")]
     [SerializeField] private Animator owl;
     private bool isMoving = false;
     private float X = 0, Y = 0;
 
+    // Following stats
+    [Header("Following")]
+    private float distance;
+    private Vector2 direction;
+    [SerializeField] private float followDistance = 4;
+
+    // Speed
+    [Header("Speed")]
+    [SerializeField] private float speed;
+
     // Health
+    [Header("Health")]
     [SerializeField] private int health;
     [SerializeField] private int maxHealth = 100;
 
     // Attack
+    [Header("Attack")]
     [SerializeField] private int attack = 5;
 
     // Attacking 
@@ -39,13 +48,11 @@ public class EnemyController : MonoBehaviour
 
     private Coroutine recharge;
 
-    // Stamina
+    // Cooldown
+    [Header("Cooldown")]
     [SerializeField] private float cooldown, maxCooldown;
     [SerializeField] private float chargeRate;
     private bool hasAttack = true;
-
-    // Speed
-    [SerializeField] private float speed;
 
     void Start()
     {

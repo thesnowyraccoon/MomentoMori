@@ -4,7 +4,7 @@ public class TarotMenu : MonoBehaviour
 {
     // External object references
     private PlayerController player;
-    private Sword sword;
+    private PlayerAttack attack;
     private Insomnium insomnium;
 
     // Tarot UI
@@ -18,9 +18,9 @@ public class TarotMenu : MonoBehaviour
     {
         // Finds external objects
         player = GameObject.Find("playerRemy").GetComponent<PlayerController>();
-        sword = player.GetComponentInChildren<Sword>();
+        attack = GameObject.Find("playerRemy").GetComponent<PlayerAttack>();
         insomnium = GameObject.Find("Insomnium").GetComponent<Insomnium>();
-
+        
         // Tarot UI and buttons
         tarot = GetComponent<Canvas>();
         t1 = GameObject.Find("T1").GetComponent<UnityEngine.UI.Button>();
@@ -52,7 +52,7 @@ public class TarotMenu : MonoBehaviour
     // Increases player attack
     public void AttackTarot()
     {
-        sword.AddDamage(attackTarot);
+        attack.AddAttack(attackTarot);
         t2.interactable = false;
     }
 

@@ -1725,7 +1725,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9b49f5e89cb4eb42ab31cd2fb3a42cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  swordDamage: 1
+  swordDamage: {fileID: 1275644930}
 --- !u!60 &657703913
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -7102,7 +7102,9 @@ MonoBehaviour:
   maxStamina: 100
   chargeRate: 33
   attackCost: 20
-  player: {fileID: 1275644930}
+  dashCost: 10
+  playerController: {fileID: 1275644931}
+  playerAttack: {fileID: 1275644930}
 --- !u!114 &1275644930
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7134,6 +7136,7 @@ MonoBehaviour:
     m_Flags: 0
   sword: {fileID: 657703910}
   animator: {fileID: 657703911}
+  attackDamage: 1
   attackDuration: 0.25
 --- !u!114 &1275644931
 MonoBehaviour:
@@ -7196,6 +7199,23 @@ MonoBehaviour:
       m_Action: Move
       m_Flags: 8
     m_Flags: 0
+  dashAction:
+    m_Name: Dash
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 0e951d9f-2cf0-44d5-b568-b564a24f5976
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: 3cbcb51b-9a1f-4e05-9d5d-fa94e566c14a
+      m_Path: <Keyboard>/space
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Dash
+      m_Flags: 0
+    m_Flags: 0
   interactAction:
     m_Name: Interact
     m_Type: 0
@@ -7239,11 +7259,12 @@ MonoBehaviour:
       m_Flags: 0
     m_Flags: 0
   moveSpeed: 5
-  aim: {fileID: 502432047}
+  dashAmount: 500
   animator: {fileID: 1275644927}
   playerSR: {fileID: 1275644932}
   maximumHealth: 0
   playerHealth: 10
+  aim: {fileID: 502432047}
 --- !u!212 &1275644932
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7772,8 +7793,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1275644924}
-  followDistance: 8
   owl: {fileID: 1323909388}
+  followDistance: 8
+  speed: 2
   health: 10
   maxHealth: 10
   attack: 2
@@ -7782,7 +7804,6 @@ MonoBehaviour:
   cooldown: 6
   maxCooldown: 6
   chargeRate: 3
-  speed: 2
 --- !u!95 &1323909388
 Animator:
   serializedVersion: 7

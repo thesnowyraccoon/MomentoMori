@@ -9,20 +9,34 @@ using UnityEngine.InputSystem;
 
 public class PlayerAttack : MonoBehaviour
 {
+    [Header("Input")]
     public InputAction attackAction; // Input action for attack
 
     // Reference to the weapon
+    [Header("Sword")]
     public GameObject sword;
     public Animator animator;
 
     // Attacking 
-    private bool isAttacking = false;
+    [Header("Attack")]
+    [SerializeField] private int attackDamage = 1;
     [SerializeField] private float attackDuration = 0.3f;
+    private bool isAttacking = false;
     private float attackTimer = 0f;
 
     void Start()
     {
         attackAction.Enable(); // Enable the attack action to start receiving input
+    }
+
+    public void AddAttack(int damage)
+    {
+        attackDamage += damage;
+    }
+
+    public int GetAttack()
+    {
+        return attackDamage;
     }
 
     public void OnAttack()
