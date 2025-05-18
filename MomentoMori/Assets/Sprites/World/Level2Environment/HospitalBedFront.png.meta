@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 7058d951a15ba75419b95cad4ebd0a32
+guid: 30079aa7c719a384f8dfc310fdbdd7a6
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1332785197874802282
-    second: StandBlue_0
+      213: 4799141431523345762
+    second: HospitalBedFront_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,23 +113,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: StandBlue_0
+      name: HospitalBedFront_0
       rect:
         serializedVersion: 2
-        x: 1135
-        y: 28
-        width: 712
-        height: 305
+        x: 363
+        y: 113
+        width: 313
+        height: 510
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 1, w: 0}
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 69116c68ceef08de0800000000000000
-      internalID: -1332785197874802282
+      spriteID: 2650fcc74b9f99240800000000000000
+      internalID: 4799141431523345762
       vertices: []
       indices: 
       edges: []
@@ -138,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 6343e3897704ca747b9e40d36244a9b6
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -147,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      StandBlue_0: -1332785197874802282
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 7058d951a15ba75419b95cad4ebd0a32
+guid: 61ba686608810e543997b6c6e86721fb
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1332785197874802282
-    second: StandBlue_0
+      213: -238335368914494337
+    second: Carosaul 1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 200
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -113,23 +113,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: StandBlue_0
+      name: Carosaul 1_0
       rect:
         serializedVersion: 2
-        x: 1135
-        y: 28
-        width: 712
-        height: 305
+        x: 472
+        y: 433
+        width: 917
+        height: 623
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 1, w: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 69116c68ceef08de0800000000000000
-      internalID: -1332785197874802282
+      spriteID: f7c9076ae3341bcf0800000000000000
+      internalID: -238335368914494337
       vertices: []
       indices: 
       edges: []
@@ -138,8 +138,8 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 6343e3897704ca747b9e40d36244a9b6
-    internalID: 0
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 1537655665
     vertices: []
     indices: 
     edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      StandBlue_0: -1332785197874802282
+      Carosaul 1_0: -238335368914494337
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
