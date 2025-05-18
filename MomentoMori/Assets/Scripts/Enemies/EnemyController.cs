@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 // Title: Unity simple 2D Enemy AI Follow Tutorial
@@ -34,6 +35,14 @@ public class EnemyController : MonoBehaviour
     private bool isAttacking = false;
     [SerializeField] private float attackDuration = 0.3f;
     private float attackTimer = 0f;
+    [SerializeField] private float attackCost;
+
+    private Coroutine recharge;
+
+    // Stamina
+    [SerializeField] private float cooldown, maxCooldown;
+    [SerializeField] private float chargeRate;
+    private bool hasAttack = true;
 
     // Speed
     [SerializeField] private float speed;
@@ -41,6 +50,7 @@ public class EnemyController : MonoBehaviour
     void Start()
     {
         health = maxHealth; // Sets enemy health to max
+        cooldown = maxCooldown;
     }
 
     void Update()
@@ -49,9 +59,50 @@ public class EnemyController : MonoBehaviour
 
         AttackTimer(); // Initiates time and check for each attack
 
-        if (hasPlayer == true)
+        if (hasPlayer == true && hasAttack == true)
         {
             OnAttack(); // Activates attack
+
+            cooldown -= attackCost; // Attacks use stamina
+
+            if (recharge != null) // Checks and initiates cooldown before recharging stamina
+            {
+                StopCoroutine(recharge);
+            }
+
+            recharge = StartCoroutine(RechargeStamina()); // Stamina recharges
+        }
+
+        if (cooldown < 0) // Ensures stamina not below 0
+        {
+            cooldown = 0;
+        }
+
+        if (cooldown > maxCooldown) // Ensures stamina not above max
+        {
+            cooldown = maxCooldown;
+        }
+        
+        if (cooldown < attackCost)
+        {
+            hasAttack = false;
+        }
+
+        if (cooldown >= attackCost)
+        {
+            hasAttack = true;
+        }
+    }
+
+    private IEnumerator RechargeStamina() // Stamina recharges after a short duration after attacking
+    {
+        yield return new WaitForSeconds(1f);
+
+        while (cooldown < maxCooldown)
+        {
+            cooldown += chargeRate / 10f;
+
+            yield return new WaitForSeconds(.1f);
         }
     }
 
@@ -121,17 +172,17 @@ public class EnemyController : MonoBehaviour
     }
 
     // Checks if near player and deals damage accordingly
-    void OnTriggerEnter2D(Collider2D trigger)
+    void OnTriggerEnter2D(Collider2D collision)
     {
-        if (trigger.CompareTag("Player"))
+        if (collision.CompareTag("Player"))
         {
             hasPlayer = true;
         }
     }
 
-    void OnTriggerExit2D(Collider2D trigger)
+    void OnTriggerExit2D(Collider2D collision)
     {
-        if (trigger.CompareTag("Player"))
+        if (collision.CompareTag("Player"))
         {
             hasPlayer = false;
         }
