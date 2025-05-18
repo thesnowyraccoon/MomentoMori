@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      HospitalBedFront_0: 4799141431523345762
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

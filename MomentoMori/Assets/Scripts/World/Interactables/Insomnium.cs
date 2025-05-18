@@ -39,7 +39,7 @@ public class Insomnium : Interactions
         spriteRenderer = GetComponent<SpriteRenderer>();
         spriteRenderer.sprite = closed;
 
-        tarot = GameObject.Find("Tarot UI").GetComponent<Canvas>();
+        tarot = GameObject.Find("TarotUI").GetComponent<Canvas>();
         tarot.enabled = false;
     }
 }

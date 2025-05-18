@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      BloodChair_0: 8917003110206161875
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
