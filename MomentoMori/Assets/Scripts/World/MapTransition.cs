@@ -14,7 +14,7 @@ public class MapTransition : MonoBehaviour
     CinemachineConfiner2D confiner;
     public Direction direction;
 
-    public enum Direction { Up, Down, Left, Right, Far } //The camera direction
+    public enum Direction { Up, Down, Left, Right, Far, Level3 } //The camera direction
     void Start()
     {
         confiner = GameObject.FindFirstObjectByType<CinemachineConfiner2D>();
@@ -33,14 +33,14 @@ public class MapTransition : MonoBehaviour
     private void UpdatePlayerPosition(GameObject playerRemy) //This teleports the player to not mess with the camera
     {
         Vector3 newPos = playerRemy.transform.position;
-    
+
 
         switch (direction)
         {
             case Direction.Right:  //most of these are obselete because the camera bounds were changed.
                 newPos.x += 5;
                 break;
-           case Direction.Left:
+            case Direction.Left:
                 newPos.x -= 5;
                 break;
             case Direction.Up:
@@ -50,7 +50,10 @@ public class MapTransition : MonoBehaviour
                 newPos.y -= 7;
                 break;
             case Direction.Far:
-                newPos = new Vector3(0, 7, 0); 
+                newPos = new Vector3(0, 7, 0);
+                break;
+            case Direction.Level3:
+                newPos = new Vector3(179, -9, 0);
                 break;
         }
         playerRemy.transform.position = newPos;
