@@ -89,7 +89,7 @@ public class EnemyController : MonoBehaviour
         {
             cooldown = maxCooldown;
         }
-        
+
         if (cooldown < attackCost)
         {
             hasAttack = false;
@@ -194,4 +194,6 @@ public class EnemyController : MonoBehaviour
             hasPlayer = false;
         }
     }
+
+
 }
