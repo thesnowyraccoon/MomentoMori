@@ -211,6 +211,7 @@ public class PlayerController : MonoBehaviour
             playerSR.enabled = false;
             moveAction.Disable();
             Time.timeScale = 0f;
+        
         }
     }
 
