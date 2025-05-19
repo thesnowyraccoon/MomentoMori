@@ -397,7 +397,18 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      CrowThrowLeft_0: -3853552128463272577
+      CrowThrowLeft_1: -729730147713779276
+      CrowThrowLeft_10: -8081992566616909068
+      CrowThrowLeft_2: 6656358192706970958
+      CrowThrowLeft_3: -1188165853145051428
+      CrowThrowLeft_4: 6171915853023668593
+      CrowThrowLeft_5: -714937139531495758
+      CrowThrowLeft_6: -7991410718441608957
+      CrowThrowLeft_7: -3125121596492500138
+      CrowThrowLeft_8: 3132939392323593152
+      CrowThrowLeft_9: -8990164467091022701
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

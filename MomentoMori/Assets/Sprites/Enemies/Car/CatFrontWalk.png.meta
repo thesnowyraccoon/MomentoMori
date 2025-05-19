@@ -522,7 +522,23 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      CatFrontWalk_0: 7159072553243549983
+      CatFrontWalk_1: -3760448062989166012
+      CatFrontWalk_10: -1837250620854445331
+      CatFrontWalk_11: -8611396093276421553
+      CatFrontWalk_12: -928628372479115961
+      CatFrontWalk_13: 6477958708435792366
+      CatFrontWalk_14: -5537329138556294918
+      CatFrontWalk_15: -7722725649006322669
+      CatFrontWalk_2: 1115224243469314662
+      CatFrontWalk_3: 5911879657230227582
+      CatFrontWalk_4: -241206763675978050
+      CatFrontWalk_5: 1087556715397156698
+      CatFrontWalk_6: -5420251712141619581
+      CatFrontWalk_7: 4569453207473809244
+      CatFrontWalk_8: -2693962317418166270
+      CatFrontWalk_9: 7250913904905806910
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

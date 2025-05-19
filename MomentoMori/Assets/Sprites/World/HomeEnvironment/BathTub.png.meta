@@ -172,7 +172,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      BathTub_0: -163170383295445267
+      BathTub_1: -723886532667892839
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
