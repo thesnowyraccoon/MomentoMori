@@ -1,22 +1,10 @@
 fileFormatVersion: 2
-guid: 715a0fd489e4e3c4eac1bf4877ad43a3
+guid: edcd7f6287dae7145975aaa56230c8aa
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8740491524576469797
-    second: Sun_0
-  - first:
-      213: -8838118737182495800
-    second: Sun_1
-  - first:
-      213: -8664763093570941427
-    second: Sun_2
-  - first:
-      213: -6313178382888641860
-    second: Sun_3
-  - first:
-      213: -7990073000246423195
-    second: Sun_4
+      213: -7926266425324306925
+    second: Screenshot__104_-removebg-preview_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -58,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -125,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Sun_0
+      name: Screenshot__104_-removebg-preview_0
       rect:
         serializedVersion: 2
-        x: 652
-        y: 60
-        width: 576
-        height: 939
+        x: 18
+        y: 18
+        width: 419
+        height: 149
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,96 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 52361b48bb67c4970800000000000000
-      internalID: 8740491524576469797
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sun_1
-      rect:
-        serializedVersion: 2
-        x: 1222
-        y: 259
-        width: 9
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8cb638bb5d1b85580800000000000000
-      internalID: -8838118737182495800
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sun_2
-      rect:
-        serializedVersion: 2
-        x: 1224
-        y: 143
-        width: 9
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d0e0ac0dfd390c780800000000000000
-      internalID: -8664763093570941427
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sun_3
-      rect:
-        serializedVersion: 2
-        x: 798
-        y: 23
-        width: 129
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: cba5f3c95b51368a0800000000000000
-      internalID: -6313178382888641860
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sun_4
-      rect:
-        serializedVersion: 2
-        x: 931
-        y: 23
-        width: 62
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5615fd280fe8d1190800000000000000
-      internalID: -7990073000246423195
+      spriteID: 31e707b6eae300290800000000000000
+      internalID: -7926266425324306925
       vertices: []
       indices: 
       edges: []
@@ -238,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -247,12 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Sun_0: 8740491524576469797
-      Sun_1: -8838118737182495800
-      Sun_2: -8664763093570941427
-      Sun_3: -6313178382888641860
-      Sun_4: -7990073000246423195
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
