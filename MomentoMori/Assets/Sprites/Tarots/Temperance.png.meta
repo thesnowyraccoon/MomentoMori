@@ -128,94 +128,6 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Temperance_0
-      rect:
-        serializedVersion: 2
-        x: 798
-        y: 981
-        width: 119
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5341ca3f6ad9a8d70800000000000000
-      internalID: 9046216141905335349
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Temperance_1
-      rect:
-        serializedVersion: 2
-        x: 921
-        y: 985
-        width: 6
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4c8b0e9d0eba26100800000000000000
-      internalID: 99831123971979460
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Temperance_2
-      rect:
-        serializedVersion: 2
-        x: 931
-        y: 983
-        width: 62
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: fadc56124c45e3e70800000000000000
-      internalID: 9096801498685623727
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Temperance_3
-      rect:
-        serializedVersion: 2
-        x: 649
-        y: 707
-        width: 7
-        height: 47
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 162d656f08ce3cdf0800000000000000
-      internalID: -161025123022351775
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Temperance_4
       rect:
         serializedVersion: 2
@@ -224,7 +136,7 @@ TextureImporter:
         width: 563
         height: 919
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -237,33 +149,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: Temperance_5
-      rect:
-        serializedVersion: 2
-        x: 744
-        y: 48
-        width: 54
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4620b67b4f15741c0800000000000000
-      internalID: -4519553589551889820
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: b808445a5d34ea94e928918ee8f924f2
     internalID: 0
     vertices: []
     indices: 

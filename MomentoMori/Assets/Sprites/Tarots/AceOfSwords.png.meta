@@ -122,50 +122,6 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: AceOfSwords_0
-      rect:
-        serializedVersion: 2
-        x: 1107
-        y: 997
-        width: 13
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 357ad0ae4ddd1a880800000000000000
-      internalID: -8601349906771368109
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: AceOfSwords_1
-      rect:
-        serializedVersion: 2
-        x: 649
-        y: 706
-        width: 7
-        height: 46
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 71d17515d1a942130800000000000000
-      internalID: 3541124657729445143
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: AceOfSwords_2
       rect:
         serializedVersion: 2
@@ -174,7 +130,7 @@ TextureImporter:
         width: 563
         height: 918
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -187,33 +143,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: AceOfSwords_3
-      rect:
-        serializedVersion: 2
-        x: 1104
-        y: 45
-        width: 13
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4dec958b58dab5510800000000000000
-      internalID: 1539014487512305364
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 4a4ef10187186cd4fa7a2eac5260a69e
     internalID: 0
     vertices: []
     indices: 

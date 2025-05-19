@@ -125,59 +125,15 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: WheelOfFortune_0
-      rect:
-        serializedVersion: 2
-        x: 775
-        y: 1009
-        width: 8
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 47371fe65a9be9900800000000000000
-      internalID: 693195512843694964
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WheelOfFortune_1
-      rect:
-        serializedVersion: 2
-        x: 806
-        y: 993
-        width: 18
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4557770d71c826140800000000000000
-      internalID: 4711482194092586324
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: WheelOfFortune_2
       rect:
         serializedVersion: 2
-        x: 667
-        y: 60
+        x: 671
+        y: 61
         width: 563
-        height: 929
+        height: 916
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -190,55 +146,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: WheelOfFortune_3
-      rect:
-        serializedVersion: 2
-        x: 819
-        y: 975
-        width: 31
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 31dd7998d27cdb640800000000000000
-      internalID: 5097449351649156371
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WheelOfFortune_4
-      rect:
-        serializedVersion: 2
-        x: 651
-        y: 706
-        width: 7
-        height: 46
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e49c911a92ce7d3d0800000000000000
-      internalID: -3181814948173330098
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: f7d90bd53e422dc47b356ad4e39b4490
     internalID: 0
     vertices: []
     indices: 

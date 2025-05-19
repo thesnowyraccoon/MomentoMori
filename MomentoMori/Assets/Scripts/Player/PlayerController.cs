@@ -26,6 +26,7 @@ public class PlayerController : MonoBehaviour
     [Header("Animations")]
     [SerializeField] private Animator animator; // Animator component
     [SerializeField] private SpriteRenderer playerSR; // Player renderer
+    [SerializeField] private Animator interact;
 
     // Stats
     [Header("Health")]
@@ -219,7 +220,7 @@ public class PlayerController : MonoBehaviour
     {
         if (pauseAction.triggered)
         {
-            PauseMenu pause = GameObject.Find("Pause UI").GetComponent<PauseMenu>();
+            PauseMenu pause = GameObject.Find("PauseUI").GetComponent<PauseMenu>();
             pause.Open(); // Opens pause menu
 
             Time.timeScale = 0f; // Stop game time
@@ -235,12 +236,12 @@ public class PlayerController : MonoBehaviour
     // Displays icon when able to interact
     public void OpenInteractableIcon()
     {
-        // Set interactable icon active
+        interact.SetFloat("Y", 2);
     }
 
     public void CloseInteractableIcon()
     {
-        // Set interactable icon false
+        interact.SetFloat("Y", 0);
     }
 
     // Checks if player can interact
