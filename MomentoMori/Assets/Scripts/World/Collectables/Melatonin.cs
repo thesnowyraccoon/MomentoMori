@@ -10,6 +10,11 @@ public class Melatonin : MonoBehaviour
     private int maxHealth;
     private PlayerController player;
 
+    public void SetHealth(int health)
+    {
+        collectableHealth = health;
+    }
+
     // Check for player and if they can pick up collectable health
     void OnTriggerEnter2D(Collider2D trigger)
     {

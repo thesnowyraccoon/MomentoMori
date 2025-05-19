@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
     public InputAction moveAction; // Input action for movement
     public InputAction dashAction; // Input action for dashing
     public InputAction interactAction; // Input action for interactions
+    public InputAction tarotAction;
     public InputAction pauseAction; // Input action for pausing the game
 
     private Vector2 _boxSize = new Vector2(0.1f, 1f); // Interaction distance
@@ -16,7 +17,7 @@ public class PlayerController : MonoBehaviour
     // Movement
     [Header("Movement")]
     [SerializeField] private float moveSpeed = 5f; // Speed of the player
-    [SerializeField] private float dashAmount = 50f;
+    [SerializeField] private float dashAmount = 500f;
     private Vector3 moveDirection;
 
     private float lastX = 0, lastY = 0; // Last position player was facing
@@ -46,6 +47,7 @@ public class PlayerController : MonoBehaviour
         moveAction.Enable(); // Enable the movement inputs
         dashAction.Enable();
         interactAction.Enable(); // Enable interaction input
+        tarotAction.Enable();
         pauseAction.Enable(); // Enable pause inputs
 
         animator = GetComponent<Animator>(); // Get the Animator component attached to the player
@@ -142,6 +144,11 @@ public class PlayerController : MonoBehaviour
     public void Dash()
     {
         transform.position += moveDirection.normalized * dashAmount * Time.deltaTime;
+    }
+
+    public void DashGain(float gain)
+    {
+        dashAmount += gain;
     }
 
     // Sets player speed in external operations

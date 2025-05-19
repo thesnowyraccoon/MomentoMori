@@ -180,9 +180,9 @@ MonoBehaviour:
   owl: {fileID: 2793539734633556881}
   followDistance: 8
   speed: 2
-  health: 10
-  maxHealth: 10
-  attack: 2
+  health: 15
+  maxHealth: 15
+  attack: 3
   attackDuration: 0.6
   attackCost: 5
   cooldown: 6
