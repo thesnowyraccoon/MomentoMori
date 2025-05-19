@@ -11,19 +11,21 @@ public class ItemDragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, I
 {
     Transform originalParent;
     CanvasGroup canvasGroup;
+    GameObject book;
 
     void Start()
     {
         canvasGroup = GetComponent<CanvasGroup>();
+        book = GameObject.Find("Book");
     }
 
     public void OnBeginDrag(PointerEventData eventData)
     {
         originalParent = transform.parent; // Saves original parent
-        transform.SetParent(transform.root);
+        transform.SetParent(book.transform.parent);
 
         canvasGroup.blocksRaycasts = false;
-        //canvasGroup.alpha = 0.8f; // Makes item semi trans during drag
+        canvasGroup.alpha = 0.8f; // Makes item semi trans during drag
     }
 
     public void OnDrag(PointerEventData eventData)
@@ -34,7 +36,7 @@ public class ItemDragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, I
     public void OnEndDrag(PointerEventData eventData)
     {
         canvasGroup.blocksRaycasts = true;
-        //canvasGroup.alpha = 1f; // Makes item no longer transparent
+        canvasGroup.alpha = 1f; // Makes item no longer transparent
 
         Slot dropSlot = eventData.pointerEnter?.GetComponent<Slot>(); // Checks/Gets slot where item is dropped
 

@@ -350,6 +350,7 @@ MonoBehaviour:
   slotCount: 12
   tarotPrefabs:
   - {fileID: 6590529108859859616, guid: 3a6da2954e45ace46a9b295812d83109, type: 3}
+  - {fileID: 6590529108859859616, guid: 580da7a805235ca4ea9f4cbf58e3fcc2, type: 3}
 --- !u!1 &252560093
 GameObject:
   m_ObjectHideFlags: 0
@@ -871,7 +872,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 1
-  m_AdditionalShaderChannelsFlag: 25
+  m_AdditionalShaderChannelsFlag: 0
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 1
