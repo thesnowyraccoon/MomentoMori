@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
     public InputAction moveAction; // Input action for movement
     public InputAction dashAction; // Input action for dashing
     public InputAction interactAction; // Input action for interactions
+    public InputAction tarotAction;
     public InputAction pauseAction; // Input action for pausing the game
 
     private Vector2 _boxSize = new Vector2(0.1f, 1f); // Interaction distance
@@ -16,7 +17,7 @@ public class PlayerController : MonoBehaviour
     // Movement
     [Header("Movement")]
     [SerializeField] private float moveSpeed = 5f; // Speed of the player
-    [SerializeField] private float dashAmount = 50f;
+    [SerializeField] private float dashAmount = 500f;
     private Vector3 moveDirection;
 
     private float lastX = 0, lastY = 0; // Last position player was facing
@@ -26,6 +27,7 @@ public class PlayerController : MonoBehaviour
     [Header("Animations")]
     [SerializeField] private Animator animator; // Animator component
     [SerializeField] private SpriteRenderer playerSR; // Player renderer
+    [SerializeField] private Animator interact;
 
     // Stats
     [Header("Health")]
@@ -45,6 +47,7 @@ public class PlayerController : MonoBehaviour
         moveAction.Enable(); // Enable the movement inputs
         dashAction.Enable();
         interactAction.Enable(); // Enable interaction input
+        tarotAction.Enable();
         pauseAction.Enable(); // Enable pause inputs
 
         animator = GetComponent<Animator>(); // Get the Animator component attached to the player
@@ -143,6 +146,11 @@ public class PlayerController : MonoBehaviour
         transform.position += moveDirection.normalized * dashAmount * Time.deltaTime;
     }
 
+    public void DashGain(float gain)
+    {
+        dashAmount += gain;
+    }
+
     // Sets player speed in external operations
     public void AddSpeed(float speed)
     {
@@ -220,7 +228,7 @@ public class PlayerController : MonoBehaviour
     {
         if (pauseAction.triggered)
         {
-            PauseMenu pause = GameObject.Find("Pause UI").GetComponent<PauseMenu>();
+            PauseMenu pause = GameObject.Find("PauseUI").GetComponent<PauseMenu>();
             pause.Open(); // Opens pause menu
 
             Time.timeScale = 0f; // Stop game time
@@ -236,12 +244,12 @@ public class PlayerController : MonoBehaviour
     // Displays icon when able to interact
     public void OpenInteractableIcon()
     {
-        // Set interactable icon active
+        interact.SetFloat("Y", 2);
     }
 
     public void CloseInteractableIcon()
     {
-        // Set interactable icon false
+        interact.SetFloat("Y", 0);
     }
 
     // Checks if player can interact

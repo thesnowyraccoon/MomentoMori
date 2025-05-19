@@ -11,7 +11,7 @@ public class Insomnium : Interactions
     public bool isOpen = false;
 
     // Tarot UI
-    private Canvas tarot;
+    [SerializeField] private GameObject tarot;
     private SpriteRenderer spriteRenderer;
 
     // Check interaction and animate accordingly
@@ -21,13 +21,13 @@ public class Insomnium : Interactions
         {
             spriteRenderer.sprite = closed;
 
-            tarot.enabled = false;
+            tarot.SetActive(false);
         }
         else
         {
             spriteRenderer.sprite = open;
 
-            tarot.enabled = true;
+            tarot.SetActive(true);
         }
 
         isOpen = !isOpen;
@@ -39,7 +39,11 @@ public class Insomnium : Interactions
         spriteRenderer = GetComponent<SpriteRenderer>();
         spriteRenderer.sprite = closed;
 
-        tarot = GameObject.Find("TarotUI").GetComponent<Canvas>();
-        tarot.enabled = false;
+        tarot = GameObject.Find("Inventory");
+
+        if (tarot != null)
+        {
+            tarot.SetActive(false);
+        }
     }
 }

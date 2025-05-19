@@ -56,6 +56,8 @@ public class EnemyController : MonoBehaviour
 
     void Start()
     {
+        player = GameObject.Find("playerRemy");
+
         health = maxHealth; // Sets enemy health to max
         cooldown = maxCooldown;
     }

@@ -46,6 +46,16 @@ public class StaminaUI : MonoBehaviour
         Stamina();
     }
 
+    public void ChargeGain(int charge)
+    {
+        chargeRate += charge;
+    }
+
+    public void StaminaIncrease(float increase)
+    {
+        maxStamina += increase;
+    }
+
     void Attacking()
     {
         playerAttack.AttackTimer(); // Initiates time and check for each attack
