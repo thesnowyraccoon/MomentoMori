@@ -1,16 +1,10 @@
 fileFormatVersion: 2
-guid: a6ea092c228dbce4190952550675f5b1
+guid: ddf7a5f35083d514590adeaed0183abe
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -274455258522226829
-    second: TarotSlotsHUD_0
-  - first:
-      213: 858636287058581959
-    second: TarotSlotsHUD_1
-  - first:
-      213: 1818281582067105122
-    second: TarotSlotsHUD_2
+      213: 4659246527555697679
+    second: Sam Potrait Image_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -119,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: TarotSlotsHUD_0
+      name: Sam Potrait Image_0
       rect:
         serializedVersion: 2
-        x: 99
-        y: 171
-        width: 506
-        height: 738
+        x: 21
+        y: 0
+        width: 233
+        height: 211
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,52 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 37f6b018560f03cf0800000000000000
-      internalID: -274455258522226829
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TarotSlotsHUD_1
-      rect:
-        serializedVersion: 2
-        x: 706
-        y: 181
-        width: 506
-        height: 741
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7c91361672d7aeb00800000000000000
-      internalID: 858636287058581959
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TarotSlotsHUD_2
-      rect:
-        serializedVersion: 2
-        x: 1314
-        y: 181
-        width: 503
-        height: 741
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 26dbeb81775db3910800000000000000
-      internalID: 1818281582067105122
+      spriteID: f0cfde3f708f8a040800000000000000
+      internalID: 4659246527555697679
       vertices: []
       indices: 
       edges: []
@@ -188,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -197,10 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      TarotSlotsHUD_0: -274455258522226829
-      TarotSlotsHUD_1: 858636287058581959
-      TarotSlotsHUD_2: 1818281582067105122
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
