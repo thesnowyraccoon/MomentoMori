@@ -227,10 +227,21 @@ public class PlayerController : MonoBehaviour
     {
         if (pauseAction.triggered)
         {
-            PauseMenu pause = GameObject.Find("PauseUI").GetComponent<PauseMenu>();
-            pause.Open(); // Opens pause menu
+            Canvas pause = GameObject.Find("Canvas (PauseMenu)").GetComponent<Canvas>();
 
-            Time.timeScale = 0f; // Stop game time
+            if (pause.enabled == false)
+            {
+                pause.enabled = true;
+
+                Time.timeScale = 0f; // Stop game time
+            }
+            else if (pause.enabled == true)
+            {
+                pause.enabled = false;
+
+                Time.timeScale = 1f; // Stop game time
+            }
+            
         }
     }
 
