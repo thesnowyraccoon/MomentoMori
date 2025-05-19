@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Insomnium : Interactions
 {
+    [SerializeField] private PlayerController player;
+
     // Sprite 
     [SerializeField] private Sprite open;
     [SerializeField] private Sprite closed;
@@ -22,12 +24,20 @@ public class Insomnium : Interactions
             spriteRenderer.sprite = closed;
 
             tarot.SetActive(false);
+
+            //Time.timeScale = 1f;
+
+            player.moveAction.Enable();
         }
         else
         {
             spriteRenderer.sprite = open;
 
             tarot.SetActive(true);
+
+            //Time.timeScale = 0f; 
+
+            player.moveAction.Disable();
         }
 
         isOpen = !isOpen;
@@ -38,6 +48,8 @@ public class Insomnium : Interactions
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
         spriteRenderer.sprite = closed;
+
+        player = GameObject.Find("playerRemy").GetComponent<PlayerController>();
 
         tarot = GameObject.Find("Inventory");
 

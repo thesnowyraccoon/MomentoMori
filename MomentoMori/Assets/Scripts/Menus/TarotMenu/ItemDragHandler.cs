@@ -16,7 +16,7 @@ public class ItemDragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, I
     void Start()
     {
         canvasGroup = GetComponent<CanvasGroup>();
-        book = GameObject.Find("Book");
+        book = GameObject.Find("InsomniumInventory");
     }
 
     public void OnBeginDrag(PointerEventData eventData)

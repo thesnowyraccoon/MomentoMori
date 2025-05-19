@@ -1,6 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.Scripting.APIUpdating;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -216,9 +216,11 @@ public class PlayerController : MonoBehaviour
 
         if (playerHealth <= 0) // Player disable on death // Should be reset to start
         {
-            playerSR.enabled = false;
-            moveAction.Disable();
-            Time.timeScale = 0f;
+            //playerSR.enabled = false;
+            //moveAction.Disable();
+            //Time.timeScale = 0f;
+
+            SceneManager.LoadSceneAsync("World");
         }
     }
 
@@ -239,7 +241,7 @@ public class PlayerController : MonoBehaviour
             {
                 pause.enabled = false;
 
-                Time.timeScale = 1f; // Stop game time
+                Time.timeScale = 1f; // Start game time
             }
             
         }
