@@ -1,16 +1,10 @@
 fileFormatVersion: 2
-guid: ffa4572369aa79e46b96caab44ca7f8f
+guid: 20dc7161871e0fe4b83ef09d907315d2
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1714756807398554617
-    second: Signs_0
-  - first:
-      213: 8051134168378353487
-    second: Signs_1
-  - first:
-      213: -5459743574113085061
-    second: Signs_2
+      213: 4507162162781784842
+    second: Border_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -57,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 1080
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -119,67 +113,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Signs_0
+      name: Border_0
       rect:
         serializedVersion: 2
-        x: 459
-        y: 593
-        width: 847
-        height: 487
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 0
+        width: 963
+        height: 1080
+      alignment: 9
+      pivot: {x: 0.1667391, y: 0.48449633}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9fb7c2d2b3a0cc710800000000000000
-      internalID: 1714756807398554617
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Signs_1
-      rect:
-        serializedVersion: 2
-        x: 1521
-        y: 680
-        width: 296
-        height: 279
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f47a3319edf5bbf60800000000000000
-      internalID: 8051134168378353487
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Signs_2
-      rect:
-        serializedVersion: 2
-        x: 1317
-        y: 195
-        width: 196
-        height: 198
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b79944475281b34b0800000000000000
-      internalID: -5459743574113085061
+      spriteID: a0b80b96b18ac8e30800000000000000
+      internalID: 4507162162781784842
       vertices: []
       indices: 
       edges: []
@@ -188,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 67613abbe8cba124e826b1fc1c52f1dc
     internalID: 0
     vertices: []
     indices: 
@@ -198,9 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Signs_0: 1714756807398554617
-      Signs_1: 8051134168378353487
-      Signs_2: -5459743574113085061
+      Border_0: 4507162162781784842
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
