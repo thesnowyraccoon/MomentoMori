@@ -1,70 +1,73 @@
 fileFormatVersion: 2
-guid: 39a6c10a295aafe44a1f8a462d56e9ac
+guid: 3475dad5f14a9b04bb33652fdf74576a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -989657878603778108
-    second: HeartRateAnimation_0
+      213: 1403107423701559005
+    second: HeartRateRes_0
   - first:
-      213: 604734422314237799
-    second: HeartRateAnimation_1
+      213: -3335309118842504328
+    second: HeartRateRes_1
   - first:
-      213: 6956920364437692113
-    second: HeartRateAnimation_2
+      213: -8078373322497251743
+    second: HeartRateRes_2
   - first:
-      213: 253941912042306797
-    second: HeartRateAnimation_3
+      213: 1094645552870100904
+    second: HeartRateRes_3
   - first:
-      213: -8337529681512896509
-    second: HeartRateAnimation_4
+      213: 7806657521725132974
+    second: HeartRateRes_4
   - first:
-      213: -6224604143688001151
-    second: HeartRateAnimation_5
+      213: 2781669571419381350
+    second: HeartRateRes_5
   - first:
-      213: -2062524559312051180
-    second: HeartRateAnimation_6
+      213: 1605053516044676423
+    second: HeartRateRes_6
   - first:
-      213: -2988853720358092277
-    second: HeartRateAnimation_7
+      213: -6339220815592867046
+    second: HeartRateRes_7
   - first:
-      213: -6137928939323901462
-    second: HeartRateAnimation_8
+      213: -6409005951575013721
+    second: HeartRateRes_8
   - first:
-      213: -6410572799836171878
-    second: HeartRateAnimation_9
+      213: 2243015852064344501
+    second: HeartRateRes_9
   - first:
-      213: -4899336796231618471
-    second: HeartRateAnimation_10
+      213: 7947475056920617839
+    second: HeartRateRes_10
   - first:
-      213: -1919792056895779069
-    second: HeartRateAnimation_11
+      213: 244378104870895899
+    second: HeartRateRes_11
   - first:
-      213: -3204160348419908907
-    second: HeartRateAnimation_12
+      213: 6361032784290127658
+    second: HeartRateRes_12
   - first:
-      213: 2411523373531846450
-    second: HeartRateAnimation_13
+      213: -6730802958348156961
+    second: HeartRateRes_13
   - first:
-      213: -3340783064164918731
-    second: HeartRateAnimation_14
+      213: -5177969504853475140
+    second: HeartRateRes_14
   - first:
-      213: -4658195818159606190
-    second: HeartRateAnimation_15
+      213: 5501403339062339570
+    second: HeartRateRes_15
   - first:
-      213: 5329969527987354057
-    second: HeartRateAnimation_16
+      213: 5308736120630299513
+    second: HeartRateRes_16
   - first:
-      213: 8343130086649896068
-    second: HeartRateAnimation_17
+      213: 6433923130593072446
+    second: HeartRateRes_17
   - first:
-      213: 3421317156054877389
-    second: HeartRateAnimation_18
+      213: 5208464800547160961
+    second: HeartRateRes_18
   - first:
-      213: 7270141547629300934
-    second: HeartRateAnimation_19
+      213: -6049990157267065223
+    second: HeartRateRes_19
   - first:
-      213: 6943143054569785388
-    second: HeartRateAnimation_20
+      213: 7951471001854927994
+    second: HeartRateRes_20
+  - first:
+      213: 2724731400262765392
+    second: HeartRateRes_21
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -135,7 +138,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -173,13 +176,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: HeartRateAnimation_0
+      name: HeartRateRes_0
       rect:
         serializedVersion: 2
-        x: 833
-        y: 4581
-        width: 253
-        height: 558
+        x: 556
+        y: 7825
+        width: 721
+        height: 1594
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -188,20 +191,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4c7b7a027670442f0800000000000000
-      internalID: -989657878603778108
+      spriteID: dd6e17394c6d87310800000000000000
+      internalID: 1403107423701559005
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HeartRateAnimation_1
+      name: HeartRateRes_1
       rect:
         serializedVersion: 2
-        x: 2753
-        y: 4581
-        width: 253
-        height: 558
+        x: 2476
+        y: 7825
+        width: 721
+        height: 1594
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -210,20 +213,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 76fbd79c0c2746800800000000000000
-      internalID: 604734422314237799
+      spriteID: 87b7543170a96b1d0800000000000000
+      internalID: -3335309118842504328
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HeartRateAnimation_2
+      name: HeartRateRes_2
       rect:
         serializedVersion: 2
-        x: 4673
-        y: 4581
-        width: 253
-        height: 558
+        x: 4396
+        y: 7825
+        width: 721
+        height: 1594
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -232,20 +235,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1de5dfc4632fb8060800000000000000
-      internalID: 6956920364437692113
+      spriteID: 1662f85a34ad3ef80800000000000000
+      internalID: -8078373322497251743
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HeartRateAnimation_3
+      name: HeartRateRes_3
       rect:
         serializedVersion: 2
-        x: 6593
-        y: 4581
-        width: 253
-        height: 558
+        x: 6316
+        y: 7825
+        width: 721
+        height: 1594
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -254,20 +257,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: dec7dd4d2de268300800000000000000
-      internalID: 253941912042306797
+      spriteID: 8af88c5a456f03f00800000000000000
+      internalID: 1094645552870100904
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HeartRateAnimation_4
+      name: HeartRateRes_4
       rect:
         serializedVersion: 2
-        x: 8513
-        y: 4581
-        width: 253
-        height: 558
+        x: 8236
+        y: 7825
+        width: 721
+        height: 1594
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -276,20 +279,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 308e525cde42b4c80800000000000000
-      internalID: -8337529681512896509
+      spriteID: ea0de8197a1d65c60800000000000000
+      internalID: 7806657521725132974
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HeartRateAnimation_5
+      name: HeartRateRes_5
       rect:
         serializedVersion: 2
-        x: 833
-        y: 3501
-        width: 253
-        height: 558
+        x: 556
+        y: 5905
+        width: 721
+        height: 1594
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -298,20 +301,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1895d0cb283cd99a0800000000000000
-      internalID: -6224604143688001151
+      spriteID: 66e17febcb97a9620800000000000000
+      internalID: 2781669571419381350
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HeartRateAnimation_6
+      name: HeartRateRes_6
       rect:
         serializedVersion: 2
-        x: 2753
-        y: 3501
-        width: 253
-        height: 558
+        x: 2476
+        y: 5905
+        width: 721
+        height: 1594
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -320,20 +323,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 414afad47d07063e0800000000000000
-      internalID: -2062524559312051180
+      spriteID: 74da55d3bab464610800000000000000
+      internalID: 1605053516044676423
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HeartRateAnimation_7
+      name: HeartRateRes_7
       rect:
         serializedVersion: 2
-        x: 4673
-        y: 3501
-        width: 253
-        height: 558
+        x: 4396
+        y: 5905
+        width: 721
+        height: 1594
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -342,20 +345,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b02837080657586d0800000000000000
-      internalID: -2988853720358092277
+      spriteID: a1b33dd31409608a0800000000000000
+      internalID: -6339220815592867046
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HeartRateAnimation_8
+      name: HeartRateRes_8
       rect:
         serializedVersion: 2
-        x: 6593
-        y: 3501
-        width: 253
-        height: 558
+        x: 6316
+        y: 5905
+        width: 721
+        height: 1594
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -364,20 +367,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ae9320b5622b1daa0800000000000000
-      internalID: -6137928939323901462
+      spriteID: 7a6c10d1b03ae07a0800000000000000
+      internalID: -6409005951575013721
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HeartRateAnimation_9
+      name: HeartRateRes_9
       rect:
         serializedVersion: 2
-        x: 8513
-        y: 3501
-        width: 253
-        height: 558
+        x: 8236
+        y: 5905
+        width: 721
+        height: 1594
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -386,20 +389,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a91dbf2d0021907a0800000000000000
-      internalID: -6410572799836171878
+      spriteID: 5b98ddf880bc02f10800000000000000
+      internalID: 2243015852064344501
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HeartRateAnimation_10
+      name: HeartRateRes_10
       rect:
         serializedVersion: 2
-        x: 833
-        y: 2421
-        width: 253
-        height: 558
+        x: 556
+        y: 3985
+        width: 721
+        height: 1594
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -408,20 +411,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9503d91442f020cb0800000000000000
-      internalID: -4899336796231618471
+      spriteID: f63e70de47a1b4e60800000000000000
+      internalID: 7947475056920617839
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HeartRateAnimation_11
+      name: HeartRateRes_11
       rect:
         serializedVersion: 2
-        x: 2753
-        y: 2421
-        width: 253
-        height: 558
+        x: 2476
+        y: 3985
+        width: 721
+        height: 1594
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -430,20 +433,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 30f4c16bb478b55e0800000000000000
-      internalID: -1919792056895779069
+      spriteID: b1186b37794346300800000000000000
+      internalID: 244378104870895899
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HeartRateAnimation_12
+      name: HeartRateRes_12
       rect:
         serializedVersion: 2
-        x: 4673
-        y: 2421
-        width: 253
-        height: 558
+        x: 4396
+        y: 3985
+        width: 721
+        height: 1594
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -452,20 +455,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5da1a05b3298883d0800000000000000
-      internalID: -3204160348419908907
+      spriteID: a2f1a387d9de64850800000000000000
+      internalID: 6361032784290127658
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HeartRateAnimation_13
+      name: HeartRateRes_13
       rect:
         serializedVersion: 2
-        x: 6593
-        y: 2421
-        width: 253
-        height: 558
+        x: 6316
+        y: 3985
+        width: 721
+        height: 1594
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -474,20 +477,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 237daee3bb3777120800000000000000
-      internalID: 2411523373531846450
+      spriteID: fdf7286ee526792a0800000000000000
+      internalID: -6730802958348156961
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HeartRateAnimation_14
+      name: HeartRateRes_14
       rect:
         serializedVersion: 2
-        x: 8513
-        y: 2421
-        width: 253
-        height: 558
+        x: 8236
+        y: 3985
+        width: 721
+        height: 1594
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -496,20 +499,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 53a1fccd08723a1d0800000000000000
-      internalID: -3340783064164918731
+      spriteID: cb0476d5b282428b0800000000000000
+      internalID: -5177969504853475140
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HeartRateAnimation_15
+      name: HeartRateRes_15
       rect:
         serializedVersion: 2
-        x: 833
-        y: 1341
-        width: 253
-        height: 558
+        x: 556
+        y: 2065
+        width: 721
+        height: 1594
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -518,20 +521,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 256f2646593ca5fb0800000000000000
-      internalID: -4658195818159606190
+      spriteID: 2f765fe6039e85c40800000000000000
+      internalID: 5501403339062339570
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HeartRateAnimation_16
+      name: HeartRateRes_16
       rect:
         serializedVersion: 2
-        x: 2753
-        y: 1341
-        width: 253
-        height: 558
+        x: 2476
+        y: 2065
+        width: 721
+        height: 1594
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -540,20 +543,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9c9b75bdb0bd7f940800000000000000
-      internalID: 5329969527987354057
+      spriteID: 97b4474ff5b6ca940800000000000000
+      internalID: 5308736120630299513
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HeartRateAnimation_17
+      name: HeartRateRes_17
       rect:
         serializedVersion: 2
-        x: 4673
-        y: 1341
-        width: 253
-        height: 558
+        x: 4396
+        y: 2065
+        width: 721
+        height: 1594
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -562,20 +565,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 48c14a92c90c8c370800000000000000
-      internalID: 8343130086649896068
+      spriteID: e355b27bff2e94950800000000000000
+      internalID: 6433923130593072446
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HeartRateAnimation_18
+      name: HeartRateRes_18
       rect:
         serializedVersion: 2
-        x: 6593
-        y: 1341
-        width: 253
-        height: 558
+        x: 6316
+        y: 2065
+        width: 721
+        height: 1594
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -584,20 +587,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: dc4c99693d5fa7f20800000000000000
-      internalID: 3421317156054877389
+      spriteID: 1834db5f32f284840800000000000000
+      internalID: 5208464800547160961
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HeartRateAnimation_19
+      name: HeartRateRes_19
       rect:
         serializedVersion: 2
-        x: 8513
-        y: 1341
-        width: 253
-        height: 558
+        x: 8236
+        y: 2065
+        width: 721
+        height: 1594
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -606,20 +609,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6ccc04df73bb4e460800000000000000
-      internalID: 7270141547629300934
+      spriteID: 976ac75910e1a0ca0800000000000000
+      internalID: -6049990157267065223
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HeartRateAnimation_20
+      name: HeartRateRes_20
       rect:
         serializedVersion: 2
-        x: 833
-        y: 261
-        width: 253
-        height: 558
+        x: 556
+        y: 145
+        width: 721
+        height: 1594
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -628,8 +631,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c284a5062dffa5060800000000000000
-      internalID: 6943143054569785388
+      spriteID: a74e16b5fbc495e60800000000000000
+      internalID: 7951471001854927994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeartRateRes_21
+      rect:
+        serializedVersion: 2
+        x: 2476
+        y: 145
+        width: 721
+        height: 1594
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05bc305b5c030d520800000000000000
+      internalID: 2724731400262765392
       vertices: []
       indices: 
       edges: []
@@ -648,27 +673,28 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      HeartRateAnimation_0: -989657878603778108
-      HeartRateAnimation_1: 604734422314237799
-      HeartRateAnimation_10: -4899336796231618471
-      HeartRateAnimation_11: -1919792056895779069
-      HeartRateAnimation_12: -3204160348419908907
-      HeartRateAnimation_13: 2411523373531846450
-      HeartRateAnimation_14: -3340783064164918731
-      HeartRateAnimation_15: -4658195818159606190
-      HeartRateAnimation_16: 5329969527987354057
-      HeartRateAnimation_17: 8343130086649896068
-      HeartRateAnimation_18: 3421317156054877389
-      HeartRateAnimation_19: 7270141547629300934
-      HeartRateAnimation_2: 6956920364437692113
-      HeartRateAnimation_20: 6943143054569785388
-      HeartRateAnimation_3: 253941912042306797
-      HeartRateAnimation_4: -8337529681512896509
-      HeartRateAnimation_5: -6224604143688001151
-      HeartRateAnimation_6: -2062524559312051180
-      HeartRateAnimation_7: -2988853720358092277
-      HeartRateAnimation_8: -6137928939323901462
-      HeartRateAnimation_9: -6410572799836171878
+      HeartRateRes_0: 1403107423701559005
+      HeartRateRes_1: -3335309118842504328
+      HeartRateRes_10: 7947475056920617839
+      HeartRateRes_11: 244378104870895899
+      HeartRateRes_12: 6361032784290127658
+      HeartRateRes_13: -6730802958348156961
+      HeartRateRes_14: -5177969504853475140
+      HeartRateRes_15: 5501403339062339570
+      HeartRateRes_16: 5308736120630299513
+      HeartRateRes_17: 6433923130593072446
+      HeartRateRes_18: 5208464800547160961
+      HeartRateRes_19: -6049990157267065223
+      HeartRateRes_2: -8078373322497251743
+      HeartRateRes_20: 7951471001854927994
+      HeartRateRes_21: 2724731400262765392
+      HeartRateRes_3: 1094645552870100904
+      HeartRateRes_4: 7806657521725132974
+      HeartRateRes_5: 2781669571419381350
+      HeartRateRes_6: 1605053516044676423
+      HeartRateRes_7: -6339220815592867046
+      HeartRateRes_8: -6409005951575013721
+      HeartRateRes_9: 2243015852064344501
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
