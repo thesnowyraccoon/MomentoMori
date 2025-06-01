@@ -29,6 +29,10 @@ public class SoundEffectManager : MonoBehaviour
         {
             audioSource.PlayOneShot(audioClip);
         }
-    }
+        else
+        {
+            Debug.Log("Clip Not Found");
+        }
+    }   
 
 }

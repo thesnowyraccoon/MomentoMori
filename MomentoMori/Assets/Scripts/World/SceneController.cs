@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 public class SceneController : MonoBehaviour
 {
     public static SceneController instance; //Access from anywhere
+   //Script Destroyer
     private void Awake()
     {
         if (instance == null)

@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class FinishPoint : MonoBehaviour
 {
+    public PlayerController player; //refers to the player controller script
+    private int health;
     [SerializeField] bool goNextLevel;
     [SerializeField] string levelName;
     //collision with a teleport point
@@ -22,11 +24,13 @@ public class FinishPoint : MonoBehaviour
 
         }
     }
-    private void PlayerDies()
-    {   
-        
+    void Update()
+    {
+        health = player.GetHealth();
+
+        if (health == 0)
         {
-            
+            SceneController.instance.LoadScene("Home");
         }
     }
 

@@ -524,6 +524,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5615858519374318390, guid: 897fc189131d94b4ea055829941234c7, type: 3}
   m_PrefabInstance: {fileID: 35244512}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &44796930 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4187071245117195424, guid: 7095924ccee04454f95b379988884a28, type: 3}
+  m_PrefabInstance: {fileID: 4676811351132960697}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &49626869
 GameObject:
   m_ObjectHideFlags: 0
@@ -5024,6 +5029,30 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8976497851515157416, guid: 7095924ccee04454f95b379988884a28, type: 3}
   m_PrefabInstance: {fileID: 4676811351132960697}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &413920787 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4516301944991059894, guid: 7095924ccee04454f95b379988884a28, type: 3}
+  m_PrefabInstance: {fileID: 4676811351132960697}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 44796930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd621b8729369f644afdf4b94d2ca3dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &413920789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 44796930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23bb250a3fa286849aa3d9e52e8dac21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 413920787}
 --- !u!1 &417640963
 GameObject:
   m_ObjectHideFlags: 0
@@ -13264,6 +13293,7 @@ GameObject:
   - component: {fileID: 1139027866}
   - component: {fileID: 1139027865}
   - component: {fileID: 1139027864}
+  - component: {fileID: 1139027867}
   m_Layer: 0
   m_Name: SoundEffectManagerTest
   m_TagString: Untagged
@@ -13286,7 +13316,7 @@ MonoBehaviour:
   soundEffectGroups:
   - name: Death
     audioClips:
-    - {fileID: 8300000, guid: 0ab53b19799a7da48ac6b35633bff6ed, type: 3}
+    - {fileID: 8300000, guid: 0e1973a04d5207246a507b4a8e2da5be, type: 3}
 --- !u!82 &1139027865
 AudioSource:
   m_ObjectHideFlags: 0
@@ -13300,13 +13330,13 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.079
   m_Pitch: 1
   Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 57
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -13399,6 +13429,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1139027867
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1139027863}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f293a1fcba2efc14286dc65c1c50b5dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1144387236 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3541521068193902901, guid: 45eb926e1169ab647b5feccc99a6a1ce, type: 3}
@@ -30123,7 +30165,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4187071245117195424, guid: 7095924ccee04454f95b379988884a28, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 413920789}
   m_SourcePrefab: {fileID: 100100000, guid: 7095924ccee04454f95b379988884a28, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
