@@ -2,9 +2,14 @@ using UnityEngine;
 
 public class AudioPlayer : MonoBehaviour
 {
-    public PlayerController player;
+    private PlayerController player; //Refers to the player script (Death Sound)
+    private Melatonin melatonin; //Refers to the melatonin script (Pickup Sound)
+    private EnemyController enemy; //Refers to the enemies script (Owl laugh)
 
     private int health;
+    private int newHealth;
+    private float following;
+
 
     // Update is called once per frame
     void Update()
@@ -12,10 +17,23 @@ public class AudioPlayer : MonoBehaviour
         //player health values
         health = player.GetHealth();
 
-        if (health <= 0) 
+        if (health <= 0)
         {
             SoundEffectManager.Play("Death");
-            Debug.Log("SoundPlayed");
+            //Debug.Log("SoundPlayed");
         }
+        //Melatonin Sound Effect
+
+        /*if ()
+        {
+            SoundEffectManager.Play("Pop");
+        }
+        else
+        {
+            Debug.Log("Ahhhhhhh");
+        }*/
+
+        //following = enemy.Follow(); Enemy script needs to be unlocked D:
+
     }
 }

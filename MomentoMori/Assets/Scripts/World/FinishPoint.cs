@@ -28,9 +28,13 @@ public class FinishPoint : MonoBehaviour
     {
         health = player.GetHealth();
 
-        if (health == 0)
+        if (health <= 0)
         {
-            SceneController.instance.LoadScene("Home");
+            SceneController.instance.LoadScene(levelName);
+        }
+        else
+        {
+            Debug.Log("You suck");
         }
     }
 
