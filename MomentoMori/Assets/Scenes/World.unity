@@ -29934,6 +29934,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: playerRemy
       objectReference: {fileID: 0}
+    - target: {fileID: 4516301944991059894, guid: 7095924ccee04454f95b379988884a28, type: 3}
+      propertyPath: dashSpeed
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 4516301944991059894, guid: 7095924ccee04454f95b379988884a28, type: 3}
+      propertyPath: dashLength
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 8976497851515157416, guid: 7095924ccee04454f95b379988884a28, type: 3}
       propertyPath: m_LocalPosition.x
       value: -19.42
