@@ -197,7 +197,10 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      EntityDialogue_0: 7124534918767079847
+      EntityDialogue_1: -4270403430981489131
+      EntityDialogue_2: 2296233857491084319
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
