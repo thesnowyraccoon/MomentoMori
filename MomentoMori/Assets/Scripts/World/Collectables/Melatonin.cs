@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class Melatonin : MonoBehaviour
@@ -15,6 +16,11 @@ public class Melatonin : MonoBehaviour
         collectableHealth = health;
     }
 
+    internal int SetHealth()
+    {
+        throw new NotImplementedException();
+    }
+
     // Check for player and if they can pick up collectable health
     void OnTriggerEnter2D(Collider2D trigger)
     {
@@ -27,13 +33,15 @@ public class Melatonin : MonoBehaviour
                 maxHealth = player.GetMaxHealth(); // Gets player max health
                 playerHealth = player.GetHealth(); // Gets player current health
             }
-            
+
             if (playerHealth < maxHealth) // Checks if player can recieve health
             {
                 player.HealthGain(collectableHealth); // sets new player health
 
                 Destroy(gameObject);
             }
+            
+            // trigger pickup sound
         }
     }
 }

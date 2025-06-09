@@ -22,7 +22,7 @@ public class AudioPlayer : MonoBehaviour
             SoundEffectManager.Play("Death");
             //Debug.Log("SoundPlayed");
         }
-        //Melatonin Sound Effect
+        //Melatonin pickup Sound Effect
 
         /*if ()
         {
