@@ -119,37 +119,15 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Boss2Portrait_0
-      rect:
-        serializedVersion: 2
-        x: 585
-        y: 804
-        width: 170
-        height: 216
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8640f498ce3aeecf0800000000000000
-      internalID: -221059095383309208
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Boss2Portrait_1
       rect:
         serializedVersion: 2
-        x: 701
-        y: 26
-        width: 506
-        height: 1017
+        x: 569
+        y: 16
+        width: 718
+        height: 1027
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -162,33 +140,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: Boss2Portrait_2
-      rect:
-        serializedVersion: 2
-        x: 1092
-        y: 800
-        width: 174
-        height: 216
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ee5b9043bf7576b40800000000000000
-      internalID: 5433408211867252206
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 92f341642a680f54597c4591b49af93b
     internalID: 0
     vertices: []
     indices: 
@@ -197,7 +153,10 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Boss2Portrait_0: -221059095383309208
+      Boss2Portrait_1: 5430537305643819898
+      Boss2Portrait_2: 5433408211867252206
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

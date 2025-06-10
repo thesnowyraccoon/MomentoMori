@@ -131,10 +131,10 @@ TextureImporter:
       name: OwlHeadSlam_0
       rect:
         serializedVersion: 2
-        x: 116
-        y: 1316
-        width: 679
-        height: 1060
+        x: 0
+        y: 1200
+        width: 910
+        height: 1200
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,10 +153,10 @@ TextureImporter:
       name: OwlHeadSlam_1
       rect:
         serializedVersion: 2
-        x: 1026
-        y: 1316
-        width: 679
-        height: 1060
+        x: 910
+        y: 1200
+        width: 910
+        height: 1200
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -175,10 +175,10 @@ TextureImporter:
       name: OwlHeadSlam_2
       rect:
         serializedVersion: 2
-        x: 1936
-        y: 1316
-        width: 679
-        height: 1060
+        x: 1820
+        y: 1200
+        width: 910
+        height: 1200
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -197,10 +197,10 @@ TextureImporter:
       name: OwlHeadSlam_3
       rect:
         serializedVersion: 2
-        x: 116
-        y: 116
-        width: 679
-        height: 1060
+        x: 0
+        y: 0
+        width: 910
+        height: 1200
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -219,10 +219,10 @@ TextureImporter:
       name: OwlHeadSlam_4
       rect:
         serializedVersion: 2
-        x: 1026
-        y: 116
-        width: 679
-        height: 1060
+        x: 910
+        y: 0
+        width: 910
+        height: 1200
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -241,10 +241,10 @@ TextureImporter:
       name: OwlHeadSlam_5
       rect:
         serializedVersion: 2
-        x: 1936
-        y: 116
-        width: 679
-        height: 1060
+        x: 1820
+        y: 0
+        width: 910
+        height: 1200
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -263,7 +263,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5009212708360d04ca300808df05f422
     internalID: 0
     vertices: []
     indices: 
@@ -272,7 +272,13 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      OwlHeadSlam_0: -2693750144118482023
+      OwlHeadSlam_1: 4388167764891932494
+      OwlHeadSlam_2: 5241476844771113040
+      OwlHeadSlam_3: -6602420781702696282
+      OwlHeadSlam_4: -5239751461696058408
+      OwlHeadSlam_5: -7217083899317061666
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -128,10 +128,10 @@ TextureImporter:
       name: SwordSwingRight_0
       rect:
         serializedVersion: 2
-        x: 167
-        y: 550
-        width: 179
-        height: 365
+        x: 0
+        y: 488
+        width: 514
+        height: 488
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -150,10 +150,10 @@ TextureImporter:
       name: SwordSwingRight_1
       rect:
         serializedVersion: 2
-        x: 617
-        y: 549
-        width: 287
-        height: 391
+        x: 514
+        y: 488
+        width: 514
+        height: 488
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -172,10 +172,10 @@ TextureImporter:
       name: SwordSwingRight_2
       rect:
         serializedVersion: 2
-        x: 1102
-        y: 536
-        width: 397
-        height: 392
+        x: 1028
+        y: 488
+        width: 514
+        height: 488
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -194,10 +194,10 @@ TextureImporter:
       name: SwordSwingRight_3
       rect:
         serializedVersion: 2
-        x: 20
-        y: 61
-        width: 326
-        height: 366
+        x: 0
+        y: 0
+        width: 514
+        height: 488
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -216,10 +216,10 @@ TextureImporter:
       name: SwordSwingRight_4
       rect:
         serializedVersion: 2
-        x: 681
-        y: 62
-        width: 179
-        height: 365
+        x: 514
+        y: 0
+        width: 514
+        height: 488
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -238,7 +238,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 4fe0d92ffb7f21a45b67c021f1918753
     internalID: 0
     vertices: []
     indices: 
@@ -247,7 +247,12 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      SwordSwingRight_0: -8634915824886700906
+      SwordSwingRight_1: -4244570517885860709
+      SwordSwingRight_2: 8983234697964845551
+      SwordSwingRight_3: -7681599701728063917
+      SwordSwingRight_4: 649951356714876907
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

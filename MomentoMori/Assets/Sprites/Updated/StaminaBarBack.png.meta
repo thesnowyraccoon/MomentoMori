@@ -125,72 +125,6 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: StaminaBarBack_0
-      rect:
-        serializedVersion: 2
-        x: 487
-        y: 730
-        width: 7
-        height: 46
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 42aed07341309f270800000000000000
-      internalID: 8284656374882626084
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: StaminaBarBack_1
-      rect:
-        serializedVersion: 2
-        x: 487
-        y: 648
-        width: 10
-        height: 48
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: cd54feb07aec67620800000000000000
-      internalID: 2771629837548209628
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: StaminaBarBack_2
-      rect:
-        serializedVersion: 2
-        x: 488
-        y: 616
-        width: 6
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5187fad9fad182a80800000000000000
-      internalID: -8491504457305065451
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: StaminaBarBack_3
       rect:
         serializedVersion: 2
@@ -199,7 +133,7 @@ TextureImporter:
         width: 1425
         height: 160
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -212,33 +146,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: StaminaBarBack_4
-      rect:
-        serializedVersion: 2
-        x: 488
-        y: 367
-        width: 9
-        height: 51
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f63a9a702e0b1e420800000000000000
-      internalID: 2657599739962958703
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: bad785d91f5d4054f8065f62f037d8df
     internalID: 0
     vertices: []
     indices: 
@@ -247,7 +159,12 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      StaminaBarBack_0: 8284656374882626084
+      StaminaBarBack_1: 2771629837548209628
+      StaminaBarBack_2: -8491504457305065451
+      StaminaBarBack_3: 3299839614973812505
+      StaminaBarBack_4: 2657599739962958703
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
