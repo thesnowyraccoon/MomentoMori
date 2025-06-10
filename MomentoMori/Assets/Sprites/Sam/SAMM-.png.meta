@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: ddf7a5f35083d514590adeaed0183abe
+guid: 86f09f1befcb8d040af003ec61ba74ef
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4659246527555697679
-    second: Sam Potrait Image_0
+      213: 4979557184586937949
+    second: SAMM-_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Sam Potrait Image_0
+      name: SAMM-_0
       rect:
         serializedVersion: 2
         x: 21
-        y: 0
+        y: 16
         width: 233
-        height: 211
+        height: 420
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f0cfde3f708f8a040800000000000000
-      internalID: 4659246527555697679
+      spriteID: d567c0660e0fa1540800000000000000
+      internalID: 4979557184586937949
       vertices: []
       indices: 
       edges: []
@@ -138,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Sam Potrait Image_0: 4659246527555697679
+      SAMM-_0: 4979557184586937949
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
