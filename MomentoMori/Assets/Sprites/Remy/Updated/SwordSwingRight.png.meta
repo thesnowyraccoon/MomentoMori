@@ -1,10 +1,22 @@
 fileFormatVersion: 2
-guid: 1aa8aa098e212bd419325cc577dc58e6
+guid: 3b29ff55e56d7c54aa7d920a214bb123
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4768510936459863944
-    second: UnkownDialogue_0
+      213: -8634915824886700906
+    second: SwordSwingRight_0
+  - first:
+      213: -4244570517885860709
+    second: SwordSwingRight_1
+  - first:
+      213: 8983234697964845551
+    second: SwordSwingRight_2
+  - first:
+      213: -7681599701728063917
+    second: SwordSwingRight_3
+  - first:
+      213: 649951356714876907
+    second: SwordSwingRight_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +125,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: UnkownDialogue_0
+      name: SwordSwingRight_0
       rect:
         serializedVersion: 2
-        x: 28
-        y: 34
-        width: 305
-        height: 303
+        x: 167
+        y: 550
+        width: 179
+        height: 365
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +140,96 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8789eb46198d2ddb0800000000000000
-      internalID: -4768510936459863944
+      spriteID: 694aa389ecd9a2880800000000000000
+      internalID: -8634915824886700906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwordSwingRight_1
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 549
+        width: 287
+        height: 391
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9441594a914815c0800000000000000
+      internalID: -4244570517885860709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwordSwingRight_2
+      rect:
+        serializedVersion: 2
+        x: 1102
+        y: 536
+        width: 397
+        height: 392
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe97822dc5cdaac70800000000000000
+      internalID: 8983234697964845551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwordSwingRight_3
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 61
+        width: 326
+        height: 366
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35e80c725c9756590800000000000000
+      internalID: -7681599701728063917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwordSwingRight_4
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 62
+        width: 179
+        height: 365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: beff54ab057150900800000000000000
+      internalID: 649951356714876907
       vertices: []
       indices: 
       edges: []

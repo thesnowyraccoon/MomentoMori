@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 1aa8aa098e212bd419325cc577dc58e6
+guid: 5f31b06ca35015f4bab2d90acf806482
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4768510936459863944
-    second: UnkownDialogue_0
+      213: -8449399843987483666
+    second: Wing_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: UnkownDialogue_0
+      name: Wing_0
       rect:
         serializedVersion: 2
-        x: 28
-        y: 34
-        width: 305
-        height: 303
+        x: 99
+        y: 20
+        width: 614
+        height: 1082
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8789eb46198d2ddb0800000000000000
-      internalID: -4768510936459863944
+      spriteID: ee392e5db93bdba80800000000000000
+      internalID: -8449399843987483666
       vertices: []
       indices: 
       edges: []

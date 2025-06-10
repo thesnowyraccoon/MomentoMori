@@ -1,13 +1,28 @@
 fileFormatVersion: 2
-guid: f0f93ed561a66fd45ad2e7f592cb0702
+guid: 33d69705138b9934bbea48189f0c2cf6
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6035982768272008374
-    second: DialogueNormal_0
+      213: -4016100973011549457
+    second: DialogueHappy_0
   - first:
-      213: -1824545175151598739
-    second: DialogueNormal_1
+      213: 6075739541817158112
+    second: DialogueHappy_1
+  - first:
+      213: 7908823201451120528
+    second: DialogueHappy_2
+  - first:
+      213: -8149675460012959917
+    second: DialogueHappy_3
+  - first:
+      213: -4844333188623029637
+    second: DialogueHappy_4
+  - first:
+      213: -718595177992569102
+    second: DialogueHappy_5
+  - first:
+      213: 8080614485035933226
+    second: DialogueHappy_6
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -116,13 +131,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: DialogueNormal_0
+      name: DialogueHappy_0
       rect:
         serializedVersion: 2
-        x: 28
-        y: 369
+        x: 31
+        y: 382
         width: 15
-        height: 16
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,20 +146,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6b46b35095e14c350800000000000000
-      internalID: 6035982768272008374
+      spriteID: fe2cb897171f348c0800000000000000
+      internalID: -4016100973011549457
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DialogueNormal_1
+      name: DialogueHappy_1
       rect:
         serializedVersion: 2
-        x: 29
-        y: 19
-        width: 303
-        height: 394
+        x: 60
+        y: 358
+        width: 70
+        height: 71
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,8 +168,118 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d63af6e74d9eda6e0800000000000000
-      internalID: -1824545175151598739
+      spriteID: 0e96ec13cec515450800000000000000
+      internalID: 6075739541817158112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DialogueHappy_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 359
+        width: 49
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0979cd98cc8c1cd60800000000000000
+      internalID: 7908823201451120528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DialogueHappy_3
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 358
+        width: 76
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3579533195986ee80800000000000000
+      internalID: -8149675460012959917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DialogueHappy_4
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 361
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7a2d7e91a875ccb0800000000000000
+      internalID: -4844333188623029637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DialogueHappy_5
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 379
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2feb17e2e790706f0800000000000000
+      internalID: -718595177992569102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DialogueHappy_6
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 40
+        width: 328
+        height: 307
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2e517baf0c142070800000000000000
+      internalID: 8080614485035933226
       vertices: []
       indices: 
       edges: []

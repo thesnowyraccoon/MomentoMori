@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: 1aa8aa098e212bd419325cc577dc58e6
+guid: 7effcb36a2b80d44fbebd8f1c6aaab92
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4768510936459863944
-    second: UnkownDialogue_0
+      213: -7947304519223855954
+    second: CrowJumpRight_0
+  - first:
+      213: -4884158861405665095
+    second: CrowJumpRight_1
+  - first:
+      213: 4998876195703754337
+    second: CrowJumpRight_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +119,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: UnkownDialogue_0
+      name: CrowJumpRight_0
       rect:
         serializedVersion: 2
-        x: 28
-        y: 34
-        width: 305
-        height: 303
+        x: 34
+        y: 412
+        width: 262
+        height: 298
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +134,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8789eb46198d2ddb0800000000000000
-      internalID: -4768510936459863944
+      spriteID: ea43ec975a085b190800000000000000
+      internalID: -7947304519223855954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CrowJumpRight_1
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 427
+        width: 262
+        height: 287
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b8c657946bf73cb0800000000000000
+      internalID: -4884158861405665095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CrowJumpRight_2
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 39
+        width: 262
+        height: 298
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16e04113a639f5540800000000000000
+      internalID: 4998876195703754337
       vertices: []
       indices: 
       edges: []

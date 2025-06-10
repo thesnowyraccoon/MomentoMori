@@ -1,10 +1,25 @@
 fileFormatVersion: 2
-guid: 1aa8aa098e212bd419325cc577dc58e6
+guid: 8d39b29e8b9b6a34d85ee9959a48af91
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4768510936459863944
-    second: UnkownDialogue_0
+      213: 5232721635854257013
+    second: RemySwingBack_0
+  - first:
+      213: -7578864476517516305
+    second: RemySwingBack_1
+  - first:
+      213: 7403408676728019183
+    second: RemySwingBack_2
+  - first:
+      213: 4564365685082817213
+    second: RemySwingBack_3
+  - first:
+      213: 8353670797030437388
+    second: RemySwingBack_4
+  - first:
+      213: 8637898278825781986
+    second: RemySwingBack_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +128,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: UnkownDialogue_0
+      name: RemySwingBack_0
       rect:
         serializedVersion: 2
-        x: 28
-        y: 34
-        width: 305
-        height: 303
+        x: 62
+        y: 549
+        width: 267
+        height: 378
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +143,118 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8789eb46198d2ddb0800000000000000
-      internalID: -4768510936459863944
+      spriteID: 57b08998a9c5e9840800000000000000
+      internalID: 5232721635854257013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RemySwingBack_1
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 549
+        width: 267
+        height: 378
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: febb854c9e672d690800000000000000
+      internalID: -7578864476517516305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RemySwingBack_2
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 549
+        width: 267
+        height: 376
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe81b6f67f03eb660800000000000000
+      internalID: 7403408676728019183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RemySwingBack_3
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 39
+        width: 267
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db208545862e75f30800000000000000
+      internalID: 4564365685082817213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RemySwingBack_4
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 435
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c02bd8b84533ee370800000000000000
+      internalID: 8353670797030437388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RemySwingBack_5
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 39
+        width: 267
+        height: 375
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ea6e5318baffd770800000000000000
+      internalID: 8637898278825781986
       vertices: []
       indices: 
       edges: []

@@ -1,10 +1,25 @@
 fileFormatVersion: 2
-guid: 1aa8aa098e212bd419325cc577dc58e6
+guid: fd01af449cb136a4f814ec99d64b4adf
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4768510936459863944
-    second: UnkownDialogue_0
+      213: 707639400790859499
+    second: OwlBite_0
+  - first:
+      213: 5689927709222569617
+    second: OwlBite_1
+  - first:
+      213: -4849396125400046285
+    second: OwlBite_2
+  - first:
+      213: -2119653750835584337
+    second: OwlBite_3
+  - first:
+      213: -2198909601176975763
+    second: OwlBite_4
+  - first:
+      213: -5911697457353736086
+    second: OwlBite_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +128,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: UnkownDialogue_0
+      name: OwlBite_0
       rect:
         serializedVersion: 2
-        x: 28
-        y: 34
-        width: 305
-        height: 303
+        x: 46
+        y: 317
+        width: 205
+        height: 217
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +143,118 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8789eb46198d2ddb0800000000000000
-      internalID: -4768510936459863944
+      spriteID: bee9539294a02d900800000000000000
+      internalID: 707639400790859499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OwlBite_1
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 317
+        width: 206
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1960dd1ea1fa6fe40800000000000000
+      internalID: 5689927709222569617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OwlBite_2
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 317
+        width: 204
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 335ef5acaeb73bcb0800000000000000
+      internalID: -4849396125400046285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OwlBite_3
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 35
+        width: 210
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa2ee9ed42a7592e0800000000000000
+      internalID: -2119653750835584337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OwlBite_4
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 35
+        width: 212
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6686a83e57eb71e0800000000000000
+      internalID: -2198909601176975763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OwlBite_5
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 37
+        width: 217
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a60c9daeb7e65fda0800000000000000
+      internalID: -5911697457353736086
       vertices: []
       indices: 
       edges: []

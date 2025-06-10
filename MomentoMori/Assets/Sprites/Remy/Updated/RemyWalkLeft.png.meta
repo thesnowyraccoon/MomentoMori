@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: 1aa8aa098e212bd419325cc577dc58e6
+guid: 5b753ce356f78eb4d923488dc8a23a38
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4768510936459863944
-    second: UnkownDialogue_0
+      213: -7765019652428192076
+    second: RemyWalkLeft_0
+  - first:
+      213: -7622695391850618578
+    second: RemyWalkLeft_1
+  - first:
+      213: 7754442825693754474
+    second: RemyWalkLeft_2
+  - first:
+      213: 5047383235512359930
+    second: RemyWalkLeft_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +122,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: UnkownDialogue_0
+      name: RemyWalkLeft_0
       rect:
         serializedVersion: 2
-        x: 28
-        y: 34
-        width: 305
-        height: 303
+        x: 62
+        y: 488
+        width: 179
+        height: 365
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +137,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8789eb46198d2ddb0800000000000000
-      internalID: -4768510936459863944
+      spriteID: 4b6271754cb1d3490800000000000000
+      internalID: -7765019652428192076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RemyWalkLeft_1
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 493
+        width: 196
+        height: 351
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e21acb98deeb63690800000000000000
+      internalID: -7622695391850618578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RemyWalkLeft_2
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 41
+        width: 179
+        height: 365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a647d884aa05d9b60800000000000000
+      internalID: 7754442825693754474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RemyWalkLeft_3
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 47
+        width: 179
+        height: 350
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afbd9fd7f48eb0640800000000000000
+      internalID: 5047383235512359930
       vertices: []
       indices: 
       edges: []

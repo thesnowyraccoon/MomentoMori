@@ -1,13 +1,28 @@
 fileFormatVersion: 2
-guid: f0f93ed561a66fd45ad2e7f592cb0702
+guid: 768774c811f743b4396f5a018f45d856
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6035982768272008374
-    second: DialogueNormal_0
+      213: -7624768288583517505
+    second: DialogueEyesClosed_0
   - first:
-      213: -1824545175151598739
-    second: DialogueNormal_1
+      213: 4091666404171074579
+    second: DialogueEyesClosed_1
+  - first:
+      213: -7831436251301925845
+    second: DialogueEyesClosed_2
+  - first:
+      213: -4186823508580116559
+    second: DialogueEyesClosed_3
+  - first:
+      213: 1914638149841919967
+    second: DialogueEyesClosed_4
+  - first:
+      213: 3914904891587980259
+    second: DialogueEyesClosed_5
+  - first:
+      213: -8772836044190805084
+    second: DialogueEyesClosed_6
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -116,13 +131,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: DialogueNormal_0
+      name: DialogueEyesClosed_0
       rect:
         serializedVersion: 2
-        x: 28
-        y: 369
+        x: 32
+        y: 373
         width: 15
-        height: 16
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,20 +146,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6b46b35095e14c350800000000000000
-      internalID: 6035982768272008374
+      spriteID: fbaf058a3a16f2690800000000000000
+      internalID: -7624768288583517505
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DialogueNormal_1
+      name: DialogueEyesClosed_1
       rect:
         serializedVersion: 2
-        x: 29
-        y: 19
-        width: 303
-        height: 394
+        x: 61
+        y: 349
+        width: 70
+        height: 71
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,8 +168,118 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d63af6e74d9eda6e0800000000000000
-      internalID: -1824545175151598739
+      spriteID: 31c44008ae488c830800000000000000
+      internalID: 4091666404171074579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DialogueEyesClosed_2
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 350
+        width: 49
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2c2800e836215390800000000000000
+      internalID: -7831436251301925845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DialogueEyesClosed_3
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 349
+        width: 76
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b7d3d1a33a65e5c0800000000000000
+      internalID: -4186823508580116559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DialogueEyesClosed_4
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 352
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdf1dbac049229a10800000000000000
+      internalID: 1914638149841919967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DialogueEyesClosed_5
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 370
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3eb6a80c149845630800000000000000
+      internalID: 3914904891587980259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DialogueEyesClosed_6
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 31
+        width: 328
+        height: 307
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a393492910a04680800000000000000
+      internalID: -8772836044190805084
       vertices: []
       indices: 
       edges: []

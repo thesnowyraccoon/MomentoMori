@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f0f93ed561a66fd45ad2e7f592cb0702
+guid: f9876b5042df985478de69bf764df9c0
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -8,6 +8,21 @@ TextureImporter:
   - first:
       213: -1824545175151598739
     second: DialogueNormal_1
+  - first:
+      213: 1945773278779199393
+    second: DialogueNormal_2
+  - first:
+      213: 2959567439064806342
+    second: DialogueNormal_3
+  - first:
+      213: 4641329364196095854
+    second: DialogueNormal_4
+  - first:
+      213: 4250899663210768238
+    second: DialogueNormal_5
+  - first:
+      213: -6674990003782957317
+    second: DialogueNormal_6
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -119,10 +134,10 @@ TextureImporter:
       name: DialogueNormal_0
       rect:
         serializedVersion: 2
-        x: 28
-        y: 369
+        x: 36
+        y: 395
         width: 15
-        height: 16
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,10 +156,10 @@ TextureImporter:
       name: DialogueNormal_1
       rect:
         serializedVersion: 2
-        x: 29
-        y: 19
-        width: 303
-        height: 394
+        x: 65
+        y: 371
+        width: 70
+        height: 71
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -155,6 +170,116 @@ TextureImporter:
       bones: []
       spriteID: d63af6e74d9eda6e0800000000000000
       internalID: -1824545175151598739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DialogueNormal_2
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 372
+        width: 49
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1afc417ec76c00b10800000000000000
+      internalID: 1945773278779199393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DialogueNormal_3
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 371
+        width: 76
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c33546c7ee721920800000000000000
+      internalID: 2959567439064806342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DialogueNormal_4
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 374
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e677f764770596040800000000000000
+      internalID: 4641329364196095854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DialogueNormal_5
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 392
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e676181b8ba3efa30800000000000000
+      internalID: 4250899663210768238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DialogueNormal_6
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 53
+        width: 328
+        height: 307
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf6cb3905fbad53a0800000000000000
+      internalID: -6674990003782957317
       vertices: []
       indices: 
       edges: []
