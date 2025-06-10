@@ -1,40 +1,53 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
     // Input
+    [Header("Input")]
     public InputAction moveAction; // Input action for movement
+    public InputAction dashAction; // Input action for dashing
     public InputAction interactAction; // Input action for interactions
+    public InputAction tarotAction;
     public InputAction pauseAction; // Input action for pausing the game
 
     private Vector2 _boxSize = new Vector2(0.1f, 1f); // Interaction distance
 
     // Movement
-    public float moveSpeed = 5f; // Speed of the player
+    [Header("Movement")]
+    [SerializeField] private float moveSpeed = 5f; // Speed of the player
+    [SerializeField] private float dashAmount = 500f;
+    private Vector3 moveDirection;
 
     private float lastX = 0, lastY = 0; // Last position player was facing
     private bool isMoving = false; // Movement check
 
-    // Attacking 
-    public Transform aim; // Direction of player attack
-
     // Animations
+    [Header("Animations")]
     [SerializeField] private Animator animator; // Animator component
     [SerializeField] private SpriteRenderer playerSR; // Player renderer
+    [SerializeField] private Animator interact;
 
     // Stats
-    public enum MaximumHealth { Ten, Twenty, Thirty, Forty, Fifty }; // Specific player max health
+    [Header("Health")]
     public MaximumHealth maximumHealth;
+    public enum MaximumHealth { Ten, Twenty, Thirty, Forty, Fifty }; // Specific player max health
 
     private int maxHealth = 10;
     [SerializeField] private int playerHealth = 10; // Player current health
+
+    // Attacking 
+    [Header("Attacking")]
+    public Transform aim; // Direction of player attack
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         moveAction.Enable(); // Enable the movement inputs
+        dashAction.Enable();
         interactAction.Enable(); // Enable interaction input
+        tarotAction.Enable();
         pauseAction.Enable(); // Enable pause inputs
 
         animator = GetComponent<Animator>(); // Get the Animator component attached to the player
@@ -56,7 +69,7 @@ public class PlayerController : MonoBehaviour
     // Player movement
     void MovePlayer()
     {
-        Vector3 moveDirection = Vector3.zero; // Initialize move direction
+        moveDirection = Vector3.zero; // Initialize move direction
 
         isMoving = false; // Sets moving to false when not moving 
 
@@ -128,6 +141,22 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    public void Dash()
+    {
+        transform.position += moveDirection.normalized * dashAmount * Time.deltaTime;
+    }
+
+    public void DashGain(float gain)
+    {
+        dashAmount += gain;
+    }
+
+    // Sets player speed in external operations
+    public void AddSpeed(float speed)
+    {
+        moveSpeed += speed;
+    }
+
     // Player recieving damage
     public void Damaged(int damage)
     {
@@ -187,8 +216,11 @@ public class PlayerController : MonoBehaviour
 
         if (playerHealth <= 0) // Player disable on death // Should be reset to start
         {
-            playerSR.enabled = false;
-            moveAction.Disable();
+            //playerSR.enabled = false;
+            //moveAction.Disable();
+            //Time.timeScale = 0f;
+
+            SceneManager.LoadSceneAsync("World");
         }
     }
 
@@ -197,10 +229,21 @@ public class PlayerController : MonoBehaviour
     {
         if (pauseAction.triggered)
         {
-            PauseMenu pause = GameObject.Find("Pause UI").GetComponent<PauseMenu>();
-            pause.Open(); // Opens pause menu
+            Canvas pause = GameObject.Find("Canvas (PauseMenu)").GetComponent<Canvas>();
 
-            Time.timeScale = 0f; // Stop game time
+            if (pause.enabled == false)
+            {
+                pause.enabled = true;
+
+                Time.timeScale = 0f; // Stop game time
+            }
+            else if (pause.enabled == true)
+            {
+                pause.enabled = false;
+
+                Time.timeScale = 1f; // Start game time
+            }
+            
         }
     }
 
@@ -213,12 +256,12 @@ public class PlayerController : MonoBehaviour
     // Displays icon when able to interact
     public void OpenInteractableIcon()
     {
-        // Set interactable icon active
+        interact.SetFloat("Y", 2);
     }
 
     public void CloseInteractableIcon()
     {
-        // Set interactable icon false
+        interact.SetFloat("Y", 0);
     }
 
     // Checks if player can interact

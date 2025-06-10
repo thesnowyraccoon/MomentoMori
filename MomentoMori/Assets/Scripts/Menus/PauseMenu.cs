@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
 {
@@ -15,7 +16,7 @@ public class PauseMenu : MonoBehaviour
     {
         if (isOpen == false)
         {
-            pause.enabled = true;    
+            pause.enabled = true;
             isOpen = true;
         }
         else
@@ -23,17 +24,18 @@ public class PauseMenu : MonoBehaviour
             pause.enabled = false;
             isOpen = false;
         }
-    } 
+    }
 
     public void Resume()
     {
         pause.enabled = false;
         isOpen = false;
+        Time.timeScale = 1f; // Start game time
     }
 
-    public void Options()
+    public void MainMenu()
     {
-
+        SceneManager.LoadScene("Menu");
     }
 
     public void Exit()
