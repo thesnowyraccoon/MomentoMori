@@ -125,10 +125,10 @@ TextureImporter:
       name: Owl_0
       rect:
         serializedVersion: 2
-        x: 37
-        y: 264
-        width: 198
-        height: 217
+        x: 0
+        y: 243
+        width: 234
+        height: 243
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -147,10 +147,10 @@ TextureImporter:
       name: Owl_1
       rect:
         serializedVersion: 2
-        x: 270
-        y: 265
-        width: 198
-        height: 213
+        x: 234
+        y: 243
+        width: 234
+        height: 243
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -169,10 +169,10 @@ TextureImporter:
       name: Owl_2
       rect:
         serializedVersion: 2
-        x: 37
-        y: 21
-        width: 198
-        height: 218
+        x: 0
+        y: 0
+        width: 234
+        height: 243
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -191,10 +191,10 @@ TextureImporter:
       name: Owl_3
       rect:
         serializedVersion: 2
-        x: 267
-        y: 18
-        width: 201
-        height: 217
+        x: 234
+        y: 0
+        width: 234
+        height: 243
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -213,7 +213,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 03614754b6a183c44930b90f0b11f1ce
     internalID: 0
     vertices: []
     indices: 
@@ -222,7 +222,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Owl_0: -1788626132936788117
+      Owl_1: -6547531000066942689
+      Owl_2: 1696435273948115360
+      Owl_3: -2957158296051965490
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

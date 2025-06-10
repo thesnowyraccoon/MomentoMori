@@ -140,10 +140,10 @@ TextureImporter:
       name: OwlSpin_0
       rect:
         serializedVersion: 2
-        x: 46
-        y: 2279
-        width: 679
-        height: 1060
+        x: 0
+        y: 2242
+        width: 780
+        height: 1121
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -162,10 +162,10 @@ TextureImporter:
       name: OwlSpin_1
       rect:
         serializedVersion: 2
-        x: 826
-        y: 2279
-        width: 679
-        height: 1060
+        x: 780
+        y: 2242
+        width: 780
+        height: 1121
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -184,10 +184,10 @@ TextureImporter:
       name: OwlSpin_2
       rect:
         serializedVersion: 2
-        x: 1605
-        y: 2279
-        width: 680
-        height: 1060
+        x: 1560
+        y: 2242
+        width: 780
+        height: 1121
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -206,10 +206,10 @@ TextureImporter:
       name: OwlSpin_3
       rect:
         serializedVersion: 2
-        x: 46
-        y: 1158
-        width: 679
-        height: 1060
+        x: 0
+        y: 1121
+        width: 780
+        height: 1121
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -228,10 +228,10 @@ TextureImporter:
       name: OwlSpin_4
       rect:
         serializedVersion: 2
-        x: 825
-        y: 1158
-        width: 680
-        height: 1060
+        x: 780
+        y: 1121
+        width: 780
+        height: 1121
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -250,10 +250,10 @@ TextureImporter:
       name: OwlSpin_5
       rect:
         serializedVersion: 2
-        x: 1606
-        y: 1158
-        width: 679
-        height: 1060
+        x: 1560
+        y: 1121
+        width: 780
+        height: 1121
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -272,10 +272,10 @@ TextureImporter:
       name: OwlSpin_6
       rect:
         serializedVersion: 2
-        x: 47
-        y: 37
-        width: 678
-        height: 1060
+        x: 0
+        y: 0
+        width: 780
+        height: 1121
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -294,10 +294,10 @@ TextureImporter:
       name: OwlSpin_7
       rect:
         serializedVersion: 2
-        x: 826
-        y: 37
-        width: 679
-        height: 1060
+        x: 780
+        y: 0
+        width: 780
+        height: 1121
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -316,10 +316,10 @@ TextureImporter:
       name: OwlSpin_8
       rect:
         serializedVersion: 2
-        x: 1606
-        y: 37
-        width: 679
-        height: 1060
+        x: 1560
+        y: 0
+        width: 780
+        height: 1121
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -338,7 +338,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: e212732a95beb8f44a2edfe1034bb25d
     internalID: 0
     vertices: []
     indices: 
@@ -347,7 +347,16 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      OwlSpin_0: -7331178936807023312
+      OwlSpin_1: -5247888929214694033
+      OwlSpin_2: 3226440418133852499
+      OwlSpin_3: 1459259927033169261
+      OwlSpin_4: -1815873531315172251
+      OwlSpin_5: 3860971751646146947
+      OwlSpin_6: -8867596881729066485
+      OwlSpin_7: -140846835885371957
+      OwlSpin_8: 2921397287539546973
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

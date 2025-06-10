@@ -128,10 +128,10 @@ TextureImporter:
       name: SwordSwingForward_0
       rect:
         serializedVersion: 2
-        x: 180
-        y: 469
-        width: 266
-        height: 386
+        x: 0
+        y: 450
+        width: 534
+        height: 450
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -150,10 +150,10 @@ TextureImporter:
       name: SwordSwingForward_1
       rect:
         serializedVersion: 2
-        x: 693
-        y: 469
-        width: 287
-        height: 420
+        x: 534
+        y: 450
+        width: 534
+        height: 450
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -172,10 +172,10 @@ TextureImporter:
       name: SwordSwingForward_2
       rect:
         serializedVersion: 2
-        x: 1140
-        y: 468
-        width: 418
-        height: 384
+        x: 1068
+        y: 450
+        width: 534
+        height: 450
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -194,10 +194,10 @@ TextureImporter:
       name: SwordSwingForward_3
       rect:
         serializedVersion: 2
-        x: 5
-        y: 19
-        width: 441
-        height: 386
+        x: 0
+        y: 0
+        width: 534
+        height: 450
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -216,10 +216,10 @@ TextureImporter:
       name: SwordSwingForward_4
       rect:
         serializedVersion: 2
-        x: 714
-        y: 19
-        width: 266
-        height: 386
+        x: 534
+        y: 0
+        width: 534
+        height: 450
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -238,7 +238,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 14aa272e20cad1946816d11ef13478ab
     internalID: 0
     vertices: []
     indices: 
@@ -247,7 +247,12 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      SwordSwingForward_0: -2943768239981051804
+      SwordSwingForward_1: -4136890019636492255
+      SwordSwingForward_2: -6998055144684188044
+      SwordSwingForward_3: 3938037154675120321
+      SwordSwingForward_4: 451944838586023711
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
