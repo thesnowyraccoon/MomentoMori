@@ -5,12 +5,6 @@ TextureImporter:
   - first:
       213: -4768510936459863944
     second: UnkownDialogue_0
-  - first:
-      213: 8191310488569912352
-    second: UnkownDialogue_1
-  - first:
-      213: 1094696861940817251
-    second: UnkownDialogue_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -122,8 +116,8 @@ TextureImporter:
       name: UnkownDialogue_0
       rect:
         serializedVersion: 2
-        x: 488
-        y: 132
+        x: 28
+        y: 34
         width: 305
         height: 303
       alignment: 0
@@ -136,50 +130,6 @@ TextureImporter:
       bones: []
       spriteID: 8789eb46198d2ddb0800000000000000
       internalID: -4768510936459863944
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: UnkownDialogue_1
-      rect:
-        serializedVersion: 2
-        x: 487
-        y: 84
-        width: 6
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 02c142c6d716da170800000000000000
-      internalID: 8191310488569912352
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: UnkownDialogue_2
-      rect:
-        serializedVersion: 2
-        x: 488
-        y: 38
-        width: 7
-        height: 30
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 36d97b8fef4213f00800000000000000
-      internalID: 1094696861940817251
       vertices: []
       indices: 
       edges: []

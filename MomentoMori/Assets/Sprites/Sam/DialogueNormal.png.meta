@@ -119,8 +119,8 @@ TextureImporter:
       name: DialogueNormal_0
       rect:
         serializedVersion: 2
-        x: 486
-        y: 473
+        x: 28
+        y: 369
         width: 15
         height: 16
       alignment: 0
@@ -141,8 +141,8 @@ TextureImporter:
       name: DialogueNormal_1
       rect:
         serializedVersion: 2
-        x: 487
-        y: 123
+        x: 29
+        y: 19
         width: 303
         height: 394
       alignment: 0
