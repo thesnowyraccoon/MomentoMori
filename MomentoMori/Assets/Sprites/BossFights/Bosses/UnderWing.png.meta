@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: b547e7228ed5fc74e8b7a666daa6f0df
+guid: 1189038a452619c42819a663c10e0639
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5940781818166149764
-    second: Staff_0
-  - first:
-      213: 3527205280244131103
-    second: Staff_1
+      213: 2505095821236932211
+    second: UnderWing_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -49,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -116,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Staff_0
+      name: UnderWing_0
       rect:
         serializedVersion: 2
-        x: 24
-        y: 151
-        width: 116
-        height: 120
+        x: 48
+        y: 34
+        width: 516
+        height: 380
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,30 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c7d7b18796a1e8da0800000000000000
-      internalID: -5940781818166149764
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Staff_1
-      rect:
-        serializedVersion: 2
-        x: 91
-        y: 49
-        width: 1737
-        height: 312
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f1565d2b38623f030800000000000000
-      internalID: 3527205280244131103
+      spriteID: 37e84297063e3c220800000000000000
+      internalID: 2505095821236932211
       vertices: []
       indices: 
       edges: []
@@ -163,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -172,9 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Staff_0: -5940781818166149764
-      Staff_1: 3527205280244131103
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
