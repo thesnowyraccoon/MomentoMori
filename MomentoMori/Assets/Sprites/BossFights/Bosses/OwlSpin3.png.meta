@@ -547,7 +547,24 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      OwlSpin3_0: 4940179618774297967
+      OwlSpin3_1: 604852631998274600
+      OwlSpin3_10: 3353484763959099114
+      OwlSpin3_11: -3066742737377407463
+      OwlSpin3_12: -7637152287019151208
+      OwlSpin3_13: 5132403532264952926
+      OwlSpin3_14: -8869951868969537733
+      OwlSpin3_15: 4611119549185837949
+      OwlSpin3_16: 4521074342994489929
+      OwlSpin3_2: -4995263530880168786
+      OwlSpin3_3: 7484380295201010876
+      OwlSpin3_4: -5202413658508697978
+      OwlSpin3_5: 7360671669104512124
+      OwlSpin3_6: -6887783598448271963
+      OwlSpin3_7: -2675525910606899496
+      OwlSpin3_8: 4175401378453622740
+      OwlSpin3_9: -5610230215996849568
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
