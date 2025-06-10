@@ -17,11 +17,18 @@ public class PlayerController : MonoBehaviour
     // Movement
     [Header("Movement")]
     [SerializeField] private float moveSpeed = 5f; // Speed of the player
-    [SerializeField] private float dashAmount = 500f;
+
     private Vector3 moveDirection;
 
     private float lastX = 0, lastY = 0; // Last position player was facing
     private bool isMoving = false; // Movement check
+
+    // Dashing
+    [SerializeField] private float dashSpeed;
+    [SerializeField] private float dashLength = 0.5f;
+
+    private float activeMoveSpeed;
+    private float dashCounter;
 
     // Animations
     [Header("Animations")]
@@ -53,12 +60,15 @@ public class PlayerController : MonoBehaviour
         animator = GetComponent<Animator>(); // Get the Animator component attached to the player
 
         playerHealth = maxHealth; // Sets player health to maximum
+
+        activeMoveSpeed = moveSpeed;
     }
 
     // Update is called once per frame
     void Update()
     {
         MovePlayer(); // Call to handle movement and animation
+        Dashing();
         Interaction(); // Call to check if interacting
         Pause(); // Call to check if pausing
 
@@ -112,7 +122,7 @@ public class PlayerController : MonoBehaviour
             isMoving = true;
         }
 
-        transform.position += moveDirection.normalized * moveSpeed * Time.deltaTime; // Move the player based on input
+        transform.position += moveDirection.normalized * activeMoveSpeed * Time.deltaTime; // Move the player based on input
 
         // Moving animations
         animator.SetFloat("X", moveDirection.x);
@@ -141,14 +151,37 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    // Title: 
+    // Author: Jake Makes Games
+    // Date: July 19 2021
+    // Code version: Unknown
+    // Availability:
+
     public void Dash()
     {
-        transform.position += moveDirection.normalized * dashAmount * Time.deltaTime;
+        if (dashCounter <= 0)
+        {
+            activeMoveSpeed = dashSpeed;
+            dashCounter = dashLength;
+        }
+    }
+
+    void Dashing()
+    {
+        if (dashCounter > 0)
+        {
+            dashCounter -= Time.deltaTime;
+
+            if (dashCounter <= 0)
+            {
+                activeMoveSpeed = moveSpeed;
+            }
+        }
     }
 
     public void DashGain(float gain)
     {
-        dashAmount += gain;
+        dashSpeed += gain;
     }
 
     // Sets player speed in external operations

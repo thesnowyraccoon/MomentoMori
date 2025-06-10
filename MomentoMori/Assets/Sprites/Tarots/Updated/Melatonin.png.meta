@@ -124,10 +124,10 @@ TextureImporter:
         serializedVersion: 2
         x: 648
         y: 17
-        width: 590
+        width: 553
         height: 1040
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -140,55 +140,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: Melatonin_1
-      rect:
-        serializedVersion: 2
-        x: 912
-        y: 11
-        width: 21
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9f40b5de5b38bb340800000000000000
-      internalID: 4880639438580548857
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Melatonin_2
-      rect:
-        serializedVersion: 2
-        x: 987
-        y: 1
-        width: 14
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3dd7fbca0b0a219b0800000000000000
-      internalID: -5110845946439172653
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 3772743d376ac5d4ea6cb1d8b88205a1
     internalID: 0
     vertices: []
     indices: 
@@ -197,7 +153,10 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Melatonin_0: -8355695218496794209
+      Melatonin_1: 4880639438580548857
+      Melatonin_2: -5110845946439172653
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

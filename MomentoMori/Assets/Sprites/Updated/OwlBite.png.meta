@@ -131,10 +131,10 @@ TextureImporter:
       name: OwlBite_0
       rect:
         serializedVersion: 2
-        x: 46
-        y: 317
-        width: 205
-        height: 217
+        x: 0
+        y: 286
+        width: 250
+        height: 286
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,10 +153,10 @@ TextureImporter:
       name: OwlBite_1
       rect:
         serializedVersion: 2
-        x: 295
-        y: 317
-        width: 206
-        height: 220
+        x: 250
+        y: 286
+        width: 250
+        height: 286
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -175,10 +175,10 @@ TextureImporter:
       name: OwlBite_2
       rect:
         serializedVersion: 2
-        x: 546
-        y: 317
-        width: 204
-        height: 223
+        x: 500
+        y: 286
+        width: 250
+        height: 286
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -197,10 +197,10 @@ TextureImporter:
       name: OwlBite_3
       rect:
         serializedVersion: 2
-        x: 41
-        y: 35
-        width: 210
-        height: 210
+        x: 0
+        y: 0
+        width: 250
+        height: 286
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -219,10 +219,10 @@ TextureImporter:
       name: OwlBite_4
       rect:
         serializedVersion: 2
-        x: 289
-        y: 35
-        width: 212
-        height: 210
+        x: 250
+        y: 0
+        width: 250
+        height: 286
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -241,10 +241,10 @@ TextureImporter:
       name: OwlBite_5
       rect:
         serializedVersion: 2
-        x: 533
-        y: 37
-        width: 217
-        height: 208
+        x: 500
+        y: 0
+        width: 250
+        height: 286
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -263,7 +263,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: d0ecec715804c67418dd32c936ed3522
     internalID: 0
     vertices: []
     indices: 
@@ -272,7 +272,13 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      OwlBite_0: 707639400790859499
+      OwlBite_1: 5689927709222569617
+      OwlBite_2: -4849396125400046285
+      OwlBite_3: -2119653750835584337
+      OwlBite_4: -2198909601176975763
+      OwlBite_5: -5911697457353736086
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

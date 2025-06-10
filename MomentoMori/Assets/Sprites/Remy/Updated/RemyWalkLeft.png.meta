@@ -125,10 +125,10 @@ TextureImporter:
       name: RemyWalkLeft_0
       rect:
         serializedVersion: 2
-        x: 62
-        y: 488
-        width: 179
-        height: 365
+        x: 0
+        y: 447
+        width: 300
+        height: 447
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -147,10 +147,10 @@ TextureImporter:
       name: RemyWalkLeft_1
       rect:
         serializedVersion: 2
-        x: 363
-        y: 493
-        width: 196
-        height: 351
+        x: 300
+        y: 447
+        width: 300
+        height: 447
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -169,10 +169,10 @@ TextureImporter:
       name: RemyWalkLeft_2
       rect:
         serializedVersion: 2
-        x: 62
-        y: 41
-        width: 179
-        height: 365
+        x: 0
+        y: 0
+        width: 300
+        height: 447
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -191,10 +191,10 @@ TextureImporter:
       name: RemyWalkLeft_3
       rect:
         serializedVersion: 2
-        x: 362
-        y: 47
-        width: 179
-        height: 350
+        x: 300
+        y: 0
+        width: 300
+        height: 447
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -213,7 +213,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 760daedab40a8c544b7e5a72327c06c9
     internalID: 0
     vertices: []
     indices: 
@@ -222,7 +222,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      RemyWalkLeft_0: -7765019652428192076
+      RemyWalkLeft_1: -7622695391850618578
+      RemyWalkLeft_2: 7754442825693754474
+      RemyWalkLeft_3: 5047383235512359930
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

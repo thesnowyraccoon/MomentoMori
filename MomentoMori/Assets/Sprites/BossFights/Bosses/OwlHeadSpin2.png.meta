@@ -194,10 +194,10 @@ TextureImporter:
       name: OwlHeadSpin2_0
       rect:
         serializedVersion: 2
-        x: 51
-        y: 3078
-        width: 170
-        height: 216
+        x: 0
+        y: 2274
+        width: 795
+        height: 1137
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -216,10 +216,10 @@ TextureImporter:
       name: OwlHeadSpin2_1
       rect:
         serializedVersion: 2
-        x: 167
-        y: 2300
-        width: 506
-        height: 1017
+        x: 795
+        y: 2274
+        width: 795
+        height: 1137
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -238,10 +238,10 @@ TextureImporter:
       name: OwlHeadSpin2_2
       rect:
         serializedVersion: 2
-        x: 558
-        y: 3074
-        width: 174
-        height: 216
+        x: 1590
+        y: 2274
+        width: 795
+        height: 1137
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -260,10 +260,10 @@ TextureImporter:
       name: OwlHeadSpin2_3
       rect:
         serializedVersion: 2
-        x: 846
-        y: 3078
-        width: 170
-        height: 216
+        x: 0
+        y: 1137
+        width: 795
+        height: 1137
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -282,10 +282,10 @@ TextureImporter:
       name: OwlHeadSpin2_4
       rect:
         serializedVersion: 2
-        x: 962
-        y: 2300
-        width: 506
-        height: 1017
+        x: 795
+        y: 1137
+        width: 795
+        height: 1137
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -304,10 +304,10 @@ TextureImporter:
       name: OwlHeadSpin2_5
       rect:
         serializedVersion: 2
-        x: 1353
-        y: 3074
-        width: 174
-        height: 216
+        x: 1590
+        y: 1137
+        width: 795
+        height: 1137
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -326,10 +326,10 @@ TextureImporter:
       name: OwlHeadSpin2_6
       rect:
         serializedVersion: 2
-        x: 1639
-        y: 3077
-        width: 173
-        height: 215
+        x: 0
+        y: 0
+        width: 795
+        height: 1137
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -348,10 +348,10 @@ TextureImporter:
       name: OwlHeadSpin2_7
       rect:
         serializedVersion: 2
-        x: 1757
-        y: 2300
-        width: 506
-        height: 1017
+        x: 795
+        y: 0
+        width: 795
+        height: 1137
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -370,10 +370,10 @@ TextureImporter:
       name: OwlHeadSpin2_8
       rect:
         serializedVersion: 2
-        x: 2147
-        y: 3073
-        width: 178
-        height: 215
+        x: 1590
+        y: 0
+        width: 795
+        height: 1137
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -388,407 +388,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: OwlHeadSpin2_9
-      rect:
-        serializedVersion: 2
-        x: 47
-        y: 1939
-        width: 175
-        height: 214
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c5295cc42a14bf2b0800000000000000
-      internalID: -5549769950475480484
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: OwlHeadSpin2_10
-      rect:
-        serializedVersion: 2
-        x: 167
-        y: 1163
-        width: 506
-        height: 1017
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c095ebb93f0c10e10800000000000000
-      internalID: 2162221448637077772
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: OwlHeadSpin2_11
-      rect:
-        serializedVersion: 2
-        x: 558
-        y: 1935
-        width: 179
-        height: 213
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4d1ca638d165ac750800000000000000
-      internalID: 6325963311354134996
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: OwlHeadSpin2_12
-      rect:
-        serializedVersion: 2
-        x: 844
-        y: 1940
-        width: 173
-        height: 215
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7aa5fd64e6acd4950800000000000000
-      internalID: 6435022017566562983
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: OwlHeadSpin2_13
-      rect:
-        serializedVersion: 2
-        x: 962
-        y: 1163
-        width: 506
-        height: 1017
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 27e13ca680a1bdc30800000000000000
-      internalID: 4385127285628542578
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: OwlHeadSpin2_14
-      rect:
-        serializedVersion: 2
-        x: 1353
-        y: 1936
-        width: 177
-        height: 215
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 361ce6cebfe5ae3f0800000000000000
-      internalID: -870779141846285981
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: OwlHeadSpin2_15
-      rect:
-        serializedVersion: 2
-        x: 1641
-        y: 1941
-        width: 170
-        height: 216
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1430b055f5f55be80800000000000000
-      internalID: -8163513886485839039
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: OwlHeadSpin2_16
-      rect:
-        serializedVersion: 2
-        x: 1757
-        y: 1163
-        width: 506
-        height: 1017
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e44516724326296d0800000000000000
-      internalID: -2985215626854706098
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: OwlHeadSpin2_17
-      rect:
-        serializedVersion: 2
-        x: 2148
-        y: 1937
-        width: 174
-        height: 216
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 85186c8df6b05a110800000000000000
-      internalID: 1271435044808196440
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: OwlHeadSpin2_18
-      rect:
-        serializedVersion: 2
-        x: 51
-        y: 804
-        width: 170
-        height: 216
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 046157918e07f9840800000000000000
-      internalID: 5233025434189633088
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: OwlHeadSpin2_19
-      rect:
-        serializedVersion: 2
-        x: 167
-        y: 26
-        width: 506
-        height: 1017
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 59f31f02fd6031a90800000000000000
-      internalID: -7344519011910991979
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: OwlHeadSpin2_20
-      rect:
-        serializedVersion: 2
-        x: 558
-        y: 800
-        width: 174
-        height: 216
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 92f74ace26c3fb010800000000000000
-      internalID: 1206749620733247273
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: OwlHeadSpin2_21
-      rect:
-        serializedVersion: 2
-        x: 846
-        y: 804
-        width: 170
-        height: 216
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 45de0e3af6afa8970800000000000000
-      internalID: 8758087782773091668
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: OwlHeadSpin2_22
-      rect:
-        serializedVersion: 2
-        x: 962
-        y: 26
-        width: 506
-        height: 1017
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: cd01fd0ab25e8acb0800000000000000
-      internalID: -4852376622946381604
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: OwlHeadSpin2_23
-      rect:
-        serializedVersion: 2
-        x: 1353
-        y: 800
-        width: 174
-        height: 216
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4e8fec50716a67f70800000000000000
-      internalID: 9184711107880614116
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: OwlHeadSpin2_24
-      rect:
-        serializedVersion: 2
-        x: 1641
-        y: 804
-        width: 170
-        height: 216
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4427846311b5a8790800000000000000
-      internalID: -7527103697713073596
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: OwlHeadSpin2_25
-      rect:
-        serializedVersion: 2
-        x: 1757
-        y: 26
-        width: 506
-        height: 1017
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a8436e0df2da54110800000000000000
-      internalID: 1244591292917625994
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: OwlHeadSpin2_26
-      rect:
-        serializedVersion: 2
-        x: 2148
-        y: 800
-        width: 174
-        height: 216
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f6ff1a89411814960800000000000000
-      internalID: 7584485172928708463
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 828d03b84153fc142b63fda93253e54a
     internalID: 0
     vertices: []
     indices: 
@@ -797,7 +401,16 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      OwlHeadSpin2_0: -2911865070753444308
+      OwlHeadSpin2_1: 6040406384354147930
+      OwlHeadSpin2_2: 1795815891732939000
+      OwlHeadSpin2_3: -2445274061236793584
+      OwlHeadSpin2_4: 3539180003324342703
+      OwlHeadSpin2_5: 6560980434794451200
+      OwlHeadSpin2_6: -4372331484805195386
+      OwlHeadSpin2_7: -2911592940049254318
+      OwlHeadSpin2_8: 3601692494715155211
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

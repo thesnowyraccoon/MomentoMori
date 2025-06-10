@@ -15,8 +15,12 @@ public class HotBarController : MonoBehaviour
 
     public int slotCount = 3;
 
-    void Start()
+    private ItemDictionary itemDictionary;
+
+    void Awake()
     {
+        itemDictionary = FindAnyObjectByType<ItemDictionary>();
+
         player = GameObject.Find("playerRemy").GetComponent<PlayerController>();
     }
 

@@ -123,9 +123,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 444
-        width: 341
-        height: 298
+        y: 390
+        width: 412
+        height: 390
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -144,10 +144,10 @@ TextureImporter:
       name: CrowJumpLeft_1
       rect:
         serializedVersion: 2
-        x: 485
-        y: 462
-        width: 262
-        height: 287
+        x: 412
+        y: 390
+        width: 412
+        height: 390
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,10 +166,10 @@ TextureImporter:
       name: CrowJumpLeft_2
       rect:
         serializedVersion: 2
-        x: 67
-        y: 50
-        width: 262
-        height: 298
+        x: 0
+        y: 0
+        width: 412
+        height: 390
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -188,7 +188,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 34ae6edf3ba968e459a9614435b058c3
     internalID: 0
     vertices: []
     indices: 
@@ -197,7 +197,10 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      CrowJumpLeft_0: -8476013622537400284
+      CrowJumpLeft_1: -6324212120583425220
+      CrowJumpLeft_2: 1046736548767043926
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

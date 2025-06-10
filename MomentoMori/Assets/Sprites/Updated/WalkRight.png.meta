@@ -126,9 +126,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 288
-        width: 172
-        height: 222
+        y: 268
+        width: 198
+        height: 268
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -147,10 +147,10 @@ TextureImporter:
       name: WalkRight_1
       rect:
         serializedVersion: 2
-        x: 197
-        y: 285
-        width: 179
-        height: 221
+        x: 198
+        y: 268
+        width: 198
+        height: 268
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -170,9 +170,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 20
-        width: 172
-        height: 222
+        y: 0
+        width: 198
+        height: 268
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -192,9 +192,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 198
-        y: 19
-        width: 178
-        height: 221
+        y: 0
+        width: 198
+        height: 268
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -213,7 +213,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: d68924d8381a8244586f255d2ff0fa9a
     internalID: 0
     vertices: []
     indices: 
@@ -222,7 +222,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      WalkRight_0: -6201019692056567399
+      WalkRight_1: -7852898016727190981
+      WalkRight_2: 3771676678745289610
+      WalkRight_3: -3566616766442689571
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

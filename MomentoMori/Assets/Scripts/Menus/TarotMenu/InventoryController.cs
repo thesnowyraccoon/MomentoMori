@@ -8,6 +8,8 @@ using UnityEngine;
 
 public class InventoryController : MonoBehaviour
 {
+    private ItemDictionary itemDictionary;
+
     public GameObject inventoryPanel;
     public GameObject slotPrefab;
     public int slotCount;
@@ -15,6 +17,8 @@ public class InventoryController : MonoBehaviour
 
     void Start()
     {
+        itemDictionary = FindAnyObjectByType<ItemDictionary>();
+        
         for (int i = 0; i < slotCount; i++)
         {
             Slot slot = Instantiate(slotPrefab, inventoryPanel.transform).GetComponent<Slot>();
@@ -23,6 +27,7 @@ public class InventoryController : MonoBehaviour
             {
                 GameObject tarot = Instantiate(tarotPrefabs[i], slot.transform);
                 tarot.GetComponent<RectTransform>().anchoredPosition = Vector2.zero;
+                
                 slot.currentItem = tarot;
             }
         }

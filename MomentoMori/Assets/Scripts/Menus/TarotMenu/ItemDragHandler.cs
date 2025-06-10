@@ -16,7 +16,7 @@ public class ItemDragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, I
     void Start()
     {
         canvasGroup = GetComponent<CanvasGroup>();
-        book = GameObject.Find("InsomniumInventory");
+        book = GameObject.Find("Inventory");
     }
 
     public void OnBeginDrag(PointerEventData eventData)
@@ -56,7 +56,7 @@ public class ItemDragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, I
         {
             if (dropSlot.currentItem != null) // If slot has an item, swap that item with the new item
             {
-                dropSlot.currentItem.transform.SetParent(originalSlot.transform);
+                dropSlot.currentItem.transform.SetParent(originalParent.transform);
                 originalSlot.currentItem = dropSlot.currentItem;
                 dropSlot.currentItem.GetComponent<RectTransform>().anchoredPosition = Vector2.zero;
             }

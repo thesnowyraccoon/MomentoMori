@@ -130,7 +130,7 @@ TextureImporter:
         width: 1836
         height: 522
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -143,77 +143,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: StaminaBar_1
-      rect:
-        serializedVersion: 2
-        x: 429
-        y: 248
-        width: 11
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6a7cbd483950d4ec0800000000000000
-      internalID: -3581199997542348890
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: StaminaBar_2
-      rect:
-        serializedVersion: 2
-        x: 458
-        y: 249
-        width: 11
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0be5b643acf58e3b0800000000000000
-      internalID: -5483027224256094544
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: StaminaBar_3
-      rect:
-        serializedVersion: 2
-        x: 441
-        y: 246
-        width: 8
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: bc1851b27283e4440800000000000000
-      internalID: 4921933183640240587
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: c0950e8608b6c1e468ad16ff1c2688a0
     internalID: 0
     vertices: []
     indices: 
@@ -222,7 +156,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      StaminaBar_0: -8952926071697581558
+      StaminaBar_1: -3581199997542348890
+      StaminaBar_2: -5483027224256094544
+      StaminaBar_3: 4921933183640240587
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

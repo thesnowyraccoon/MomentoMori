@@ -131,10 +131,10 @@ TextureImporter:
       name: RemySwingBack_0
       rect:
         serializedVersion: 2
-        x: 62
-        y: 549
-        width: 267
-        height: 378
+        x: 0
+        y: 510
+        width: 377
+        height: 510
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,10 +153,10 @@ TextureImporter:
       name: RemySwingBack_1
       rect:
         serializedVersion: 2
-        x: 439
-        y: 549
-        width: 267
-        height: 378
+        x: 377
+        y: 510
+        width: 377
+        height: 510
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -175,10 +175,10 @@ TextureImporter:
       name: RemySwingBack_2
       rect:
         serializedVersion: 2
-        x: 816
-        y: 549
-        width: 267
-        height: 376
+        x: 754
+        y: 510
+        width: 377
+        height: 510
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -197,10 +197,10 @@ TextureImporter:
       name: RemySwingBack_3
       rect:
         serializedVersion: 2
-        x: 439
-        y: 39
-        width: 267
-        height: 417
+        x: 0
+        y: 0
+        width: 377
+        height: 510
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -219,10 +219,10 @@ TextureImporter:
       name: RemySwingBack_4
       rect:
         serializedVersion: 2
-        x: 529
-        y: 435
-        width: 32
-        height: 33
+        x: 377
+        y: 0
+        width: 377
+        height: 510
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -237,33 +237,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: RemySwingBack_5
-      rect:
-        serializedVersion: 2
-        x: 62
-        y: 39
-        width: 267
-        height: 375
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2ea6e5318baffd770800000000000000
-      internalID: 8637898278825781986
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 25d1caeff5960b8498a68e481003b1b0
     internalID: 0
     vertices: []
     indices: 
@@ -272,7 +250,12 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      RemySwingBack_0: 5232721635854257013
+      RemySwingBack_1: -7578864476517516305
+      RemySwingBack_2: 7403408676728019183
+      RemySwingBack_3: 4564365685082817213
+      RemySwingBack_4: 8353670797030437388
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
