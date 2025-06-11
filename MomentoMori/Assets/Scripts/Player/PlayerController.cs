@@ -58,6 +58,7 @@ public class PlayerController : MonoBehaviour
         pauseAction.Enable(); // Enable pause inputs
 
         animator = GetComponent<Animator>(); // Get the Animator component attached to the player
+        playerSR = GetComponent<SpriteRenderer>();
 
         playerHealth = maxHealth; // Sets player health to maximum
 

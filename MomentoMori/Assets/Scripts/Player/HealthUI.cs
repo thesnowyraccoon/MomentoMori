@@ -24,8 +24,34 @@ public class HealthUI : MonoBehaviour
     public Sprite fullStar;
     public Image[] stars;
 
+    private bool foundStars;
+
+    void Start()
+    {
+        player = GetComponent<PlayerController>();
+
+        if (emptyStar || quarterStar || halfStar || threequarterStar || fullStar || stars == null)
+        {
+            Debug.LogWarning("Stars not found!");
+
+            foundStars = false;
+        }
+        else
+        {
+            foundStars = true;
+        }
+    }
+
     void Update()
-    {   
+    {
+        if (foundStars)
+        {
+            SetHealthUI();
+        }    
+    }
+
+    void SetHealthUI()
+    {
         // Gets player health values
         health = player.GetHealth();
         maxHealth = player.GetMaxHealth();
