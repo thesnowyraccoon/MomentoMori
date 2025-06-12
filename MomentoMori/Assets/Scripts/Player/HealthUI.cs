@@ -30,7 +30,7 @@ public class HealthUI : MonoBehaviour
     {
         player = GetComponent<PlayerController>();
 
-        if (emptyStar || quarterStar || halfStar || threequarterStar || fullStar || stars == null)
+        if (stars == null)
         {
             Debug.LogWarning("Stars not found!");
 
@@ -47,7 +47,7 @@ public class HealthUI : MonoBehaviour
         if (foundStars)
         {
             SetHealthUI();
-        }    
+        }  
     }
 
     void SetHealthUI()
