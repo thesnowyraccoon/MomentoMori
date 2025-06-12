@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 7ea2bd7971e027f4cb0b5260285e06c9
+guid: afbdfd69f3d7dea4b8b2a6443713943b
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -41,12 +41,6 @@ TextureImporter:
   - first:
       213: 1188765337296634212
     second: CrowThrowRight_12
-  - first:
-      213: 2031379296668725859
-    second: CrowThrowRight_13
-  - first:
-      213: 5202138595096347203
-    second: CrowThrowRight_14
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -93,7 +87,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 150
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -158,10 +152,10 @@ TextureImporter:
       name: CrowThrowRight_0
       rect:
         serializedVersion: 2
-        x: 635
-        y: 1560
-        width: 15
-        height: 8
+        x: 0
+        y: 379
+        width: 366
+        height: 379
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -180,10 +174,10 @@ TextureImporter:
       name: CrowThrowRight_1
       rect:
         serializedVersion: 2
-        x: 726
-        y: 1433
-        width: 262
-        height: 298
+        x: 366
+        y: 379
+        width: 366
+        height: 379
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -202,10 +196,10 @@ TextureImporter:
       name: CrowThrowRight_2
       rect:
         serializedVersion: 2
-        x: 2626
-        y: 1434
-        width: 251
-        height: 286
+        x: 732
+        y: 379
+        width: 366
+        height: 379
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -224,10 +218,10 @@ TextureImporter:
       name: CrowThrowRight_3
       rect:
         serializedVersion: 2
-        x: 4556
-        y: 1434
-        width: 309
-        height: 286
+        x: 0
+        y: 0
+        width: 366
+        height: 379
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -246,10 +240,10 @@ TextureImporter:
       name: CrowThrowRight_4
       rect:
         serializedVersion: 2
-        x: 623
-        y: 1549
-        width: 16
-        height: 10
+        x: 366
+        y: 0
+        width: 366
+        height: 379
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -264,231 +258,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: CrowThrowRight_5
-      rect:
-        serializedVersion: 2
-        x: 4541
-        y: 1517
-        width: 13
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 46159c86f9c8dcf80800000000000000
-      internalID: -8084651139774459548
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CrowThrowRight_6
-      rect:
-        serializedVersion: 2
-        x: 2910
-        y: 1454
-        width: 38
-        height: 47
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d06035dc4d3d4d140800000000000000
-      internalID: 4743649218459272717
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CrowThrowRight_7
-      rect:
-        serializedVersion: 2
-        x: 4862
-        y: 1473
-        width: 6
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: cd8d1f6fdf23134d0800000000000000
-      internalID: -3156685797458847524
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CrowThrowRight_8
-      rect:
-        serializedVersion: 2
-        x: 2887
-        y: 1459
-        width: 10
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5e48d8692db7b40b0800000000000000
-      internalID: -5743360755381730075
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CrowThrowRight_9
-      rect:
-        serializedVersion: 2
-        x: 2930
-        y: 1436
-        width: 10
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3343bf1409928df90800000000000000
-      internalID: -6928742327150496717
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CrowThrowRight_10
-      rect:
-        serializedVersion: 2
-        x: 4850
-        y: 1436
-        width: 10
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e99cde4163ce49c70800000000000000
-      internalID: 8977059674279758238
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CrowThrowRight_11
-      rect:
-        serializedVersion: 2
-        x: 766
-        y: 353
-        width: 232
-        height: 297
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c01a4b78f9de556a0800000000000000
-      internalID: -6460996820960763636
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CrowThrowRight_12
-      rect:
-        serializedVersion: 2
-        x: 2555
-        y: 480
-        width: 15
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4610dd2a6c75f7010800000000000000
-      internalID: 1188765337296634212
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CrowThrowRight_13
-      rect:
-        serializedVersion: 2
-        x: 2646
-        y: 353
-        width: 262
-        height: 298
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 362b50625b8e03c10800000000000000
-      internalID: 2031379296668725859
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CrowThrowRight_14
-      rect:
-        serializedVersion: 2
-        x: 2543
-        y: 469
-        width: 16
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 34241197d75b13840800000000000000
-      internalID: 5202138595096347203
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 06be36cc7abc6ce4982a343eb991eb3d
     internalID: 0
     vertices: []
     indices: 
@@ -500,19 +274,9 @@ TextureImporter:
     nameFileIdTable:
       CrowThrowRight_0: -4690068125354719491
       CrowThrowRight_1: -8387808544083103604
-      CrowThrowRight_10: 8977059674279758238
-      CrowThrowRight_11: -6460996820960763636
-      CrowThrowRight_12: 1188765337296634212
-      CrowThrowRight_13: 2031379296668725859
-      CrowThrowRight_14: 5202138595096347203
       CrowThrowRight_2: 7401319438330957697
       CrowThrowRight_3: -2656658820480895546
       CrowThrowRight_4: 7139363345013690985
-      CrowThrowRight_5: -8084651139774459548
-      CrowThrowRight_6: 4743649218459272717
-      CrowThrowRight_7: -3156685797458847524
-      CrowThrowRight_8: -5743360755381730075
-      CrowThrowRight_9: -6928742327150496717
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

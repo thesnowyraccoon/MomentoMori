@@ -240,7 +240,7 @@ MonoBehaviour:
   dashLength: 0.5
   animator: {fileID: 5794283828250870785}
   playerSR: {fileID: 7483883042574814246}
-  interact: {fileID: 8246667554741897655}
+  interactionIcon: {fileID: 6582577251047938111}
   maximumHealth: 0
   playerHealth: 10
   aim: {fileID: 4505692784547946365}
@@ -446,14 +446,13 @@ GameObject:
   m_Component:
   - component: {fileID: 5203524776506269620}
   - component: {fileID: 8129508559762761907}
-  - component: {fileID: 8246667554741897655}
   m_Layer: 0
   m_Name: InteractIcon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &5203524776506269620
 Transform:
   m_ObjectHideFlags: 0
@@ -512,7 +511,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 4
+  m_SortingOrder: 5
   m_Sprite: {fileID: -1700367358461211857, guid: 3e127e387930c9c41ac4ed4fee312673, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -524,28 +523,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &8246667554741897655
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6582577251047938111}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2d3d51b51a7c63048872ffa9374a0f4e, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &7580716860769961220
 GameObject:
   m_ObjectHideFlags: 0
