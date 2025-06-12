@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 52dbde129cf131446a9daff74b611bd7
+guid: 2c1573eb0dff62145bdc0735307817e5
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1853591155359618330
-    second: SkeletonSitting_0
+      213: -6441131969155267175
+    second: SkeletonSitting 2_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,23 +113,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SkeletonSitting_0
+      name: SkeletonSitting 2_0
       rect:
         serializedVersion: 2
-        x: 36
-        y: 35
+        x: 20
+        y: 192
         width: 180
-        height: 321
+        height: 155
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6eaebf93aa8b646e0800000000000000
-      internalID: -1853591155359618330
+      spriteID: 9958613c9908c96a0800000000000000
+      internalID: -6441131969155267175
       vertices: []
       indices: 
       edges: []
@@ -138,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: a560af7d60703a044a1e2775187112db
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      SkeletonSitting_0: -1853591155359618330
+      SkeletonSitting 2_0: -6441131969155267175
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
