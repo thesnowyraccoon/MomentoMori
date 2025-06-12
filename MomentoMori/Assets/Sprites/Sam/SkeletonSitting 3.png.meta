@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: 72db59f84315c594fb18142461a236cd
+guid: 2c1573eb0dff62145bdc0735307817e5
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2246752296198444279
-    second: Boss3portrait_0
-  - first:
-      213: -4903257812271221511
-    second: Boss3portrait_1
+      213: -6441131969155267175
+    second: SkeletonSitting 2_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -49,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -116,45 +113,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Boss3portrait_0
+      name: SkeletonSitting 2_0
       rect:
         serializedVersion: 2
-        x: 565
-        y: 0
-        width: 868
-        height: 1182
+        x: 20
+        y: 192
+        width: 180
+        height: 155
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 90b6cceb0bee1d0e0800000000000000
-      internalID: -2246752296198444279
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Boss3portrait_1
-      rect:
-        serializedVersion: 2
-        x: 924
-        y: 1179
-        width: 10
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9f43a619ff024fbb0800000000000000
-      internalID: -4903257812271221511
+      spriteID: 9958613c9908c96a0800000000000000
+      internalID: -6441131969155267175
       vertices: []
       indices: 
       edges: []
@@ -163,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: a560af7d60703a044a1e2775187112db
     internalID: 0
     vertices: []
     indices: 
@@ -173,8 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Boss3portrait_0: -2246752296198444279
-      Boss3portrait_1: -4903257812271221511
+      SkeletonSitting 2_0: -6441131969155267175
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,13 +1,19 @@
 fileFormatVersion: 2
-guid: 72db59f84315c594fb18142461a236cd
+guid: 8bee97bd756b0d44a90010e7b785ae5a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2246752296198444279
-    second: Boss3portrait_0
+      213: -3336602011101729071
+    second: CatWalkLeft_0
   - first:
-      213: -4903257812271221511
-    second: Boss3portrait_1
+      213: -4870093686476223343
+    second: CatWalkLeft_1
+  - first:
+      213: -3232312524730759153
+    second: CatWalkLeft_2
+  - first:
+      213: 7828544470807522494
+    second: CatWalkLeft_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -49,7 +55,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -116,13 +122,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Boss3portrait_0
+      name: CatWalkLeft_0
       rect:
         serializedVersion: 2
-        x: 565
-        y: 0
-        width: 868
-        height: 1182
+        x: 16
+        y: 348
+        width: 240
+        height: 297
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,20 +137,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 90b6cceb0bee1d0e0800000000000000
-      internalID: -2246752296198444279
+      spriteID: 1de6d63262202b1d0800000000000000
+      internalID: -3336602011101729071
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Boss3portrait_1
+      name: CatWalkLeft_1
       rect:
         serializedVersion: 2
-        x: 924
-        y: 1179
-        width: 10
-        height: 10
+        x: 312
+        y: 350
+        width: 237
+        height: 285
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,8 +159,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9f43a619ff024fbb0800000000000000
-      internalID: -4903257812271221511
+      spriteID: 19c46b25893f96cb0800000000000000
+      internalID: -4870093686476223343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CatWalkLeft_2
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 20
+        width: 240
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f08806062e48423d0800000000000000
+      internalID: -3232312524730759153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CatWalkLeft_3
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 19
+        width: 237
+        height: 303
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebca4d208b394ac60800000000000000
+      internalID: 7828544470807522494
       vertices: []
       indices: 
       edges: []
@@ -163,7 +213,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -172,9 +222,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Boss3portrait_0: -2246752296198444279
-      Boss3portrait_1: -4903257812271221511
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: 52dbde129cf131446a9daff74b611bd7
+guid: bf0f6766254f3cf4a97ea9fcce4ef655
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1853591155359618330
-    second: SkeletonSitting_0
+      213: 416748630594270775
+    second: CatWalkFront_0
+  - first:
+      213: -5144635643848917273
+    second: CatWalkFront_1
+  - first:
+      213: -1453114757845028299
+    second: CatWalkFront_2
+  - first:
+      213: -4894786768034089866
+    second: CatWalkFront_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +122,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SkeletonSitting_0
+      name: CatWalkFront_0
       rect:
         serializedVersion: 2
-        x: 36
-        y: 35
-        width: 180
-        height: 321
+        x: 28
+        y: 388
+        width: 144
+        height: 346
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +137,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6eaebf93aa8b646e0800000000000000
-      internalID: -1853591155359618330
+      spriteID: 736b337eba698c500800000000000000
+      internalID: 416748630594270775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CatWalkFront_1
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 388
+        width: 136
+        height: 342
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ee729da3259a98b0800000000000000
+      internalID: -5144635643848917273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CatWalkFront_2
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 11
+        width: 137
+        height: 342
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 532f4c0a3df75dbe0800000000000000
+      internalID: -1453114757845028299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CatWalkFront_3
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 10
+        width: 135
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 674bb004e59321cb0800000000000000
+      internalID: -4894786768034089866
       vertices: []
       indices: 
       edges: []
@@ -147,8 +222,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      SkeletonSitting_0: -1853591155359618330
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
