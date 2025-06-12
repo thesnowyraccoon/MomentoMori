@@ -34,7 +34,7 @@ public class FinishPoint : MonoBehaviour
         }
         else
         {
-            Debug.Log("You suck");
+            //Debug.Log("You suck");
         }
     }
 
