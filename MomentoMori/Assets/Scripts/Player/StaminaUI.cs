@@ -36,7 +36,15 @@ public class StaminaUI : MonoBehaviour
 
     void Start()
     {
+        playerController = GetComponent<PlayerController>();
+        playerAttack = GetComponent<PlayerAttack>();
+
         stamina = maxStamina; // Sets stamina to full
+
+        if (staminaBar == null)
+        {
+            Debug.LogWarning("Stamina Bar not found!");
+        }
     }
 
     void Update()
@@ -115,7 +123,10 @@ public class StaminaUI : MonoBehaviour
             hasStamina = true;
         }
 
-        staminaBar.fillAmount = stamina/maxStamina; // Stamina bar fills
+        if (staminaBar != null)
+        {
+            staminaBar.fillAmount = stamina/maxStamina; // Stamina bar fills
+        }
     }
 
     private IEnumerator RechargeStamina() // Stamina recharges after a short duration after attacking

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c663dd85f9b23e548b992611117c14fb
+guid: fd01af449cb136a4f814ec99d64b4adf
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -131,12 +131,12 @@ TextureImporter:
       name: OwlBite_0
       rect:
         serializedVersion: 2
-        x: 775
-        y: 1717
-        width: 164
-        height: 217
+        x: 0
+        y: 286
+        width: 250
+        height: 286
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -153,12 +153,12 @@ TextureImporter:
       name: OwlBite_1
       rect:
         serializedVersion: 2
-        x: 2695
-        y: 1717
-        width: 168
-        height: 220
+        x: 250
+        y: 286
+        width: 250
+        height: 286
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -175,12 +175,12 @@ TextureImporter:
       name: OwlBite_2
       rect:
         serializedVersion: 2
-        x: 4615
-        y: 1717
-        width: 161
-        height: 221
+        x: 500
+        y: 286
+        width: 250
+        height: 286
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -197,12 +197,12 @@ TextureImporter:
       name: OwlBite_3
       rect:
         serializedVersion: 2
-        x: 770
-        y: 641
-        width: 173
-        height: 210
+        x: 0
+        y: 0
+        width: 250
+        height: 286
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -219,12 +219,12 @@ TextureImporter:
       name: OwlBite_4
       rect:
         serializedVersion: 2
-        x: 2688
-        y: 641
-        width: 176
-        height: 209
+        x: 250
+        y: 0
+        width: 250
+        height: 286
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -241,12 +241,12 @@ TextureImporter:
       name: OwlBite_5
       rect:
         serializedVersion: 2
-        x: 4602
-        y: 643
-        width: 186
-        height: 199
+        x: 500
+        y: 0
+        width: 250
+        height: 286
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -263,7 +263,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: c027dd1f1d5cccd40919415f3f737cc5
+    spriteID: d0ecec715804c67418dd32c936ed3522
     internalID: 0
     vertices: []
     indices: 
