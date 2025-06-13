@@ -31,18 +31,18 @@ public class FinishPoint : MonoBehaviour
 
         }
     }
-    void Update()
-    {
-        health = player.GetHealth();
+    // void Update()
+    // {
+    //     health = player.GetHealth();
 
-        if (health <= 0)
-        {
-            SceneManager.LoadScene(3); //Index number for the home scene 
-        }
-        else
-        {
-            Debug.Log("You suck");
-        }
-    }
+    //     if (health <= 0)
+    //     {
+    //         SceneManager.LoadScene(3); //Index number for the home scene 
+    //     }
+    //     else
+    //     {
+    //         Debug.Log("You suck");
+    //     }
+    // }
 
 }
