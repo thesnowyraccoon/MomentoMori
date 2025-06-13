@@ -1,6 +1,12 @@
 using Unity.VisualScripting;
 using UnityEngine;
 
+// Title: Add a sound effect manager to your game- 2D platformer Unity #26
+ // Author: Game Code Library
+ // Date: 16 February 2024
+ // Code version: Unknown
+ // Availability: https://youtu.be/rAX_r0yBwzQ?si=E9eu7PGWc_ng1Hpc
+
 public class SoundEffectManager : MonoBehaviour
 {
     //To call sounds go to the specifc script, add SoundEffectManager.Play("SoundName") 
@@ -33,6 +39,6 @@ public class SoundEffectManager : MonoBehaviour
         {
             Debug.Log("Clip Not Found");
         }
-    }   
+    }
 
 }

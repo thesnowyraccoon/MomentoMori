@@ -1,10 +1,16 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+// Title: Unity 2D SCENE MANAGEMENT tutorial
+ // Author: Rehope Games
+ // Date: 13 March 2023
+ // Code version: Unknown
+ // Availability: https://youtu.be/E25JWfeCFPA?si=jPe9A3gVatkBPRZE
+
 public class SceneController : MonoBehaviour
 {
     public static SceneController instance; //Access from anywhere
-   //Script Destroyer
+                                            //Script Destroyer
     private void Awake()
     {
         if (instance == null)
