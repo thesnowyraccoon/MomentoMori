@@ -27,6 +27,8 @@ public class PlayerAttack : MonoBehaviour
     void Start()
     {
         attackAction.Enable(); // Enable the attack action to start receiving input
+
+        animator = GetComponent<Animator>();
     }
 
     public void AddAttack(int damage)
@@ -61,6 +63,7 @@ public class PlayerAttack : MonoBehaviour
             {
                 attackTimer = 0;
                 isAttacking = false;
+                animator.SetBool("isAttacking", isAttacking);
                 sword.SetActive(false);
             }
         }

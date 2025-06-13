@@ -51,7 +51,7 @@ public class Insomnium : Interactions
 
         player = GameObject.Find("playerRemy").GetComponent<PlayerController>();
 
-        tarot = GameObject.Find("Inventory");
+        //tarot = GameObject.Find("Inventory");
 
         if (tarot != null)
         {

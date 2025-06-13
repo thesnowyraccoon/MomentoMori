@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 7c01b32bccde41949a1557942a7c3021
+guid: 8bee97bd756b0d44a90010e7b785ae5a
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -125,10 +125,10 @@ TextureImporter:
       name: CatWalkLeft_0
       rect:
         serializedVersion: 2
-        x: 534
-        y: 1128
-        width: 241
-        height: 297
+        x: 0
+        y: 328
+        width: 289
+        height: 328
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -147,10 +147,10 @@ TextureImporter:
       name: CatWalkLeft_1
       rect:
         serializedVersion: 2
-        x: 2461
-        y: 1130
-        width: 238
-        height: 285
+        x: 289
+        y: 328
+        width: 289
+        height: 328
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -169,10 +169,10 @@ TextureImporter:
       name: CatWalkLeft_2
       rect:
         serializedVersion: 2
-        x: 533
-        y: 48
-        width: 241
-        height: 290
+        x: 0
+        y: 0
+        width: 289
+        height: 328
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -191,10 +191,10 @@ TextureImporter:
       name: CatWalkLeft_3
       rect:
         serializedVersion: 2
-        x: 2457
-        y: 47
-        width: 237
-        height: 303
+        x: 289
+        y: 0
+        width: 289
+        height: 328
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -213,7 +213,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 56b5397e0f92ee84fa299746b46bb8c1
     internalID: 0
     vertices: []
     indices: 

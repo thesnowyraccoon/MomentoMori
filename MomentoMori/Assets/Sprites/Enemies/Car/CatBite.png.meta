@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 69f09f290f9994248b03710313a89e6d
+guid: 2372b62cddb07db46836121e5f131e07
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -41,30 +41,6 @@ TextureImporter:
   - first:
       213: 2838225721711028568
     second: CatBite_12
-  - first:
-      213: 965925918869667047
-    second: CatBite_13
-  - first:
-      213: -4738119043292153305
-    second: CatBite_14
-  - first:
-      213: -1051106515851860085
-    second: CatBite_15
-  - first:
-      213: -6026204738635266391
-    second: CatBite_16
-  - first:
-      213: -1333680817715386483
-    second: CatBite_17
-  - first:
-      213: -64313034304765503
-    second: CatBite_18
-  - first:
-      213: -2376759135652601156
-    second: CatBite_19
-  - first:
-      213: 2036391068636056855
-    second: CatBite_20
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -176,10 +152,10 @@ TextureImporter:
       name: CatBite_0
       rect:
         serializedVersion: 2
-        x: 1137
-        y: 1715
-        width: 144
-        height: 346
+        x: 0
+        y: 391
+        width: 242
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -198,10 +174,10 @@ TextureImporter:
       name: CatBite_1
       rect:
         serializedVersion: 2
-        x: 1384
-        y: 2017
-        width: 9
-        height: 46
+        x: 242
+        y: 391
+        width: 242
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -220,10 +196,10 @@ TextureImporter:
       name: CatBite_2
       rect:
         serializedVersion: 2
-        x: 3057
-        y: 1715
-        width: 144
-        height: 349
+        x: 484
+        y: 391
+        width: 242
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -242,10 +218,10 @@ TextureImporter:
       name: CatBite_3
       rect:
         serializedVersion: 2
-        x: 3304
-        y: 2017
-        width: 9
-        height: 46
+        x: 0
+        y: 0
+        width: 242
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -264,10 +240,10 @@ TextureImporter:
       name: CatBite_4
       rect:
         serializedVersion: 2
-        x: 4977
-        y: 1715
-        width: 144
-        height: 350
+        x: 242
+        y: 0
+        width: 242
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -282,363 +258,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: CatBite_5
-      rect:
-        serializedVersion: 2
-        x: 5224
-        y: 2017
-        width: 9
-        height: 46
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5c1d6bb29f78296e0800000000000000
-      internalID: -1832252594136362555
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CatBite_6
-      rect:
-        serializedVersion: 2
-        x: 1322
-        y: 1767
-        width: 34
-        height: 51
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8e5b6de57e12b3210800000000000000
-      internalID: 1313680993920923112
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CatBite_7
-      rect:
-        serializedVersion: 2
-        x: 1341
-        y: 1793
-        width: 11
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 661c4ab619dddd650800000000000000
-      internalID: 6259402673760813414
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CatBite_8
-      rect:
-        serializedVersion: 2
-        x: 3242
-        y: 1767
-        width: 34
-        height: 51
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d726308c9ddb8fbd0800000000000000
-      internalID: -2596116442117873027
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CatBite_9
-      rect:
-        serializedVersion: 2
-        x: 3261
-        y: 1793
-        width: 11
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ac9f69adb5b2fc0b0800000000000000
-      internalID: -5706294529345783350
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CatBite_10
-      rect:
-        serializedVersion: 2
-        x: 5162
-        y: 1767
-        width: 34
-        height: 51
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 52043e6d4d32cb0f0800000000000000
-      internalID: -1099964811939987419
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CatBite_11
-      rect:
-        serializedVersion: 2
-        x: 5181
-        y: 1793
-        width: 11
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 62232a3ae60138b30800000000000000
-      internalID: 4288289337564607014
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CatBite_12
-      rect:
-        serializedVersion: 2
-        x: 1134
-        y: 635
-        width: 144
-        height: 336
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 85966fe9147636720800000000000000
-      internalID: 2838225721711028568
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CatBite_13
-      rect:
-        serializedVersion: 2
-        x: 3030
-        y: 916
-        width: 29
-        height: 50
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7ecb1996188a76d00800000000000000
-      internalID: 965925918869667047
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CatBite_14
-      rect:
-        serializedVersion: 2
-        x: 3058
-        y: 635
-        width: 135
-        height: 325
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 72abe0175d1de3eb0800000000000000
-      internalID: -4738119043292153305
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CatBite_15
-      rect:
-        serializedVersion: 2
-        x: 3213
-        y: 788
-        width: 31
-        height: 36
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b872d8d5138b961f0800000000000000
-      internalID: -1051106515851860085
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CatBite_16
-      rect:
-        serializedVersion: 2
-        x: 3219
-        y: 778
-        width: 20
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9a68ed9e7be9e5ca0800000000000000
-      internalID: -6026204738635266391
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CatBite_17
-      rect:
-        serializedVersion: 2
-        x: 1322
-        y: 695
-        width: 20
-        height: 43
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d876258cc50dd7de0800000000000000
-      internalID: -1333680817715386483
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CatBite_18
-      rect:
-        serializedVersion: 2
-        x: 1341
-        y: 718
-        width: 9
-        height: 19
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1c146d3d2a38b1ff0800000000000000
-      internalID: -64313034304765503
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CatBite_19
-      rect:
-        serializedVersion: 2
-        x: 3242
-        y: 695
-        width: 20
-        height: 43
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: cb223c2a82e040fd0800000000000000
-      internalID: -2376759135652601156
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CatBite_20
-      rect:
-        serializedVersion: 2
-        x: 3261
-        y: 713
-        width: 11
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 71d84dd33e6b24c10800000000000000
-      internalID: 2036391068636056855
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 338b75f39f5e4924690f4dac230c5588
     internalID: 0
     vertices: []
     indices: 
@@ -650,25 +274,9 @@ TextureImporter:
     nameFileIdTable:
       CatBite_0: 3761084093127100578
       CatBite_1: -5185281946878706551
-      CatBite_10: -1099964811939987419
-      CatBite_11: 4288289337564607014
-      CatBite_12: 2838225721711028568
-      CatBite_13: 965925918869667047
-      CatBite_14: -4738119043292153305
-      CatBite_15: -1051106515851860085
-      CatBite_16: -6026204738635266391
-      CatBite_17: -1333680817715386483
-      CatBite_18: -64313034304765503
-      CatBite_19: -2376759135652601156
       CatBite_2: -7150113489780544466
-      CatBite_20: 2036391068636056855
       CatBite_3: 2525671070377773744
       CatBite_4: -1480826778535434443
-      CatBite_5: -1832252594136362555
-      CatBite_6: 1313680993920923112
-      CatBite_7: 6259402673760813414
-      CatBite_8: -2596116442117873027
-      CatBite_9: -5706294529345783350
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

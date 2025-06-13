@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ee03f8232a953864b978702845934755
+guid: 8c4bb356a08be644e9c5020e0d3c9270
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -125,13 +125,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: StaminaBarBack_1
+      name: StaminaBarBack_3
       rect:
         serializedVersion: 2
-        x: 37
-        y: 255
-        width: 1831
-        height: 522
+        x: 451
+        y: 439
+        width: 1425
+        height: 160
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,8 +140,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cd54feb07aec67620800000000000000
-      internalID: 2771629837548209628
+      spriteID: 91f964285a26bcd20800000000000000
+      internalID: 3299839614973812505
       vertices: []
       indices: 
       edges: []
@@ -150,7 +150,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 83639afd82040744e9e8cee0744732cd
+    spriteID: bad785d91f5d4054f8065f62f037d8df
     internalID: 0
     vertices: []
     indices: 

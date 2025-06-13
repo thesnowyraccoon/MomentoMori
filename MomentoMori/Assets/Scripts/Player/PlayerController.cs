@@ -34,7 +34,10 @@ public class PlayerController : MonoBehaviour
     [Header("Animations")]
     [SerializeField] private Animator animator; // Animator component
     [SerializeField] private SpriteRenderer playerSR; // Player renderer
-    [SerializeField] private Animator interact;
+
+    // Interaction Icon
+    [Header("Interactions")]
+    [SerializeField] private GameObject interactionIcon;
 
     // Stats
     [Header("Health")]
@@ -58,6 +61,7 @@ public class PlayerController : MonoBehaviour
         pauseAction.Enable(); // Enable pause inputs
 
         animator = GetComponent<Animator>(); // Get the Animator component attached to the player
+        playerSR = GetComponent<SpriteRenderer>();
 
         playerHealth = maxHealth; // Sets player health to maximum
 
@@ -289,12 +293,12 @@ public class PlayerController : MonoBehaviour
     // Displays icon when able to interact
     public void OpenInteractableIcon()
     {
-        interact.SetFloat("Y", 2);
+        interactionIcon.SetActive(true);
     }
 
     public void CloseInteractableIcon()
     {
-        interact.SetFloat("Y", 0);
+        interactionIcon.SetActive(false);
     }
 
     // Checks if player can interact
