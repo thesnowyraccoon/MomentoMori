@@ -137,10 +137,10 @@ TextureImporter:
       name: HeadSlamUp_0
       rect:
         serializedVersion: 2
-        x: 35
-        y: 1148
-        width: 679
-        height: 1060
+        x: 0
+        y: 1116
+        width: 770
+        height: 1116
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -159,10 +159,10 @@ TextureImporter:
       name: HeadSlamUp_1
       rect:
         serializedVersion: 2
-        x: 967
-        y: 1709
-        width: 306
-        height: 231
+        x: 770
+        y: 1116
+        width: 770
+        height: 1116
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -181,10 +181,10 @@ TextureImporter:
       name: HeadSlamUp_2
       rect:
         serializedVersion: 2
-        x: 1744
-        y: 1496
-        width: 299
-        height: 439
+        x: 1540
+        y: 1116
+        width: 770
+        height: 1116
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -203,10 +203,10 @@ TextureImporter:
       name: HeadSlamUp_3
       rect:
         serializedVersion: 2
-        x: 199
-        y: 252
-        width: 306
-        height: 583
+        x: 0
+        y: 0
+        width: 770
+        height: 1116
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -225,10 +225,10 @@ TextureImporter:
       name: HeadSlamUp_4
       rect:
         serializedVersion: 2
-        x: 971
-        y: 79
-        width: 304
-        height: 739
+        x: 770
+        y: 0
+        width: 770
+        height: 1116
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -247,10 +247,10 @@ TextureImporter:
       name: HeadSlamUp_5
       rect:
         serializedVersion: 2
-        x: 1697
-        y: 193
-        width: 350
-        height: 637
+        x: 1540
+        y: 0
+        width: 770
+        height: 1116
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -265,55 +265,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: HeadSlamUp_6
-      rect:
-        serializedVersion: 2
-        x: 1716
-        y: 605
-        width: 6
-        height: 21
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d8526f1d1006155e0800000000000000
-      internalID: -1922650004976687731
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: HeadSlamUp_7
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 211
-        width: 7
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 25839b1c647c86d50800000000000000
-      internalID: 6730848749816985682
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: a15ee2c9fe26ebf4c964bb645e493a6f
     internalID: 0
     vertices: []
     indices: 
@@ -322,7 +278,13 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      HeadSlamUp_0: 3548277565164882198
+      HeadSlamUp_1: 5779430954351818482
+      HeadSlamUp_2: 5195823142729405292
+      HeadSlamUp_3: -2790185454236496851
+      HeadSlamUp_4: 3308296373790644631
+      HeadSlamUp_5: 2489435662058252253
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

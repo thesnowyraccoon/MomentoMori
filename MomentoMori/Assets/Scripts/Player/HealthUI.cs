@@ -24,7 +24,7 @@ public class HealthUI : MonoBehaviour
     public Sprite fullStar;
     public Image[] stars;
 
-    private bool foundStars;
+    private bool foundStars = false;
 
     void Start()
     {

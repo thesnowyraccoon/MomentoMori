@@ -22,5 +22,14 @@ public class Sword : MonoBehaviour
                 enemy.TakeDamage(swordDamage.GetAttack());
             }
         }
+        else if (collision.CompareTag("Boss"))
+        {
+            BossController boss = collision.GetComponent<BossController>();
+
+            if (boss != null)
+            {
+                boss.TakeDamage(swordDamage.GetAttack());
+            }
+        }
     }
 }
