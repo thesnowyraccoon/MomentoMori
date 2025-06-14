@@ -14,7 +14,7 @@ public class MapTransition : MonoBehaviour
     CinemachineConfiner2D confiner;
     public Direction direction;
 
-    public enum Direction { Up, Down, Left, Right, Far, Level3 } //The camera direction
+    public enum Direction { HomeUp, HomeDown, Left, Right, Far, Level3 } //The camera direction
     void Start()
     {
         confiner = GameObject.FindFirstObjectByType<CinemachineConfiner2D>();
@@ -43,11 +43,11 @@ public class MapTransition : MonoBehaviour
             case Direction.Left:
                 newPos.x -= 5;
                 break;
-            case Direction.Up:
-                newPos.y += 7;
+            case Direction.HomeUp:
+                newPos.y += 12;
                 break;
-            case Direction.Down:
-                newPos.y -= 7;
+            case Direction.HomeDown:
+                newPos.y -= 12;
                 break;
             case Direction.Far:
                 newPos = new Vector3(0, 7, 0);

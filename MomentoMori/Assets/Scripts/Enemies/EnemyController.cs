@@ -54,6 +54,16 @@ public class EnemyController : MonoBehaviour
     [SerializeField] private float chargeRate;
     private bool hasAttack = true;
 
+    //Learn EVERYTHING About Particles in Unity|Easy Tutorial
+    //1 December 2022
+    //Sasquatch B Studios
+    //https://youtu.be/0HKSvT2gcuk?si=mdvnt9gmoj4TxuaC
+
+    //Particle Effect
+    [Header("Particle")]
+    [SerializeField] private ParticleSystem damageParticles;
+    private ParticleSystem damageParticlesInstance;
+
     void Start()
     {
         player = GameObject.Find("playerRemy");
@@ -174,6 +184,8 @@ public class EnemyController : MonoBehaviour
     {
         health -= damage;
 
+        SpawnDamageParticles(); //Spawns in particles
+
         if (health <= 0)
         {
             Destroy(gameObject); // Enemy dies when health is zero
@@ -195,6 +207,11 @@ public class EnemyController : MonoBehaviour
         {
             hasPlayer = false;
         }
+    }
+
+    private void SpawnDamageParticles()
+    {
+        damageParticlesInstance = Instantiate(damageParticles, transform.position, Quaternion.identity);
     }
 
 
