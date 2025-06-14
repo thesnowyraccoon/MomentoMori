@@ -172,7 +172,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      SoulEffect_0: 746225075431483013
+      SoulEffect_1: -6287110105189809071
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

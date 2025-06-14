@@ -280,7 +280,6 @@ public class PlayerController : MonoBehaviour
 
                 Time.timeScale = 1f; // Start game time
             }
-            
         }
     }
 
