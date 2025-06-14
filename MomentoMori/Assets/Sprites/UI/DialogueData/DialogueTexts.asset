@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aac7f4e96c5d5ca41aa925a0cedbc6c2, type: 3}
+  m_Name: DialogueTexts
+  m_EditorClassIdentifier: 
+  dialogue:
+  - Where am I?
+  - You're dreaming...
+  - You don't remember what happened, do you?
+  - The only way you'll be able to remember  anything...is through dreaming.
+  - Can't you just tell me what happened?
+  - I am only here to help you Remy, that is all I can do for you.
+  - You'll have to survive each dream to regain fragments of your memory.
+  - Survive?
+  - Yes.  now quickly do as I tell you...
+  - WE DON'T HAVE MUCH TIME!
+  - Time for what?!
+  - I SAID WE DON'T HAVE MUCH TIME, NOW LISTEN AND DO AS I SAY!
+  - 'We''ll start with movement.
+
+    Pressing W will move you up and S to move down
+
+'
+  - Pressing A will move you to the left and D to the Right
+  - 'Good old fashion WASD, should be simple enough
+
+    Now try it out for yourself!'
+  - Good job, you learn fast... well I expected as much.
+  - Now you going to need a weapon
+  - A weapon for what?
+  - Enemies surround this whole world, you need to defeat them to stay alive...
+  - Now go pick up that tarot, it will give you a sword.
+  - Now that you have your weapon , you need to learn how to use it.
+  - You can use "K" to attack, now go try it out on that flower over there.
+  - 'Awesome work! do realise that the more you swing your sword the less stamina
+    you''ll have. '
+  - If you have no Stamina you cannot attack!
+  - Pay attention to the bottom corner, that is your stamina bar, it'll help you
+    track you stamina in battle.
+  - See the stars in the top left Corner?
+  - Yes...
+  - Those stars carry the amount of time you have left in this world
+  - if you run out of stars, you time in this world has ended and you'll wake up
+  - Stamina Bar? Stars? Time? You are not making any sense!
+  - Do dreams ever make sense?
+  - ...
+  - Now that you understand everything it is ti- oh one more thing...
+  - Remember to pick up Melatonin it'll give you more time in this world, when low
+    on time, fine Melatonin.
+  - It won't do anything if you have not lost anytime. So choose wisely on when to
+    pick it up.
+  - I know it is a lot to take in, but I believe in you, Remy, as I always have.
+  - Now it's time for you to go.
+  - Wait who are yo-
