@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: e3bd1273d216652499450b53bfd4b7f5
+guid: 4161cade55aa9be49980949163c99eb2
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -172,9 +172,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      SoulEffect_0: 746225075431483013
-      SoulEffect_1: -6287110105189809071
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
