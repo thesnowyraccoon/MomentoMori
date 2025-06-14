@@ -1,12 +1,6 @@
 using System.Collections;
 using UnityEngine;
 
-// Title: How to make a BOSS in Unity!
-// Author: Brackeys
-// Date: January 26 2020
-// Code version: Unknown
-// Availability: https://youtu.be/AD4JIXQDw0s?si=6hfV5X20wXlI3O14
-
 public class BossController : MonoBehaviour
 {
     // Health
@@ -14,6 +8,12 @@ public class BossController : MonoBehaviour
     [SerializeField] private int health;
     [SerializeField] private int maxHealth = 50;
 
+    // Attack
+    [Header("Attacking")]
+    public float attackCooldown = 5f;
+
+    // Colliders
+    [Header("Colliders")]
     [SerializeField] private Collider2D wing;
     [SerializeField] private Collider2D head;
     [SerializeField] private Collider2D staff;
@@ -48,4 +48,3 @@ public class BossController : MonoBehaviour
         }
     }
 }
-
