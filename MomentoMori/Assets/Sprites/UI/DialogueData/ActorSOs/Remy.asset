@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 497e78ed4cf41eb4c86c9a9ab701d544, type: 3}
+  m_Name: Remy
+  m_EditorClassIdentifier: 
+  actorName: Remy
+  actorPortrait: {fileID: 2011427461511132350, guid: c586169dad2b2cd41b29c93c1a5d98c7, type: 3}
