@@ -23,6 +23,7 @@ public class FinishPoint : MonoBehaviour
             if (goNextLevel)
             {
                 SceneController.instance.NextLevel();
+                Debug.Log("Scene Loaded");
             }
             else
             {

@@ -27,7 +27,8 @@ public class SceneController : MonoBehaviour
     }
     public void NextLevel()
     { //Load Next Scene. (+1 is to indicate the scene after it)
-        StartCoroutine(LoadLevel());
+        SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 1);
+        //StartCoroutine(LoadLevel());
     }
 
     public void LoadScene(string sceneName)
@@ -35,17 +36,23 @@ public class SceneController : MonoBehaviour
         SceneManager.LoadSceneAsync(sceneName);  //Go to the desired scene using the scene name
     }
 
-// Title: Unity Scene Transitions: Creating an Immersive and seamless Gaming Experience
-// Author: Rehope Games
-// Date: 7 April 2023
-// Code version: Unknown
-// Availability: https://youtu.be/HBEStd96UzI?si=ffU8jJTDLNc6oTgo
-    IEnumerator LoadLevel()
-    {
-        transitionAnim.SetTrigger("End");
-        yield return new WaitForSeconds(1);
-        SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 1);
-        transitionAnim.SetTrigger("Start");
-    }
+    // Title: Unity Scene Transitions: Creating an Immersive and seamless Gaming Experience
+    // Author: Rehope Games
+    // Date: 7 April 2023
+    // Code version: Unknown
+    // Availability: https://youtu.be/HBEStd96UzI?si=ffU8jJTDLNc6oTgo
+    // IEnumerator LoadLevel()
+    // {
+    //     transitionAnim.SetTrigger("End");
+
+    //     yield return new WaitForSeconds(1);
+
+    //     SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 1);
+    //     Debug.Log("Scene Loaded");
+
+    //     transitionAnim.SetTrigger("Start");
+
+        
+    // }
 }
 
