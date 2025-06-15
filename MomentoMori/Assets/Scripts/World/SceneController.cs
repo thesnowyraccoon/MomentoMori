@@ -27,8 +27,8 @@ public class SceneController : MonoBehaviour
     }
     public void NextLevel()
     { //Load Next Scene. (+1 is to indicate the scene after it)
-        SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 1);
-        //StartCoroutine(LoadLevel());
+       
+        StartCoroutine(LoadLevel());
     }
 
     public void LoadScene(string sceneName)
@@ -41,18 +41,19 @@ public class SceneController : MonoBehaviour
     // Date: 7 April 2023
     // Code version: Unknown
     // Availability: https://youtu.be/HBEStd96UzI?si=ffU8jJTDLNc6oTgo
-    // IEnumerator LoadLevel()
-    // {
-    //     transitionAnim.SetTrigger("End");
+    IEnumerator LoadLevel()
+    {
+        transitionAnim.SetTrigger("End");
 
-    //     yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(1);
 
-    //     SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 1);
-    //     Debug.Log("Scene Loaded");
+        SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 1);
+        
+        Debug.Log("Scene Loaded");
 
-    //     transitionAnim.SetTrigger("Start");
+        transitionAnim.SetTrigger("Start");
 
         
-    // }
+    }
 }
 
