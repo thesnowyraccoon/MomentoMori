@@ -103,7 +103,7 @@ public class HealthUI : MonoBehaviour
                 }
                 else if (health >= 10)
                 {
-                    //stars[i].sprite = fullStar;
+                    stars[i].sprite = fullStar;
                 }
             }
 

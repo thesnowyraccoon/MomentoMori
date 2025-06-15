@@ -20,10 +20,4 @@ public class SceneCheck : MonoBehaviour
             Debug.Log("Scene is not loaded.");
         }
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

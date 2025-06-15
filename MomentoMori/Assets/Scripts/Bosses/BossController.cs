@@ -45,6 +45,8 @@ public class BossController : MonoBehaviour
         if (health <= 0)
         {
             Destroy(gameObject);
+
+            SceneController.instance.NextLevel();
         }
     }
 }

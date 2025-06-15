@@ -1,5 +1,3 @@
-using UnityEngine;
-
 public class Magician : Item
 {
     bool tarotActive = false;

@@ -177,7 +177,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  owl: {fileID: 2793539734633556881}
+  enemy: {fileID: 0}
   followDistance: 8
   speed: 2
   health: 15

@@ -17,7 +17,7 @@ public class EnemyController : MonoBehaviour
 
     // Animations
     [Header("Animations")]
-    [SerializeField] private Animator owl;
+    [SerializeField] private Animator enemy;
     private bool isMoving = false;
     private float X = 0, Y = 0;
 
@@ -67,6 +67,7 @@ public class EnemyController : MonoBehaviour
     void Start()
     {
         player = GameObject.Find("playerRemy");
+        enemy = GetComponent<Animator>();
 
         health = maxHealth; // Sets enemy health to max
         cooldown = maxCooldown;
@@ -132,7 +133,7 @@ public class EnemyController : MonoBehaviour
         {
             player.GetComponent<PlayerController>().Damaged(attack);
             isAttacking = true;
-            owl.SetBool("isAttacking", isAttacking);
+            enemy.SetBool("isAttacking", isAttacking);
         }
     }
 
@@ -147,7 +148,7 @@ public class EnemyController : MonoBehaviour
             {
                 attackTimer = 0;
                 isAttacking = false;
-                owl.SetBool("isAttacking", isAttacking);
+                enemy.SetBool("isAttacking", isAttacking);
             }
         }
     }
@@ -166,16 +167,16 @@ public class EnemyController : MonoBehaviour
             X = direction.x;
             Y = direction.y;
 
-            owl.SetBool("isMoving", isMoving);
-            owl.SetFloat("X", X);
-            owl.SetFloat("Y", Y);
+            enemy.SetBool("isMoving", isMoving);
+            enemy.SetFloat("X", X);
+            enemy.SetFloat("Y", Y);
         }
         else
         {
             direction = Vector2.zero;
 
             isMoving = false;
-            owl.SetBool("isMoving", isMoving);
+            enemy.SetBool("isMoving", isMoving);
         }
     }
 

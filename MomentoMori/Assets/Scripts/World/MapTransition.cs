@@ -44,10 +44,10 @@ public class MapTransition : MonoBehaviour
                 newPos.x -= 5;
                 break;
             case Direction.HomeUp:
-                newPos.y += 12;
+                newPos.y += 10;
                 break;
             case Direction.HomeDown:
-                newPos.y -= 12;
+                newPos.y -= 10;
                 break;
             case Direction.Far:
                 newPos = new Vector3(0, 7, 0);

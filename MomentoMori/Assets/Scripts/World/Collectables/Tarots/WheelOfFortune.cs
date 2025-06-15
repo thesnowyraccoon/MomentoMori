@@ -4,19 +4,23 @@ public class WheelOfFortune : Item
 {
     bool tarotActive = false;
 
-    public int speedGain = 5;
-    public float dashGain = 300;
-    public PlayerController.MaximumHealth maximumHealth = PlayerController.MaximumHealth.Thirty;
-    public int damageGain = 4;
-    public float staminaGain = 50;
+    public int speedGain = 10;
+    public float dashGain = 5;
+    public PlayerController.MaximumHealth maximumHealth = PlayerController.MaximumHealth.Fifty;
+    public int damageGain = 15;
+    public float staminaGain = 17;
 
     public override void UseItem()
     {
         if (tarotActive == false)
         {
-            int fortune = Random.Range(1, 6);
+            int fortune = Random.Range(0, 6);
 
-            if (fortune == 1)
+            if (fortune == 0)
+            {
+                Debug.Log("Loser :P");
+            }
+            else if (fortune == 1)
             {
                 player.AddSpeed(speedGain);
             }

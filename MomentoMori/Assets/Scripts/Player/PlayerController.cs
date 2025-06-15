@@ -253,11 +253,7 @@ public class PlayerController : MonoBehaviour
 
         if (playerHealth <= 0) // Player disable on death // Should be reset to start
         {
-            //playerSR.enabled = false;
-            //moveAction.Disable();
-            //Time.timeScale = 0f;
-
-            SceneManager.LoadSceneAsync("World");
+            SceneController.instance.LoadScene("Home");
         }
     }
 

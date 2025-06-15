@@ -1225,7 +1225,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &721166781
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1265,7 +1265,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 2011427461511132350, guid: c586169dad2b2cd41b29c93c1a5d98c7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f9876b5042df985478de69bf764df9c0, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1375,7 +1375,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &827550799
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1415,7 +1415,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 88d2af8e7fc5ab444b468473b6b9e0ec, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 652263da6ce1f0e488ce94f78ada5640, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1477,6 +1477,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89a71ded54726af4493cad1e94670279, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  transitionAnim: {fileID: 0}
 --- !u!1 &945520838
 GameObject:
   m_ObjectHideFlags: 0
@@ -2300,7 +2301,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1132860653
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2321,7 +2322,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 2011427461511132350, guid: c586169dad2b2cd41b29c93c1a5d98c7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f9876b5042df985478de69bf764df9c0, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2937,7 +2938,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1436021950
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2954,8 +2955,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 29.718994, y: -4.3703003}
-  m_SizeDelta: {x: 200, y: 190}
+  m_AnchoredPosition: {x: 9.3272705, y: -12.442}
+  m_SizeDelta: {x: 248.4303, y: 253.7241}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &1436021951
 MonoBehaviour:
@@ -2977,7 +2978,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 88d2af8e7fc5ab444b468473b6b9e0ec, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 652263da6ce1f0e488ce94f78ada5640, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4176,8 +4177,8 @@ MonoBehaviour:
   textLabel: {fileID: 1969242236}
   playDialogue: {fileID: 11400000, guid: ca494aa5e8893714f912b1704303b903, type: 2}
   inputPromptText: {fileID: 147828871}
-  actorPotraitRemy: {fileID: 827550798}
-  pactorPotraitEntity: {fileID: 1132860652}
+  actorPotraitRemy: {fileID: 721166780}
+  pactorPotraitEntity: {fileID: 1436021949}
   PlayerController: {fileID: 1379031549}
   Cutscene: {fileID: 36647799}
   Cutscene2: {fileID: 1617645232}

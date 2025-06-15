@@ -25,6 +25,7 @@ public class DontDestroy : MonoBehaviour
         }
         //Player- Object Index 0
         //Canvas- Object Index 1
+        //Camera- Object Index 2
     }
 
     

@@ -12,7 +12,6 @@ using UnityEngine.SceneManagement;
 public class FinishPoint : MonoBehaviour
 {
     public PlayerController player; //refers to the player controller script
-    private int health;
 
     [SerializeField] bool goNextLevel;
     [SerializeField] string levelName;
@@ -24,7 +23,6 @@ public class FinishPoint : MonoBehaviour
             if (goNextLevel)
             {
                 SceneController.instance.NextLevel();
-                
             }
             else
             {
