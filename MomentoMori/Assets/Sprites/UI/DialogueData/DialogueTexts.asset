@@ -12,6 +12,45 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aac7f4e96c5d5ca41aa925a0cedbc6c2, type: 3}
   m_Name: DialogueTexts
   m_EditorClassIdentifier: 
+  actorPortrait:
+  - {fileID: 2011427461511132350, guid: c586169dad2b2cd41b29c93c1a5d98c7, type: 3}
+  - {fileID: 21300000, guid: 88d2af8e7fc5ab444b468473b6b9e0ec, type: 3}
+  - {fileID: 21300000, guid: 88d2af8e7fc5ab444b468473b6b9e0ec, type: 3}
+  - {fileID: 21300000, guid: 88d2af8e7fc5ab444b468473b6b9e0ec, type: 3}
+  - {fileID: 2011427461511132350, guid: c586169dad2b2cd41b29c93c1a5d98c7, type: 3}
+  - {fileID: 21300000, guid: 88d2af8e7fc5ab444b468473b6b9e0ec, type: 3}
+  - {fileID: 21300000, guid: 88d2af8e7fc5ab444b468473b6b9e0ec, type: 3}
+  - {fileID: 2011427461511132350, guid: c586169dad2b2cd41b29c93c1a5d98c7, type: 3}
+  - {fileID: 21300000, guid: 88d2af8e7fc5ab444b468473b6b9e0ec, type: 3}
+  - {fileID: 21300000, guid: 88d2af8e7fc5ab444b468473b6b9e0ec, type: 3}
+  - {fileID: 2011427461511132350, guid: c586169dad2b2cd41b29c93c1a5d98c7, type: 3}
+  - {fileID: 21300000, guid: 88d2af8e7fc5ab444b468473b6b9e0ec, type: 3}
+  - {fileID: 21300000, guid: 88d2af8e7fc5ab444b468473b6b9e0ec, type: 3}
+  - {fileID: 21300000, guid: 88d2af8e7fc5ab444b468473b6b9e0ec, type: 3}
+  - {fileID: 21300000, guid: 88d2af8e7fc5ab444b468473b6b9e0ec, type: 3}
+  - {fileID: 21300000, guid: 88d2af8e7fc5ab444b468473b6b9e0ec, type: 3}
+  - {fileID: 21300000, guid: 88d2af8e7fc5ab444b468473b6b9e0ec, type: 3}
+  - {fileID: 21300000, guid: 88d2af8e7fc5ab444b468473b6b9e0ec, type: 3}
+  - {fileID: 21300000, guid: 88d2af8e7fc5ab444b468473b6b9e0ec, type: 3}
+  - {fileID: 21300000, guid: 88d2af8e7fc5ab444b468473b6b9e0ec, type: 3}
+  - {fileID: 21300000, guid: 88d2af8e7fc5ab444b468473b6b9e0ec, type: 3}
+  - {fileID: 21300000, guid: 88d2af8e7fc5ab444b468473b6b9e0ec, type: 3}
+  - {fileID: 21300000, guid: 88d2af8e7fc5ab444b468473b6b9e0ec, type: 3}
+  - {fileID: 21300000, guid: 88d2af8e7fc5ab444b468473b6b9e0ec, type: 3}
+  - {fileID: 21300000, guid: 88d2af8e7fc5ab444b468473b6b9e0ec, type: 3}
+  - {fileID: 21300000, guid: 88d2af8e7fc5ab444b468473b6b9e0ec, type: 3}
+  - {fileID: 2011427461511132350, guid: c586169dad2b2cd41b29c93c1a5d98c7, type: 3}
+  - {fileID: 21300000, guid: 88d2af8e7fc5ab444b468473b6b9e0ec, type: 3}
+  - {fileID: 21300000, guid: 88d2af8e7fc5ab444b468473b6b9e0ec, type: 3}
+  - {fileID: 2011427461511132350, guid: c586169dad2b2cd41b29c93c1a5d98c7, type: 3}
+  - {fileID: 21300000, guid: 88d2af8e7fc5ab444b468473b6b9e0ec, type: 3}
+  - {fileID: 2011427461511132350, guid: c586169dad2b2cd41b29c93c1a5d98c7, type: 3}
+  - {fileID: 21300000, guid: 88d2af8e7fc5ab444b468473b6b9e0ec, type: 3}
+  - {fileID: 21300000, guid: 88d2af8e7fc5ab444b468473b6b9e0ec, type: 3}
+  - {fileID: 21300000, guid: 88d2af8e7fc5ab444b468473b6b9e0ec, type: 3}
+  - {fileID: 21300000, guid: 88d2af8e7fc5ab444b468473b6b9e0ec, type: 3}
+  - {fileID: 21300000, guid: 88d2af8e7fc5ab444b468473b6b9e0ec, type: 3}
+  - {fileID: 2011427461511132350, guid: c586169dad2b2cd41b29c93c1a5d98c7, type: 3}
   dialogue:
   - Where am I?
   - You're dreaming...
@@ -21,7 +60,7 @@ MonoBehaviour:
   - I am only here to help you Remy, that is all I can do for you.
   - You'll have to survive each dream to regain fragments of your memory.
   - Survive?
-  - Yes.  now quickly do as I tell you...
+  - Yes. now quickly do as I tell you...
   - WE DON'T HAVE MUCH TIME!
   - Time for what?!
   - I SAID WE DON'T HAVE MUCH TIME, NOW LISTEN AND DO AS I SAY!
@@ -39,7 +78,7 @@ MonoBehaviour:
   - A weapon for what?
   - Enemies surround this whole world, you need to defeat them to stay alive...
   - Now go pick up that tarot, it will give you a sword.
-  - Now that you have your weapon , you need to learn how to use it.
+  - Now that you have your weapon, you need to learn how to use it.
   - You can use "K" to attack, now go try it out on that flower over there.
   - 'Awesome work! do realise that the more you swing your sword the less stamina
     you''ll have. '

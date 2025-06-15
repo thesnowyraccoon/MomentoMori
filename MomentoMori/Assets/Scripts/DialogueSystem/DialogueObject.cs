@@ -9,10 +9,15 @@ using static UnityEngine.Rendering.DebugUI.Table;
 //Availability: https://youtu.be/ZvJYb-nxrj8?si=nYZ5KjbNbrUPuNB_
 
 
-[CreateAssetMenu(menuName = "Dialogue/DialogueObject")]
+[CreateAssetMenu]
 public class DialogueObject : ScriptableObject
 {
-    [SerializeField][TextArea] private string[] dialogue;
+    //public DialogueActors[] actors;
+    public Sprite[] actorPortrait;
+
+    [Header("Dialogue")]
+    [TextArea]
+    public string[] dialogue;
 
     public string[] Dialogue => dialogue;
 }

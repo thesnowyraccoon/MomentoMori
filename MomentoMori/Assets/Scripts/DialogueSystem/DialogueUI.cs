@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEngine;
 using TMPro;
+//using UnityEngine.UI;
 using static UnityEngine.Rendering.DebugUI.Table;
 using Unity.VisualScripting;
 using UnityEngine.Playables;
@@ -14,46 +15,65 @@ using UnityEngine.Playables;
 
 public class DialogueUI : MonoBehaviour
 {
-
+    //UI References
     [SerializeField] private GameObject dialogueBox;
     [SerializeField] private TMP_Text textLabel;
     [SerializeField] private DialogueObject playDialogue;
     [SerializeField] private TMP_Text inputPromptText;
+
+    //ActorPortrait reference
+    [SerializeField] private GameObject actorPotraitRemy;
+    [SerializeField] private GameObject pactorPotraitEntity;
+
+    //PlayerMovement Reference
     [SerializeField] private MonoBehaviour PlayerController;
+
+    //Cutscenes References
     [SerializeField] private PlayableDirector Cutscene;
     [SerializeField] private PlayableDirector Cutscene2;
     [SerializeField] private PlayableDirector Cutscene3;
     [SerializeField] private PlayableDirector Cutscene4;
-    private int currentDialogueIndex = 0;
 
-
+    //Typewriter Reference
     private TypewriterEffect typewriterEffect;
 
-    private void CloseDialogueBox()
-    {
-        PlayerController.enabled = true;
-        dialogueBox.SetActive(false);
-        textLabel.text = string.Empty;
-    }
+    //Start dialouge on the first array
+    private int currentDialogueIndex = 0;
+
+    
 
     private void Start()
     { 
+        //Inactive cutscenes
         Cutscene.gameObject.SetActive(false);
         Cutscene2.gameObject.SetActive(false);
         Cutscene3.gameObject.SetActive(false);
         Cutscene4.gameObject.SetActive(false);
+
+        //Typing effect
         typewriterEffect = GetComponent<TypewriterEffect>();
+
+        //show and close dialogue methods
         CloseDialogueBox();
         ShowDialogue(playDialogue);
+
+        //Prompt text set to blank
         inputPromptText.text = "";
 
     }
+
 
     public void ShowDialogue(DialogueObject dialogueObject)
     {
         PlayerController.enabled = false;
         dialogueBox.SetActive(true);
         StartCoroutine(StepThroughDialogue(dialogueObject));
+    }
+    private void CloseDialogueBox()
+    {
+        PlayerController.enabled = true;
+        dialogueBox.SetActive(false);
+        textLabel.text = string.Empty;
     }
 
     private IEnumerator StepThroughDialogue(DialogueObject dialogueObject)
