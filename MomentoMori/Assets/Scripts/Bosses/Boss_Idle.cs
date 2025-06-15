@@ -6,7 +6,7 @@ using UnityEngine;
 // Code version: Unknown
 // Availability: https://youtu.be/AD4JIXQDw0s?si=6hfV5X20wXlI3O14
 
-public class CarnivalBoss_Idle : StateMachineBehaviour
+public class Boss_Idle : StateMachineBehaviour
 {
     float timer;
     float cooldown;

@@ -236,7 +236,7 @@ MonoBehaviour:
       m_Flags: 0
     m_Flags: 0
   moveSpeed: 5
-  dashSpeed: 0
+  dashSpeed: 15
   dashLength: 0.5
   animator: {fileID: 5794283828250870785}
   playerSR: {fileID: 7483883042574814246}
@@ -315,12 +315,7 @@ MonoBehaviour:
   halfStar: {fileID: -1609472864295989705, guid: 0401ca566606bd74e9e65a4cc4257616, type: 3}
   threequarterStar: {fileID: 5921520191417961623, guid: 0b5f9a7b68991904abe21da9c8caa3d8, type: 3}
   fullStar: {fileID: -5613572870632553568, guid: da81a28854b9b4740be59594a6083963, type: 3}
-  stars:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  stars: []
 --- !u!114 &3417674357925583199
 MonoBehaviour:
   m_ObjectHideFlags: 0

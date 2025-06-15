@@ -1,5 +1,7 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 // Title: Drag and Drop Inventory UI - Top Down Unity 2D #8
 // Author: Game Code Library 
@@ -7,11 +9,14 @@ using UnityEngine.EventSystems;
 // Code version: Unknown
 // Availability: https://youtu.be/wlBJ0yZOYfM?si=W2ip6xoiSZjbsVKb
 
-public class ItemDragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
+public class ItemDragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler, IPointerClickHandler
 {
     Transform originalParent;
     CanvasGroup canvasGroup;
     GameObject book;
+
+    TMP_Text description;
+    public string tarotDescription;
 
     void Start()
     {
@@ -75,5 +80,11 @@ public class ItemDragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, I
         }
 
         GetComponent<RectTransform>().anchoredPosition = Vector2.zero;
+    }
+
+    public void OnPointerClick(PointerEventData eventData)
+    {
+        description = GameObject.Find("Description").GetComponent<TMP_Text>();
+        description.text = tarotDescription;
     }
 }
