@@ -3,6 +3,22 @@ using UnityEngine;
 
 public class CrowMovement : MonoBehaviour
 {
+    //Most of this script has been taken out of the enemy controller script (Find refernces there)
+    // Health
+     [Header("Player")]
+    public GameObject player;
+    private bool hasPlayer = false;
+
+    [Header("Health")]
+    [SerializeField] private int health;
+    [SerializeField] private int maxHealth = 100;
+
+    //Header
+    [Header("Particle")]
+    [SerializeField] private ParticleSystem damageParticles;
+    private ParticleSystem damageParticlesInstance;
+
+
     //Title:Week 14 - Polymorphism & Overriding & Raycasting
     //Author:HAyes, A.
     //Date: 2025
@@ -16,6 +32,10 @@ public class CrowMovement : MonoBehaviour
     void Start()
     {
         animator = GetComponent<Animator>();
+
+        player = GameObject.Find("playerRemy");
+
+        health = maxHealth; // Sets enemy health to max
     }
 
     // Update is called once per frame
@@ -38,6 +58,22 @@ public class CrowMovement : MonoBehaviour
 
             animator.SetBool("isMoving", true);
         }
-        
     }
+
+     public void TakeDamage(int damage)
+    {
+        health -= damage;
+
+        SpawnDamageParticles(); //Spawns in particles
+
+        if (health <= 0)
+        {
+            Destroy(gameObject); // Enemy dies when health is zero
+        }
+    }
+     private void SpawnDamageParticles()
+    {
+        damageParticlesInstance = Instantiate(damageParticles, transform.position, Quaternion.identity);
+    }
+
 }
