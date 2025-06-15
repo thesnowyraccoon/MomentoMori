@@ -55,6 +55,8 @@ public class PlayerController : MonoBehaviour
     [Header("Particle")]
     [SerializeField] private ParticleSystem dashParticles;
     private ParticleSystem dashParticlesInstance;
+    [SerializeField] private ParticleSystem starParticles;
+    private ParticleSystem starParticlesInstance;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -204,6 +206,7 @@ public class PlayerController : MonoBehaviour
     public void Damaged(int damage)
     {
         playerHealth -= damage;
+        SpawnStarParticles(); //Spawns in particles
     }
 
     // Player recieving health
@@ -334,8 +337,12 @@ public class PlayerController : MonoBehaviour
             CheckInteraction();
         }
     }
-     private void SpawnDashParticles()
+    private void SpawnDashParticles()
     {
         dashParticlesInstance = Instantiate(dashParticles, transform.position, Quaternion.identity);
+    }
+    private void SpawnStarParticles()
+    {
+        starParticlesInstance = Instantiate(starParticles, transform.position, Quaternion.identity);
     }
 }
