@@ -100,6 +100,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 612620484901056731, guid: 0322c3d153e5c63429f3edde64939120, type: 3}
+    - target: {fileID: 5865835777226444075, guid: 3a6da2954e45ace46a9b295812d83109, type: 3}
+      propertyPath: tarotDescription
+      value: 'The Star: Adds health to player'
+      objectReference: {fileID: 0}
     - target: {fileID: 6590529108859859616, guid: 3a6da2954e45ace46a9b295812d83109, type: 3}
       propertyPath: m_Name
       value: The Star Variant
@@ -131,5 +135,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ID: 0
   player: {fileID: 0}
+  attack: {fileID: 0}
+  stamina: {fileID: 0}
   maximumHealth: 2
   healthGain: 30
