@@ -11,7 +11,13 @@ public class CrowMovement : MonoBehaviour
 
     public LayerMask groundLayer;
 
-    
+    private Animator animator;
+
+    void Start()
+    {
+        animator = GetComponent<Animator>();
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -29,6 +35,8 @@ public class CrowMovement : MonoBehaviour
         void Move()
         {
             transform.Translate(Vector2.right * 2.0f * Time.deltaTime);
+
+            animator.SetBool("isMoving", true);
         }
         
     }
