@@ -51,6 +51,11 @@ public class PlayerController : MonoBehaviour
     [Header("Attacking")]
     public Transform aim; // Direction of player attack
 
+    //Particle
+    [Header("Particle")]
+    [SerializeField] private ParticleSystem dashParticles;
+    private ParticleSystem dashParticlesInstance;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -167,6 +172,7 @@ public class PlayerController : MonoBehaviour
         {
             activeMoveSpeed = dashSpeed;
             dashCounter = dashLength;
+            SpawnDashParticles(); //Spawns in particles
         }
     }
 
@@ -288,7 +294,7 @@ public class PlayerController : MonoBehaviour
     // Date: April 24 2020
     // Code version: Unknown
     // Availability: https://youtu.be/GaVADPZlO0o?si=0MwOBmMmnPj6RDBl
-    
+
     // Displays icon when able to interact
     public void OpenInteractableIcon()
     {
@@ -307,7 +313,7 @@ public class PlayerController : MonoBehaviour
 
         if (hits.Length > 0)
         {
-            foreach(RaycastHit2D raycast in hits)
+            foreach (RaycastHit2D raycast in hits)
             {
                 if (raycast.transform.GetComponent<Interactions>())
                 {
@@ -325,5 +331,9 @@ public class PlayerController : MonoBehaviour
         {
             CheckInteraction();
         }
+    }
+     private void SpawnDashParticles()
+    {
+        dashParticlesInstance = Instantiate(dashParticles, transform.position, Quaternion.identity);
     }
 }
