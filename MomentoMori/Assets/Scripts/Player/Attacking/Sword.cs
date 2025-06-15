@@ -16,10 +16,16 @@ public class Sword : MonoBehaviour
         if (collision.CompareTag("Enemy"))
         {
             EnemyController enemy = collision.GetComponent<EnemyController>();
+            CrowMovement crow = collision.GetComponent<CrowMovement>();
 
             if (enemy != null)
             {
                 enemy.TakeDamage(swordDamage.GetAttack());
+            }
+
+            if (crow != null)
+            {
+                crow.TakeDamage(swordDamage.GetAttack());
             }
         }
         else if (collision.CompareTag("Boss"))

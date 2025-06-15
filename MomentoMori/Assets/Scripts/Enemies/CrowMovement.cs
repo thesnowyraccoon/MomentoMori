@@ -5,9 +5,8 @@ public class CrowMovement : MonoBehaviour
 {
     //Most of this script has been taken out of the enemy controller script (Find refernces there)
     // Health
-     [Header("Player")]
+    [Header("Player")]
     public GameObject player;
-    private bool hasPlayer = false;
 
     [Header("Health")]
     [SerializeField] private int health;
@@ -60,7 +59,7 @@ public class CrowMovement : MonoBehaviour
         }
     }
 
-     public void TakeDamage(int damage)
+    public void TakeDamage(int damage)
     {
         health -= damage;
 
@@ -68,10 +67,11 @@ public class CrowMovement : MonoBehaviour
 
         if (health <= 0)
         {
-            Destroy(gameObject); // Enemy dies when health is zero
+            Destroy(transform.parent.gameObject); // Enemy dies when health is zero
         }
     }
-     private void SpawnDamageParticles()
+
+    private void SpawnDamageParticles()
     {
         damageParticlesInstance = Instantiate(damageParticles, transform.position, Quaternion.identity);
     }
