@@ -2,8 +2,6 @@ using System.Collections;
 using UnityEngine;
 using TMPro;
 //using UnityEngine.UI;
-using static UnityEngine.Rendering.DebugUI.Table;
-using Unity.VisualScripting;
 using UnityEngine.Playables;
 
 //Title: SETUP: How to Create a Flexible Dialogue System - Unity #1
@@ -43,6 +41,7 @@ public class DialogueUI : MonoBehaviour
     //Start dialouge on the first array
     private int currentDialogueIndex = 0;
 
+    [HideInInspector] public bool hasAttacked = false;
 
     private void Start()
     {
@@ -68,17 +67,13 @@ public class DialogueUI : MonoBehaviour
 
         //Prompt text set to blank
         inputPromptText.text = "";
-
-        
-
     }
-
 
     public void ShowDialogue(DialogueObject dialogueObject)
     {
         //DisableMovement
         Remy.GetComponent<PlayerController>().moveAction.Disable();
-        Remy.GetComponent<Animator>().SetBool("isMOving", false);
+        Remy.GetComponent<Animator>().SetBool("isMoving", false);
 
         dialogueBox.SetActive(true);
         StartCoroutine(StepThroughDialogue(dialogueObject));
@@ -87,7 +82,7 @@ public class DialogueUI : MonoBehaviour
     {
         //EnablesMovement
         Remy.GetComponent<PlayerController>().moveAction.Enable();
-        Remy.GetComponent<Animator>().SetBool("isMOving", true);
+        Remy.GetComponent<Animator>().SetBool("isMoving", true);
 
         dialogueBox.SetActive(false);
         textLabel.text = string.Empty;
@@ -122,7 +117,6 @@ public class DialogueUI : MonoBehaviour
 
             }
 
-
             // Potrait activated and deactvated/////////////////////////////////////////
 
             else if (currentDialogueIndex == 3)
@@ -155,7 +149,6 @@ public class DialogueUI : MonoBehaviour
                 potraitEntity.gameObject.SetActive(true);
             }
 
-
             //Entity's anger///////////////////////////////////////////////////////////
 
             else if (currentDialogueIndex == 11)
@@ -170,7 +163,6 @@ public class DialogueUI : MonoBehaviour
                 yield return new WaitForSeconds(1);
             }
 
-
             //WASD Tutotial///////////////////////////////////////////////////////////
 
             else if (currentDialogueIndex == 14)
@@ -180,7 +172,7 @@ public class DialogueUI : MonoBehaviour
 
                 //Enables movement
                 Remy.GetComponent<PlayerController>().moveAction.Enable();
-                Remy.GetComponent<Animator>().SetBool("isMOving", true);
+                Remy.GetComponent<Animator>().SetBool("isMoving", true);
 
                 inputPromptText.text = "WASD to move around";
 
@@ -200,7 +192,7 @@ public class DialogueUI : MonoBehaviour
 
                 //Disables movement
                 Remy.GetComponent<PlayerController>().moveAction.Disable();
-                Remy.GetComponent<Animator>().SetBool("isMOving", false);
+                Remy.GetComponent<Animator>().SetBool("isMoving", false);
             }
 
 
@@ -231,7 +223,7 @@ public class DialogueUI : MonoBehaviour
 
                 //Enables movement
                 Remy.GetComponent<PlayerController>().moveAction.Enable();
-                Remy.GetComponent<Animator>().SetBool("isMOving", true);
+                Remy.GetComponent<Animator>().SetBool("isMoving", true);
 
 
                 inputPromptText.text = "Pick up tarot card";
@@ -241,7 +233,7 @@ public class DialogueUI : MonoBehaviour
 
                 //Disables movement
                 Remy.GetComponent<PlayerController>().moveAction.Disable();
-                Remy.GetComponent<Animator>().SetBool("isMOving", false);
+                Remy.GetComponent<Animator>().SetBool("isMoving", false);
 
                 inputPromptText.text = "";
             }
@@ -261,22 +253,21 @@ public class DialogueUI : MonoBehaviour
 
                 //Enables movement
                 Remy.GetComponent<PlayerController>().moveAction.Enable();
-                Remy.GetComponent<Animator>().SetBool("isMOving", true);
+                Remy.GetComponent<Animator>().SetBool("isMoving", true);
 
                 CloseDialogueBox();
                 inputPromptText.text = "Press 'k' to Attack";
 
                 //Enables movement
                 Remy.GetComponent<PlayerController>().moveAction.Enable();
-                Remy.GetComponent<Animator>().SetBool("isMOving", true);
+                Remy.GetComponent<Animator>().SetBool("isMoving", true);
 
-
-                yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.K));
+                yield return new WaitUntil(() => hasAttacked);
                 dialogueBox.SetActive(true);
 
                 //Disables movement
                 Remy.GetComponent<PlayerController>().moveAction.Disable();
-                Remy.GetComponent<Animator>().SetBool("isMOving", false);
+                Remy.GetComponent<Animator>().SetBool("isMoving", false);
 
                 inputPromptText.text = "";
             }
@@ -289,7 +280,7 @@ public class DialogueUI : MonoBehaviour
 
                 //Enables movement
                 Remy.GetComponent<PlayerController>().moveAction.Enable();
-                Remy.GetComponent<Animator>().SetBool("isMOving", true);
+                Remy.GetComponent<Animator>().SetBool("isMoving", true);
 
 
                 inputPromptText.text = "Press 'Space' to dash";
@@ -300,7 +291,7 @@ public class DialogueUI : MonoBehaviour
 
                 //Disables movement
                 Remy.GetComponent<PlayerController>().moveAction.Disable();
-                Remy.GetComponent<Animator>().SetBool("isMOving", false);
+                Remy.GetComponent<Animator>().SetBool("isMoving", false);
 
                 inputPromptText.text = "";
             }

@@ -17,6 +17,7 @@ public class Sword : MonoBehaviour
         {
             EnemyController enemy = collision.GetComponent<EnemyController>();
             CrowMovement crow = collision.GetComponent<CrowMovement>();
+            FloweyController flowey = collision.GetComponent<FloweyController>();
 
             if (enemy != null)
             {
@@ -26,6 +27,11 @@ public class Sword : MonoBehaviour
             if (crow != null)
             {
                 crow.TakeDamage(swordDamage.GetAttack());
+            }
+
+            if (flowey != null)
+            {
+                flowey.TakeDamage(swordDamage.GetAttack());
             }
         }
         else if (collision.CompareTag("Boss"))
