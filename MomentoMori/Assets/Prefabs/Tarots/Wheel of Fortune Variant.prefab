@@ -133,8 +133,8 @@ MonoBehaviour:
   player: {fileID: 0}
   attack: {fileID: 0}
   stamina: {fileID: 0}
-  speedGain: 5
-  dashGain: 100
-  maximumHealth: 2
-  damageGain: 4
-  staminaGain: 50
+  speedGain: 10
+  dashGain: 5
+  maximumHealth: 4
+  damageGain: 15
+  staminaGain: 17

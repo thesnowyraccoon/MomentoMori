@@ -221,7 +221,7 @@ MonoBehaviour:
     m_Flags: 0
   moveSpeed: 5
   dashSpeed: 15
-  dashLength: 0.5
+  dashLength: 0.2
   animator: {fileID: 5794283828250870785}
   playerSR: {fileID: 7483883042574814246}
   interactionIcon: {fileID: 6582577251047938111}

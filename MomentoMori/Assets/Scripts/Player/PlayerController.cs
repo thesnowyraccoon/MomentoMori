@@ -327,15 +327,6 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.CompareTag("Tarot"))
-        {
-            collision.gameObject.SetActive(false);
-        }
-        
-    }
-
     // Activates interaction according to input
     void Interaction()
     {

@@ -16,7 +16,11 @@ public class SpawnPoint : MonoBehaviour
             player = GameObject.FindGameObjectWithTag("Player");
 
             player.transform.position = transform.position;
-            player.GetComponent<PlayerController>().HealthGain(50);
+
+            if (health)
+            {
+                player.GetComponent<PlayerController>().HealthGain(50);
+            }
         }
         else
         {

@@ -32,6 +32,9 @@ public class ItemDragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, I
 
         canvasGroup.blocksRaycasts = false;
         canvasGroup.alpha = 0.8f; // Makes item semi trans during drag
+
+        description = GameObject.Find("Description").GetComponent<TMP_Text>();
+        description.text = tarotDescription;
     }
 
     public void OnDrag(PointerEventData eventData)

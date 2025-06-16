@@ -9074,15 +9074,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8440905147103633013, guid: 042d6ea111795d44abf4292845cfd3a1, type: 3}
       propertyPath: dashGain
-      value: 0
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8440905147103633013, guid: 042d6ea111795d44abf4292845cfd3a1, type: 3}
       propertyPath: speedGain
-      value: 0
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8440905147103633013, guid: 042d6ea111795d44abf4292845cfd3a1, type: 3}
+      propertyPath: damageGain
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 8440905147103633013, guid: 042d6ea111795d44abf4292845cfd3a1, type: 3}
       propertyPath: staminaGain
-      value: 0
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 8440905147103633013, guid: 042d6ea111795d44abf4292845cfd3a1, type: 3}
+      propertyPath: maximumHealth
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8712946954923342218, guid: 042d6ea111795d44abf4292845cfd3a1, type: 3}
       propertyPath: m_Name
@@ -10344,6 +10352,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f99d6deda8e319419133bd22c62dfa8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: 0
 --- !u!4 &1363657045 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4239937436274708299, guid: 7eba8852cfa73b74d8cf99c9b99614e1, type: 3}

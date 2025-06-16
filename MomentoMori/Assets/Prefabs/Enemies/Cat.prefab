@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 4426983760474620744}
   m_Layer: 0
   m_Name: Cat
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -204,7 +204,7 @@ MonoBehaviour:
   speed: 4
   health: 0
   maxHealth: 30
-  attack: 30
+  attack: 15
   attackDuration: 0.3
   attackCost: 5
   cooldown: 10

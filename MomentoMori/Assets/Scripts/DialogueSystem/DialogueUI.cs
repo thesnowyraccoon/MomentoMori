@@ -228,7 +228,7 @@ public class DialogueUI : MonoBehaviour
 
                 inputPromptText.text = "Pick up tarot card";
 
-                yield return new WaitUntil(() => !Tarot.gameObject.activeSelf);
+                yield return new WaitUntil(() => Tarot == null);
                 dialogueBox.SetActive(true);
 
                 //Disables movement

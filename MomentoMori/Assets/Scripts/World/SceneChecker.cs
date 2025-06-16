@@ -38,7 +38,7 @@ public class SceneChecker : MonoBehaviour
 
         if (tarot1 != null)
         {
-            if (currentScene.name == "Level1" || currentScene.name == "Home")
+            if (currentScene.name == "Level1")
             {
                 foreach (Transform child in tarot1.transform)
                 {
@@ -56,7 +56,7 @@ public class SceneChecker : MonoBehaviour
 
         if (tarot2 != null)
         {
-            if (currentScene.name == "Level 2" || currentScene.name == "Home")
+            if (currentScene.name == "Level 2")
             {
                 foreach (Transform child in tarot2.transform)
                 {
@@ -74,7 +74,7 @@ public class SceneChecker : MonoBehaviour
 
         if (tarot3 != null)
         {
-            if (currentScene.name == "Level 3" || currentScene.name == "Home")
+            if (currentScene.name == "Level 3")
             {
                 foreach (Transform child in tarot3.transform)
                 {
