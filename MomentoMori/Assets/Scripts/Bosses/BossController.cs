@@ -18,6 +18,11 @@ public class BossController : MonoBehaviour
     [SerializeField] private Collider2D head;
     [SerializeField] private Collider2D staff;
 
+    //Particle Effect
+    [Header("Particle")]
+    [SerializeField] private ParticleSystem damageParticles;
+    private ParticleSystem damageParticlesInstance;
+
     void Start()
     {
         health = maxHealth;
@@ -42,11 +47,18 @@ public class BossController : MonoBehaviour
     {
         health -= damage;
 
+        SpawnDamageParticles(); //Spawns in particles
+
         if (health <= 0)
         {
             Destroy(gameObject);
 
             SceneController.instance.NextLevel();
         }
+    }
+
+     private void SpawnDamageParticles()
+    {
+        damageParticlesInstance = Instantiate(damageParticles, transform.position, Quaternion.identity);
     }
 }

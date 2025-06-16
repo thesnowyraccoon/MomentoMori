@@ -36,6 +36,7 @@ public class Melatonin : MonoBehaviour
 
             if (playerHealth < maxHealth) // Checks if player can recieve health
             {
+                SoundEffectManager.Play("Pop");
                 player.HealthGain(collectableHealth); // sets new player health
 
                 Destroy(gameObject);

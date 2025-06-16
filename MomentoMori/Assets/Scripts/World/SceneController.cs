@@ -46,7 +46,7 @@ public class SceneController : MonoBehaviour
     {
         transitionAnim.SetTrigger("End");
 
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(3);
 
         SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 1);
         

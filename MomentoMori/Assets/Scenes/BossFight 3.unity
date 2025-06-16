@@ -287,6 +287,85 @@ Transform:
   m_Children: []
   m_Father: {fileID: 615159088}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &468156226
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 468156228}
+  - component: {fileID: 468156227}
+  m_Layer: 0
+  m_Name: player bounds
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!68 &468156227
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 468156226}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -7.9083595, y: -0.98590267}
+  - {x: 11.749233, y: -0.88014615}
+  - {x: 11.721101, y: -5.825053}
+  - {x: 1.4333878, y: -5.9366655}
+  - {x: -7.938034, y: -5.9573555}
+  - {x: -7.9399834, y: -1.1613636}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
+--- !u!4 &468156228
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 468156226}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.791621, y: -1.6419421, z: 1.0861597}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &615159086
 GameObject:
   m_ObjectHideFlags: 0
@@ -408,8 +487,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pellet: {fileID: 3300837433988236584, guid: ee36ac8856ab6144882a68e893eca054, type: 3}
   pelletPos: {fileID: 438661529}
-  distance: 10
-  timer: 5
+  animator: {fileID: 0}
+  playerDistance: 9
+  cooldown: 2
 --- !u!114 &615159091
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1115,3 +1195,4 @@ SceneRoots:
   - {fileID: 1906014588}
   - {fileID: 615159088}
   - {fileID: 1054029849}
+  - {fileID: 468156228}
