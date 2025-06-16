@@ -51,6 +51,8 @@ public class BossController : MonoBehaviour
 
         if (health <= 0)
         {
+           // SoundEffectManager.Play("Scream");
+
             Destroy(gameObject);
 
             SceneController.instance.NextLevel();

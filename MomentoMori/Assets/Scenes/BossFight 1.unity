@@ -318,7 +318,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.93
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -421,9 +421,9 @@ MonoBehaviour:
   - name: HeadSlam
     audioClips:
     - {fileID: 8300000, guid: c281b35d915419648b5e4df52f67c2c2, type: 3}
-  - name: Hit
+  - name: Scream
     audioClips:
-    - {fileID: 8300000, guid: 3077fbaa78a37a8429a1e528054bc551, type: 3}
+    - {fileID: 8300000, guid: d42359a376284a447b007378ebd7d6ad, type: 3}
 --- !u!114 &133600870
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1569,6 +1569,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f99d6deda8e319419133bd22c62dfa8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: 0
 --- !u!1 &1463319911
 GameObject:
   m_ObjectHideFlags: 0
