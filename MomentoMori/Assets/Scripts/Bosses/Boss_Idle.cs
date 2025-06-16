@@ -35,6 +35,7 @@ public class Boss_Idle : StateMachineBehaviour
             if (randomAttack == 1)
             {
                 animator.SetTrigger("Head");
+                SoundEffectManager.Play("HeadSpin");
             }
             else if (randomAttack == 2)
             {
