@@ -600,6 +600,7 @@ MonoBehaviour:
   wing: {fileID: 357035723}
   head: {fileID: 1630142715}
   staff: {fileID: 0}
+  damageParticles: {fileID: 602058523568561755, guid: 9c1ed3ad356d77e4ca5061db619d6e39, type: 3}
 --- !u!50 &361713479
 Rigidbody2D:
   serializedVersion: 5
