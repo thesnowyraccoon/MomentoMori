@@ -22,12 +22,14 @@ public class DialogueUI : MonoBehaviour
     [SerializeField] private TMP_Text inputPromptText;
     [SerializeField] private GameObject Remy;
 
+    //Audio Reference
+    [SerializeField] private AudioClip sound;
+
     //ActorPortrait reference
-    //[SerializeField] private GameObject actorPotraitRemy;
     [SerializeField] private GameObject potraitEntity;
 
-    //PlayerMovement Reference
-    //[SerializeField] private MonoBehaviour PlayerController;
+    //Tarot Reference
+    [SerializeField] private GameObject Tarot;
 
     //Cutscenes References
     [SerializeField] private PlayableDirector Cutscene;
@@ -58,7 +60,7 @@ public class DialogueUI : MonoBehaviour
 
         //Disables movement
         Remy.GetComponent<PlayerController>().moveAction.Disable();
-        Remy.GetComponent<Animator>().SetBool("isMOving", false);
+        Remy.GetComponent<Animator>().SetBool("isMoving", false);
 
         //show and close dialogue methods
         CloseDialogueBox();
@@ -93,6 +95,8 @@ public class DialogueUI : MonoBehaviour
 
     private IEnumerator StepThroughDialogue(DialogueObject dialogueObject)
     {
+        yield return new WaitForSeconds(0.3f);
+
         while (currentDialogueIndex < dialogueObject.Dialogue.Length)
         {
             if (currentDialogueIndex == 1)
@@ -101,9 +105,11 @@ public class DialogueUI : MonoBehaviour
             }
 
             string dialogue = dialogueObject.Dialogue[currentDialogueIndex];
-            yield return typewriterEffect.Run(dialogue, textLabel);
+            yield return typewriterEffect.Run(dialogue, textLabel, sound);
 
-            yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.Space));
+            yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.Return));
+
+            //Entity appearence/////////////////////////////////////////////
 
             if (currentDialogueIndex == 1)
             {
@@ -116,6 +122,9 @@ public class DialogueUI : MonoBehaviour
 
             }
 
+
+            // Potrait activated and deactvated/////////////////////////////////////////
+
             else if (currentDialogueIndex == 3)
             {
                 potraitEntity.gameObject.SetActive(false);
@@ -125,7 +134,6 @@ public class DialogueUI : MonoBehaviour
             {
                 potraitEntity.gameObject.SetActive(true);
             }
-
 
             else if (currentDialogueIndex == 6)
             {
@@ -147,6 +155,9 @@ public class DialogueUI : MonoBehaviour
                 potraitEntity.gameObject.SetActive(true);
             }
 
+
+            //Entity's anger///////////////////////////////////////////////////////////
+
             else if (currentDialogueIndex == 11)
             {
                 Cutscene4.gameObject.SetActive(true);
@@ -159,9 +170,12 @@ public class DialogueUI : MonoBehaviour
                 yield return new WaitForSeconds(1);
             }
 
+
+            //WASD Tutotial///////////////////////////////////////////////////////////
+
             else if (currentDialogueIndex == 14)
             {
-                yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.Space));
+                yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.Return));
                 CloseDialogueBox();
 
                 //Enables movement
@@ -189,6 +203,9 @@ public class DialogueUI : MonoBehaviour
                 Remy.GetComponent<Animator>().SetBool("isMOving", false);
             }
 
+
+            //Potrait activated and deactvated//////////////////////////////////
+
             else if (currentDialogueIndex == 16)
             {
                 potraitEntity.gameObject.SetActive(false);
@@ -198,6 +215,9 @@ public class DialogueUI : MonoBehaviour
             {
                 potraitEntity.gameObject.SetActive(true);
             }
+
+
+            //Tarot cutscene and pick up//////////////////////////////////////////
 
             else if (currentDialogueIndex == 19)
             {
@@ -216,8 +236,7 @@ public class DialogueUI : MonoBehaviour
 
                 inputPromptText.text = "Pick up tarot card";
 
-                yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.E));
-
+                yield return new WaitUntil(() => !Tarot.gameObject.activeSelf);
                 dialogueBox.SetActive(true);
 
                 //Disables movement
@@ -225,8 +244,10 @@ public class DialogueUI : MonoBehaviour
                 Remy.GetComponent<Animator>().SetBool("isMOving", false);
 
                 inputPromptText.text = "";
-
             }
+
+
+            //Flower cutscene and attack//////////////////////////////////////////////
 
             else if (currentDialogueIndex == 21)
             {
@@ -260,15 +281,31 @@ public class DialogueUI : MonoBehaviour
                 inputPromptText.text = "";
             }
 
-            else if (currentDialogueIndex == 25)
+            //Dashing Tutorial/////////////////////////////////////////////////////////////
+
+            else if (currentDialogueIndex == 23)
             {
-                potraitEntity.gameObject.SetActive(false);
+                dialogueBox.SetActive(false);
+
+                //Enables movement
+                Remy.GetComponent<PlayerController>().moveAction.Enable();
+                Remy.GetComponent<Animator>().SetBool("isMOving", true);
+
+
+                inputPromptText.text = "Press 'Space' to dash";
+
+                yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.Space));
+
+                dialogueBox.SetActive(true);
+
+                //Disables movement
+                Remy.GetComponent<PlayerController>().moveAction.Disable();
+                Remy.GetComponent<Animator>().SetBool("isMOving", false);
+
+                inputPromptText.text = "";
             }
 
-            else if (currentDialogueIndex == 26)
-            {
-                potraitEntity.gameObject.SetActive(true);
-            }
+            // Potrait activated and deactvated/////////////////////////////////////////
 
             else if (currentDialogueIndex == 28)
             {
@@ -280,23 +317,33 @@ public class DialogueUI : MonoBehaviour
                 potraitEntity.gameObject.SetActive(true);
             }
 
-            else if (currentDialogueIndex == 30)
+            else if (currentDialogueIndex == 31)
             {
                 potraitEntity.gameObject.SetActive(false);
             }
 
-            else if (currentDialogueIndex == 31)
+            else if (currentDialogueIndex == 32)
             {
                 potraitEntity.gameObject.SetActive(true);
             }
 
-            else if (currentDialogueIndex == 36)
+            else if (currentDialogueIndex == 33)
             {
                 potraitEntity.gameObject.SetActive(false);
             }
 
+            else if (currentDialogueIndex == 34)
+            {
+                potraitEntity.gameObject.SetActive(true);
+            }
+
+            else if (currentDialogueIndex == 39)
+            {
+                potraitEntity.gameObject.SetActive(false);
+            }
 
             currentDialogueIndex++;
+
         }
         
         CloseDialogueBox();
