@@ -55,7 +55,7 @@ MonoBehaviour:
   - Where am I?
   - You're dreaming...
   - You don't remember what happened, do you?
-  - The only way you'll be able to remember  anything...is through dreaming.
+  - "The only way you'll be able to remember anything... \nis through dreaming."
   - Can't you just tell me what happened?
   - I am only here to help you Remy, that is all I can do for you.
   - You'll have to survive each dream to regain fragments of your memory.
@@ -66,7 +66,8 @@ MonoBehaviour:
   - I SAID WE DON'T HAVE MUCH TIME, NOW LISTEN AND DO AS I SAY!
   - 'We''ll start with movement.
 
-    Pressing W will move you up and S to move down
+    Pressing W will move you up and S will you
+    move down
 
 '
   - Pressing A will move you to the left and D to the Right
@@ -80,11 +81,17 @@ MonoBehaviour:
   - Now go pick up that tarot, it will give you a sword.
   - Now that you have your weapon, you need to learn how to use it.
   - You can use "K" to attack, now go try it out on that flower over there.
-  - 'Awesome work! do realise that the more you swing your sword the less stamina
-    you''ll have. '
-  - If you have no Stamina you cannot attack!
+  - 'Awesome Remy!
+
+    But having a weapon alone won''t help you survive. '
+  - You need to be able to evade the enemie's attacks as well.
+  - Use "Space" to dash away from the enemy attacks or you can use it as a quick
+    speed boost.
+  - 'Awesome work! do realise that the more you swing your sword and dash, the less
+    stamina you''ll have. '
+  - If you have no Stamina you cannot attack! or dash!
   - Pay attention to the bottom corner, that is your stamina bar, it'll help you
-    track you stamina in battle.
+    track your stamina in battle.
   - See the stars in the top left Corner?
   - Yes...
   - Those stars carry the amount of time you have left in this world

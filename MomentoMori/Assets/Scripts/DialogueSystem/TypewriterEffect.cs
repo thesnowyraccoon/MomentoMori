@@ -13,30 +13,27 @@ public class TypewriterEffect : MonoBehaviour
 {
     [SerializeField] private float typewriterSpeed = 50f;
 
-    public Coroutine Run(string textToType, TMP_Text textLabel) 
+    public Coroutine Run(string textToType, TMP_Text textLabel, AudioClip sound) 
     {
-      return StartCoroutine(TypeText(textToType, textLabel));
+      return StartCoroutine(TypeText(textToType, textLabel, sound));
     }
 
-    private IEnumerator TypeText(string textToType, TMP_Text textLabel)
+    private IEnumerator TypeText(string textToType, TMP_Text textLabel, AudioClip sound)
     {
         textLabel.text = string.Empty;
-        
 
-        float t = 0;
-        int charIndex = 0;
-
-        while (charIndex < textToType.Length)
+        foreach (char letter in textToType)
         {
-            t += Time.deltaTime * typewriterSpeed;
-            charIndex = Mathf.FloorToInt(t);
-            charIndex = Mathf.Clamp(charIndex, 0, textToType.Length);
+            textLabel.text += letter;
 
-            textLabel.text = textToType.Substring(0, charIndex);
+            // Play the sound for each character
+            if (sound != null)
+                SoundManager.instance.PlaySound(sound);
 
-            yield return null;
+            yield return new WaitForSeconds(1f / typewriterSpeed);
         }
 
         textLabel.text = textToType;
+  
     }
 }
