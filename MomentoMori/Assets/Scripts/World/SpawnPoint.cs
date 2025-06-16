@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class SceneCheck : MonoBehaviour
+public class SpawnPoint : MonoBehaviour
 {
     Transform player;
 
@@ -9,7 +9,7 @@ public class SceneCheck : MonoBehaviour
     {
         if (gameObject.scene.isLoaded)
         {
-            Debug.Log("Scene is loaded.");
+            Debug.Log("Player Spawned");
 
             player = GameObject.FindGameObjectWithTag("Player").transform;
 

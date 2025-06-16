@@ -6171,7 +6171,7 @@ GameObject:
   - component: {fileID: 363628957}
   - component: {fileID: 363628958}
   m_Layer: 0
-  m_Name: CameraBound
+  m_Name: Camera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9088,6 +9088,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wheel of Fortune Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 8712946954923342218, guid: 042d6ea111795d44abf4292845cfd3a1, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10533,6 +10537,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1484574327}
   m_CullTransparentMesh: 1
+--- !u!1 &1519608654
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1519608656}
+  - component: {fileID: 1519608655}
+  m_Layer: 0
+  m_Name: SceneChecker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1519608655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1519608654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9378755de478f2847a5fd0b2668f3278, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1519608656
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1519608654}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 15.093089, y: -22.777489, z: 10.818008}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1545041896
 GameObject:
   m_ObjectHideFlags: 0
@@ -13567,3 +13615,4 @@ SceneRoots:
   - {fileID: 1703660079}
   - {fileID: 196430801}
   - {fileID: 143433763}
+  - {fileID: 1519608656}

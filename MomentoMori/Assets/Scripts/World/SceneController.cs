@@ -98,8 +98,6 @@ public class SceneController : MonoBehaviour
             if (transitionAnim != null)
                 transitionAnim.SetTrigger("Start");
         }
-
-        TarotCheck();
     }
 
     IEnumerator ResetRemy(string scene)
@@ -119,57 +117,6 @@ public class SceneController : MonoBehaviour
         {
             transitionAnim.SetTrigger("Start");
         }
-
-        TarotCheck();
     }            
-
-    void TarotCheck()
-    {
-        Scene currentScene = SceneManager.GetActiveScene();
-
-        GameObject tarot1;
-        GameObject tarot2;
-        GameObject tarot3;
-
-        tarot1 = GameObject.Find("Tarots 1");
-        tarot2 = GameObject.Find("Tarots 2");
-        tarot3 = GameObject.Find("Tarots 3");
-
-        if (tarot1 != null)
-        {
-            if (currentScene.name == "Level1")
-            {
-                tarot1.SetActive(true);
-            }
-            else
-            {
-                tarot1.SetActive(false);
-            }
-        }
-
-        if (tarot2 != null)
-        {
-            if (currentScene.name == "Level 2")
-            {
-                tarot2.SetActive(true);
-            }
-            else
-            {
-                tarot2.SetActive(false);
-            }
-        }
-
-        if (tarot3 != null)
-        {
-            if (currentScene.name == "Level 3")
-            {
-                tarot3.SetActive(true);
-            }
-            else
-            {
-                tarot3.SetActive(false);
-            }
-        }
-    }
 }
 
