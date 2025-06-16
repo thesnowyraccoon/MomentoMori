@@ -36,10 +36,13 @@ public class Boss_Idle : StateMachineBehaviour
             {
                 animator.SetTrigger("Head");
                 SoundEffectManager.Play("HeadSpin");
+                //yield return new WaitForSeconds(1);
+                //SoundEffectManager.Play("HeadSlam");
             }
             else if (randomAttack == 2)
             {
                 animator.SetTrigger("Wing");
+                //SoundEffectManager.Play("Hit");
             }
         }
     }
