@@ -194,23 +194,6 @@ MonoBehaviour:
       m_Action: Interact
       m_Flags: 0
     m_Flags: 0
-  tarotAction:
-    m_Name: Tarot
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 08932ba1-5825-4cad-b57c-16b695e035e8
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: ee724825-323e-49b4-b70e-75d325650250
-      m_Path: <Keyboard>/q
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Tarot
-      m_Flags: 0
-    m_Flags: 0
   pauseAction:
     m_Name: Pause
     m_Type: 0
@@ -246,6 +229,7 @@ MonoBehaviour:
   playerHealth: 10
   aim: {fileID: 4505692784547946365}
   dashParticles: {fileID: 2159096870326663728, guid: 50289b3e56f9d1147844e11f1b9d4212, type: 3}
+  starParticles: {fileID: 7107402535801444199, guid: 958c1b2ab01ac5243b24bcf0b0f5eea0, type: 3}
 --- !u!114 &5655864326068241334
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -582,7 +566,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &8313132013501049380
 Transform:
   m_ObjectHideFlags: 0
@@ -592,7 +576,7 @@ Transform:
   m_GameObject: {fileID: 7716368630721617441}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.09, y: -0.82, z: -0.0378}
+  m_LocalPosition: {x: 1.09, y: -0.19, z: -0.0378}
   m_LocalScale: {x: 0.15885907, y: 0.15885907, z: 0.15885907}
   m_ConstrainProportionsScale: 0
   m_Children: []

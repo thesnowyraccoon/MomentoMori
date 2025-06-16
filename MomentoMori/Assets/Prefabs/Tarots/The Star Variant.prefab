@@ -10,11 +10,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -418695239537871221, guid: 3a6da2954e45ace46a9b295812d83109, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 1.136
+      value: 1.126
       objectReference: {fileID: 0}
     - target: {fileID: -418695239537871221, guid: 3a6da2954e45ace46a9b295812d83109, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 1.85
+      value: 1.858
       objectReference: {fileID: 0}
     - target: {fileID: 246960384432866785, guid: 3a6da2954e45ace46a9b295812d83109, type: 3}
       propertyPath: m_Pivot.x
@@ -99,14 +99,22 @@ PrefabInstance:
     - target: {fileID: 1149476050338362325, guid: 3a6da2954e45ace46a9b295812d83109, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 8740491524576469797, guid: 715a0fd489e4e3c4eac1bf4877ad43a3, type: 3}
+      objectReference: {fileID: 612620484901056731, guid: 0322c3d153e5c63429f3edde64939120, type: 3}
+    - target: {fileID: 1149476050338362325, guid: 3a6da2954e45ace46a9b295812d83109, type: 3}
+      propertyPath: m_SortingLayer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1767475659269264195, guid: 3a6da2954e45ace46a9b295812d83109, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 8740491524576469797, guid: 715a0fd489e4e3c4eac1bf4877ad43a3, type: 3}
+      objectReference: {fileID: 612620484901056731, guid: 0322c3d153e5c63429f3edde64939120, type: 3}
+    - target: {fileID: 5865835777226444075, guid: 3a6da2954e45ace46a9b295812d83109, type: 3}
+      propertyPath: tarotDescription
+      value: 'The Star: Increases the player''s max health'
+      objectReference: {fileID: 0}
     - target: {fileID: 6590529108859859616, guid: 3a6da2954e45ace46a9b295812d83109, type: 3}
       propertyPath: m_Name
-      value: The Sun Variant
+      value: The Star Variant
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -114,14 +122,14 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 6590529108859859616, guid: 3a6da2954e45ace46a9b295812d83109, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 2006314903710565135}
+      addedObject: {fileID: 4502001515560178337}
   m_SourcePrefab: {fileID: 100100000, guid: 3a6da2954e45ace46a9b295812d83109, type: 3}
 --- !u!1 &1120734932879260112 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6590529108859859616, guid: 3a6da2954e45ace46a9b295812d83109, type: 3}
   m_PrefabInstance: {fileID: 6123740136935328624}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2006314903710565135
+--- !u!114 &4502001515560178337
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -130,11 +138,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1120734932879260112}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bffd50fa8dca1194cb4b7c5e065f9e86, type: 3}
+  m_Script: {fileID: 11500000, guid: 16a398aa179f3bc47b9d3a3202f172df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   ID: 0
   player: {fileID: 0}
   attack: {fileID: 0}
   stamina: {fileID: 0}
-  melatoninHealth: 20
+  maximumHealth: 1
+  healthGain: 20

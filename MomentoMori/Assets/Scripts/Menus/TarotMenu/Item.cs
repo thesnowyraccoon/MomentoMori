@@ -25,5 +25,6 @@ public class Item : MonoBehaviour
     public virtual void UseItem()
     {
         Debug.Log("Using Item");
+        Destroy(gameObject);
     }
 }

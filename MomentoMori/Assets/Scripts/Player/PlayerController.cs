@@ -9,7 +9,6 @@ public class PlayerController : MonoBehaviour
     public InputAction moveAction; // Input action for movement
     public InputAction dashAction; // Input action for dashing
     public InputAction interactAction; // Input action for interactions
-    public InputAction tarotAction;
     public InputAction pauseAction; // Input action for pausing the game
 
     private Vector2 _boxSize = new Vector2(0.1f, 1f); // Interaction distance
@@ -64,7 +63,6 @@ public class PlayerController : MonoBehaviour
         moveAction.Enable(); // Enable the movement inputs
         dashAction.Enable();
         interactAction.Enable(); // Enable interaction input
-        tarotAction.Enable();
         pauseAction.Enable(); // Enable pause inputs
 
         animator = GetComponent<Animator>(); // Get the Animator component attached to the player
@@ -268,8 +266,8 @@ public class PlayerController : MonoBehaviour
 
     void Reset()
     {
-        playerHealth = maxHealth;
         SceneController.instance.LoadScene("Home");
+        playerHealth = maxHealth;
     }
 
     // Pause menu activation

@@ -1470,8 +1470,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 143433763}
+  - component: {fileID: 143433764}
   m_Layer: 0
-  m_Name: Tarots
+  m_Name: Tarots 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1495,6 +1496,19 @@ Transform:
   - {fileID: 329048701}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &143433764
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 143433762}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0419d83bb6fe49d4f8d5d6484f549846, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectIndex: 3
 --- !u!1 &196430800
 GameObject:
   m_ObjectHideFlags: 0
@@ -7191,7 +7205,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f816844bce7f30447afbd5bcc8de7978, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelName: BossFight 1
+  confirm: 1
+  tarot: 0
+  enemies: {fileID: 1703660080}
 --- !u!1 &629606998
 GameObject:
   m_ObjectHideFlags: 0
@@ -7987,6 +8003,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   transitionAnim: {fileID: 1795110062}
+  carnivalAnim: {fileID: 0}
+  hospitalAnim: {fileID: 0}
+  homeAnim: {fileID: 0}
 --- !u!4 &797680831
 Transform:
   m_ObjectHideFlags: 0
@@ -9320,7 +9339,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1120734932879260112, guid: 5d2c349a87c988a48980bd42dc9203b0, type: 3}
       propertyPath: m_Name
-      value: The Sun Variant
+      value: The Star Variant
       objectReference: {fileID: 0}
     - target: {fileID: 6311377187448688273, guid: 5d2c349a87c988a48980bd42dc9203b0, type: 3}
       propertyPath: m_Pivot.x
@@ -9402,7 +9421,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2006314903710565135, guid: 5d2c349a87c988a48980bd42dc9203b0, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -11592,6 +11612,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1703660079}
+  - component: {fileID: 1703660080}
   m_Layer: 0
   m_Name: Enemies
   m_TagString: Untagged
@@ -11622,6 +11643,19 @@ Transform:
   - {fileID: 206518614}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1703660080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1703660078}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af0bc931d787c684b93f5a830347e220, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  areEnemies: 0
 --- !u!1001 &1768269151
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11714,6 +11748,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   transitionAnim: {fileID: 621600133}
+  carnivalAnim: {fileID: 0}
+  hospitalAnim: {fileID: 0}
+  homeAnim: {fileID: 0}
 --- !u!4 &1769118833
 Transform:
   m_ObjectHideFlags: 0

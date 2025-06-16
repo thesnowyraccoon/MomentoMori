@@ -737,8 +737,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f816844bce7f30447afbd5bcc8de7978, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelName: BossFight 3
   confirm: 1
+  tarot: 0
   enemies: {fileID: 345218333}
 --- !u!1 &121556010
 GameObject:
@@ -3494,6 +3494,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   transitionAnim: {fileID: 59109930}
+  carnivalAnim: {fileID: 0}
+  hospitalAnim: {fileID: 0}
+  homeAnim: {fileID: 0}
 --- !u!4 &1171937864
 Transform:
   m_ObjectHideFlags: 0
@@ -4211,6 +4214,7 @@ GameObject:
   - component: {fileID: 1495095107}
   - component: {fileID: 1495095106}
   - component: {fileID: 1495095105}
+  - component: {fileID: 1495095109}
   m_Layer: 0
   m_Name: CinemachineCamera
   m_TagString: Untagged
@@ -4315,6 +4319,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1495095109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1495095104}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0419d83bb6fe49d4f8d5d6484f549846, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectIndex: 2
 --- !u!1 &1598891450
 GameObject:
   m_ObjectHideFlags: 0
@@ -4612,6 +4629,51 @@ Transform:
   - {fileID: 15505551}
   - {fileID: 1598891451}
   - {fileID: 1236865302}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1706815269
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1706815271}
+  - component: {fileID: 1706815270}
+  m_Layer: 0
+  m_Name: Tarots 3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1706815270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1706815269}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0419d83bb6fe49d4f8d5d6484f549846, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectIndex: 5
+--- !u!4 &1706815271
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1706815269}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 6.8431377, y: -37.384354, z: 0.010436697}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1821122525
@@ -6723,3 +6785,4 @@ SceneRoots:
   - {fileID: 1037295309}
   - {fileID: 1245287260}
   - {fileID: 345218334}
+  - {fileID: 1706815271}

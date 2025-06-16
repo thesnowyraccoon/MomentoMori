@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Linq;
 
 [RequireComponent(typeof(SpriteRenderer))]
 
@@ -9,20 +10,22 @@ public class Insomnium : Interactions
     public bool isOpen = false;
 
     // Tarot UI
-    [SerializeField] private GameObject tarot;
+    [SerializeField] private Canvas tarot;
 
     // Check interaction and animate accordingly
     public override void Interact()
     {
+        tarot = GameObject.Find("TarotUI").GetComponent<Canvas>();
+
         if (isOpen)
         {
-            tarot.SetActive(false);
+            tarot.enabled = false;
 
             player.moveAction.Enable();
         }
         else
         {
-            tarot.SetActive(true);
+            tarot.enabled = true;
 
             player.moveAction.Disable();
         }
@@ -34,10 +37,11 @@ public class Insomnium : Interactions
     void Start()
     {
         player = GameObject.Find("playerRemy").GetComponent<PlayerController>();
+        tarot = GameObject.Find("TarotUI").GetComponent<Canvas>();
 
         if (tarot != null)
         {
-            tarot.SetActive(false);
+            tarot.enabled = false;
         }
     }
 }

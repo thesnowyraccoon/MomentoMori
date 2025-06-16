@@ -13,7 +13,8 @@ public class ItemDragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, I
 {
     Transform originalParent;
     CanvasGroup canvasGroup;
-    GameObject book;
+
+    public GameObject book;
 
     TMP_Text description;
     public string tarotDescription;

@@ -750,7 +750,7 @@ MonoBehaviour:
   m_BlockingObjects: 0
   m_BlockingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 0
 --- !u!114 &98549793
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -795,7 +795,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 0
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_TargetDisplay: 0
 --- !u!1 &136355300
 GameObject:
@@ -1723,7 +1723,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f816844bce7f30447afbd5bcc8de7978, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelName: Level1
+  confirm: 0
+  tarot: 1
+  enemies: {fileID: 0}
 --- !u!1 &467212089
 GameObject:
   m_ObjectHideFlags: 0
@@ -1916,6 +1918,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: playerRemy
       objectReference: {fileID: 0}
+    - target: {fileID: 4516301944991059894, guid: 7095924ccee04454f95b379988884a28, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7042377095557559969, guid: 7095924ccee04454f95b379988884a28, type: 3}
       propertyPath: m_Size.y
       value: 2.1561966
@@ -1923,6 +1929,10 @@ PrefabInstance:
     - target: {fileID: 7042377095557559969, guid: 7095924ccee04454f95b379988884a28, type: 3}
       propertyPath: m_Offset.y
       value: -0.19973755
+      objectReference: {fileID: 0}
+    - target: {fileID: 7716368630721617441, guid: 7095924ccee04454f95b379988884a28, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8976497851515157416, guid: 7095924ccee04454f95b379988884a28, type: 3}
       propertyPath: m_LocalScale.x
@@ -4691,11 +4701,11 @@ GameObject:
   - component: {fileID: 959279391}
   m_Layer: 5
   m_Name: Inventory
-  m_TagString: Untagged
+  m_TagString: Inventory
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &959279390
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5205,15 +5215,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Padding:
-    m_Left: 130
+    m_Left: 120
     m_Right: 0
-    m_Top: 40
+    m_Top: 125
     m_Bottom: 0
   m_ChildAlignment: 0
   m_StartCorner: 0
   m_StartAxis: 1
   m_CellSize: {x: 170, y: 250}
-  m_Spacing: {x: 120, y: 30}
+  m_Spacing: {x: 125, y: 100}
   m_Constraint: 0
   m_ConstraintCount: 4
 --- !u!114 &1063407430
@@ -5701,7 +5711,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   isOpen: 0
-  tarot: {fileID: 959279389}
+  tarot: {fileID: 0}
 --- !u!212 &1102208972
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5881,7 +5891,7 @@ MonoBehaviour:
     CustomLookAtTarget: 0
   Lens:
     FieldOfView: 60
-    OrthographicSize: 2.6
+    OrthographicSize: 4
     NearClipPlane: 0.3
     FarClipPlane: 1000
     Dutch: 0
@@ -8378,6 +8388,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   transitionAnim: {fileID: 1453976434}
+  carnivalAnim: {fileID: 0}
+  hospitalAnim: {fileID: 0}
+  homeAnim: {fileID: 0}
 --- !u!4 &1520776789
 Transform:
   m_ObjectHideFlags: 0
@@ -9375,7 +9388,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inventoryPanel: {fileID: 1063407427}
   slotPrefab: {fileID: 5951303703444827686, guid: 13a8b3f9d344fda409bed1e972b8896b, type: 3}
-  slotCount: 12
+  slotCount: 8
   tarotPrefabs: []
 --- !u!1 &1902359470
 GameObject:
@@ -9838,7 +9851,7 @@ Canvas:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1947625203}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_RenderMode: 0
   m_Camera: {fileID: 0}
@@ -9852,7 +9865,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_TargetDisplay: 0
 --- !u!1 &1963400765
 GameObject:
@@ -10567,7 +10580,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0.002}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -115.101685, y: 149.03583}
+  m_AnchoredPosition: {x: -114, y: 146}
   m_SizeDelta: {x: 230.2325, y: 298.0622}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2115350499
@@ -10639,8 +10652,8 @@ Camera:
   m_GameObject: {fileID: 2128882177}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0.04705883, g: 0.04705883, b: 0.12941177, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -10665,7 +10678,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 2.6
+  orthographic size: 4
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -10690,7 +10703,7 @@ Transform:
   m_GameObject: {fileID: 2128882177}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.4289536, y: 9.579289, z: -9.962212}
+  m_LocalPosition: {x: 0.9400649, y: 9.57848, z: -9.962212}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

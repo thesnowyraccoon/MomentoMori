@@ -8,8 +8,6 @@ using UnityEngine;
 
 public class HotBarController : MonoBehaviour
 {
-    private PlayerController player;
-
     public GameObject hotBar;
     public GameObject slotPrefab;
 
@@ -20,22 +18,9 @@ public class HotBarController : MonoBehaviour
     void Awake()
     {
         itemDictionary = FindAnyObjectByType<ItemDictionary>();
-
-        player = GameObject.Find("playerRemy").GetComponent<PlayerController>();
     }
 
-    void Update()
-    {
-        if (player.tarotAction.triggered)
-        {
-            for (int i = 0; i < slotCount; i++)
-            {
-                UseItemInSlot(i);
-            }
-        }
-    }
-
-    void UseItemInSlot(int index)
+    public void UseItemInSlot(int index)
     {
         Slot slot = hotBar.transform.GetChild(index).GetComponent<Slot>();
 
