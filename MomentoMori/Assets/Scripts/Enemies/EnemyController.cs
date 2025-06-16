@@ -159,7 +159,7 @@ public class EnemyController : MonoBehaviour
 
         if (distance < followDistance)
         {
-            //SoundEffectManager.Play("EnemyFollow"); (A bit overpowering)
+            //SoundEffectManager.Play("EnemyFollow"); 
             transform.position = Vector2.MoveTowards(this.transform.position, player.transform.position, speed * Time.deltaTime);
             direction = (player.transform.position - transform.position).normalized;
 
