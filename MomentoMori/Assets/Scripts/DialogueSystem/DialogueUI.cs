@@ -276,7 +276,7 @@ public class DialogueUI : MonoBehaviour
 
             //Dashing Tutorial/////////////////////////////////////////////////////////////
 
-            else if (currentDialogueIndex == 23)
+            else if (currentDialogueIndex == 24)
             {
                 dialogueBox.SetActive(false);
 
@@ -288,6 +288,7 @@ public class DialogueUI : MonoBehaviour
                 inputPromptText.text = "Press 'Space' to dash";
 
                 yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.Space));
+                yield return new WaitForSeconds(3);
 
                 dialogueBox.SetActive(true);
 
@@ -330,6 +331,7 @@ public class DialogueUI : MonoBehaviour
                 potraitEntity.gameObject.SetActive(true);
             }
 
+            //Time to go cutscene!
             else if (currentDialogueIndex == 40)
             {
                 potraitEntity.gameObject.SetActive(false);
@@ -341,13 +343,16 @@ public class DialogueUI : MonoBehaviour
 
                 Entity.gameObject.SetActive(false);
 
+                //Disable box
+                dialogueBox.SetActive(false);
+
+                yield return new WaitForSeconds(3);
+
                 //Disables movement
                 Remy.GetComponent<PlayerController>().moveAction.Enable();
                 Remy.GetComponent<Animator>().SetBool("isMoving", true);
 
-                dialogueBox.SetActive(false);
                 inputPromptText.text = "Go to the portal";
-
             }
                 currentDialogueIndex++;
 
