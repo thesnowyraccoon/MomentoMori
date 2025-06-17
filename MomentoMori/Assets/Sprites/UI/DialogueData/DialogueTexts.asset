@@ -12,45 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aac7f4e96c5d5ca41aa925a0cedbc6c2, type: 3}
   m_Name: DialogueTexts
   m_EditorClassIdentifier: 
-  actorPortrait:
-  - {fileID: 2011427461511132350, guid: c586169dad2b2cd41b29c93c1a5d98c7, type: 3}
-  - {fileID: 21300000, guid: 88d2af8e7fc5ab444b468473b6b9e0ec, type: 3}
-  - {fileID: 21300000, guid: 88d2af8e7fc5ab444b468473b6b9e0ec, type: 3}
-  - {fileID: 21300000, guid: 88d2af8e7fc5ab444b468473b6b9e0ec, type: 3}
-  - {fileID: 2011427461511132350, guid: c586169dad2b2cd41b29c93c1a5d98c7, type: 3}
-  - {fileID: 21300000, guid: 88d2af8e7fc5ab444b468473b6b9e0ec, type: 3}
-  - {fileID: 21300000, guid: 88d2af8e7fc5ab444b468473b6b9e0ec, type: 3}
-  - {fileID: 2011427461511132350, guid: c586169dad2b2cd41b29c93c1a5d98c7, type: 3}
-  - {fileID: 21300000, guid: 88d2af8e7fc5ab444b468473b6b9e0ec, type: 3}
-  - {fileID: 21300000, guid: 88d2af8e7fc5ab444b468473b6b9e0ec, type: 3}
-  - {fileID: 2011427461511132350, guid: c586169dad2b2cd41b29c93c1a5d98c7, type: 3}
-  - {fileID: 21300000, guid: 88d2af8e7fc5ab444b468473b6b9e0ec, type: 3}
-  - {fileID: 21300000, guid: 88d2af8e7fc5ab444b468473b6b9e0ec, type: 3}
-  - {fileID: 21300000, guid: 88d2af8e7fc5ab444b468473b6b9e0ec, type: 3}
-  - {fileID: 21300000, guid: 88d2af8e7fc5ab444b468473b6b9e0ec, type: 3}
-  - {fileID: 21300000, guid: 88d2af8e7fc5ab444b468473b6b9e0ec, type: 3}
-  - {fileID: 21300000, guid: 88d2af8e7fc5ab444b468473b6b9e0ec, type: 3}
-  - {fileID: 21300000, guid: 88d2af8e7fc5ab444b468473b6b9e0ec, type: 3}
-  - {fileID: 21300000, guid: 88d2af8e7fc5ab444b468473b6b9e0ec, type: 3}
-  - {fileID: 21300000, guid: 88d2af8e7fc5ab444b468473b6b9e0ec, type: 3}
-  - {fileID: 21300000, guid: 88d2af8e7fc5ab444b468473b6b9e0ec, type: 3}
-  - {fileID: 21300000, guid: 88d2af8e7fc5ab444b468473b6b9e0ec, type: 3}
-  - {fileID: 21300000, guid: 88d2af8e7fc5ab444b468473b6b9e0ec, type: 3}
-  - {fileID: 21300000, guid: 88d2af8e7fc5ab444b468473b6b9e0ec, type: 3}
-  - {fileID: 21300000, guid: 88d2af8e7fc5ab444b468473b6b9e0ec, type: 3}
-  - {fileID: 21300000, guid: 88d2af8e7fc5ab444b468473b6b9e0ec, type: 3}
-  - {fileID: 2011427461511132350, guid: c586169dad2b2cd41b29c93c1a5d98c7, type: 3}
-  - {fileID: 21300000, guid: 88d2af8e7fc5ab444b468473b6b9e0ec, type: 3}
-  - {fileID: 21300000, guid: 88d2af8e7fc5ab444b468473b6b9e0ec, type: 3}
-  - {fileID: 2011427461511132350, guid: c586169dad2b2cd41b29c93c1a5d98c7, type: 3}
-  - {fileID: 21300000, guid: 88d2af8e7fc5ab444b468473b6b9e0ec, type: 3}
-  - {fileID: 2011427461511132350, guid: c586169dad2b2cd41b29c93c1a5d98c7, type: 3}
-  - {fileID: 21300000, guid: 88d2af8e7fc5ab444b468473b6b9e0ec, type: 3}
-  - {fileID: 21300000, guid: 88d2af8e7fc5ab444b468473b6b9e0ec, type: 3}
-  - {fileID: 21300000, guid: 88d2af8e7fc5ab444b468473b6b9e0ec, type: 3}
-  - {fileID: 21300000, guid: 88d2af8e7fc5ab444b468473b6b9e0ec, type: 3}
-  - {fileID: 21300000, guid: 88d2af8e7fc5ab444b468473b6b9e0ec, type: 3}
-  - {fileID: 2011427461511132350, guid: c586169dad2b2cd41b29c93c1a5d98c7, type: 3}
   dialogue:
   - Where am I?
   - You're dreaming...
@@ -95,15 +56,15 @@ MonoBehaviour:
   - See the stars in the top left Corner?
   - Yes...
   - Those stars carry the amount of time you have left in this world
-  - if you run out of stars, you time in this world has ended and you'll wake up
+  - If you run out of stars, your time in this world has ended and you'll wake up
   - Stamina Bar? Stars? Time? You are not making any sense!
   - Do dreams ever make sense?
   - ...
   - Now that you understand everything it is ti- oh one more thing...
   - Remember to pick up Melatonin it'll give you more time in this world, when low
-    on time, fine Melatonin.
-  - It won't do anything if you have not lost anytime. So choose wisely on when to
-    pick it up.
-  - I know it is a lot to take in, but I believe in you, Remy, as I always have.
+    on time, find Melatonin.
+  - It won't do anything if you have not lost any time. So choose wisely on when
+    to pick it up.
+  - I know it is a lot to take in, but I believe in you Remy, as I always have.
   - Now it's time for you to go.
   - Wait who are yo-
