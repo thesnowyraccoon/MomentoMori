@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aac7f4e96c5d5ca41aa925a0cedbc6c2, type: 3}
+  m_Name: World
+  m_EditorClassIdentifier: 
+  actorPortrait:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  dialogue:
+  - What was that?
+  - Welcome home honey!
+  - "Sam?! \n(I guess I woke up from the dream then)"
+  - Wait that picture looked familiar!
+  - Honey! We should go to the carnival I want to go on the caurosel again.
+  - Yes of course, I know you love the Caurosel
+  - Hey Remy go check the book over there
+  - Huh? what is this?
+  - That's your Insomnium, all the tarots are stored in here. So when you wanna eqiup
+    one, just open the book.
+  - Again with this talk of Tarots?!!!!! What is happening here?!!!
+  - Remy you are acting up again, you need to go take a nap.
+  - 'A nap? '
+  - Yes go to the bed over there, after you wake up we can go ride the caurosel.

@@ -1,7 +1,6 @@
 using System.Collections;
 using UnityEngine;
 using TMPro;
-//using UnityEngine.UI;
 using UnityEngine.Playables;
 
 //Title: SETUP: How to Create a Flexible Dialogue System - Unity #1

@@ -13447,6 +13447,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   transitionAnim: {fileID: 0}
+  carnivalAnim: {fileID: 0}
+  hospitalAnim: {fileID: 0}
+  homeAnim: {fileID: 0}
 --- !u!4 &1132036768
 Transform:
   m_ObjectHideFlags: 0
