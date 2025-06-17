@@ -7,6 +7,10 @@ public class PauseMenu : MonoBehaviour
 
     bool isOpen = false;
 
+    GameObject player;
+    GameObject UI;
+    GameObject playerCamera;
+
     void Start()
     {
         pause = GetComponent<Canvas>();
@@ -35,6 +39,15 @@ public class PauseMenu : MonoBehaviour
 
     public void MainMenu()
     {
+        player = GameObject.Find("playerRemy");
+        Destroy(player);
+
+        UI = GameObject.Find("UI");
+        Destroy(UI);
+
+        playerCamera = GameObject.Find("PlayerCamera");
+        Destroy(playerCamera);
+    
         SceneManager.LoadScene("Menu");
     }
 

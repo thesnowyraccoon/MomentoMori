@@ -166,4 +166,4 @@ MonoBehaviour:
   attack: {fileID: 0}
   stamina: {fileID: 0}
   maximumHealth: 1
-  healthGain: 20
+  healthGain: 50

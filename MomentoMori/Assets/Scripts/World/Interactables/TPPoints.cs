@@ -12,6 +12,8 @@ public class TPPoints : Interactions
 
     public override void Interact()
     {
+        Debug.Log("Interacting");
+
         if (!confirm)
         {
             SceneController.instance.NextLevel();

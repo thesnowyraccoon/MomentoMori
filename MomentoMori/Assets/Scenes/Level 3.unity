@@ -1619,8 +1619,8 @@ PolygonCollider2D:
       - {x: -16.533064, y: -36.67092}
       - {x: 11.297655, y: -36.447304}
       - {x: 11.292457, y: -9.415587}
-      - {x: -2.0880194, y: -9.473145}
-      - {x: -2.1340995, y: -6.513277}
+      - {x: 5.2592416, y: -9.501844}
+      - {x: 5.327962, y: -9.3546}
       - {x: 5.339848, y: -6.5047665}
   m_UseDelaunayMesh: 0
 --- !u!1 &256922371
@@ -2889,11 +2889,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7493713401753171341, guid: e98b7cf71895fb5448dc6ed3424a0920, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7493713401753171341, guid: e98b7cf71895fb5448dc6ed3424a0920, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7493713401753171341, guid: e98b7cf71895fb5448dc6ed3424a0920, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3811,7 +3811,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 404276931593832027, guid: 5d2c349a87c988a48980bd42dc9203b0, type: 3}
       propertyPath: tarotDescription
-      value: 'The Star: Increases the player''s max health to full'
+      value: 'The Star: Sets Remy''s health to max'
       objectReference: {fileID: 0}
     - target: {fileID: 1120734932879260112, guid: 5d2c349a87c988a48980bd42dc9203b0, type: 3}
       propertyPath: m_Name
@@ -3855,11 +3855,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6311377187448688273, guid: 5d2c349a87c988a48980bd42dc9203b0, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6311377187448688273, guid: 5d2c349a87c988a48980bd42dc9203b0, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6311377187448688273, guid: 5d2c349a87c988a48980bd42dc9203b0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5176,6 +5176,7 @@ Transform:
   m_Children:
   - {fileID: 710636753}
   - {fileID: 1105326447}
+  - {fileID: 1980273961}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1714859678
@@ -7276,7 +7277,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1706815271}
     m_Modifications:
     - target: {fileID: 2373882371700641483, guid: 042d6ea111795d44abf4292845cfd3a1, type: 3}
       propertyPath: m_Pivot.x
@@ -7312,11 +7313,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2373882371700641483, guid: 042d6ea111795d44abf4292845cfd3a1, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2373882371700641483, guid: 042d6ea111795d44abf4292845cfd3a1, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2373882371700641483, guid: 042d6ea111795d44abf4292845cfd3a1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7328,7 +7329,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2373882371700641483, guid: 042d6ea111795d44abf4292845cfd3a1, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1
+      value: 0.9895633
       objectReference: {fileID: 0}
     - target: {fileID: 2373882371700641483, guid: 042d6ea111795d44abf4292845cfd3a1, type: 3}
       propertyPath: m_LocalRotation.w
@@ -7336,23 +7337,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2373882371700641483, guid: 042d6ea111795d44abf4292845cfd3a1, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 2373882371700641483, guid: 042d6ea111795d44abf4292845cfd3a1, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 2373882371700641483, guid: 042d6ea111795d44abf4292845cfd3a1, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 2373882371700641483, guid: 042d6ea111795d44abf4292845cfd3a1, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -5.45
+      value: -12.293138
       objectReference: {fileID: 0}
     - target: {fileID: 2373882371700641483, guid: 042d6ea111795d44abf4292845cfd3a1, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -27.66
+      value: 9.724358
       objectReference: {fileID: 0}
     - target: {fileID: 2373882371700641483, guid: 042d6ea111795d44abf4292845cfd3a1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -7375,6 +7376,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 042d6ea111795d44abf4292845cfd3a1, type: 3}
+--- !u!224 &1980273961 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 2373882371700641483, guid: 042d6ea111795d44abf4292845cfd3a1, type: 3}
+  m_PrefabInstance: {fileID: 1980273960}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1993270401
 GameObject:
   m_ObjectHideFlags: 0
@@ -7881,4 +7887,3 @@ SceneRoots:
   - {fileID: 10265695}
   - {fileID: 1208559901}
   - {fileID: 1883141691}
-  - {fileID: 1980273960}

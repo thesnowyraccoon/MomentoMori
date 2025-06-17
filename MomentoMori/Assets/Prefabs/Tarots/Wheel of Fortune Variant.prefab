@@ -117,6 +117,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: eb1a5ea011b16fa448aed2728cc3cd1b, type: 3}
     - target: {fileID: 1149476050338362325, guid: 3a6da2954e45ace46a9b295812d83109, type: 3}
+      propertyPath: m_SortingLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1149476050338362325, guid: 3a6da2954e45ace46a9b295812d83109, type: 3}
       propertyPath: m_WasSpriteAssigned
       value: 1
       objectReference: {fileID: 0}
@@ -124,6 +128,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: eb1a5ea011b16fa448aed2728cc3cd1b, type: 3}
+    - target: {fileID: 5865835777226444075, guid: 3a6da2954e45ace46a9b295812d83109, type: 3}
+      propertyPath: tarotDescription
+      value: 'Wheel of Fortune: Gives Remy a random buff'
+      objectReference: {fileID: 0}
     - target: {fileID: 6590529108859859616, guid: 3a6da2954e45ace46a9b295812d83109, type: 3}
       propertyPath: m_Name
       value: Wheel of Fortune Variant
@@ -157,8 +165,8 @@ MonoBehaviour:
   player: {fileID: 0}
   attack: {fileID: 0}
   stamina: {fileID: 0}
-  speedGain: 10
+  speedGain: 5
   dashGain: 5
   maximumHealth: 4
-  damageGain: 15
-  staminaGain: 17
+  damageGain: 5
+  staminaGain: 5

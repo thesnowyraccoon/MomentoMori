@@ -917,7 +917,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 0
-  maxHealth: 150
+  maxHealth: 200
   attackCooldown: 3
   wing: {fileID: 640209982}
   head: {fileID: 0}

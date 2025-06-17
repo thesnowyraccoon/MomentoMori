@@ -44,6 +44,8 @@ public class DialogueUI : MonoBehaviour
 
     [HideInInspector] public bool hasAttacked = false;
 
+    [SerializeField] GameObject UI;
+
     private void Start()
     {
         //Inactive potrait
@@ -296,6 +298,13 @@ public class DialogueUI : MonoBehaviour
                 Remy.GetComponent<Animator>().SetBool("isMoving", false);
 
                 inputPromptText.text = "";
+            }
+
+            // UI activated
+
+            else if (currentDialogueIndex == 26)
+            {
+                UI.SetActive(true);
             }
 
             // Potrait activated and deactvated/////////////////////////////////////////
