@@ -39,6 +39,7 @@ public class Projectiles : MonoBehaviour
                 if (animator != null)
                 {
                     animator.SetBool("isAttacking", true);
+                    //SoundEffectManager.Play("Crow");
                 }
                 
                 Shoot();
