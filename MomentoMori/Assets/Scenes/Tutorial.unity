@@ -1036,7 +1036,11 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 0
+<<<<<<< HEAD
   m_Volume: 1
+=======
+  m_Volume: 0.2
+>>>>>>> 8a6e10e3fdb1cbe7a544b50ea0692359d2946cbe
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1341,9 +1345,11 @@ GameObject:
   - component: {fileID: 538015371}
   - component: {fileID: 538015372}
   - component: {fileID: 538015373}
+  - component: {fileID: 538015375}
+  - component: {fileID: 538015374}
   m_Layer: 0
   m_Name: Flowey
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1464,6 +1470,47 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.7870278, y: 3.4194682}
   m_EdgeRadius: 0
+--- !u!114 &538015374
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 538015370}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6845416052c803f4699f7830537d6628, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 15
+  damageParticles: {fileID: 602058523568561755, guid: 9c1ed3ad356d77e4ca5061db619d6e39, type: 3}
+--- !u!50 &538015375
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 538015370}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!4 &588789210 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8976497851515157416, guid: 7095924ccee04454f95b379988884a28, type: 3}
@@ -1802,54 +1849,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 737920978}
   m_CullTransparentMesh: 1
---- !u!1 &829339717
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 829339718}
-  - component: {fileID: 829339719}
-  m_Layer: 0
-  m_Name: GameManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &829339718
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 829339717}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.1048815, y: 10.441714, z: 1.0532429}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &829339719
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 829339717}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 89a71ded54726af4493cad1e94670279, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  transitionAnim: {fileID: 0}
-  carnivalAnim: {fileID: 0}
-  hospitalAnim: {fileID: 0}
-  homeAnim: {fileID: 0}
 --- !u!1 &945520838
 GameObject:
   m_ObjectHideFlags: 0
@@ -3061,6 +3060,10 @@ PrefabInstance:
     - target: {fileID: 4187071245117195424, guid: 7095924ccee04454f95b379988884a28, type: 3}
       propertyPath: m_Name
       value: playerRemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 7716368630721617441, guid: 7095924ccee04454f95b379988884a28, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8930285033327013001, guid: 7095924ccee04454f95b379988884a28, type: 3}
       propertyPath: m_IsTrigger
@@ -4719,7 +4722,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31cf7b1887d57a94589a52b9118306e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
   typewriterSpeed: 2000000
+=======
+  typewriterSpeed: 15
+>>>>>>> 8a6e10e3fdb1cbe7a544b50ea0692359d2946cbe
 --- !u!114 &1849667980
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4745,7 +4752,11 @@ MonoBehaviour:
   Cutscene2: {fileID: 1617645232}
   Cutscene3: {fileID: 381257431}
   Cutscene4: {fileID: 1506164521}
+<<<<<<< HEAD
   Cutscene5: {fileID: 968502333}
+=======
+  hasAttacked: 0
+>>>>>>> 8a6e10e3fdb1cbe7a544b50ea0692359d2946cbe
 --- !u!114 &1849667981
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5710,7 +5721,6 @@ SceneRoots:
   - {fileID: 980649278}
   - {fileID: 2093254680}
   - {fileID: 1019411219}
-  - {fileID: 829339718}
   - {fileID: 996639657}
   - {fileID: 1849667984}
   - {fileID: 149163842}
