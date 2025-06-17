@@ -81,7 +81,7 @@ public class SceneController : MonoBehaviour
             }
         }
 
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(1);
 
         SceneManager.LoadSceneAsync(currentScene.buildIndex + 1);
 

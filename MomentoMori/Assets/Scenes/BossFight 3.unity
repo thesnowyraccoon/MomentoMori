@@ -585,7 +585,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0d805eff754bec4495aaa03a0af71a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soundEffectGroups: []
+  soundEffectGroups:
+  - name: HeadSpin
+    audioClips:
+    - {fileID: 8300000, guid: f465b90f1cfa6c94cbb2b396550ea7bb, type: 3}
+  - name: Scream
+    audioClips:
+    - {fileID: 8300000, guid: d42359a376284a447b007378ebd7d6ad, type: 3}
 --- !u!114 &443406593
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -611,8 +617,8 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
+  m_Volume: 0.59
+  m_Pitch: 0.72
   Loop: 0
   Mute: 0
   Spatialize: 0

@@ -42,7 +42,7 @@ public class Boss_Idle : StateMachineBehaviour
             else if (randomAttack == 2)
             {
                 animator.SetTrigger("Wing");
-                //SoundEffectManager.Play("Hit");
+                SoundEffectManager.Play("Scream");
             }
         }
     }
