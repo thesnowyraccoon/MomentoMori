@@ -1,22 +1,10 @@
 fileFormatVersion: 2
-guid: d49e8a359e94eb54181d38fdce49d0ea
+guid: eb1a5ea011b16fa448aed2728cc3cd1b
 TextureImporter:
   internalIDToNameTable:
   - first:
       213: 693195512843694964
     second: WheelOfFortune_0
-  - first:
-      213: 4711482194092586324
-    second: WheelOfFortune_1
-  - first:
-      213: 598103956710606808
-    second: WheelOfFortune_2
-  - first:
-      213: 5097449351649156371
-    second: WheelOfFortune_3
-  - first:
-      213: -3181814948173330098
-    second: WheelOfFortune_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -58,12 +46,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 500
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -125,23 +113,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: WheelOfFortune_2
+      name: WheelOfFortune_0
       rect:
         serializedVersion: 2
-        x: 671
-        y: 61
-        width: 563
-        height: 916
+        x: 0
+        y: 2
+        width: 179
+        height: 299
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8d7cd763164ec4800800000000000000
-      internalID: 598103956710606808
+      spriteID: 47371fe65a9be9900800000000000000
+      internalID: 693195512843694964
       vertices: []
       indices: 
       edges: []
@@ -150,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: f7d90bd53e422dc47b356ad4e39b4490
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -161,10 +149,6 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       WheelOfFortune_0: 693195512843694964
-      WheelOfFortune_1: 4711482194092586324
-      WheelOfFortune_2: 598103956710606808
-      WheelOfFortune_3: 5097449351649156371
-      WheelOfFortune_4: -3181814948173330098
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

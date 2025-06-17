@@ -9,8 +9,20 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: -418695239537871221, guid: 3a6da2954e45ace46a9b295812d83109, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.x
+      value: 1.83
+      objectReference: {fileID: 0}
+    - target: {fileID: -418695239537871221, guid: 3a6da2954e45ace46a9b295812d83109, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.y
+      value: 3.03
+      objectReference: {fileID: 0}
+    - target: {fileID: -418695239537871221, guid: 3a6da2954e45ace46a9b295812d83109, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 1.83
+      objectReference: {fileID: 0}
+    - target: {fileID: -418695239537871221, guid: 3a6da2954e45ace46a9b295812d83109, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 1.832
+      value: 3.03
       objectReference: {fileID: 0}
     - target: {fileID: 246960384432866785, guid: 3a6da2954e45ace46a9b295812d83109, type: 3}
       propertyPath: m_Pivot.x
@@ -93,13 +105,25 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1149476050338362325, guid: 3a6da2954e45ace46a9b295812d83109, type: 3}
+      propertyPath: m_Size.x
+      value: 1.83
+      objectReference: {fileID: 0}
+    - target: {fileID: 1149476050338362325, guid: 3a6da2954e45ace46a9b295812d83109, type: 3}
+      propertyPath: m_Size.y
+      value: 3.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 1149476050338362325, guid: 3a6da2954e45ace46a9b295812d83109, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 598103956710606808, guid: d49e8a359e94eb54181d38fdce49d0ea, type: 3}
+      objectReference: {fileID: 21300000, guid: eb1a5ea011b16fa448aed2728cc3cd1b, type: 3}
+    - target: {fileID: 1149476050338362325, guid: 3a6da2954e45ace46a9b295812d83109, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1767475659269264195, guid: 3a6da2954e45ace46a9b295812d83109, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 598103956710606808, guid: d49e8a359e94eb54181d38fdce49d0ea, type: 3}
+      objectReference: {fileID: 21300000, guid: eb1a5ea011b16fa448aed2728cc3cd1b, type: 3}
     - target: {fileID: 6590529108859859616, guid: 3a6da2954e45ace46a9b295812d83109, type: 3}
       propertyPath: m_Name
       value: Wheel of Fortune Variant

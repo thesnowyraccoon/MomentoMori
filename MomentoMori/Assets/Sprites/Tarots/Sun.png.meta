@@ -1,22 +1,10 @@
 fileFormatVersion: 2
-guid: 715a0fd489e4e3c4eac1bf4877ad43a3
+guid: 90635bf7b53487e4cbfa15c53ccedf91
 TextureImporter:
   internalIDToNameTable:
   - first:
       213: 8740491524576469797
     second: Sun_0
-  - first:
-      213: -8838118737182495800
-    second: Sun_1
-  - first:
-      213: -8664763093570941427
-    second: Sun_2
-  - first:
-      213: -6313178382888641860
-    second: Sun_3
-  - first:
-      213: -7990073000246423195
-    second: Sun_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -58,12 +46,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 500
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -128,12 +116,12 @@ TextureImporter:
       name: Sun_0
       rect:
         serializedVersion: 2
-        x: 660
-        y: 60
-        width: 568
-        height: 925
+        x: 0
+        y: 6
+        width: 185
+        height: 296
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -150,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 728bdc06edaf38e41a9f3f0fe73211fc
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -161,10 +149,6 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       Sun_0: 8740491524576469797
-      Sun_1: -8838118737182495800
-      Sun_2: -8664763093570941427
-      Sun_3: -6313178382888641860
-      Sun_4: -7990073000246423195
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

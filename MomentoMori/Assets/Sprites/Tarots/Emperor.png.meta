@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f9e9d15996acc96458624eb4f2532ae7
+guid: e6b61d67d3b2b904facd54c0194d2f91
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -8,18 +8,6 @@ TextureImporter:
   - first:
       213: -5321784832648774622
     second: Emperor_1
-  - first:
-      213: 2577140464506405742
-    second: Emperor_2
-  - first:
-      213: -928843559567033501
-    second: Emperor_3
-  - first:
-      213: -202491373093034048
-    second: Emperor_4
-  - first:
-      213: -6923766307369848147
-    second: Emperor_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -61,12 +49,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 500
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -128,15 +116,37 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
+      name: Emperor_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 15
+        width: 180
+        height: 295
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b641101d881c2e200800000000000000
+      internalID: 207941326178686059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: Emperor_1
       rect:
         serializedVersion: 2
-        x: 665
-        y: 56
-        width: 563
-        height: 933
+        x: 45
+        y: 2
+        width: 42
+        height: 6
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -153,7 +163,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: f23bbc6e09cb2c34f9e6d1e85c465569
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -165,10 +175,6 @@ TextureImporter:
     nameFileIdTable:
       Emperor_0: 207941326178686059
       Emperor_1: -5321784832648774622
-      Emperor_2: 2577140464506405742
-      Emperor_3: -928843559567033501
-      Emperor_4: -202491373093034048
-      Emperor_5: -6923766307369848147
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

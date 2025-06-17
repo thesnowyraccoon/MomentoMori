@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5a522d7c06a6a9e4c9a5f39894a3b46b
+guid: 0c76d628e34ca9c4b83d8c9f54b7274f
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -8,24 +8,6 @@ TextureImporter:
   - first:
       213: -276728812324164698
     second: Death_1
-  - first:
-      213: 3156895337291164288
-    second: Death_2
-  - first:
-      213: 1400002288684528572
-    second: Death_3
-  - first:
-      213: -1891625820773287384
-    second: Death_4
-  - first:
-      213: -5789737788129074030
-    second: Death_5
-  - first:
-      213: 3968659893341466949
-    second: Death_6
-  - first:
-      213: 6495761399759928590
-    second: Death_7
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -67,12 +49,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 500
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -137,12 +119,12 @@ TextureImporter:
       name: Death_0
       rect:
         serializedVersion: 2
-        x: 665
-        y: 58
-        width: 563
-        height: 921
+        x: 1
+        y: 0
+        width: 184
+        height: 307
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -155,11 +137,33 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Death_1
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 278
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ab6d428c9cd82cf0800000000000000
+      internalID: -276728812324164698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: dfe86b8a2a42f694c8ae743669a2fe3f
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -171,12 +175,6 @@ TextureImporter:
     nameFileIdTable:
       Death_0: 6991849013916550155
       Death_1: -276728812324164698
-      Death_2: 3156895337291164288
-      Death_3: 1400002288684528572
-      Death_4: -1891625820773287384
-      Death_5: -5789737788129074030
-      Death_6: 3968659893341466949
-      Death_7: 6495761399759928590
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

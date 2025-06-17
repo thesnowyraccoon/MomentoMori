@@ -1,19 +1,10 @@
 fileFormatVersion: 2
-guid: bd7c0a1bc0362664f8658d65a4caccc0
+guid: df076613f0ed2284c842c794984e1b0d
 TextureImporter:
   internalIDToNameTable:
   - first:
       213: -8307069055350043731
     second: Strength_0
-  - first:
-      213: -1651686764343670146
-    second: Strength_1
-  - first:
-      213: 6559226163460424660
-    second: Strength_2
-  - first:
-      213: 7563853285651607238
-    second: Strength_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -55,12 +46,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 500
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -122,23 +113,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Strength_1
+      name: Strength_0
       rect:
         serializedVersion: 2
-        x: 667
-        y: 58
-        width: 563
-        height: 933
+        x: 0
+        y: 0
+        width: 183
+        height: 305
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e7ac41b83a70419e0800000000000000
-      internalID: -1651686764343670146
+      spriteID: dab8837f4bc57bc80800000000000000
+      internalID: -8307069055350043731
       vertices: []
       indices: 
       edges: []
@@ -147,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: ae7cfaa1fe8bf0d4e9429e3f27d54720
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -158,9 +149,6 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       Strength_0: -8307069055350043731
-      Strength_1: -1651686764343670146
-      Strength_2: 6559226163460424660
-      Strength_3: 7563853285651607238
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

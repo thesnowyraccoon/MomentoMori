@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: a3808243508a2324c8ab082c4ed7ca1d
+guid: 6fa939789ef4b8544b4eba8334d73050
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -8,18 +8,6 @@ TextureImporter:
   - first:
       213: 1525946473705795643
     second: Lovers_1
-  - first:
-      213: -8442642003121826417
-    second: Lovers_2
-  - first:
-      213: -7004847159678759290
-    second: Lovers_3
-  - first:
-      213: -4273756472697648047
-    second: Lovers_4
-  - first:
-      213: -6262451185910234781
-    second: Lovers_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -61,12 +49,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 500
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -128,23 +116,45 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Lovers_5
+      name: Lovers_0
       rect:
         serializedVersion: 2
-        x: 666
-        y: 58
-        width: 563
-        height: 919
+        x: 0
+        y: 1
+        width: 184
+        height: 296
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 361c89883dd4719a0800000000000000
-      internalID: -6262451185910234781
+      spriteID: 19eaad696b5388480800000000000000
+      internalID: -8896802005539180911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lovers_1
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 292
+        width: 39
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b307e77ab304d2510800000000000000
+      internalID: 1525946473705795643
       vertices: []
       indices: 
       edges: []
@@ -153,7 +163,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 349a1d6e3f57e754290a45da1a72bcbf
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -165,10 +175,6 @@ TextureImporter:
     nameFileIdTable:
       Lovers_0: -8896802005539180911
       Lovers_1: 1525946473705795643
-      Lovers_2: -8442642003121826417
-      Lovers_3: -7004847159678759290
-      Lovers_4: -4273756472697648047
-      Lovers_5: -6262451185910234781
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

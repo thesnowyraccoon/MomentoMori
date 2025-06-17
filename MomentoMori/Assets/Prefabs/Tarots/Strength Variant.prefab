@@ -9,8 +9,20 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: -418695239537871221, guid: 3a6da2954e45ace46a9b295812d83109, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.x
+      value: 1.88
+      objectReference: {fileID: 0}
+    - target: {fileID: -418695239537871221, guid: 3a6da2954e45ace46a9b295812d83109, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.y
+      value: 3.05
+      objectReference: {fileID: 0}
+    - target: {fileID: -418695239537871221, guid: 3a6da2954e45ace46a9b295812d83109, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 1.88
+      objectReference: {fileID: 0}
+    - target: {fileID: -418695239537871221, guid: 3a6da2954e45ace46a9b295812d83109, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 1.866
+      value: 3.05
       objectReference: {fileID: 0}
     - target: {fileID: 246960384432866785, guid: 3a6da2954e45ace46a9b295812d83109, type: 3}
       propertyPath: m_Pivot.x
@@ -93,13 +105,25 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1149476050338362325, guid: 3a6da2954e45ace46a9b295812d83109, type: 3}
+      propertyPath: m_Size.x
+      value: 1.88
+      objectReference: {fileID: 0}
+    - target: {fileID: 1149476050338362325, guid: 3a6da2954e45ace46a9b295812d83109, type: 3}
+      propertyPath: m_Size.y
+      value: 3.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 1149476050338362325, guid: 3a6da2954e45ace46a9b295812d83109, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -1651686764343670146, guid: bd7c0a1bc0362664f8658d65a4caccc0, type: 3}
+      objectReference: {fileID: 21300000, guid: df076613f0ed2284c842c794984e1b0d, type: 3}
+    - target: {fileID: 1149476050338362325, guid: 3a6da2954e45ace46a9b295812d83109, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1767475659269264195, guid: 3a6da2954e45ace46a9b295812d83109, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -1651686764343670146, guid: bd7c0a1bc0362664f8658d65a4caccc0, type: 3}
+      objectReference: {fileID: 21300000, guid: df076613f0ed2284c842c794984e1b0d, type: 3}
     - target: {fileID: 6590529108859859616, guid: 3a6da2954e45ace46a9b295812d83109, type: 3}
       propertyPath: m_Name
       value: Strength Variant
@@ -132,4 +156,5 @@ MonoBehaviour:
   ID: 0
   player: {fileID: 0}
   attack: {fileID: 0}
+  stamina: {fileID: 0}
   attackGain: 5
