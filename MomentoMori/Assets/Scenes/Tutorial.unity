@@ -5459,7 +5459,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31cf7b1887d57a94589a52b9118306e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  typewriterSpeed: 9000
+  typewriterSpeed: 15
 --- !u!114 &1849667980
 MonoBehaviour:
   m_ObjectHideFlags: 0
