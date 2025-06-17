@@ -13,7 +13,7 @@ using static UnityEngine.Rendering.DebugUI.Table;
 public class DialogueObject : ScriptableObject
 {
     //public DialogueActors[] actors;
-    public Sprite[] actorPortrait;
+    //public Sprite[] actorPortrait;
 
     [Header("Dialogue")]
     [TextArea]

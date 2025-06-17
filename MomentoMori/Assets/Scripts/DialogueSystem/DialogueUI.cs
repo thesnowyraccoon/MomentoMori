@@ -1,7 +1,6 @@
 using System.Collections;
 using UnityEngine;
 using TMPro;
-//using UnityEngine.UI;
 using UnityEngine.Playables;
 
 //Title: SETUP: How to Create a Flexible Dialogue System - Unity #1
@@ -19,6 +18,7 @@ public class DialogueUI : MonoBehaviour
     [SerializeField] private DialogueObject playDialogue;
     [SerializeField] private TMP_Text inputPromptText;
     [SerializeField] private GameObject Remy;
+    [SerializeField] private GameObject Entity;
 
     //Audio Reference
     [SerializeField] private AudioClip sound;
@@ -34,6 +34,7 @@ public class DialogueUI : MonoBehaviour
     [SerializeField] private PlayableDirector Cutscene2;
     [SerializeField] private PlayableDirector Cutscene3;
     [SerializeField] private PlayableDirector Cutscene4;
+    [SerializeField] private PlayableDirector Cutscene5;
 
     //Typewriter Reference
     private TypewriterEffect typewriterEffect;
@@ -274,7 +275,7 @@ public class DialogueUI : MonoBehaviour
 
             //Dashing Tutorial/////////////////////////////////////////////////////////////
 
-            else if (currentDialogueIndex == 23)
+            else if (currentDialogueIndex == 24)
             {
                 dialogueBox.SetActive(false);
 
@@ -286,6 +287,7 @@ public class DialogueUI : MonoBehaviour
                 inputPromptText.text = "Press 'Space' to dash";
 
                 yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.Space));
+                yield return new WaitForSeconds(3);
 
                 dialogueBox.SetActive(true);
 
@@ -328,12 +330,30 @@ public class DialogueUI : MonoBehaviour
                 potraitEntity.gameObject.SetActive(true);
             }
 
-            else if (currentDialogueIndex == 39)
+            //Time to go cutscene!
+            else if (currentDialogueIndex == 40)
             {
                 potraitEntity.gameObject.SetActive(false);
-            }
+                Cutscene5.gameObject.SetActive(true);
+                Cutscene5.Play();
 
-            currentDialogueIndex++;
+                yield return new WaitUntil(() => Cutscene5.state != PlayState.Playing);
+                Cutscene5.gameObject.SetActive(false);
+
+                Entity.gameObject.SetActive(false);
+
+                //Disable box
+                dialogueBox.SetActive(false);
+
+                yield return new WaitForSeconds(3);
+
+                //Disables movement
+                Remy.GetComponent<PlayerController>().moveAction.Enable();
+                Remy.GetComponent<Animator>().SetBool("isMoving", true);
+
+                inputPromptText.text = "Go to the portal";
+            }
+                currentDialogueIndex++;
 
         }
         
