@@ -24,6 +24,7 @@ public class PlayerItemCollector : MonoBehaviour
             if (item != null)
             {
                 bool itemAdded = inventoryController.AddItem(collision.gameObject);
+                SoundEffectManager.Play("Tarot");
 
                 if (itemAdded)
                 {
