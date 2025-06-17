@@ -29,6 +29,7 @@ public class SceneController : MonoBehaviour
             Destroy(gameObject); //If scene already has this object it will destroy the previous one
         }
     }
+
     public void NextLevel()
     { //Load Next Scene. (+1 is to indicate the scene after it)
 
@@ -54,22 +55,30 @@ public class SceneController : MonoBehaviour
         if (currentScene.name == "BossFight 1")
         {
             if (carnivalAnim != null)
+            {
                 carnivalAnim.SetTrigger("End");
+            }
         }
         else if (currentScene.name == "BossFightt 2")
         {
             if (hospitalAnim != null)
+            {
                 hospitalAnim.SetTrigger("End");
+            }
         }
         else if (currentScene.name == "BossFight 3")
         {
             if (homeAnim != null)
+            {
                 homeAnim.SetTrigger("End");
+            }
         }
         else
         {
             if (transitionAnim != null)
+            {
                 transitionAnim.SetTrigger("End");
+            }
         }
 
         yield return new WaitForSeconds(3);
@@ -81,22 +90,30 @@ public class SceneController : MonoBehaviour
         if (currentScene.name == "BossFight 1")
         {
             if (carnivalAnim != null)
+            {
                 carnivalAnim.SetTrigger("Start");
+            }
         }
         else if (currentScene.name == "BossFightt 2")
         {
             if (hospitalAnim != null)
+            {
                 hospitalAnim.SetTrigger("Start");
+            }
         }
         else if (currentScene.name == "BossFight 3")
         {
             if (homeAnim != null)
+            {
                 homeAnim.SetTrigger("Start");
+            }
         }
         else
         {
             if (transitionAnim != null)
+            {
                 transitionAnim.SetTrigger("Start");
+            }
         }
     }
 

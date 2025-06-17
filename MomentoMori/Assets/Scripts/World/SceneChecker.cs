@@ -4,9 +4,6 @@ using UnityEngine.SceneManagement;
 
 public class SceneChecker : MonoBehaviour
 {
-    CinemachineConfiner2D playerCamera;
-    PolygonCollider2D cameraBounds;
-
     void Start()
     {
         SetCamera();
@@ -15,12 +12,15 @@ public class SceneChecker : MonoBehaviour
 
     void SetCamera()
     {
-        playerCamera = GameObject.Find("PlayerCamera").GetComponent<CinemachineConfiner2D>();
-        cameraBounds = GameObject.Find("Camera").GetComponent<PolygonCollider2D>();
+        GameObject player = GameObject.Find("PlayerCamera");
+        GameObject bounds = GameObject.Find("Camera");
 
-        if (playerCamera != null && cameraBounds != null) 
+        if (player != null && bounds != null) 
         {
-            playerCamera.BoundingShape2D = cameraBounds;
+            CinemachineConfiner2D playerCamera = player.GetComponent<CinemachineConfiner2D>();
+            PolygonCollider2D cameraBounds = bounds.GetComponent<PolygonCollider2D>();
+
+            playerCamera.GetComponent<CinemachineConfiner2D>().BoundingShape2D = cameraBounds;
         }
     }
     
@@ -38,7 +38,7 @@ public class SceneChecker : MonoBehaviour
 
         if (tarot1 != null)
         {
-            if (currentScene.name == "Level1")
+            if (currentScene.name == "Level1" || currentScene.name == "Home")
             {
                 foreach (Transform child in tarot1.transform)
                 {
@@ -56,7 +56,7 @@ public class SceneChecker : MonoBehaviour
 
         if (tarot2 != null)
         {
-            if (currentScene.name == "Level 2")
+            if (currentScene.name == "Level 2" || currentScene.name == "Home")
             {
                 foreach (Transform child in tarot2.transform)
                 {
@@ -74,7 +74,7 @@ public class SceneChecker : MonoBehaviour
 
         if (tarot3 != null)
         {
-            if (currentScene.name == "Level 3")
+            if (currentScene.name == "Level 3" || currentScene.name == "Home")
             {
                 foreach (Transform child in tarot3.transform)
                 {

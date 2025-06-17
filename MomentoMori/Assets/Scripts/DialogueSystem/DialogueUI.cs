@@ -2,8 +2,6 @@ using System.Collections;
 using UnityEngine;
 using TMPro;
 //using UnityEngine.UI;
-using static UnityEngine.Rendering.DebugUI.Table;
-using Unity.VisualScripting;
 using UnityEngine.Playables;
 
 //Title: SETUP: How to Create a Flexible Dialogue System - Unity #1
@@ -45,6 +43,7 @@ public class DialogueUI : MonoBehaviour
     //Start dialouge on the first array
     private int currentDialogueIndex = 0;
 
+    [HideInInspector] public bool hasAttacked = false;
 
     private void Start()
     {
@@ -70,11 +69,7 @@ public class DialogueUI : MonoBehaviour
 
         //Prompt text set to blank
         inputPromptText.text = "";
-
-        
-
     }
-
 
     public void ShowDialogue(DialogueObject dialogueObject)
     {
@@ -124,7 +119,6 @@ public class DialogueUI : MonoBehaviour
 
             }
 
-
             // Potrait activated and deactvated/////////////////////////////////////////
 
             else if (currentDialogueIndex == 3)
@@ -157,7 +151,6 @@ public class DialogueUI : MonoBehaviour
                 potraitEntity.gameObject.SetActive(true);
             }
 
-
             //Entity's anger///////////////////////////////////////////////////////////
 
             else if (currentDialogueIndex == 11)
@@ -171,7 +164,6 @@ public class DialogueUI : MonoBehaviour
 
                 yield return new WaitForSeconds(1);
             }
-
 
             //WASD Tutotial///////////////////////////////////////////////////////////
 
@@ -272,8 +264,7 @@ public class DialogueUI : MonoBehaviour
                 Remy.GetComponent<PlayerController>().moveAction.Enable();
                 Remy.GetComponent<Animator>().SetBool("isMoving", true);
 
-
-                yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.K));
+                yield return new WaitUntil(() => hasAttacked);
                 dialogueBox.SetActive(true);
 
                 //Disables movement

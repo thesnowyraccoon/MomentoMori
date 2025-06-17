@@ -2,7 +2,9 @@ using UnityEngine;
 
 public class SpawnPoint : MonoBehaviour
 {
-    Transform player;
+    GameObject player;
+
+    [SerializeField] private bool health = false;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -11,9 +13,10 @@ public class SpawnPoint : MonoBehaviour
         {
             Debug.Log("Player Spawned");
 
-            player = GameObject.FindGameObjectWithTag("Player").transform;
+            player = GameObject.FindGameObjectWithTag("Player");
 
-            player.position = transform.position;
+            player.transform.position = transform.position;
+            player.GetComponent<PlayerController>().HealthGain(50);
         }
         else
         {
