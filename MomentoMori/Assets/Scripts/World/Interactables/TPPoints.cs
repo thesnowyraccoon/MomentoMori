@@ -25,6 +25,7 @@ public class TPPoints : Interactions
             else
             {
                 Debug.Log("No Entry!");
+                SoundEffectManager.Play("NoEntry");
             }
         }
 
