@@ -12,13 +12,16 @@ public class SoundEffectManager : MonoBehaviour
     //To call sounds go to the specifc script, add SoundEffectManager.Play("SoundName") 
     private static SoundEffectManager Instance; //Callable from anywhere
     private static AudioSource audioSource;
+    private static AudioSource softerAudioSource; //For enemy sound effects
     private static SoundEffectLibrary soundEffectLibrary;
     private void Awake() //Allows there to be only one script
     {
         if (Instance == null)
         {
             Instance = this;
-            audioSource = GetComponent<AudioSource>();
+            AudioSource[] audioSources = GetComponents<AudioSource>();
+            audioSource = audioSources[0]; //First in the list, dont touch
+            softerAudioSource = audioSources[1]; 
             soundEffectLibrary = GetComponent<SoundEffectLibrary>(); // gets the other script
             DontDestroyOnLoad(gameObject);
         }
@@ -28,12 +31,20 @@ public class SoundEffectManager : MonoBehaviour
         }
     }
 
-    public static void Play(string soundName)
+    public static void Play(string soundName, bool softerSound = false)
     {
         AudioClip audioClip = soundEffectLibrary.GetRandomClip(soundName);
         if (audioClip != null) //Not null
         {
-            audioSource.PlayOneShot(audioClip);
+            if (softerSound)
+            {
+                softerAudioSource.pitch = Random.Range (0.89f, 0.95f);
+                softerAudioSource.PlayOneShot(audioClip);
+            }
+            else
+            {
+                audioSource.PlayOneShot(audioClip);
+            }
         }
         else
         {

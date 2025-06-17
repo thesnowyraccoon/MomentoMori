@@ -4165,6 +4165,7 @@ GameObject:
   m_Component:
   - component: {fileID: 811658032}
   - component: {fileID: 811658033}
+  - component: {fileID: 811658034}
   m_Layer: 0
   m_Name: SoundEffect
   m_TagString: Untagged
@@ -4200,16 +4201,16 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: 781a2a641db6ea44194d294a37df3f98, type: 3}
   m_Resource: {fileID: 8300000, guid: 781a2a641db6ea44194d294a37df3f98, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.46
-  m_Pitch: 1
-  Loop: 0
+  m_Volume: 0.31
+  m_Pitch: 0.66
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 84
   DopplerLevel: 1
-  MinDistance: 3
-  MaxDistance: 20
+  MinDistance: 4.07
+  MaxDistance: 17
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -4274,7 +4275,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 1.1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -4284,6 +4285,30 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!167 &811658034
+AudioReverbZone:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 811658031}
+  m_Enabled: 1
+  m_MinDistance: 10.52
+  m_MaxDistance: 17.6
+  m_ReverbPreset: 24
+  m_Room: -1000
+  m_RoomHF: 0
+  m_DecayTime: 8.39
+  m_DecayHFRatio: 1.39
+  m_Reflections: -115
+  m_ReflectionsDelay: 0.002
+  m_Reverb: 985
+  m_ReverbDelay: 0.03
+  m_HFReference: 5000
+  m_Diffusion: 100
+  m_Density: 100
+  m_LFReference: 250
+  m_RoomLF: 0
 --- !u!1 &821812110
 GameObject:
   m_ObjectHideFlags: 0
@@ -10471,6 +10496,9 @@ MonoBehaviour:
   - name: NoEntry
     audioClips:
     - {fileID: 8300000, guid: 903b07c683ed59a448d145421d88133a, type: 3}
+  - name: Crow
+    audioClips:
+    - {fileID: 8300000, guid: 101d3dcc23c36c444a7c107cce730656, type: 3}
 --- !u!114 &1758584854
 MonoBehaviour:
   m_ObjectHideFlags: 0
