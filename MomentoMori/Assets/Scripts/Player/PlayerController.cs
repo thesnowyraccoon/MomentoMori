@@ -260,14 +260,11 @@ public class PlayerController : MonoBehaviour
 
         if (playerHealth <= 0) // Player disable on death // Should be reset to start
         {
-            Reset();
-        }
-    }
+            Debug.Log("Awoken");
 
-    void Reset()
-    {
-        SceneController.instance.LoadScene("Home");
-        playerHealth = maxHealth;
+            SceneController.instance.LoadScene("Home");
+            playerHealth = maxHealth;
+        }
     }
 
     // Pause menu activation

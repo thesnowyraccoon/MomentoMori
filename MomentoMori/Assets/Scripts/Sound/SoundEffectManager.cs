@@ -14,6 +14,7 @@ public class SoundEffectManager : MonoBehaviour
     private static AudioSource audioSource;
     private static AudioSource softerAudioSource; //For enemy sound effects
     private static SoundEffectLibrary soundEffectLibrary;
+    
     private void Awake() //Allows there to be only one script
     {
         if (Instance == null)
