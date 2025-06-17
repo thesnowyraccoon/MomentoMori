@@ -2,10 +2,10 @@ using Unity.VisualScripting;
 using UnityEngine;
 
 // Title: Add a sound effect manager to your game- 2D platformer Unity #26
- // Author: Game Code Library
- // Date: 16 February 2024
- // Code version: Unknown
- // Availability: https://youtu.be/rAX_r0yBwzQ?si=E9eu7PGWc_ng1Hpc
+// Author: Game Code Library
+// Date: 16 February 2024
+// Code version: Unknown
+// Availability: https://youtu.be/rAX_r0yBwzQ?si=E9eu7PGWc_ng1Hpc
 
 public class SoundEffectManager : MonoBehaviour
 {
@@ -21,7 +21,7 @@ public class SoundEffectManager : MonoBehaviour
             Instance = this;
             AudioSource[] audioSources = GetComponents<AudioSource>();
             audioSource = audioSources[0]; //First in the list, dont touch
-            softerAudioSource = audioSources[1]; 
+            softerAudioSource = audioSources[1];
             soundEffectLibrary = GetComponent<SoundEffectLibrary>(); // gets the other script
             DontDestroyOnLoad(gameObject);
         }
@@ -38,7 +38,7 @@ public class SoundEffectManager : MonoBehaviour
         {
             if (softerSound)
             {
-                softerAudioSource.pitch = Random.Range (0.89f, 0.95f);
+                softerAudioSource.pitch = Random.Range(0.89f, 0.95f);
                 softerAudioSource.PlayOneShot(audioClip);
             }
             else
@@ -52,4 +52,24 @@ public class SoundEffectManager : MonoBehaviour
         }
     }
 
+    public static void PlayEnemy(string soundName, bool softerSound = false)
+    {
+        AudioClip audioClip = soundEffectLibrary.GetRandomClip(soundName);
+        if (audioClip != null) //Not null
+        {
+            if (softerSound)
+            {
+                softerAudioSource.pitch = Random.Range(0.89f, 0.95f);
+                softerAudioSource.PlayOneShot(audioClip);
+            }
+            else
+            {
+                audioSource.PlayOneShot(audioClip);
+            }
+        }
+        else
+        {
+            Debug.Log("Clip Not Found");
+        }
+    }
 }
