@@ -1,8 +1,6 @@
 using UnityEngine;
 using System.Linq;
 
-[RequireComponent(typeof(SpriteRenderer))]
-
 public class Insomnium : Interactions
 {
     [SerializeField] private PlayerController player;

@@ -11,8 +11,6 @@ public class PlayerController : MonoBehaviour
     public InputAction interactAction; // Input action for interactions
     public InputAction pauseAction; // Input action for pausing the game
 
-    private Vector2 _boxSize = new Vector2(0.1f, 1f); // Interaction distance
-
     // Movement
     [Header("Movement")]
     [SerializeField] private float moveSpeed = 5f; // Speed of the player
@@ -37,6 +35,8 @@ public class PlayerController : MonoBehaviour
     // Interaction Icon
     [Header("Interactions")]
     [SerializeField] private GameObject interactionIcon;
+
+    private Vector2 _boxSize = new Vector2(0.1f, 1f); // Interaction distance
 
     // Stats
     [Header("Health")]
